@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "stars": 5,
+      "author": "Johan & Lies",
+      "property": "hoeve",
+      "text_nl": "Fijne ontvangst, perfecte locatie in een stil hoekje van Oostende. Ideaal voor een fietsweekend door de polders. Het huisje heeft een echte ziel.",
+      "text_fr": "Accueil chaleureux, emplacement idéal dans un coin tranquille d'Ostende. Parfait pour un week-end à vélo dans les polders.",
+      "text_en": "Great welcome, perfect location in a quiet corner of Ostend. Ideal for a cycling weekend through the polders. The house has a real soul.",
+      "text_de": "Herzliche Begrüßung, perfekte Lage in einem ruhigen Winkel von Ostende. Ideal für ein Radwochenende durch die Polder."
+    },
+    {
+      "stars": 5,
+      "author": "Familie De Smedt",
+      "property": "hoeve",
+      "text_nl": "Super fijn appartement met alles wat je nodig hebt! Heel proper, heel vriendelijk, en die tuin is een cadeau. Absolute aanrader voor families.",
+      "text_fr": "Super bel appartement avec tout ce qu'il faut! Très propre, très accueillant, et ce jardin est un cadeau. À recommander pour les familles.",
+      "text_en": "Fantastic apartment with everything you need! Very clean, very friendly, and the garden is a treat. Absolute must for families.",
+      "text_de": "Tolles Appartement mit allem was man braucht! Sehr sauber, sehr freundlich, und der Garten ist ein Geschenk."
+    },
+    {
+      "stars": 5,
+      "author": "Michael & Sarah",
+      "property": "brise",
+      "text_nl": "Het uitzicht is spectaculair. Rechtstreeks aan de boulevard, kon niet beter. Het appartement is schoon, stijlvol en de gastheer is ongelooflijk behulpzaam.",
+      "text_fr": "La vue est simplement spectaculaire. Directement sur le front de mer. L'appartement est propre, élégant et l'hôte est incroyablement serviable.",
+      "text_en": "The view is simply spectacular. Right on the seafront, couldn't be better. The apartment is clean, stylish and the host is incredibly helpful.",
+      "text_de": "Die Aussicht ist einfach atemberaubend. Direkt an der Promenade. Die Wohnung ist sauber, stilvoll und der Gastgeber unglaublich hilfsbereit."
+    }
+  ]
+}

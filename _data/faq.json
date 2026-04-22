@@ -1,0 +1,102 @@
+[
+  {
+    "q_nl": "Hoe verloopt het inchecken?",
+    "a_nl": "U ontvangt enkele dagen voor aankomst een bericht met een persoonlijke toegangscode of de locatie van de sleutelkluis. U kunt inchecken op het uur dat u zelf verkiest — 24/7, zonder te wachten.",
+    "q_fr": "Comment se passe le check-in?",
+    "a_fr": "Vous recevrez quelques jours avant votre arrivée un code d'accès ou l'emplacement de la boîte à clés. Check-in 24h/24.",
+    "q_en": "How does check-in work?",
+    "a_en": "A few days before arrival you'll receive a personal access code or key safe location. Check in 24/7.",
+    "q_de": "Wie läuft der Check-in ab?",
+    "a_de": "Einige Tage vor Ankunft erhalten Sie einen Zugangscode. Check-in 24/7."
+  },
+  {
+    "q_nl": "Welk linnen en handdoeken worden voorzien?",
+    "a_nl": "Alle bedden zijn opgemaakt bij aankomst. Handdoeken en keukenlinnen aanwezig. In La Brise ook strandlakens.",
+    "q_fr": "Quel linge est fourni?",
+    "a_fr": "Tous les lits sont faits. Serviettes incluses. Serviettes de plage à La Brise.",
+    "q_en": "What linen is provided?",
+    "a_en": "Beds made on arrival. Towels included. Beach towels at La Brise.",
+    "q_de": "Welche Wäsche wird gestellt?",
+    "a_de": "Betten gemacht, Handtücher inklusive. Strandtücher bei La Brise."
+  },
+  {
+    "q_nl": "Zijn huisdieren toegelaten?",
+    "a_nl": "Honden welkom in t'Hoeveke (mits overleg). In La Brise et La Mer niet toegelaten.",
+    "q_fr": "Les animaux sont-ils acceptés?",
+    "a_fr": "Chiens bienvenus à t'Hoeveke (accord préalable). Non admis à La Brise.",
+    "q_en": "Are pets allowed?",
+    "a_en": "Dogs welcome at t'Hoeveke (on request). Not permitted at La Brise.",
+    "q_de": "Sind Haustiere erlaubt?",
+    "a_de": "Hunde bei t'Hoeveke willkommen (Absprache). Bei La Brise nicht erlaubt."
+  },
+  {
+    "q_nl": "Is er parking beschikbaar?",
+    "a_nl": "t'Hoeveke: gratis op eigen terrein. La Brise: betalend straatparkeren + buurtparking op wandelafstand.",
+    "q_fr": "Y a-t-il un parking?",
+    "a_fr": "t'Hoeveke: gratuit sur place. La Brise: stationnement payant et parking de quartier.",
+    "q_en": "Is parking available?",
+    "a_en": "t'Hoeveke: free on-site. La Brise: paid street parking and nearby car park.",
+    "q_de": "Gibt es Parkplätze?",
+    "a_de": "t'Hoeveke: kostenlos vor Ort. La Brise: kostenpflichtiges Parken in der Nähe."
+  },
+  {
+    "q_nl": "Hoe annuleer ik mijn boeking?",
+    "a_nl": "Annuleringsvoorwaarden verschillen per kanaal. Meest flexibel via Booking.com. Rechtstreekse boekingen: eerlijke voorwaarden per mail.",
+    "q_fr": "Comment annuler?",
+    "a_fr": "Conditions selon le canal. Plus flexible via Booking.com.",
+    "q_en": "How do I cancel?",
+    "a_en": "Cancellation terms depend on channel. Most flexible via Booking.com.",
+    "q_de": "Wie storniere ich?",
+    "a_de": "Bedingungen je nach Kanal. Flexibelste via Booking.com."
+  },
+  {
+    "q_nl": "Beste periode om Oostende te bezoeken?",
+    "a_nl": "Heel het jaar geopend. Zomer levendig, voor-/najaar rustig. Winter: lege stranden en knetterende haard.",
+    "q_fr": "Meilleure période?",
+    "a_fr": "Ouvert toute l'année. Été animé, intersaisons calmes, hiver magique.",
+    "q_en": "Best time to visit?",
+    "a_en": "Open year-round. Summer lively, shoulder seasons peaceful, winter magical.",
+    "q_de": "Beste Reisezeit?",
+    "a_de": "Ganzjährig geöffnet. Sommer lebhaft, Nebensaison ruhig, Winter magisch."
+  },
+  {
+    "q_nl": "Is ontbijt inbegrepen?",
+    "a_nl": "Nee. Beide verblijven zijn zelfstandig met volledige keuken. Koffie en welkomstsurprise staan klaar.",
+    "q_fr": "Petit-déjeuner inclus?",
+    "a_fr": "Non. Logements autonomes avec cuisine. Café et surprise de bienvenue toujours prêts.",
+    "q_en": "Is breakfast included?",
+    "a_en": "No. Self-catering with full kitchen. Coffee and welcome treat always ready.",
+    "q_de": "Frühstück inbegriffen?",
+    "a_de": "Nein. Selbstversorger mit Vollküche. Kaffee und Willkommensüberraschung bereit."
+  },
+  {
+    "q_nl": "Kan ik een kinderbedje vragen?",
+    "a_nl": "Ja, kinderbedje en kinderstoel beschikbaar op verzoek, kosteloos. Vermeld bij boeking.",
+    "q_fr": "Lit bébé disponible?",
+    "a_fr": "Oui, gratuit sur demande. Mentionnez à la réservation.",
+    "q_en": "Baby cot available?",
+    "a_en": "Yes, free on request. Mention at booking.",
+    "q_de": "Babybett verfügbar?",
+    "a_de": "Ja, kostenlos auf Anfrage. Bei Buchung angeben."
+  },
+  {
+    "q_nl": "Hoe ver is het centrum?",
+    "a_nl": "La Brise: 20 min. wandelen of tram. t'Hoeveke: 10 min. fietsen.",
+    "q_fr": "Distance du centre?",
+    "a_fr": "La Brise: 20 min. à pied ou tram. t'Hoeveke: 10 min. à vélo.",
+    "q_en": "How far is the centre?",
+    "a_en": "La Brise: 20 min. walk or tram. t'Hoeveke: 10 min. by bike.",
+    "q_de": "Wie weit ist das Zentrum?",
+    "a_de": "La Brise: 20 Min. zu Fuß oder Tram. t'Hoeveke: 10 Min. mit Rad."
+  },
+  {
+    "q_nl": "Kunnen we beide verblijven samen boeken?",
+    "a_nl": "Zeker! Bij gelijktijdige boeking bieden we een speciale deal. Contacteer ons voor een offerte.",
+    "q_fr": "Réserver les deux ensemble?",
+    "a_fr": "Oui! Offre spéciale. Contactez-nous.",
+    "q_en": "Book both together?",
+    "a_en": "Absolutely! Special deal available. Contact us.",
+    "q_de": "Beide zusammen buchen?",
+    "a_de": "Ja! Sonderangebot möglich. Kontaktieren Sie uns."
+  }
+]

@@ -1,0 +1,105 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: nl
+media_folder: images
+public_folder: /images
+
+collections:
+  - name: algemeen
+    label: "Algemeen"
+    files:
+
+      - name: contact
+        label: "Contact & Boekingslinks"
+        file: data/site.json
+        format: json
+        fields:
+          - label: "E-mailadres"
+            name: contact_email
+            widget: string
+            hint: "Dit e-mailadres verschijnt op de contactpagina en in de footer"
+          - label: "Telefoonnummer"
+            name: contact_phone
+            widget: string
+            hint: "Bijv. +32 (0)477 12 34 56"
+          - label: "WhatsApp nummer"
+            name: contact_whatsapp
+            widget: string
+            hint: "Zelfde of ander nummer als telefoon"
+          - label: "Booking.com link — t'Hoeveke"
+            name: hoeve_booking
+            widget: string
+          - label: "Booking.com link — La Brise et La Mer"
+            name: brise_booking
+            widget: string
+          - label: "Airbnb link — t'Hoeveke"
+            name: hoeve_airbnb
+            widget: string
+            hint: "Leeg laten als nog niet beschikbaar"
+          - label: "Airbnb link — La Brise et La Mer"
+            name: brise_airbnb
+            widget: string
+            hint: "Leeg laten als nog niet beschikbaar"
+          - label: "Lodgify widget — t'Hoeveke"
+            name: lodgify_hoeve
+            widget: text
+            required: false
+            hint: "Kopieer de volledige embed-code van Lodgify hier"
+          - label: "Lodgify widget — La Brise et La Mer"
+            name: lodgify_brise
+            widget: text
+            required: false
+            hint: "Kopieer de volledige embed-code van Lodgify hier"
+
+      - name: reviews
+        label: "Gastreviews"
+        file: data/reviews.json
+        format: json
+        fields:
+          - label: "Reviews"
+            name: items
+            widget: list
+            fields:
+              - label: "Naam gast"
+                name: author
+                widget: string
+              - label: "Woning"
+                name: property
+                widget: select
+                options:
+                  - { label: "t'Hoeveke", value: "hoeve" }
+                  - { label: "La Brise et La Mer", value: "brise" }
+              - label: "Sterren"
+                name: stars
+                widget: number
+                min: 1
+                max: 5
+                default: 5
+              - { label: "Review (NL)", name: text_nl, widget: text }
+              - { label: "Review (FR)", name: text_fr, widget: text }
+              - { label: "Review (EN)", name: text_en, widget: text }
+              - { label: "Review (DE)", name: text_de, widget: text }
+
+  - name: faq
+    label: "FAQ"
+    files:
+      - name: faq
+        label: "Veelgestelde vragen (alle talen)"
+        file: data/faq.json
+        format: json
+        fields:
+          - label: "Vragen & Antwoorden"
+            name: items
+            widget: list
+            summary: "{{fields.q_nl}}"
+            fields:
+              - { label: "Vraag (NL)", name: q_nl, widget: string }
+              - { label: "Antwoord (NL)", name: a_nl, widget: text }
+              - { label: "Question (FR)", name: q_fr, widget: string }
+              - { label: "Réponse (FR)", name: a_fr, widget: text }
+              - { label: "Question (EN)", name: q_en, widget: string }
+              - { label: "Answer (EN)", name: a_en, widget: text }
+              - { label: "Frage (DE)", name: q_de, widget: string }
+              - { label: "Antwort (DE)", name: a_de, widget: text }

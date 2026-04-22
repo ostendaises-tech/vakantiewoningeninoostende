@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Vakantiewoningen in Oostende | La Brise et La Mer &amp; t'Hoeveke</title>
+<meta name="description" content="Twee unieke vakantiewoningen in Oostende: La Brise et La Mer met frontaal zeezicht op de Zeedijk van Mariakerke, en het authentieke t'Hoeveke in het landelijke Stene."/>
+<meta name="keywords" content="vakantiewoning Oostende, La Brise et La Mer, t'Hoeveke Stene, vakantieappartement zeezicht, vakantie Belgische kust, airbnb Oostende, booking Oostende"/>
+<meta property="og:title" content="Vakantiewoningen in Oostende — La Brise et La Mer &amp; t'Hoeveke"/>
+<meta property="og:description" content="Twee unieke verblijven: frontaal zeezicht op de Zeedijk van Mariakerke of landelijke rust in het historische Stene."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.vakantiewoningeninoostende.be"/>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --h:#3d2b1f;--h2:#6b4c35;--h3:#a07850;--hbg:#f7f2eb;--hbg2:#ede4d4;
+  --s:#0d2235;--s2:#1a5276;--s3:#5b9ec9;--sbg:#eaf3fb;--sbg2:#d0e8f5;
+  --gold:#c9a84c;--sand:#e8dabb;--cream:#faf8f4;
+  --dark:#1c1510;--mid:#5a4535;--muted:#8c7a6a;
+  --serif:'Playfair Display',Georgia,serif;
+  --sans:'Raleway',sans-serif;
+  --radius:2px;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-weight:300;background:var(--cream);color:var(--dark);overflow-x:hidden;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.8s ease,transform 0.8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-50px);transition:opacity 0.9s ease,transform 0.9s ease}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(50px);transition:opacity 0.9s ease,transform 0.9s ease}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+
+/* ===================== NAV ===================== */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 3rem;height:72px;
+  background:rgba(250,248,244,0.97);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(61,43,31,0.08);transition:all 0.3s;
+}
+nav.scrolled{height:60px;box-shadow:0 2px 24px rgba(0,0,0,0.07)}
+.logo{text-decoration:none;display:flex;flex-direction:column;gap:2px}
+.logo-main{font-family:var(--serif);font-size:1.1rem;font-weight:500;color:var(--h);letter-spacing:0.02em}
+.logo-sub{font-size:0.58rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.nav-center{display:flex;gap:2.2rem;list-style:none}
+.nav-center a{font-size:0.7rem;letter-spacing:0.18em;text-transform:uppercase;text-decoration:none;color:var(--mid);transition:color 0.2s;font-weight:500}
+.nav-center a:hover{color:var(--h)}
+.nav-right{display:flex;gap:0.75rem;align-items:center}
+
+/* Language switcher */
+.lang-switch{display:flex;gap:0;align-items:center;margin-right:0.5rem;border:1px solid rgba(61,43,31,0.15);}
+.lang-switch button{background:none;border:none;border-right:1px solid rgba(61,43,31,0.1);cursor:pointer;font-family:var(--sans);font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;color:var(--muted);padding:0.35rem 0.55rem;transition:all 0.2s;}
+.lang-switch button:last-child{border-right:none}
+.lang-switch button:hover{color:var(--h);background:var(--hbg)}
+.lang-switch button.active{background:var(--h);color:#fff}
+
+.btn-nav-h,.btn-nav-s{padding:0.5rem 1.25rem;font-family:var(--sans);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:all 0.2s;display:inline-block}
+.btn-nav-h{background:var(--h);color:#fff}.btn-nav-h:hover{background:var(--dark)}
+.btn-nav-s{background:var(--s2);color:#fff}.btn-nav-s:hover{background:var(--s)}
+
+.nav-mobile-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+.nav-mobile-toggle span{display:block;width:22px;height:1.5px;background:var(--h);transition:all 0.3s}
+
+/* Mobile nav drawer */
+.mobile-nav{display:none;position:fixed;top:60px;left:0;right:0;background:var(--cream);border-bottom:1px solid rgba(61,43,31,0.1);z-index:199;padding:1.5rem 2rem;flex-direction:column;gap:1rem;box-shadow:0 8px 30px rgba(0,0,0,0.08)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-size:0.75rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500;color:var(--mid);padding:0.5rem 0;border-bottom:1px solid rgba(61,43,31,0.06)}
+
+/* ===================== HERO ===================== */
+.hero{margin-top:72px;display:grid;grid-template-columns:1fr 1fr;height:calc(100vh - 72px);min-height:600px;position:relative}
+.hero-half{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:4rem 4rem 5rem;text-decoration:none;cursor:pointer;}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1s cubic-bezier(0.25,0.46,0.45,0.94);will-change:transform;}
+.hero-half:hover .hero-bg{transform:scale(1.06)}
+.hero-overlay{position:absolute;inset:0;transition:opacity 0.4s;}
+.hoeve-half .hero-overlay{background:linear-gradient(155deg,rgba(61,43,31,0.82) 0%,rgba(61,43,31,0.35) 60%,rgba(0,0,0,0.08) 100%)}
+.zee-half   .hero-overlay{background:linear-gradient(205deg,rgba(13,34,53,0.88) 0%,rgba(13,34,53,0.35) 60%,rgba(0,0,0,0.08) 100%)}
+.hoeve-half .hero-bg{background-image:url('images/hoeve-street.jpg')}
+.zee-half   .hero-bg{background-image:url('images/zee-hero.jpg')}
+.hero-content{position:relative;z-index:2;color:#fff}
+.hero-eyebrow{display:flex;align-items:center;gap:0.75rem;font-size:0.63rem;letter-spacing:0.28em;text-transform:uppercase;font-weight:500;margin-bottom:1.2rem;opacity:0.8}
+.hero-eyebrow::before{content:'';width:28px;height:1px;background:currentColor;display:block;flex-shrink:0}
+.hoeve-half .hero-eyebrow{color:var(--hbg2)}.zee-half .hero-eyebrow{color:var(--sbg2)}
+.hero-h1{font-family:var(--serif);font-size:clamp(2.6rem,4.5vw,4.2rem);font-weight:400;line-height:1.0;letter-spacing:-0.01em;}
+.hero-h1 em{font-style:italic;font-weight:400;display:block;font-size:0.65em;opacity:0.9;margin-top:0.3rem}
+.hero-desc{font-size:0.87rem;line-height:1.8;color:rgba(255,255,255,0.76);max-width:360px;margin:1.2rem 0 2rem;}
+.hero-link{display:inline-flex;align-items:center;gap:0.7rem;font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.35);padding-bottom:0.25rem;transition:border-color 0.2s,gap 0.2s;}
+.hero-link:hover{border-color:#fff;gap:1.1rem}
+.hero-link::after{content:'→';font-size:1rem}
+.hero-divider{position:absolute;top:0;bottom:0;left:50%;width:1px;z-index:10;background:rgba(255,255,255,0.18);pointer-events:none;}
+
+/* Hero badge */
+.hero-badge{position:absolute;top:2rem;right:2rem;z-index:5;background:rgba(201,168,76,0.9);color:var(--dark);font-family:var(--serif);font-size:0.8rem;font-weight:700;padding:0.4rem 0.9rem;letter-spacing:0.05em}
+
+/* ===================== STATS BAND ===================== */
+.stats{background:var(--dark);color:#fff;padding:2rem 3rem;display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap;}
+.stat-item{display:flex;align-items:center;gap:1rem;font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);font-weight:400;}
+.stat-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;flex-shrink:0}
+.stat-num{font-family:var(--serif);font-size:1.9rem;color:var(--gold);line-height:1}
+
+/* ===================== SHARED SECTION STYLES ===================== */
+.eyebrow{font-size:0.63rem;letter-spacing:0.32em;text-transform:uppercase;color:var(--h3);font-weight:600;margin-bottom:1.2rem;display:flex;align-items:center;gap:0.8rem;}
+.eyebrow::before{content:'';width:24px;height:1px;background:var(--h3);display:block;flex-shrink:0}
+.eyebrow.center{justify-content:center}.eyebrow.center::before{display:none}
+.eyebrow.blue{color:var(--s2)}.eyebrow.blue::before{background:var(--s2)}
+.eyebrow.gold{color:var(--gold)}.eyebrow.gold::before{background:var(--gold)}
+h2.serif{font-family:var(--serif);font-size:clamp(2rem,3.5vw,3rem);font-weight:400;line-height:1.15;color:var(--dark);letter-spacing:-0.01em;}
+.deco-line{width:48px;height:2px;margin:2rem 0;background:linear-gradient(to right,var(--h3),transparent);}
+.deco-line.blue{background:linear-gradient(to right,var(--s3),transparent)}
+.btn-fill{padding:0.85rem 2.2rem;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;font-family:var(--sans);text-decoration:none;color:#fff;transition:all 0.2s;display:inline-flex;align-items:center;gap:0.5rem;border:none;cursor:pointer}
+.btn-fill.h{background:var(--h)}.btn-fill.h:hover{background:var(--dark)}
+.btn-fill.s{background:var(--s2)}.btn-fill.s:hover{background:var(--s)}
+.btn-fill.gold{background:var(--gold);color:var(--dark)}.btn-fill.gold:hover{background:#b89040}
+.btn-ghost{padding:0.85rem 2.2rem;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;font-family:var(--sans);text-decoration:none;color:var(--mid);border:1px solid rgba(61,43,31,0.22);transition:all 0.2s;display:inline-flex;align-items:center;gap:0.5rem}
+.btn-ghost:hover{border-color:var(--h);color:var(--h)}
+
+/* ===================== STORY ===================== */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:0;min-height:580px;}
+.story-text{padding:7rem 5.5rem;display:flex;flex-direction:column;justify-content:center;background:var(--cream);}
+.story-text p{font-size:0.92rem;line-height:1.95;color:var(--mid);margin-bottom:1rem;max-width:480px;}
+.story-text .quote{font-family:var(--serif);font-style:italic;font-size:1.05rem;color:var(--h2);line-height:1.7;margin-top:0.5rem;}
+.story-img-wrap{position:relative;overflow:hidden;min-height:500px}
+.story-img{position:absolute;inset:0;background:url('images/hoeve-dining.jpg') center/cover no-repeat;}
+
+/* ===================== PROPERTIES CARDS ===================== */
+.properties-section{background:var(--cream);padding:7rem 0}
+.section-header{text-align:center;padding:0 2rem 4.5rem}
+.section-header h2{margin-top:0.75rem}
+.cards-wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:1400px;margin:0 auto;}
+.prop-card{position:relative;overflow:hidden}
+.prop-img-wrap{position:relative;overflow:hidden;height:500px;}
+.prop-img-wrap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94);}
+.prop-card:hover .prop-img-wrap img{transform:scale(1.06)}
+.prop-num{position:absolute;top:1.5rem;left:1.5rem;z-index:2;font-family:var(--serif);font-size:5rem;font-weight:700;color:rgba(255,255,255,0.15);line-height:1;user-select:none;pointer-events:none;}
+.prop-body{padding:2.5rem 3rem 3.5rem}
+.hoeve-card .prop-body{background:var(--hbg)}.zee-card .prop-body{background:var(--sbg)}
+.prop-type{font-size:0.6rem;letter-spacing:0.3em;text-transform:uppercase;font-weight:600;margin-bottom:0.7rem;}
+.hoeve-card .prop-type{color:var(--h2)}.zee-card .prop-type{color:var(--s2)}
+.prop-title{font-family:var(--serif);font-size:1.9rem;font-weight:400;line-height:1.15;color:var(--dark);margin-bottom:0.5rem;}
+.prop-address{font-size:0.75rem;color:var(--muted);letter-spacing:0.06em;margin-bottom:1rem}
+.prop-desc{font-size:0.87rem;line-height:1.88;color:var(--mid);margin-bottom:1.5rem}
+.prop-tags{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:2rem}
+.tag{font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.32rem 0.85rem;font-weight:500;border:1px solid;}
+.hoeve-card .tag{border-color:var(--h3);color:var(--h2);background:var(--hbg)}
+.zee-card .tag{border-color:var(--s3);color:var(--s2);background:var(--sbg)}
+.prop-cta-row{display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center}
+.prop-cta{display:inline-flex;align-items:center;gap:0.6rem;padding:0.8rem 2rem;font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;font-weight:500;text-decoration:none;color:#fff;transition:all 0.25s;font-family:var(--sans);}
+.hoeve-card .prop-cta{background:var(--h)}.hoeve-card .prop-cta:hover{background:var(--dark)}
+.zee-card .prop-cta{background:var(--s2)}.zee-card .prop-cta:hover{background:var(--s)}
+.prop-cta::after{content:'→';transition:transform 0.2s}.prop-cta:hover::after{transform:translateX(4px)}
+.prop-link{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;color:var(--muted);text-decoration:underline;text-underline-offset:3px;transition:color 0.2s}
+.hoeve-card .prop-link:hover{color:var(--h)}.zee-card .prop-link:hover{color:var(--s2)}
+
+/* ===================== CONTRAST SECTION ===================== */
+.contrast{display:grid;grid-template-columns:1fr 1fr;}
+.contrast-half{position:relative;padding:6rem 5rem;min-height:460px;display:flex;flex-direction:column;justify-content:center;overflow:hidden;}
+.hoeve-contrast{background:var(--h)}.zee-contrast{background:var(--s)}
+.contrast-half::before{content:attr(data-word);position:absolute;right:-0.05em;bottom:-0.08em;font-family:var(--serif);font-size:clamp(7rem,14vw,12rem);font-weight:700;color:rgba(255,255,255,0.04);line-height:1;pointer-events:none;user-select:none;white-space:nowrap;}
+.contrast-tag{font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;font-weight:500;margin-bottom:1rem;color:rgba(255,255,255,0.42);}
+.contrast-h{font-family:var(--serif);font-size:clamp(1.7rem,3vw,2.5rem);font-weight:400;line-height:1.18;color:#fff;margin-bottom:1.2rem;}
+.contrast-p{font-size:0.87rem;line-height:1.82;color:rgba(255,255,255,0.6);max-width:420px;margin-bottom:1.8rem}
+.contrast-list{list-style:none;display:flex;flex-direction:column;gap:0.6rem;margin-bottom:2.2rem}
+.contrast-list li{font-size:0.8rem;color:rgba(255,255,255,0.66);display:flex;align-items:center;gap:0.9rem;}
+.contrast-list li::before{content:'';width:6px;height:1px;flex-shrink:0;}
+.hoeve-contrast .contrast-list li::before{background:var(--sand)}
+.zee-contrast .contrast-list li::before{background:var(--sbg2)}
+.contrast-link{display:inline-flex;align-items:center;gap:0.7rem;font-size:0.68rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,0.25);padding:0.7rem 1.7rem;transition:all 0.2s;}
+.contrast-link:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.6)}
+
+/* ===================== INFO / FACILITIES ===================== */
+.info-section{background:var(--cream);padding:7rem 0}
+.info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;max-width:1280px;margin:3.5rem auto 0;padding:0 3rem}
+.info-item{border-top:1px solid rgba(61,43,31,0.12);padding-top:1.5rem}
+.info-num{font-family:var(--serif);font-size:0.9rem;font-style:italic;color:var(--gold);margin-bottom:0.75rem;display:block}
+.info-title{font-family:var(--serif);font-size:1.15rem;font-weight:400;color:var(--dark);margin-bottom:0.6rem;}
+.info-text{font-size:0.84rem;line-height:1.82;color:var(--mid);}
+
+/* Info difference table */
+.info-compare{max-width:1000px;margin:4rem auto 0;padding:0 3rem}
+.compare-table{width:100%;border-collapse:collapse;font-size:0.84rem;}
+.compare-table th{text-align:left;font-size:0.6rem;letter-spacing:0.25em;text-transform:uppercase;font-weight:600;padding:1rem 1.5rem;border-bottom:2px solid var(--sand)}
+.compare-table th.h-col{color:var(--h2);background:var(--hbg)}
+.compare-table th.s-col{color:var(--s2);background:var(--sbg)}
+.compare-table th.feat-col{color:var(--muted)}
+.compare-table td{padding:0.85rem 1.5rem;border-bottom:1px solid rgba(61,43,31,0.07);vertical-align:middle;color:var(--mid);}
+.compare-table td.h-col{background:var(--hbg);color:var(--h2);font-weight:500}
+.compare-table td.s-col{background:var(--sbg);color:var(--s2);font-weight:500}
+.compare-table tr:last-child td{border-bottom:none}
+.check{color:var(--gold);font-size:0.9rem}
+.cross{color:var(--muted);font-size:0.9rem}
+
+/* ===================== GALLERY ===================== */
+.gallery-section{background:var(--dark);padding:7rem 0}
+.gallery-section h2{color:#fff}
+.gallery-section .eyebrow{color:var(--gold)}.gallery-section .eyebrow::before{background:var(--gold)}
+.gallery-header{text-align:center;padding:0 2rem 2.5rem}
+.gallery-filter{display:flex;gap:0;justify-content:center;margin-bottom:3rem;border:1px solid rgba(255,255,255,0.1)}
+.gallery-filter button{background:none;border:none;border-right:1px solid rgba(255,255,255,0.1);cursor:pointer;font-family:var(--sans);font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:500;color:rgba(255,255,255,0.4);padding:0.6rem 2rem;transition:all 0.2s;}
+.gallery-filter button:last-child{border-right:none}
+.gallery-filter button.active,.gallery-filter button:hover{background:rgba(255,255,255,0.08);color:#fff}
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;padding:0 3rem;grid-auto-rows:190px;}
+.g-item{overflow:hidden;position:relative;cursor:pointer}
+.g-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.6s ease;}
+.g-item:hover img{transform:scale(1.07)}
+.g-item .g-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(28,21,16,0.7) 0%,transparent 55%);opacity:0;transition:opacity 0.3s;display:flex;align-items:flex-end;padding:1rem 1.2rem;}
+.g-item:hover .g-overlay{opacity:1}
+.g-overlay span{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.85);font-weight:500}
+.g-1{grid-column:span 7;grid-row:span 2}
+.g-2{grid-column:span 5;grid-row:span 1}
+.g-3{grid-column:span 5;grid-row:span 1}
+.g-4{grid-column:span 4;grid-row:span 2}
+.g-5{grid-column:span 4;grid-row:span 1}
+.g-6{grid-column:span 4;grid-row:span 1}
+.g-7{grid-column:span 6;grid-row:span 1}
+.g-8{grid-column:span 6;grid-row:span 1}
+
+/* ===================== REVIEWS ===================== */
+.reviews{background:var(--dark);padding:7rem 3rem;text-align:center;border-top:1px solid rgba(255,255,255,0.06)}
+.reviews .eyebrow.gold{justify-content:center}.reviews .eyebrow.gold::before{display:none}
+.reviews h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.4rem);font-weight:400;color:#fff;margin:0.5rem 0 3rem;}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1200px;margin:0 auto;}
+.review-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);padding:2.2rem;text-align:left;transition:background 0.2s,border-color 0.2s;}
+.review-card:hover{background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.13)}
+.review-stars{color:var(--gold);font-size:0.72rem;letter-spacing:0.15em;margin-bottom:1rem}
+.review-text{font-family:var(--serif);font-style:italic;font-size:1rem;line-height:1.72;color:rgba(255,255,255,0.76);margin-bottom:1.4rem;}
+.review-author{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.32);font-weight:500}
+.review-badge{display:inline-block;font-size:0.58rem;letter-spacing:0.15em;text-transform:uppercase;padding:0.2rem 0.65rem;margin-left:0.6rem;font-weight:600;}
+.badge-h{background:var(--h2);color:var(--hbg)}.badge-s{background:var(--s2);color:var(--sbg)}
+
+/* ===================== LOCATION ===================== */
+.locatie{display:grid;grid-template-columns:1fr 1fr;min-height:560px}
+.locatie-text{padding:6rem 5.5rem;background:var(--hbg);display:flex;flex-direction:column;justify-content:center;}
+.locatie-text .eyebrow{color:var(--h3)}.locatie-text .eyebrow::before{background:var(--h3)}
+.locatie-text p{font-size:0.9rem;line-height:1.95;color:var(--mid);margin-bottom:1rem;max-width:480px;}
+.locatie-text strong{color:var(--h);font-weight:600}
+.locatie-facts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0;}
+.fact{background:var(--hbg2);padding:1.1rem 1.3rem;}
+.fact-val{font-family:var(--serif);font-size:1.6rem;color:var(--h);margin-bottom:0.2rem;font-weight:400}
+.fact-label{font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.locatie-map iframe{width:100%;height:100%;border:none;display:block;min-height:560px}
+
+/* ===================== FAQ ===================== */
+.faq-section{background:var(--hbg);padding:7rem 0}
+.faq-list{max-width:860px;margin:3.5rem auto 0;padding:0 3rem}
+.faq-item{border-bottom:1px solid rgba(61,43,31,0.1)}
+.faq-q{width:100%;background:none;border:none;padding:1.6rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:2rem;text-align:left;font-family:var(--serif);font-size:1.05rem;font-weight:400;color:var(--dark);transition:color 0.2s;}
+.faq-q:hover{color:var(--h)}
+.faq-toggle{font-size:1.4rem;font-weight:300;color:var(--h3);transition:transform 0.3s;flex-shrink:0;font-family:var(--sans);}
+.faq-item.open .faq-toggle{transform:rotate(45deg);color:var(--h)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height 0.45s ease,padding 0.3s}
+.faq-item.open .faq-a{max-height:500px;padding-bottom:1.8rem}
+.faq-a p{font-size:0.9rem;line-height:1.9;color:var(--mid);max-width:680px}
+
+/* ===================== BOOKING ===================== */
+.booking-section{background:var(--cream);padding:7rem 0}
+.booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:1200px;margin:3.5rem auto 0;padding:0 3rem}
+.booking-card{border-top:3px solid;padding:2.5rem}
+.booking-card.hoeve{border-color:var(--h);background:var(--hbg)}
+.booking-card.zee{border-color:var(--s2);background:var(--sbg)}
+.booking-card h3{font-family:var(--serif);font-size:1.7rem;font-weight:400;color:var(--dark);margin-bottom:0.3rem}
+.booking-card .book-addr{font-size:0.74rem;color:var(--muted);letter-spacing:0.06em;margin-bottom:1rem}
+.booking-card p{font-size:0.88rem;line-height:1.85;color:var(--mid);margin-bottom:1.75rem}
+.booking-channels{display:flex;flex-direction:column;gap:0.75rem;margin-bottom:1.5rem}
+.booking-channel{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.2rem;border:1px solid rgba(61,43,31,0.12);background:#fff;font-size:0.86rem;font-weight:500;color:var(--dark);text-decoration:none;transition:all 0.2s}
+.booking-channel:hover{transform:translateX(3px)}
+.hoeve .booking-channel:hover{border-color:var(--h);background:var(--hbg)}
+.zee .booking-channel:hover{border-color:var(--s2);background:var(--sbg)}
+.booking-channel .ch-right{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.booking-channel .ch-arrow{font-size:1.1rem;color:var(--muted)}
+.booking-channel small{font-size:0.66rem;letter-spacing:0.08em;color:var(--muted);font-weight:400;text-transform:uppercase}
+.booking-channel .ch-best{font-size:0.58rem;background:var(--gold);color:var(--dark);padding:0.15rem 0.45rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-left:0.5rem}
+/* Lodgify placeholder */
+.lodgify-placeholder{background:rgba(61,43,31,0.04);border:2px dashed rgba(61,43,31,0.15);padding:2rem;text-align:center;margin-top:1rem}
+.lodgify-placeholder p{font-size:0.8rem;color:var(--muted);line-height:1.7;margin:0}
+.lodgify-placeholder strong{font-weight:600;color:var(--mid)}
+
+/* ===================== CONTACT ===================== */
+.contact-section{background:var(--sbg);padding:7rem 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:5rem;max-width:1200px;margin:3.5rem auto 0;padding:0 3rem;align-items:start}
+.contact-info .eyebrow.blue{margin-bottom:2rem}
+.contact-info h4{font-size:0.62rem;letter-spacing:0.25em;text-transform:uppercase;font-weight:600;color:var(--s2);margin-bottom:0.4rem;margin-top:1.75rem}
+.contact-info h4:first-of-type{margin-top:0}
+.contact-info p,.contact-info a{font-size:0.92rem;color:var(--mid);line-height:1.7}
+.contact-info a{color:var(--s2);text-decoration:underline;text-underline-offset:3px}
+.contact-info a:hover{color:var(--s)}
+.contact-form{display:grid;gap:1.25rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-field label{display:block;font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;font-weight:600;color:var(--s2);margin-bottom:0.45rem}
+.form-field input,.form-field select,.form-field textarea{width:100%;padding:0.8rem 0;border:none;border-bottom:1px solid rgba(26,82,118,0.2);background:transparent;font-family:var(--sans);font-size:0.9rem;font-weight:300;color:var(--dark);transition:border-color 0.2s}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{outline:none;border-bottom-color:var(--s2)}
+.form-field textarea{resize:vertical;min-height:110px}
+.form-submit-row{display:flex;gap:1rem;align-items:center;margin-top:0.5rem}
+.form-note{font-size:0.72rem;color:var(--muted);line-height:1.6}
+
+/* ===================== CTA SECTION ===================== */
+.cta-section{background:var(--cream);padding:8rem 2rem;text-align:center;position:relative;overflow:hidden;}
+.cta-section::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 100%,rgba(201,168,76,0.07) 0%,transparent 70%);pointer-events:none}
+.cta-label{font-size:0.63rem;letter-spacing:0.32em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.5rem;display:flex;align-items:center;justify-content:center;gap:1rem;}
+.cta-label::before,.cta-label::after{content:'';width:40px;height:1px;background:var(--gold)}
+.cta-section h2{margin-bottom:1rem}
+.cta-section p{font-size:0.95rem;line-height:1.85;color:var(--mid);margin-bottom:2.5rem;max-width:520px;margin-left:auto;margin-right:auto}
+.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+/* ===================== FOOTER ===================== */
+footer{background:var(--dark);color:rgba(255,255,255,0.55);padding:5rem 4rem 2.5rem}
+.footer-top{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3.5rem;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2rem;}
+.footer-brand{font-family:var(--serif);font-size:1.4rem;font-weight:400;color:#fff;margin-bottom:0.6rem;line-height:1.2}
+.footer-tagline{font-size:0.82rem;line-height:1.85;margin-bottom:1.75rem;max-width:360px}
+.footer-social{display:flex;gap:0.75rem}
+.social-link{width:36px;height:36px;border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center;font-size:0.72rem;color:rgba(255,255,255,0.45);text-decoration:none;transition:all 0.2s;font-weight:600}
+.social-link:hover{border-color:rgba(255,255,255,0.4);color:#fff;background:rgba(255,255,255,0.06)}
+.footer-col h4{font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:1.3rem;font-weight:600;}
+.footer-col ul{list-style:none}
+.footer-col li{font-size:0.8rem;margin-bottom:0.65rem}
+.footer-col a{color:rgba(255,255,255,0.45);text-decoration:none;transition:color 0.2s}
+.footer-col a:hover{color:#fff}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:0.7rem;}
+.footer-legal{display:flex;gap:2rem;flex-wrap:wrap}
+.footer-legal a{color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s}
+.footer-legal a:hover{color:rgba(255,255,255,0.65)}
+
+/* ===================== COOKIE ===================== */
+#cookie{position:fixed;bottom:1.5rem;left:1.5rem;right:1.5rem;z-index:9999;background:var(--dark);color:rgba(255,255,255,0.8);padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;border-top:2px solid var(--gold);transform:translateY(200%);transition:transform 0.5s cubic-bezier(0.34,1.56,0.64,1);box-shadow:0 -4px 50px rgba(0,0,0,0.35);}
+#cookie.show{transform:translateY(0)}
+#cookie p{font-size:0.8rem;line-height:1.65;max-width:640px}
+#cookie a{color:var(--gold);text-decoration:underline}
+.cookie-actions{display:flex;gap:0.75rem;flex-shrink:0}
+.c-accept,.c-decline{padding:0.55rem 1.4rem;font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;border:none;cursor:pointer;font-family:var(--sans);font-weight:500;transition:all 0.2s;}
+.c-accept{background:var(--gold);color:var(--dark)}.c-accept:hover{background:#e0b84d}
+.c-decline{background:transparent;border:1px solid rgba(255,255,255,0.18);color:rgba(255,255,255,0.45)}.c-decline:hover{border-color:rgba(255,255,255,0.5);color:#fff}
+
+/* ===================== RESPONSIVE ===================== */
+@media(max-width:1100px){
+  .info-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-grid{grid-auto-rows:160px}
+}
+@media(max-width:900px){
+  nav{padding:0 1.5rem}
+  .nav-center,.btn-nav-s,.btn-nav-h,.lang-switch{display:none}
+  .nav-mobile-toggle{display:flex}
+  .hero{grid-template-columns:1fr;height:auto}.hero-half{min-height:62vh}.hero-divider{display:none}
+  .story,.contrast,.locatie{grid-template-columns:1fr}
+  .story-img-wrap{min-height:320px}
+  .locatie-map iframe{min-height:340px}
+  .cards-wrap{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr 1fr;gap:2.5rem}
+  .hero-half,.contrast-half,.locatie-text,.story-text,.prop-body,.info-grid,.info-compare,.faq-list,.booking-grid,.contact-grid{padding-left:1.75rem;padding-right:1.75rem}
+  .gallery-grid{padding:0 1rem}
+  .booking-grid,.contact-grid{grid-template-columns:1fr;gap:2.5rem}
+  .info-grid{padding:0 1.75rem}
+  .info-compare{padding:0 1.75rem}
+  .compare-table{font-size:0.78rem}
+  .reviews-grid{grid-template-columns:1fr}
+  .locatie-facts{grid-template-columns:1fr 1fr}
+  .form-row{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(6,1fr)}
+  .g-1{grid-column:span 6;grid-row:span 1}
+  .g-2,.g-3{grid-column:span 3;grid-row:span 1}
+  .g-4,.g-5,.g-6,.g-7,.g-8{grid-column:span 6;grid-row:span 1}
+}
+@media(max-width:600px){
+  .footer-top{grid-template-columns:1fr}
+  .cta-buttons{flex-direction:column;align-items:center}
+  .hero-half{padding:3rem 2rem 3.5rem}
+  .contrast-half{padding:4rem 2rem}
+  footer{padding:3.5rem 1.5rem 2rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav id="main-nav">
+  <a href="#top" class="logo">
+    <span class="logo-main">Vakantiewoningen in Oostende</span>
+    <span class="logo-sub" id="logo-sub-text">La Brise et La Mer &middot; t'Hoeveke</span>
+  </a>
+  <ul class="nav-center">
+    <li><a href="#verblijven" data-i18n="nav.rentals">Verblijven</a></li>
+    <li><a href="#galerij" data-i18n="nav.gallery">Galerij</a></li>
+    <li><a href="#info" data-i18n="nav.info">Info</a></li>
+    <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+    <li><a href="#boeken" data-i18n="nav.book">Boeken</a></li>
+    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-switch" aria-label="Taal kiezen">
+      <button data-lang="nl" class="active">NL</button>
+      <button data-lang="fr">FR</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="de">DE</button>
+    </div>
+    <a href="#boeken" class="btn-nav-h" data-i18n="nav.bookHoeve">Boek Hoeve</a>
+    <a href="#boeken" class="btn-nav-s" data-i18n="nav.bookSea">Boek Zeedijk</a>
+  </div>
+  <button class="nav-mobile-toggle" id="mob-toggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav" id="mobile-nav">
+  <a href="#verblijven" data-i18n="nav.rentals">Verblijven</a>
+  <a href="#galerij" data-i18n="nav.gallery">Galerij</a>
+  <a href="#info" data-i18n="nav.info">Info</a>
+  <a href="#faq" data-i18n="nav.faq">FAQ</a>
+  <a href="#boeken" data-i18n="nav.book">Boeken</a>
+  <a href="#contact" data-i18n="nav.contact">Contact</a>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top">
+  <a href="#hoeveke" class="hero-half hoeve-half">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow" data-i18n="hero.hoeve.location">Stene &middot; Oostende</div>
+      <h1 class="hero-h1">t'Hoeveke<em data-i18n="hero.hoeve.tagline">Landelijk &amp; authentiek</em></h1>
+      <p class="hero-desc" data-i18n="hero.hoeve.desc">Een karaktervol hoeveappartement in het historische Stene. Omringd door groene polders, op 10 minuten van de zee.</p>
+      <span class="hero-link" data-i18n="hero.hoeve.cta">Ontdek de hoeve</span>
+    </div>
+  </a>
+  <div class="hero-divider"></div>
+  <a href="#brise" class="hero-half zee-half">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow" data-i18n="hero.zee.location">Zeedijk 170 &middot; Mariakerke, Oostende</div>
+      <h1 class="hero-h1">La Brise et La Mer<em data-i18n="hero.zee.tagline">De zee voor uw deur</em></h1>
+      <p class="hero-desc" data-i18n="hero.zee.desc">Wakker worden met de Noordzee als uitzicht. Frontaal zeezicht vanuit elk raam op de Zeedijk van Mariakerke.</p>
+      <span class="hero-link" data-i18n="hero.zee.cta">Ontdek het appartement</span>
+    </div>
+    <div class="hero-badge">9.2 ★</div>
+  </a>
+</section>
+
+<!-- ===================== STATS BAND ===================== -->
+<div class="stats">
+  <div class="stat-item"><span class="stat-num">2</span><span data-i18n="stats.rentals">Unieke verblijven</span></div>
+  <div class="stat-dot"></div>
+  <div class="stat-item"><span class="stat-num">9.2</span><span data-i18n="stats.score">Gemiddelde gasten­score</span></div>
+  <div class="stat-dot"></div>
+  <div class="stat-item"><span class="stat-num">10'</span><span data-i18n="stats.beach">Van strand &amp; centrum</span></div>
+  <div class="stat-dot"></div>
+  <div class="stat-item"><span class="stat-num">4</span><span data-i18n="stats.langs">Talen gesproken</span></div>
+</div>
+
+<!-- ===================== STORY ===================== -->
+<section class="story">
+  <div class="story-text reveal">
+    <div class="eyebrow" data-i18n="story.eyebrow">Ons verhaal</div>
+    <h2 class="serif" data-i18n="story.title">Twee gezichten van Oostende, één gastheer</h2>
+    <p data-i18n="story.p1">Oostende is meer dan een badstad. Het is ook Stene: een pittoresk, historisch dorp op amper 10 minuten van strand en centrum. Hier staat t'Hoeveke — een warm en authentiek hoeveappartement, omringd door polders en het stilste groen van de regio.</p>
+    <p data-i18n="story.p2">En dan is er de Zeedijk van Mariakerke. Zeedijk 170 is waar La Brise et La Mer u verwelkomt: een modern, stijlvol appartement waar de Noordzee letterlijk voor uw raam ligt. Frontaal zeezicht, elke morgen.</p>
+    <div class="deco-line"></div>
+    <p class="quote" data-i18n="story.quote">"Kies uw eigen Oostende — de zee of de stilte, of allebei."</p>
+  </div>
+  <div class="story-img-wrap reveal-right">
+    <div class="story-img"></div>
+  </div>
+</section>
+
+<!-- ===================== PROPERTY CARDS ===================== -->
+<section class="properties-section" id="verblijven">
+  <div class="section-header reveal">
+    <div class="eyebrow center" data-i18n="props.eyebrow">Onze verblijven</div>
+    <h2 class="serif" data-i18n="props.title">Twee werelden, één bestemming</h2>
+  </div>
+  <div class="cards-wrap">
+
+    <!-- t'Hoeveke -->
+    <article class="prop-card hoeve-card reveal-left" id="hoeveke">
+      <div class="prop-img-wrap">
+        <div class="prop-num">01</div>
+        <img src="images/hoeve-exterior.jpg" alt="t'Hoeveke authentiek hoeveappartement Stene Oostende" loading="lazy"/>
+      </div>
+      <div class="prop-body">
+        <p class="prop-type" data-i18n="hoeve.type">t'Hoeveke &middot; Stene-Dorpstraat 36, Stene</p>
+        <h3 class="prop-title" data-i18n="hoeve.title">Authentiek hoeveappartement in het groen</h3>
+        <p class="prop-address">Stene-Dorpstraat 36 &middot; Stene, 8400 Oostende</p>
+        <p class="prop-desc" data-i18n="hoeve.desc">Een warm en karaktervol vakantieappartement in het rustige dorp Stene. Kook op het professionele SMEG-fornuis, geniet van een bad in de vrijstaande kuip, slaap onder authentieke dakbalken. Buiten wacht een privétuin met sfeerverlichting en hangstoel. Op 10 minuten fietsen van het strand.</p>
+        <div class="prop-tags">
+          <span class="tag" data-i18n="hoeve.tag1">4 personen</span>
+          <span class="tag" data-i18n="hoeve.tag2">2 slaapkamers</span>
+          <span class="tag" data-i18n="hoeve.tag3">Private tuin</span>
+          <span class="tag" data-i18n="hoeve.tag4">Gratis parking</span>
+          <span class="tag">SMEG keuken</span>
+          <span class="tag">Vrijstaande badkuip</span>
+          <span class="tag" data-i18n="hoeve.tag6">10 min. van strand</span>
+        </div>
+        <div class="prop-cta-row">
+          <a href="https://www.booking.com/hotel/be/t-hoeveke.nl.html" target="_blank" rel="noopener" class="prop-cta" data-i18n="prop.cta">Beschikbaarheid bekijken</a>
+          <a href="#galerij" class="prop-link" data-i18n="prop.photos">Foto's bekijken</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- La Brise et La Mer -->
+    <article class="prop-card zee-card reveal-right" id="brise">
+      <div class="prop-img-wrap">
+        <div class="prop-num">02</div>
+        <img src="images/zee-woonkamer.jpg" alt="La Brise et La Mer frontaal zeezicht Zeedijk Mariakerke Oostende" loading="lazy"/>
+      </div>
+      <div class="prop-body">
+        <p class="prop-type" data-i18n="zee.type">La Brise et La Mer &middot; Zeedijk 170, Mariakerke</p>
+        <h3 class="prop-title" data-i18n="zee.title">Frontaal zeezicht op de Zeedijk</h3>
+        <p class="prop-address">Zeedijk 170 &middot; Mariakerke, 8400 Oostende</p>
+        <p class="prop-desc" data-i18n="zee.desc">De Noordzee is uw uitzicht, het strand uw voortuin. Dit stijlvol ingerichte appartement aan de Zeedijk van Mariakerke biedt panoramisch zeezicht vanuit elk raam. Strand en boulevard op 30 seconden, gewaardeerd 9.2 door gasten op Booking.com.</p>
+        <div class="prop-tags">
+          <span class="tag" data-i18n="zee.tag1">2 personen</span>
+          <span class="tag" data-i18n="zee.tag2">1 slaapkamer</span>
+          <span class="tag" data-i18n="zee.tag3">Frontaal zeezicht</span>
+          <span class="tag" data-i18n="zee.tag4">Terras</span>
+          <span class="tag" data-i18n="zee.tag5">Volledige keuken</span>
+          <span class="tag" data-i18n="zee.tag6">Score 9.2 ★</span>
+        </div>
+        <div class="prop-cta-row">
+          <a href="https://www.booking.com/hotel/be/la-brise-et-la-mer-frontaal-zeezicht.nl.html" target="_blank" rel="noopener" class="prop-cta" data-i18n="prop.cta">Beschikbaarheid bekijken</a>
+          <a href="#galerij" class="prop-link" data-i18n="prop.photos">Foto's bekijken</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== CONTRAST SECTION ===================== -->
+<section class="contrast">
+  <div class="contrast-half hoeve-contrast" data-word="HOEVE">
+    <div class="contrast-tag" data-i18n="cont.hoeve.tag">t'Hoeveke &middot; Stene</div>
+    <h2 class="contrast-h" data-i18n="cont.hoeve.title">Rust, natuur<br>en authenticiteit</h2>
+    <p class="contrast-p" data-i18n="cont.hoeve.desc">Stene is een verborgen pareltje van Oostende. Ver genoeg van de drukte, dicht genoeg bij alles wat de kust te bieden heeft. Hier ademt u de echte Vlaamse poldersfeer.</p>
+    <ul class="contrast-list">
+      <li data-i18n="cont.hoeve.li1">Karaktervol hoeveappartement in Stene-Dorp</li>
+      <li data-i18n="cont.hoeve.li2">Professionele SMEG-keuken &amp; fornuis</li>
+      <li data-i18n="cont.hoeve.li3">Vrijstaande badkuip &amp; inloopdouche</li>
+      <li data-i18n="cont.hoeve.li4">Private tuin met hangstoel &amp; sfeerverlichting</li>
+      <li data-i18n="cont.hoeve.li5">Gratis parking op eigen terrein</li>
+      <li data-i18n="cont.hoeve.li6">Dakbalken, authentiek karakter</li>
+    </ul>
+    <a href="https://www.booking.com/hotel/be/t-hoeveke.nl.html" target="_blank" rel="noopener" class="contrast-link" data-i18n="cont.hoeve.cta">Boek t'Hoeveke &nbsp;→</a>
+  </div>
+  <div class="contrast-half zee-contrast" data-word="ZEE">
+    <div class="contrast-tag" data-i18n="cont.zee.tag">La Brise et La Mer &middot; Mariakerke</div>
+    <h2 class="contrast-h" data-i18n="cont.zee.title">Zee, wind<br>en zuivere horizon</h2>
+    <p class="contrast-p" data-i18n="cont.zee.desc">Wakker worden met de Noordzee voor uw ogen. De golven horen terwijl u ontbijt. De wind voelen op het terras. Dit is het Oostende dat u niet vergeet.</p>
+    <ul class="contrast-list">
+      <li data-i18n="cont.zee.li1">Rechtstreeks op de Zeedijk Mariakerke</li>
+      <li data-i18n="cont.zee.li2">Frontaal zeezicht vanuit elk raam</li>
+      <li data-i18n="cont.zee.li3">Strand op 30 seconden</li>
+      <li data-i18n="cont.zee.li4">Modern &amp; volledig gerenoveerd</li>
+      <li data-i18n="cont.zee.li5">Snel wifi &amp; volledig uitgeruste keuken</li>
+      <li data-i18n="cont.zee.li6">Score 9.2/10 op Booking.com</li>
+    </ul>
+    <a href="https://www.booking.com/hotel/be/la-brise-et-la-mer-frontaal-zeezicht.nl.html" target="_blank" rel="noopener" class="contrast-link" data-i18n="cont.zee.cta">Boek La Brise et La Mer &nbsp;→</a>
+  </div>
+</section>
+
+<!-- ===================== GALLERY ===================== -->
+<section class="gallery-section" id="galerij">
+  <div class="gallery-header reveal">
+    <div class="eyebrow gold center" data-i18n="gallery.eyebrow">Galerij</div>
+    <h2 class="serif" data-i18n="gallery.title">Neem een kijkje binnen</h2>
+  </div>
+  <div class="gallery-filter">
+    <button class="active" data-gfilter="all" data-i18n="gallery.all">Alle foto's</button>
+    <button data-gfilter="hoeve" data-i18n="gallery.hoeve">t'Hoeveke</button>
+    <button data-gfilter="zee" data-i18n="gallery.zee">La Brise et La Mer</button>
+  </div>
+  <div class="gallery-grid" id="gallery-grid">
+    <div class="g-item g-1" data-gcat="hoeve">
+      <img src="images/hoeve-nacht.jpg" alt="t'Hoeveke tuin bij nacht" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.h1">t'Hoeveke · Tuin bij nacht</span></div>
+    </div>
+    <div class="g-item g-2" data-gcat="zee">
+      <img src="images/zee-eethoek.jpg" alt="La Brise eethoek met zeezicht" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.z1">La Brise · Eethoek met zeezicht</span></div>
+    </div>
+    <div class="g-item g-3" data-gcat="zee">
+      <img src="images/zee-keuken.jpg" alt="La Brise keuken" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.z2">La Brise · Keuken</span></div>
+    </div>
+    <div class="g-item g-4" data-gcat="hoeve">
+      <img src="images/hoeve-slaapkamer.jpg" alt="t'Hoeveke zolderslaapkamer met balken" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.h2">t'Hoeveke · Zolderslaapkamer</span></div>
+    </div>
+    <div class="g-item g-5" data-gcat="zee">
+      <img src="images/zee-slaapkamer.png" alt="La Brise slaapkamer" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.z3">La Brise · Slaapkamer</span></div>
+    </div>
+    <div class="g-item g-6" data-gcat="hoeve">
+      <img src="images/hoeve-exterior.jpg" alt="t'Hoeveke buitenkant" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.h3">t'Hoeveke · Buitenaanzicht</span></div>
+    </div>
+    <div class="g-item g-7" data-gcat="zee">
+      <img src="images/zee-woonkamer.jpg" alt="La Brise woonkamer zeezicht" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.zw">La Brise · Woonkamer</span></div>
+    </div>
+    <div class="g-item g-8" data-gcat="zee">
+      <img src="images/zee-hero.jpg" alt="La Brise vensterbank zeezicht" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.z4">La Brise · Vensterbank met zeezicht</span></div>
+    </div>
+    <div class="g-item g-5" data-gcat="hoeve">
+      <img src="images/hoeve-keuken.jpg" alt="t'Hoeveke keuken met SMEG" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.hk">t'Hoeveke · SMEG keuken</span></div>
+    </div>
+    <div class="g-item g-5" data-gcat="hoeve">
+      <img src="images/hoeve-badkamer.jpg" alt="t'Hoeveke badkamer met vrijstaande kuip" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.hb">t'Hoeveke · Vrijstaande badkuip</span></div>
+    </div>
+    <div class="g-item g-5" data-gcat="zee">
+      <img src="images/zee-badkamer.png" alt="La Brise badkamer" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.zbad">La Brise · Badkamer</span></div>
+    </div>
+    <div class="g-item g-5" data-gcat="zee">
+      <img src="images/zee-detail.png" alt="La Brise Oostende detail" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.zdet">La Brise · Oostende sfeer</span></div>
+    </div>
+    <div class="g-item g-5" data-gcat="hoeve">
+      <img src="images/hoeve-eethoek.jpg" alt="t'Hoeveke eethoek" loading="lazy"/>
+      <div class="g-overlay"><span data-i18n="gal.he">t'Hoeveke · Eethoek</span></div>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:2.5rem;font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.3)" data-i18n="gallery.note">Klik op een foto om te vergroten</p>
+</section>
+
+<!-- ===================== INFO / FACILITEITEN ===================== -->
+<section class="info-section reveal" id="info">
+  <div style="text-align:center;padding:0 2rem 1rem">
+    <div class="eyebrow center" data-i18n="info.eyebrow">Wat mag u verwachten</div>
+    <h2 class="serif" style="margin-top:0.75rem" data-i18n="info.title">Verzorgd tot in het laatste detail</h2>
+  </div>
+  <div class="info-grid">
+    <div class="info-item">
+      <span class="info-num">01</span>
+      <h3 class="info-title" data-i18n="info.i1.t">Verse bedden &amp; linnen</h3>
+      <p class="info-text" data-i18n="info.i1.p">Kwaliteitslinnen, opgemaakte bedden en schone handdoeken bij aankomst. Extra kussens en dekens in de kast.</p>
+    </div>
+    <div class="info-item">
+      <span class="info-num">02</span>
+      <h3 class="info-title" data-i18n="info.i2.t">Welkomst­geschenk</h3>
+      <p class="info-text" data-i18n="info.i2.p">Koffie, thee, suiker en melk staan klaar. Een kleine attentie van het huis wacht u op in de koelkast.</p>
+    </div>
+    <div class="info-item">
+      <span class="info-num">03</span>
+      <h3 class="info-title" data-i18n="info.i3.t">Contactloos inchecken</h3>
+      <p class="info-text" data-i18n="info.i3.p">Digitale toegangscode of sleutelkluis — u arriveert op het uur dat u zelf kiest, zonder op iemand te wachten.</p>
+    </div>
+    <div class="info-item">
+      <span class="info-num">04</span>
+      <h3 class="info-title" data-i18n="info.i4.t">Snelle wifi</h3>
+      <p class="info-text" data-i18n="info.i4.p">Glasvezel internet in beide verblijven — ideaal voor een werkdag op het terras of een regenachtige filmavond.</p>
+    </div>
+    <div class="info-item">
+      <span class="info-num">05</span>
+      <h3 class="info-title" data-i18n="info.i5.t">Lokale tips</h3>
+      <p class="info-text" data-i18n="info.i5.p">Een persoonlijk boekje met onze favoriete restaurants, wandelingen en adressen in Oostende en omgeving.</p>
+    </div>
+    <div class="info-item">
+      <span class="info-num">06</span>
+      <h3 class="info-title" data-i18n="info.i6.t">Huisdieren welkom*</h3>
+      <p class="info-text" data-i18n="info.i6.p">Honden zijn welkom in t'Hoeveke, mits voorafgaand overleg. In La Brise et La Mer zijn huisdieren helaas niet toegelaten.</p>
+    </div>
+    <div class="info-item">
+      <span class="info-num">07</span>
+      <h3 class="info-title" data-i18n="info.i7.t">Kindvriendelijk</h3>
+      <p class="info-text" data-i18n="info.i7.p">Kinderbedje, kinderstoel en kookgerei voor kinderen beschikbaar op aanvraag, zonder extra kosten.</p>
+    </div>
+    <div class="info-item">
+      <span class="info-num">08</span>
+      <h3 class="info-title" data-i18n="info.i8.t">Altijd bereikbaar</h3>
+      <p class="info-text" data-i18n="info.i8.p">We zijn bereikbaar via WhatsApp, telefoon of e-mail. Antwoord in het Nederlands, Frans, Engels of Duits.</p>
+    </div>
+  </div>
+
+  <!-- Comparison table -->
+  <div class="info-compare reveal" style="margin-top:5rem">
+    <h3 class="serif" style="text-align:center;margin-bottom:2.5rem;font-size:1.6rem" data-i18n="compare.title">Welk verblijf past bij u?</h3>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th class="feat-col" data-i18n="compare.feature">Kenmerk</th>
+          <th class="h-col">t'Hoeveke</th>
+          <th class="s-col">La Brise et La Mer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td data-i18n="cmp.1">Max. personen</td><td class="h-col">4</td><td class="s-col">2</td></tr>
+        <tr><td data-i18n="cmp.2">Slaapkamers</td><td class="h-col">2</td><td class="s-col">1</td></tr>
+        <tr><td data-i18n="cmp.3">Zeezicht</td><td class="h-col"><span class="cross">—</span></td><td class="s-col"><span class="check">✓</span></td></tr>
+        <tr><td data-i18n="cmp.4">Tuin / buiten</td><td class="h-col"><span class="check">✓</span></td><td class="s-col"><span class="cross">—</span></td></tr>
+        <tr><td data-i18n="cmp.5">Gratis parking</td><td class="h-col"><span class="check">✓</span></td><td class="s-col"><span class="cross">—</span></td></tr>
+        <tr><td data-i18n="cmp.6">Huisdieren</td><td class="h-col"><span class="check">✓</span></td><td class="s-col"><span class="cross">—</span></td></tr>
+        <tr><td data-i18n="cmp.7">Strand op 30 sec.</td><td class="h-col"><span class="cross">—</span></td><td class="s-col"><span class="check">✓</span></td></tr>
+        <tr><td data-i18n="cmp.8">10 min. van centrum</td><td class="h-col"><span class="check">✓</span></td><td class="s-col"><span class="check">✓</span></td></tr>
+        <tr><td data-i18n="cmp.9">Terras</td><td class="h-col"><span class="check">✓</span></td><td class="s-col"><span class="check">✓</span></td></tr>
+        <tr><td data-i18n="cmp.10">Wifi</td><td class="h-col"><span class="check">✓</span></td><td class="s-col"><span class="check">✓</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ===================== REVIEWS ===================== -->
+<section class="reviews reveal">
+  <div class="eyebrow gold" data-i18n="rev.eyebrow">Wat gasten zeggen</div>
+  <h2 data-i18n="rev.title">Echte ervaringen, echte mensen</h2>
+  <div class="reviews-grid" id="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text" data-i18n="rev.r1.text">"Fijne ontvangst, perfecte locatie in een stil hoekje van Oostende. Ideaal voor een fietsweekend door de polders. Het huisje heeft een echte ziel."</p>
+      <span class="review-author">Johan &amp; Lies &nbsp;<span class="review-badge badge-h">t'Hoeveke</span></span>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text" data-i18n="rev.r2.text">"Super fijn appartement met alles wat je nodig hebt! Heel proper, heel vriendelijk, en die tuin is een cadeau. Absolute aanrader voor families."</p>
+      <span class="review-author">Familie De Smedt &nbsp;<span class="review-badge badge-h">t'Hoeveke</span></span>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text" data-i18n="rev.r3.text">"The view is simply spectacular. Right on the seafront, couldn't be better. The apartment is clean, stylish and the host is incredibly helpful."</p>
+      <span class="review-author">Michael &amp; Sarah &nbsp;<span class="review-badge badge-s">La Brise et La Mer</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LOCATION ===================== -->
+<section class="locatie" id="locatie">
+  <div class="locatie-text reveal-left">
+    <div class="eyebrow" data-i18n="loc.eyebrow">Waar vindt u ons?</div>
+    <h2 class="serif" data-i18n="loc.title">Oostende,<br>de Koningin der Badsteden</h2>
+    <p data-i18n="loc.p1"><strong>t'Hoeveke</strong> ligt in het historische Stene-Dorp, de groene en rustige kant van Oostende. Op 10 minuten fietsen van strand en centrum, met polderwandelingen aan de deur en gratis parking.</p>
+    <p data-i18n="loc.p2"><strong>La Brise et La Mer</strong> staat op Zeedijk 170 in Mariakerke. Het strand, de tram, restaurants en het centrum van Oostende liggen allemaal op wandelafstand van dit frontale zeezichtsappartement.</p>
+    <div class="locatie-facts">
+      <div class="fact"><div class="fact-val">10'</div><div class="fact-label" data-i18n="loc.f1">Strand &amp; centrum (Hoeve)</div></div>
+      <div class="fact"><div class="fact-val">30"</div><div class="fact-label" data-i18n="loc.f2">Tot het strand (Zeedijk)</div></div>
+      <div class="fact"><div class="fact-val">Vrij</div><div class="fact-label" data-i18n="loc.f3">Parking bij t'Hoeveke</div></div>
+      <div class="fact"><div class="fact-val">NL·FR·EN·DE</div><div class="fact-label" data-i18n="loc.f4">Talen beschikbaar</div></div>
+    </div>
+    <a href="#contact" class="btn-fill h" data-i18n="loc.cta">Contacteer ons</a>
+  </div>
+  <div class="locatie-map reveal-right">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39994.56!2d2.8900!3d51.2338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b15fde94a20569%3A0xc698b4a52f15d42!2sOostende!5e0!3m2!1snl!2sbe!4v1700000000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Locatie vakantiewoningen Oostende"></iframe>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq-section" id="faq">
+  <div style="text-align:center;padding:0 2rem 0.5rem" class="reveal">
+    <div class="eyebrow center" data-i18n="faq.eyebrow">FAQ</div>
+    <h2 class="serif" style="margin-top:0.75rem" data-i18n="faq.title">Veelgestelde vragen</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q"><span data-i18n="faq.q1">Hoe verloopt het inchecken?</span><span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p data-i18n="faq.a1">U ontvangt enkele dagen voor aankomst een bericht met een persoonlijke toegangscode of de locatie van de sleutelkluis. U kunt inchecken op het uur dat u zelf verkiest — 24/7, zonder te wachten op iemand.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-i18n="faq.q2">Welk linnen en welke handdoeken worden voorzien?</span><span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p data-i18n="faq.a2">Alle bedden zijn opgemaakt bij aankomst. Handdoeken en keukenlinnen zijn in voldoende aantal aanwezig. In La Brise et La Mer zijn ook strandlakens ter beschikking.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-i18n="faq.q3">Zijn huisdieren toegelaten?</span><span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p data-i18n="faq.a3">Honden zijn welkom in t'Hoeveke, mits voorafgaand overleg en melding bij boeking. In La Brise et La Mer zijn huisdieren niet toegelaten.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-i18n="faq.q4">Is er parking beschikbaar?</span><span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p data-i18n="faq.a4">t'Hoeveke beschikt over gratis parking op eigen terrein. Voor La Brise et La Mer is betalend straatparkeren beschikbaar aan de Zeedijk, en een buurtparking op korte wandelafstand.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-i18n="faq.q5">Hoe annuleer ik mijn boeking?</span><span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p data-i18n="faq.a5">De annuleringsvoorwaarden hangen af van het boekingskanaal en de gekozen periode. De meest flexibele voorwaarden vindt u via Booking.com. Voor rechtstreekse boekingen hanteren we eerlijke voorwaarden — zie uw bevestigingsmail.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-i18n="faq.q6">Wat is de beste periode om Oostende te bezoeken?</span><span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p data-i18n="faq.a6">Beide verblijven zijn het hele jaar door geopend. De zomer (juni–augustus) is levendig en vol; de voor- en najaarsmaanden bieden rust, zachte zeewinden en minder drukte. De winter heeft zijn eigen magie — lege stranden en een haard die knettert.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-i18n="faq.q7">Is er ontbijt inbegrepen?</span><span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p data-i18n="faq.a7">Nee, beide verblijven zijn zelfstandige vakantieappartementen met een volledig uitgeruste keuken. Koffie, thee en een welkomstsurprise staan altijd klaar. We delen graag onze favoriete ontbijtadressen in de buurt.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-i18n="faq.q8">Kan ik een kinderbedje vragen?</span><span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p data-i18n="faq.a8">Ja. Een kinderbedje en kinderstoel zijn beschikbaar op eenvoudig verzoek, zonder extra kosten. Vermeld dit bij uw boeking of stuur ons een berichtje.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-i18n="faq.q9">Hoe ver is het centrum van Oostende?</span><span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p data-i18n="faq.a9">Vanuit La Brise et La Mer loopt u in 20 minuten langs de Zeedijk naar het centrum, of u neemt de kusttram. Vanuit t'Hoeveke fietst u in 10 minuten naar het centrum via de polderroutes.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q"><span data-i18n="faq.q10">Kan ik beide verblijven tegelijk boeken voor een grotere groep?</span><span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p data-i18n="faq.a10">Zeker! Bij gelijktijdige boeking van beide verblijven kunnen we een speciale deal aanbieden. Neem contact op via het formulier voor een persoonlijke offerte.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BOOKING ===================== -->
+<section class="booking-section" id="boeken">
+  <div style="text-align:center;padding:0 2rem 0.5rem" class="reveal">
+    <div class="eyebrow center" data-i18n="book.eyebrow">Reserveren</div>
+    <h2 class="serif" style="margin-top:0.75rem" data-i18n="book.title">Kies uw verblijf &amp; boek</h2>
+    <p style="font-size:0.92rem;color:var(--mid);margin-top:1rem;max-width:600px;margin-left:auto;margin-right:auto;line-height:1.85" data-i18n="book.subtitle">Reserveer via Booking.com, Airbnb of rechtstreeks bij ons. Alle kalenders worden gesynchroniseerd via Lodgify — de beschikbaarheid is altijd accuraat.</p>
+  </div>
+  <div class="booking-grid">
+
+    <!-- t'Hoeveke booking -->
+    <div class="booking-card hoeve reveal-left">
+      <h3>t'Hoeveke</h3>
+      <p class="book-addr">Stene-Dorpstraat 36, Stene · Oostende</p>
+      <p data-i18n="book.hoeve.desc">Het landelijke hoeveappartement voor families en vrienden. Tuin, parking en polderrust inbegrepen.</p>
+      <div class="booking-channels">
+        <a href="https://www.booking.com/hotel/be/t-hoeveke.nl.html" target="_blank" rel="noopener" class="booking-channel" data-booking="hoeve-booking">
+          <span>Booking.com</span>
+          <div class="ch-right"><span class="ch-arrow">→</span><small data-i18n="book.ch.flexible">Flexibele annulering</small></div>
+        </a>
+        <a href="#" class="booking-channel" data-booking="hoeve-airbnb" onclick="return false;" style="opacity:0.55">
+          <span>Airbnb <span class="ch-best" data-i18n="book.soon">Binnenkort</span></span>
+          <div class="ch-right"><span class="ch-arrow">→</span><small data-i18n="book.ch.reviews">Incl. gastreviews</small></div>
+        </a>
+        <a href="#contact" class="booking-channel">
+          <span data-i18n="book.direct">Rechtstreeks boeken</span>
+          <div class="ch-right"><span class="ch-arrow">→</span><small data-i18n="book.ch.best">Beste prijs · geen commissie</small></div>
+        </a>
+      </div>
+      <div id="lodgify-hoeve" class="lodgify-placeholder">
+        <p><strong data-i18n="lodgify.title">Lodgify beschikbaarheidswidget</strong><br/><span data-i18n="lodgify.desc">De real-time boekingskalender wordt hier geplaatst zodra de Lodgify-integratie is geconfigureerd.</span></p>
+      </div>
+    </div>
+
+    <!-- La Brise booking -->
+    <div class="booking-card zee reveal-right">
+      <h3>La Brise et La Mer</h3>
+      <p class="book-addr">Zeedijk 170, Mariakerke · Oostende</p>
+      <p data-i18n="book.zee.desc">Het stijlvolle zeezichtappartement voor koppels en rustzoekers. Frontaal uitzicht op de Noordzee, 30 seconden van het strand.</p>
+      <div class="booking-channels">
+        <a href="https://www.booking.com/hotel/be/la-brise-et-la-mer-frontaal-zeezicht.nl.html" target="_blank" rel="noopener" class="booking-channel" data-booking="zee-booking">
+          <span>Booking.com <span class="ch-best" style="background:var(--gold);color:var(--dark)">9.2 ★</span></span>
+          <div class="ch-right"><span class="ch-arrow">→</span><small data-i18n="book.ch.flexible">Flexibele annulering</small></div>
+        </a>
+        <a href="#" class="booking-channel" data-booking="zee-airbnb" onclick="return false;" style="opacity:0.55">
+          <span>Airbnb <span class="ch-best" data-i18n="book.soon">Binnenkort</span></span>
+          <div class="ch-right"><span class="ch-arrow">→</span><small data-i18n="book.ch.reviews">Incl. gastreviews</small></div>
+        </a>
+        <a href="#contact" class="booking-channel">
+          <span data-i18n="book.direct">Rechtstreeks boeken</span>
+          <div class="ch-right"><span class="ch-arrow">→</span><small data-i18n="book.ch.best">Beste prijs · geen commissie</small></div>
+        </a>
+      </div>
+      <div id="lodgify-zee" class="lodgify-placeholder">
+        <p><strong data-i18n="lodgify.title">Lodgify beschikbaarheidswidget</strong><br/><span data-i18n="lodgify.desc">De real-time boekingskalender wordt hier geplaatst zodra de Lodgify-integratie is geconfigureerd.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact-section" id="contact">
+  <div style="text-align:center;padding:0 2rem 0.5rem;max-width:1200px;margin:0 auto" class="reveal">
+    <div class="eyebrow blue center" data-i18n="contact.eyebrow">Contact</div>
+    <h2 class="serif" style="margin-top:0.75rem" data-i18n="contact.title">Stel uw vraag of boek rechtstreeks</h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info reveal-left">
+      <div class="eyebrow blue" data-i18n="contact.info.eyebrow">Onze gegevens</div>
+
+      <h4 data-i18n="contact.email">E-mail</h4>
+      <p><a href="mailto:info@vakantiewoningeninoostende.be" data-contact="email-link">info@vakantiewoningeninoostende.be</a></p>
+
+      <h4 data-i18n="contact.phone">Telefoon</h4>
+      <p><a href="tel:+32000000000" data-contact="phone-link">+32 (0)__ __ __ __</a></p>
+
+      <h4 data-i18n="contact.whatsapp">WhatsApp</h4>
+      <p><a href="https://wa.me/32000000000" data-contact="whatsapp-link" data-i18n="contact.wa.label">Stuur ons een WhatsApp bericht →</a></p>
+
+      <h4 data-i18n="contact.lang.label">Wij spreken</h4>
+      <p data-i18n="contact.langs">Nederlands · Frans · Engels · Duits</p>
+
+      <h4 data-i18n="contact.addr.label">Adressen</h4>
+      <p>t'Hoeveke — Stene-Dorpstraat 36, 8400 Oostende<br/>
+         La Brise et La Mer — Zeedijk 170, 8400 Oostende (Mariakerke)</p>
+
+      <div class="deco-line blue" style="margin-top:2rem"></div>
+      <p style="font-size:0.82rem;color:var(--s2);font-style:italic;line-height:1.7" data-i18n="contact.response">We antwoorden doorgaans binnen de 4 uur. Voor dringende vragen belt u ons.</p>
+    </div>
+
+    <form class="contact-form reveal-right" onsubmit="handleForm(event)">
+      <div class="form-row">
+        <div class="form-field">
+          <label data-i18n="form.name">Naam</label>
+          <input type="text" required placeholder="Uw naam"/>
+        </div>
+        <div class="form-field">
+          <label data-i18n="form.email">E-mail</label>
+          <input type="email" required placeholder="uw@email.com"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label data-i18n="form.which">Welk verblijf</label>
+          <select>
+            <option data-i18n="form.both">Geen voorkeur / beide</option>
+            <option>t'Hoeveke</option>
+            <option>La Brise et La Mer</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label data-i18n="form.dates">Gewenste data</label>
+          <input type="text" placeholder="bv. 14–18 juli 2026"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label data-i18n="form.persons">Aantal personen</label>
+          <input type="text" placeholder="bv. 2 volwassenen, 1 kind"/>
+        </div>
+        <div class="form-field">
+          <label data-i18n="form.phone">Telefoonnummer (optioneel)</label>
+          <input type="tel" placeholder="+32 ..."/>
+        </div>
+      </div>
+      <div class="form-field">
+        <label data-i18n="form.message">Bericht</label>
+        <textarea rows="4" placeholder="Stel uw vraag of geef bijkomende info..."></textarea>
+      </div>
+      <div class="form-submit-row">
+        <button type="submit" class="btn-fill s" data-i18n="form.submit">Bericht versturen</button>
+        <span class="form-note" data-i18n="form.note">Geen spam. Uw gegevens worden nooit gedeeld.</span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== CTA SECTION ===================== -->
+<section class="cta-section">
+  <div class="cta-label" data-i18n="cta.label">Reserveer vandaag</div>
+  <h2 class="serif" data-i18n="cta.title">Klaar voor uw<br>Oostende-escape?</h2>
+  <p data-i18n="cta.desc">Kies uw verblijf en bekijk de beschikbaarheid. Wilt u eerst meer weten? We helpen u graag persoonlijk verder.</p>
+  <div class="cta-buttons">
+    <a href="https://www.booking.com/hotel/be/t-hoeveke.nl.html" target="_blank" rel="noopener" class="btn-fill h" data-i18n="cta.hoeve">Boek t'Hoeveke &nbsp;→</a>
+    <a href="https://www.booking.com/hotel/be/la-brise-et-la-mer-frontaal-zeezicht.nl.html" target="_blank" rel="noopener" class="btn-fill s" data-i18n="cta.zee">Boek La Brise et La Mer &nbsp;→</a>
+    <a href="#contact" class="btn-ghost" data-i18n="cta.contact">Stel een vraag</a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-col">
+      <div class="footer-brand">Vakantiewoningen<br>in Oostende</div>
+      <p class="footer-tagline" data-i18n="footer.tagline">Twee unieke verblijven aan de Belgische kust — van het authentieke Stene tot het frontale zeezicht op de Zeedijk van Mariakerke.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link" aria-label="Facebook" title="Facebook">f</a>
+        <a href="#" class="social-link" aria-label="Instagram" title="Instagram">ig</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.h.rentals">Verblijven</h4>
+      <ul>
+        <li><a href="#hoeveke">t'Hoeveke · Stene</a></li>
+        <li><a href="#brise">La Brise et La Mer</a></li>
+        <li><a href="#galerij" data-i18n="footer.gallery">Galerij</a></li>
+        <li><a href="#boeken" data-i18n="footer.availability">Beschikbaarheid</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.h.info">Informatie</h4>
+      <ul>
+        <li><a href="#locatie" data-i18n="footer.location">Locatie &amp; bereikbaarheid</a></li>
+        <li><a href="#info" data-i18n="footer.facilities">Faciliteiten</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#" data-i18n="footer.rules">Huisregels</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.h.contact">Contact</h4>
+      <ul>
+        <li><a href="mailto:info@vakantiewoningeninoostende.be">info@vakantiewoningeninoostende.be</a></li>
+        <li><a href="tel:+32000000000" data-i18n="footer.phone">+32 (0)__ __ __ __</a></li>
+        <li><a href="https://wa.me/32000000000">WhatsApp</a></li>
+        <li>Booking.com · Airbnb · Lodgify</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="fyear"></span> Vakantiewoningen in Oostende — vakantiewoningeninoostende.be</span>
+    <div class="footer-legal">
+      <a href="#" data-i18n="footer.privacy">Privacybeleid</a>
+      <a href="#" data-i18n="footer.cookies">Cookiebeleid</a>
+      <a href="#" data-i18n="footer.terms">Algemene voorwaarden</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== COOKIE BANNER ===================== -->
+<div id="cookie" role="dialog" aria-label="Cookiemelding">
+  <p data-i18n="cookie.text">Wij gebruiken cookies om uw bezoek te verbeteren en anonieme statistieken bij te houden. Meer info in ons <a href="#">cookiebeleid</a>.</p>
+  <div class="cookie-actions">
+    <button class="c-decline" onclick="closeCookie('declined')" data-i18n="cookie.decline">Weigeren</button>
+    <button class="c-accept" onclick="closeCookie('accepted')" data-i18n="cookie.accept">Aanvaarden</button>
+  </div>
+</div>
+
+<!-- ===================== SCRIPTS ===================== -->
+<script>
+// ======= i18n =======
+const DICT = {
+nl:{
+  "nav.rentals":"Verblijven","nav.gallery":"Galerij","nav.info":"Info","nav.faq":"FAQ","nav.book":"Boeken","nav.contact":"Contact",
+  "nav.bookHoeve":"Boek Hoeve","nav.bookSea":"Boek Zeedijk",
+  "hero.hoeve.location":"Stene · Oostende","hero.hoeve.tagline":"Landelijk & authentiek",
+  "hero.hoeve.desc":"Een karaktervol hoeveappartement in het historische Stene. Omringd door groene polders, op 10 minuten van de zee.",
+  "hero.hoeve.cta":"Ontdek de hoeve",
+  "hero.zee.location":"Zeedijk 170 · Mariakerke, Oostende","hero.zee.tagline":"De zee voor uw deur",
+  "hero.zee.desc":"Wakker worden met de Noordzee als uitzicht. Frontaal zeezicht vanuit elk raam op de Zeedijk van Mariakerke.",
+  "hero.zee.cta":"Ontdek het appartement",
+  "stats.rentals":"Unieke verblijven","stats.score":"Gemiddelde gastenscore","stats.beach":"Van strand & centrum","stats.langs":"Talen gesproken",
+  "story.eyebrow":"Ons verhaal","story.title":"Twee gezichten van Oostende, één gastheer",
+  "story.p1":"Oostende is meer dan een badstad. Het is ook Stene: een pittoresk, historisch dorp op amper 10 minuten van strand en centrum. Hier staat t'Hoeveke — een warm en authentiek hoeveappartement, omringd door polders en het stilste groen van de regio.",
+  "story.p2":"En dan is er de Zeedijk van Mariakerke. Zeedijk 170 is waar La Brise et La Mer u verwelkomt: een modern, stijlvol appartement waar de Noordzee letterlijk voor uw raam ligt. Frontaal zeezicht, elke morgen.",
+  "story.quote":"\"Kies uw eigen Oostende — de zee of de stilte, of allebei.\"",
+  "props.eyebrow":"Onze verblijven","props.title":"Twee werelden, één bestemming",
+  "hoeve.type":"t'Hoeveke · Stene-Dorpstraat 36, Stene","hoeve.title":"Authentiek hoeveappartement in het groen",
+  "hoeve.desc":"Een warm en karaktervol vakantieappartement in het rustige dorp Stene. Buiten wandel je in de polders, binnen geniet je van eerlijke ruimte en een eigen buitengebied. Op 10 minuten fietsen van het strand en het bruisende centrum van Oostende.",
+  "hoeve.tag1":"4 personen","hoeve.tag2":"2 slaapkamers","hoeve.tag3":"Private tuin","hoeve.tag4":"Gratis parking","hoeve.tag5":"Volledige keuken","hoeve.tag6":"10 min. van strand",
+  "zee.type":"La Brise et La Mer · Zeedijk 170, Mariakerke","zee.title":"Frontaal zeezicht op de Zeedijk",
+  "zee.desc":"De Noordzee is uw uitzicht, het strand uw voortuin. Dit stijlvol ingerichte appartement aan de Zeedijk van Mariakerke biedt panoramisch zeezicht vanuit elk raam. Strand en boulevard op 30 seconden, gewaardeerd 9.2 door gasten op Booking.com.",
+  "zee.tag1":"2 personen","zee.tag2":"1 slaapkamer","zee.tag3":"Frontaal zeezicht","zee.tag4":"Terras","zee.tag5":"Volledige keuken","zee.tag6":"Score 9.2 ★",
+  "prop.cta":"Beschikbaarheid bekijken","prop.photos":"Foto's bekijken",
+  "cont.hoeve.tag":"t'Hoeveke · Stene","cont.hoeve.title":"Rust, natuur\nen authenticiteit",
+  "cont.hoeve.desc":"Stene is een verborgen pareltje van Oostende. Ver genoeg van de drukte, dicht genoeg bij alles wat de kust te bieden heeft. Hier ademt u de echte Vlaamse poldersfeer.",
+  "cont.hoeve.li1":"Karaktervol hoeveappartement","cont.hoeve.li2":"Groene tuin & private buitenruimte","cont.hoeve.li3":"Gratis parking op eigen terrein","cont.hoeve.li4":"Polderwandelingen aan de deur","cont.hoeve.li5":"Fietsroutes naar zee & centrum","cont.hoeve.li6":"Ideaal voor families & groepen",
+  "cont.hoeve.cta":"Boek t'Hoeveke →",
+  "cont.zee.tag":"La Brise et La Mer · Mariakerke","cont.zee.title":"Zee, wind\nen zuivere horizon",
+  "cont.zee.desc":"Wakker worden met de Noordzee voor uw ogen. De golven horen terwijl u ontbijt. De wind voelen op het terras. Dit is het Oostende dat u niet vergeet.",
+  "cont.zee.li1":"Rechtstreeks op de Zeedijk Mariakerke","cont.zee.li2":"Frontaal zeezicht vanuit elk raam","cont.zee.li3":"Strand op 30 seconden","cont.zee.li4":"Modern & volledig gerenoveerd","cont.zee.li5":"Snel wifi & volledig uitgeruste keuken","cont.zee.li6":"Score 9.2/10 op Booking.com",
+  "cont.zee.cta":"Boek La Brise et La Mer →",
+  "gallery.eyebrow":"Galerij","gallery.title":"Neem een kijkje binnen","gallery.all":"Alle foto's","gallery.hoeve":"t'Hoeveke","gallery.zee":"La Brise et La Mer","gallery.note":"Echte foto's worden toegevoegd na fotoshoot",
+  "gal.h1":"t'Hoeveke · Woonkamer","gal.z1":"La Brise · Zeezicht","gal.z2":"La Brise · Keuken","gal.h2":"t'Hoeveke · Slaapkamer","gal.z3":"La Brise · Slaapkamer","gal.h3":"t'Hoeveke · Tuin","gal.h4":"t'Hoeveke · Keuken","gal.z4":"La Brise · Terras",
+  "info.eyebrow":"Wat mag u verwachten","info.title":"Verzorgd tot in het laatste detail",
+  "info.i1.t":"Verse bedden & linnen","info.i1.p":"Kwaliteitslinnen, opgemaakte bedden en schone handdoeken bij aankomst. Extra kussens en dekens in de kast.",
+  "info.i2.t":"Welkomstgeschenk","info.i2.p":"Koffie, thee, suiker en melk staan klaar. Een kleine attentie van het huis wacht u op in de koelkast.",
+  "info.i3.t":"Contactloos inchecken","info.i3.p":"Digitale toegangscode of sleutelkluis — u arriveert op het uur dat u zelf kiest, 24/7.",
+  "info.i4.t":"Snelle wifi","info.i4.p":"Glasvezel internet in beide verblijven — ideaal voor een werkdag op het terras of een filmavond.",
+  "info.i5.t":"Lokale tips","info.i5.p":"Een persoonlijk boekje met onze favoriete restaurants, wandelingen en adressen in Oostende.",
+  "info.i6.t":"Huisdieren welkom*","info.i6.p":"Honden welkom in t'Hoeveke (mits overleg). In La Brise et La Mer zijn huisdieren niet toegelaten.",
+  "info.i7.t":"Kindvriendelijk","info.i7.p":"Kinderbedje, kinderstoel en kookgerei voor kinderen op aanvraag, kosteloos.",
+  "info.i8.t":"Altijd bereikbaar","info.i8.p":"Via WhatsApp, telefoon of e-mail. In Nederlands, Frans, Engels of Duits.",
+  "compare.title":"Welk verblijf past bij u?","compare.feature":"Kenmerk",
+  "cmp.1":"Max. personen","cmp.2":"Slaapkamers","cmp.3":"Zeezicht","cmp.4":"Tuin / buiten","cmp.5":"Gratis parking","cmp.6":"Huisdieren","cmp.7":"Strand op 30 sec.","cmp.8":"10 min. van centrum","cmp.9":"Terras","cmp.10":"Wifi",
+  "rev.eyebrow":"Wat gasten zeggen","rev.title":"Echte ervaringen, echte mensen",
+  "rev.r1.text":"\"Fijne ontvangst, perfecte locatie in een stil hoekje van Oostende. Ideaal voor een fietsweekend door de polders. Het huisje heeft een echte ziel.\"",
+  "rev.r2.text":"\"Super fijn appartement met alles wat je nodig hebt! Heel proper, heel vriendelijk, en die tuin is een cadeau. Absolute aanrader voor families.\"",
+  "rev.r3.text":"\"The view is simply spectacular. Right on the seafront, couldn't be better. The apartment is clean, stylish and the host is incredibly helpful.\"",
+  "loc.eyebrow":"Waar vindt u ons?","loc.title":"Oostende, de Koningin der Badsteden",
+  "loc.p1":"t'Hoeveke ligt in het historische Stene-Dorp, de groene en rustige kant van Oostende. Op 10 minuten fietsen van strand en centrum, met polderwandelingen aan de deur.",
+  "loc.p2":"La Brise et La Mer staat op Zeedijk 170 in Mariakerke. Het strand, de tram en het centrum liggen op wandelafstand van dit frontale zeezichtsappartement.",
+  "loc.f1":"Strand & centrum (Hoeve)","loc.f2":"Tot het strand (Zeedijk)","loc.f3":"Parking bij t'Hoeveke","loc.f4":"Talen beschikbaar","loc.cta":"Contacteer ons",
+  "faq.eyebrow":"FAQ","faq.title":"Veelgestelde vragen",
+  "faq.q1":"Hoe verloopt het inchecken?","faq.a1":"U ontvangt enkele dagen voor aankomst een bericht met een persoonlijke toegangscode of de locatie van de sleutelkluis. 24/7 inchecken, zonder te wachten.",
+  "faq.q2":"Welk linnen en handdoeken worden voorzien?","faq.a2":"Alle bedden zijn opgemaakt bij aankomst. Handdoeken en keukenlinnen aanwezig. Strandlakens in La Brise et La Mer.",
+  "faq.q3":"Zijn huisdieren toegelaten?","faq.a3":"Honden welkom in t'Hoeveke (mits overleg en melding). In La Brise et La Mer niet toegelaten.",
+  "faq.q4":"Is er parking beschikbaar?","faq.a4":"t'Hoeveke: gratis op eigen terrein. La Brise: betalend straatparkeren en buurtparking op wandelafstand.",
+  "faq.q5":"Hoe annuleer ik mijn boeking?","faq.a5":"Annuleringsvoorwaarden afhankelijk van kanaal en periode. Flexibelste via Booking.com. Rechtstreekse boekingen: eerlijke voorwaarden, zie bevestigingsmail.",
+  "faq.q6":"Beste periode om Oostende te bezoeken?","faq.a6":"Geopend heel het jaar. Zomer levendig, voor-/najaar rustig met zachte zeewinden. Winter: lege stranden en knapperende haard.",
+  "faq.q7":"Is ontbijt inbegrepen?","faq.a7":"Nee. Zelfstandige appartementen met volledige keuken. Koffie, thee en welkomstsurprise staan klaar. We delen onze favoriete ontbijtadressen.",
+  "faq.q8":"Kinderbedje aanvragen?","faq.a8":"Ja, kinderbedje en kinderstoel kosteloos op eenvoudig verzoek. Vermeld bij boeking.",
+  "faq.q9":"Hoe ver is het centrum?","faq.a9":"La Brise: 20 min. wandelen langs dijk of tram. t'Hoeveke: 10 min. fietsen via polderroutes.",
+  "faq.q10":"Beide verblijven samen boeken?","faq.a10":"Ja! Bij gelijktijdige boeking bieden we een speciale deal. Contacteer ons voor een offerte.",
+  "book.eyebrow":"Reserveren","book.title":"Kies uw verblijf & boek",
+  "book.subtitle":"Reserveer via Booking.com, Airbnb of rechtstreeks. Alle kalenders via Lodgify gesynchroniseerd.",
+  "book.hoeve.desc":"Het landelijke hoeveappartement voor families en vrienden. Tuin, parking en polderrust inbegrepen.",
+  "book.zee.desc":"Het stijlvolle zeezichtappartement voor koppels. Frontaal uitzicht op de Noordzee, 30 sec. van het strand.",
+  "book.ch.flexible":"Flexibele annulering","book.ch.reviews":"Incl. gastreviews","book.ch.best":"Beste prijs · geen commissie",
+  "book.direct":"Rechtstreeks boeken","book.soon":"Binnenkort",
+  "lodgify.title":"Lodgify beschikbaarheidswidget","lodgify.desc":"De real-time boekingskalender wordt hier geplaatst zodra de Lodgify-integratie is geconfigureerd.",
+  "contact.eyebrow":"Contact","contact.title":"Stel uw vraag of boek rechtstreeks",
+  "contact.info.eyebrow":"Onze gegevens","contact.email":"E-mail","contact.phone":"Telefoon",
+  "contact.whatsapp":"WhatsApp","contact.wa.label":"Stuur ons een WhatsApp bericht →",
+  "contact.lang.label":"Wij spreken","contact.langs":"Nederlands · Frans · Engels · Duits",
+  "contact.addr.label":"Adressen","contact.response":"We antwoorden doorgaans binnen de 4 uur.",
+  "form.name":"Naam","form.email":"E-mail","form.which":"Welk verblijf","form.both":"Geen voorkeur / beide",
+  "form.dates":"Gewenste data","form.persons":"Aantal personen","form.phone":"Telefoon (optioneel)",
+  "form.message":"Bericht","form.submit":"Bericht versturen","form.note":"Geen spam. Uw gegevens worden nooit gedeeld.",
+  "cta.label":"Reserveer vandaag","cta.title":"Klaar voor uw Oostende-escape?",
+  "cta.desc":"Kies uw verblijf en bekijk de beschikbaarheid. Wilt u eerst meer weten? We helpen u graag persoonlijk verder.",
+  "cta.hoeve":"Boek t'Hoeveke →","cta.zee":"Boek La Brise et La Mer →","cta.contact":"Stel een vraag",
+  "footer.tagline":"Twee unieke verblijven aan de Belgische kust — van het authentieke Stene tot het frontale zeezicht op de Zeedijk van Mariakerke.",
+  "footer.h.rentals":"Verblijven","footer.h.info":"Informatie","footer.h.contact":"Contact",
+  "footer.gallery":"Galerij","footer.availability":"Beschikbaarheid","footer.location":"Locatie & bereikbaarheid",
+  "footer.facilities":"Faciliteiten","footer.rules":"Huisregels","footer.phone":"+32 (0)__ __ __ __",
+  "footer.privacy":"Privacybeleid","footer.cookies":"Cookiebeleid","footer.terms":"Algemene voorwaarden",
+  "cookie.text":"Wij gebruiken cookies om uw bezoek te verbeteren en anonieme statistieken bij te houden.","cookie.decline":"Weigeren","cookie.accept":"Aanvaarden"
+},
+fr:{
+  "nav.rentals":"Logements","nav.gallery":"Galerie","nav.info":"Infos","nav.faq":"FAQ","nav.book":"Réserver","nav.contact":"Contact",
+  "nav.bookHoeve":"Réserver Hoeve","nav.bookSea":"Réserver Mer",
+  "hero.hoeve.location":"Stene · Ostende","hero.hoeve.tagline":"Rural & authentique",
+  "hero.hoeve.desc":"Un appartement de ferme plein de caractère dans le village historique de Stene. Entouré de polders, à 10 minutes de la mer.",
+  "hero.hoeve.cta":"Découvrir la ferme",
+  "hero.zee.location":"Digue 170 · Mariakerke, Ostende","hero.zee.tagline":"La mer devant votre porte",
+  "hero.zee.desc":"Se réveiller avec la mer du Nord en vue. Vue frontale sur la mer depuis chaque fenêtre sur la digue de Mariakerke.",
+  "hero.zee.cta":"Découvrir l'appartement",
+  "stats.rentals":"Hébergements uniques","stats.score":"Score moyen des voyageurs","stats.beach":"De la plage & du centre","stats.langs":"Langues parlées",
+  "story.eyebrow":"Notre histoire","story.title":"Deux visages d'Ostende, un même hôte",
+  "story.p1":"Ostende est plus qu'une station balnéaire. C'est aussi Stene: un village pittoresque et historique à seulement 10 minutes de la plage et du centre. Ici se trouve t'Hoeveke — un appartement de ferme chaleureux et authentique, entouré de polders.",
+  "story.p2":"Et puis il y a la digue de Mariakerke. Au numéro 170 se trouve La Brise et La Mer: un appartement moderne et élégant où la mer du Nord est littéralement à votre fenêtre. Vue frontale sur la mer, chaque matin.",
+  "story.quote":"\"Choisissez votre Ostende — la mer ou le silence, ou les deux.\"",
+  "props.eyebrow":"Nos hébergements","props.title":"Deux mondes, une destination",
+  "hoeve.type":"t'Hoeveke · Stene-Dorpstraat 36, Stene","hoeve.title":"Appartement de ferme authentique dans la verdure",
+  "hoeve.desc":"Un appartement de vacances chaleureux dans le village tranquille de Stene. Dehors, vous vous promenez dans les polders; dedans, vous profitez d'espaces généreux et d'un jardin privé. À 10 minutes de vélo de la plage.",
+  "hoeve.tag1":"4 personnes","hoeve.tag2":"2 chambres","hoeve.tag3":"Jardin privé","hoeve.tag4":"Parking gratuit","hoeve.tag5":"Cuisine complète","hoeve.tag6":"10 min. de la plage",
+  "zee.type":"La Brise et La Mer · Digue 170, Mariakerke","zee.title":"Vue frontale sur la mer",
+  "zee.desc":"La mer du Nord est votre paysage, la plage votre jardin. Cet appartement élégamment meublé sur la digue de Mariakerke offre une vue panoramique depuis chaque fenêtre. Noté 9.2 par les clients sur Booking.com.",
+  "zee.tag1":"2 personnes","zee.tag2":"1 chambre","zee.tag3":"Vue frontale mer","zee.tag4":"Terrasse","zee.tag5":"Cuisine complète","zee.tag6":"Note 9.2 ★",
+  "prop.cta":"Voir les disponibilités","prop.photos":"Voir les photos",
+  "cont.hoeve.tag":"t'Hoeveke · Stene","cont.hoeve.title":"Calme, nature\net authenticité",
+  "cont.hoeve.desc":"Stene est un joyau caché d'Ostende. Assez loin de l'agitation, assez proche de tout ce que la côte a à offrir.",
+  "cont.hoeve.li1":"Appartement de ferme plein de caractère","cont.hoeve.li2":"Jardin vert & espace extérieur privé","cont.hoeve.li3":"Parking gratuit sur terrain privé","cont.hoeve.li4":"Promenades dans les polders à la porte","cont.hoeve.li5":"Routes cyclables vers la mer & le centre","cont.hoeve.li6":"Idéal pour familles & groupes",
+  "cont.hoeve.cta":"Réserver t'Hoeveke →",
+  "cont.zee.tag":"La Brise et La Mer · Mariakerke","cont.zee.title":"Mer, vent\net horizon pur",
+  "cont.zee.desc":"Se réveiller avec la mer du Nord sous les yeux. Entendre les vagues pendant le petit-déjeuner. Sentir le vent sur la terrasse. C'est l'Ostende que vous n'oublierez pas.",
+  "cont.zee.li1":"Directement sur la digue de Mariakerke","cont.zee.li2":"Vue frontale sur la mer depuis chaque fenêtre","cont.zee.li3":"Plage à 30 secondes","cont.zee.li4":"Moderne & entièrement rénové","cont.zee.li5":"Wifi rapide & cuisine entièrement équipée","cont.zee.li6":"Note 9.2/10 sur Booking.com",
+  "cont.zee.cta":"Réserver La Brise et La Mer →",
+  "gallery.eyebrow":"Galerie","gallery.title":"Jetez un œil à l'intérieur","gallery.all":"Toutes les photos","gallery.hoeve":"t'Hoeveke","gallery.zee":"La Brise et La Mer","gallery.note":"Photos réelles à venir après séance photo",
+  "gal.h1":"t'Hoeveke · Séjour","gal.z1":"La Brise · Vue mer","gal.z2":"La Brise · Cuisine","gal.h2":"t'Hoeveke · Chambre","gal.z3":"La Brise · Chambre","gal.h3":"t'Hoeveke · Jardin","gal.h4":"t'Hoeveke · Cuisine","gal.z4":"La Brise · Terrasse",
+  "info.eyebrow":"Ce qui vous attend","info.title":"Soigné dans les moindres détails",
+  "info.i1.t":"Lits frais & linge","info.i1.p":"Linge de qualité, lits faits et serviettes propres à l'arrivée. Coussins et couvertures supplémentaires dans l'armoire.",
+  "info.i2.t":"Cadeau de bienvenue","info.i2.p":"Café, thé, sucre et lait prêts. Une petite attention de la maison vous attend dans le réfrigérateur.",
+  "info.i3.t":"Check-in sans contact","info.i3.p":"Code d'accès numérique ou boîte à clés — arrivez à l'heure qui vous convient, 24h/24.",
+  "info.i4.t":"Wifi rapide","info.i4.p":"Fibre optique dans les deux logements — idéal pour une journée de télétravail sur la terrasse ou une soirée cinéma.",
+  "info.i5.t":"Conseils locaux","info.i5.p":"Un carnet personnel avec nos restaurants, promenades et adresses préférées à Ostende.",
+  "info.i6.t":"Animaux bienvenus*","info.i6.p":"Chiens bienvenus à t'Hoeveke (avec accord préalable). À La Brise et La Mer, animaux non admis.",
+  "info.i7.t":"Familial","info.i7.p":"Lit bébé, chaise haute et vaisselle enfant sur demande, sans supplément.",
+  "info.i8.t":"Toujours joignable","info.i8.p":"Via WhatsApp, téléphone ou e-mail. En néerlandais, français, anglais ou allemand.",
+  "compare.title":"Quel hébergement vous correspond?","compare.feature":"Caractéristique",
+  "cmp.1":"Personnes max.","cmp.2":"Chambres","cmp.3":"Vue sur la mer","cmp.4":"Jardin / extérieur","cmp.5":"Parking gratuit","cmp.6":"Animaux","cmp.7":"Plage à 30 sec.","cmp.8":"10 min. du centre","cmp.9":"Terrasse","cmp.10":"Wifi",
+  "rev.eyebrow":"Ce que disent les clients","rev.title":"Expériences réelles, vraies personnes",
+  "rev.r1.text":"\"Accueil chaleureux, emplacement idéal dans un coin tranquille d'Ostende. Parfait pour un week-end à vélo dans les polders. La maison a une vraie âme.\"",
+  "rev.r2.text":"\"Super bel appartement avec tout ce qu'il faut ! Très propre, très accueillant, et ce jardin est un cadeau. À recommander absolument pour les familles.\"",
+  "rev.r3.text":"\"The view is simply spectacular. Right on the seafront, couldn't be better. The apartment is clean, stylish and the host is incredibly helpful.\"",
+  "loc.eyebrow":"Où nous trouver?","loc.title":"Ostende, la Reine des Plages",
+  "loc.p1":"t'Hoeveke est situé dans le village historique de Stene, le côté vert et calme d'Ostende. À 10 minutes à vélo de la plage et du centre, avec des promenades dans les polders à la porte.",
+  "loc.p2":"La Brise et La Mer est au Zeedijk 170 à Mariakerke. La plage, le tram et le centre sont à distance de marche de cet appartement avec vue frontale sur la mer.",
+  "loc.f1":"Plage & centre (Ferme)","loc.f2":"Jusqu'à la plage (Digue)","loc.f3":"Parking chez t'Hoeveke","loc.f4":"Langues disponibles","loc.cta":"Nous contacter",
+  "faq.eyebrow":"FAQ","faq.title":"Questions fréquentes",
+  "faq.q1":"Comment se passe le check-in?","faq.a1":"Vous recevrez quelques jours avant un code d'accès personnel ou l'emplacement de la boîte à clés. Check-in 24h/24, sans attendre personne.",
+  "faq.q2":"Quel linge et quelles serviettes sont fournis?","faq.a2":"Tous les lits sont faits à l'arrivée. Serviettes et linge de cuisine inclus. Serviettes de plage à La Brise et La Mer.",
+  "faq.q3":"Les animaux sont-ils acceptés?","faq.a3":"Chiens bienvenus à t'Hoeveke (accord préalable requis). Non admis à La Brise et La Mer.",
+  "faq.q4":"Y a-t-il un parking?","faq.a4":"t'Hoeveke: parking gratuit sur place. La Brise: stationnement payant en rue et parking de quartier à distance de marche.",
+  "faq.q5":"Comment annuler ma réservation?","faq.a5":"Conditions d'annulation selon le canal et la période. Le plus flexible via Booking.com. Réservations directes: conditions équitables, voir e-mail de confirmation.",
+  "faq.q6":"Meilleure période pour visiter Ostende?","faq.a6":"Ouvert toute l'année. Été animé, intersaisons calmes. Hiver: plages désertes et feu dans la cheminée.",
+  "faq.q7":"Le petit-déjeuner est-il inclus?","faq.a7":"Non. Appartements autonomes avec cuisine équipée. Café, thé et surprise de bienvenue sont toujours là. Nous partageons nos adresses préférées.",
+  "faq.q8":"Puis-je demander un lit bébé?","faq.a8":"Oui, lit bébé et chaise haute gratuits sur simple demande. Mentionnez-le à la réservation.",
+  "faq.q9":"À quelle distance se trouve le centre?","faq.a9":"La Brise: 20 min. à pied le long de la digue ou en tram. t'Hoeveke: 10 min. à vélo via les routes des polders.",
+  "faq.q10":"Réserver les deux logements ensemble?","faq.a10":"Oui! Offre spéciale pour réservation simultanée des deux. Contactez-nous pour un devis.",
+  "book.eyebrow":"Réserver","book.title":"Choisissez votre séjour & réservez",
+  "book.subtitle":"Réservez via Booking.com, Airbnb ou directement. Tous les calendriers synchronisés via Lodgify.",
+  "book.hoeve.desc":"L'appartement de ferme champêtre pour familles et amis. Jardin, parking et calme des polders inclus.",
+  "book.zee.desc":"L'appartement élégant avec vue mer pour couples. Vue frontale sur la mer du Nord, 30 sec. de la plage.",
+  "book.ch.flexible":"Annulation flexible","book.ch.reviews":"Avis voyageurs inclus","book.ch.best":"Meilleur prix · sans commission",
+  "book.direct":"Réservation directe","book.soon":"Bientôt",
+  "lodgify.title":"Widget de disponibilité Lodgify","lodgify.desc":"Le calendrier de réservation en temps réel sera placé ici dès que l'intégration Lodgify sera configurée.",
+  "contact.eyebrow":"Contact","contact.title":"Posez votre question ou réservez directement",
+  "contact.info.eyebrow":"Nos coordonnées","contact.email":"E-mail","contact.phone":"Téléphone",
+  "contact.whatsapp":"WhatsApp","contact.wa.label":"Envoyez-nous un message WhatsApp →",
+  "contact.lang.label":"Nous parlons","contact.langs":"Néerlandais · Français · Anglais · Allemand",
+  "contact.addr.label":"Adresses","contact.response":"Nous répondons généralement en 4 heures.",
+  "form.name":"Nom","form.email":"E-mail","form.which":"Quel logement","form.both":"Aucune préférence / les deux",
+  "form.dates":"Dates souhaitées","form.persons":"Nombre de personnes","form.phone":"Téléphone (optionnel)",
+  "form.message":"Message","form.submit":"Envoyer le message","form.note":"Pas de spam. Vos données ne sont jamais partagées.",
+  "cta.label":"Réservez aujourd'hui","cta.title":"Prêt pour votre escapade à Ostende?",
+  "cta.desc":"Choisissez votre séjour et consultez les disponibilités. Vous souhaitez d'abord plus d'informations? Nous vous aidons volontiers.",
+  "cta.hoeve":"Réserver t'Hoeveke →","cta.zee":"Réserver La Brise et La Mer →","cta.contact":"Poser une question",
+  "footer.tagline":"Deux hébergements uniques sur la côte belge — de l'authentique Stene à la vue frontale sur la mer à Mariakerke.",
+  "footer.h.rentals":"Hébergements","footer.h.info":"Informations","footer.h.contact":"Contact",
+  "footer.gallery":"Galerie","footer.availability":"Disponibilité","footer.location":"Localisation & accès",
+  "footer.facilities":"Équipements","footer.rules":"Règlement","footer.phone":"+32 (0)__ __ __ __",
+  "footer.privacy":"Politique de confidentialité","footer.cookies":"Politique cookies","footer.terms":"Conditions générales",
+  "cookie.text":"Nous utilisons des cookies pour améliorer votre visite et suivre des statistiques anonymes.","cookie.decline":"Refuser","cookie.accept":"Accepter"
+},
+en:{
+  "nav.rentals":"Rentals","nav.gallery":"Gallery","nav.info":"Info","nav.faq":"FAQ","nav.book":"Book","nav.contact":"Contact",
+  "nav.bookHoeve":"Book Farmhouse","nav.bookSea":"Book Seafront",
+  "hero.hoeve.location":"Stene · Ostend","hero.hoeve.tagline":"Rural & authentic",
+  "hero.hoeve.desc":"A characterful farmhouse apartment in the historic village of Stene. Surrounded by green polders, 10 minutes from the sea.",
+  "hero.hoeve.cta":"Discover the farmhouse",
+  "hero.zee.location":"Seafront 170 · Mariakerke, Ostend","hero.zee.tagline":"The sea at your doorstep",
+  "hero.zee.desc":"Wake up to the North Sea as your view. Frontal sea view from every window on the Mariakerke seafront.",
+  "hero.zee.cta":"Discover the apartment",
+  "stats.rentals":"Unique rentals","stats.score":"Average guest score","stats.beach":"From beach & centre","stats.langs":"Languages spoken",
+  "story.eyebrow":"Our story","story.title":"Two faces of Ostend, one host",
+  "story.p1":"Ostend is more than a seaside town. It's also Stene: a picturesque, historic village just 10 minutes from the beach and city centre. This is where t'Hoeveke stands — a warm and authentic farmhouse apartment, surrounded by polders.",
+  "story.p2":"And then there's the seafront at Mariakerke. Number 170 is where La Brise et La Mer welcomes you: a modern, stylish apartment where the North Sea is literally at your window. Frontal sea views, every morning.",
+  "story.quote":"\"Choose your own Ostend — the sea or the silence, or both.\"",
+  "props.eyebrow":"Our rentals","props.title":"Two worlds, one destination",
+  "hoeve.type":"t'Hoeveke · Stene-Dorpstraat 36, Stene","hoeve.title":"Authentic farmhouse apartment in the countryside",
+  "hoeve.desc":"A warm and characterful holiday apartment in the quiet village of Stene. Outside you walk through polders; inside you enjoy generous space and a private outdoor area. 10 minutes by bike to the beach.",
+  "hoeve.tag1":"4 guests","hoeve.tag2":"2 bedrooms","hoeve.tag3":"Private garden","hoeve.tag4":"Free parking","hoeve.tag5":"Full kitchen","hoeve.tag6":"10 min. from beach",
+  "zee.type":"La Brise et La Mer · Seafront 170, Mariakerke","zee.title":"Frontal sea view on the seafront",
+  "zee.desc":"The North Sea is your view, the beach your front yard. This elegantly furnished apartment on the Mariakerke seafront offers panoramic sea views from every window. Rated 9.2 on Booking.com.",
+  "zee.tag1":"2 guests","zee.tag2":"1 bedroom","zee.tag3":"Frontal sea view","zee.tag4":"Terrace","zee.tag5":"Full kitchen","zee.tag6":"Score 9.2 ★",
+  "prop.cta":"Check availability","prop.photos":"View photos",
+  "cont.hoeve.tag":"t'Hoeveke · Stene","cont.hoeve.title":"Peace, nature\nand authenticity",
+  "cont.hoeve.desc":"Stene is a hidden gem of Ostend. Far enough from the crowds, close enough to everything the coast has to offer.",
+  "cont.hoeve.li1":"Characterful farmhouse apartment","cont.hoeve.li2":"Green garden & private outdoor space","cont.hoeve.li3":"Free parking on private grounds","cont.hoeve.li4":"Polder walks at the doorstep","cont.hoeve.li5":"Cycle routes to the sea & centre","cont.hoeve.li6":"Ideal for families & groups",
+  "cont.hoeve.cta":"Book t'Hoeveke →",
+  "cont.zee.tag":"La Brise et La Mer · Mariakerke","cont.zee.title":"Sea, wind\nand pure horizon",
+  "cont.zee.desc":"Wake up with the North Sea before your eyes. Hear the waves over breakfast. Feel the wind on the terrace. This is the Ostend you won't forget.",
+  "cont.zee.li1":"Right on the Mariakerke seafront","cont.zee.li2":"Frontal sea views from every window","cont.zee.li3":"Beach 30 seconds away","cont.zee.li4":"Modern & fully renovated","cont.zee.li5":"Fast wifi & fully equipped kitchen","cont.zee.li6":"Score 9.2/10 on Booking.com",
+  "cont.zee.cta":"Book La Brise et La Mer →",
+  "gallery.eyebrow":"Gallery","gallery.title":"Take a look inside","gallery.all":"All photos","gallery.hoeve":"t'Hoeveke","gallery.zee":"La Brise et La Mer","gallery.note":"Real photos coming after photo shoot",
+  "gal.h1":"t'Hoeveke · Living room","gal.z1":"La Brise · Sea view","gal.z2":"La Brise · Kitchen","gal.h2":"t'Hoeveke · Bedroom","gal.z3":"La Brise · Bedroom","gal.h3":"t'Hoeveke · Garden","gal.h4":"t'Hoeveke · Kitchen","gal.z4":"La Brise · Terrace",
+  "info.eyebrow":"What to expect","info.title":"Cared for down to the last detail",
+  "info.i1.t":"Fresh beds & linen","info.i1.p":"Quality linen, made-up beds and clean towels on arrival. Extra pillows and blankets in the wardrobe.",
+  "info.i2.t":"Welcome gift","info.i2.p":"Coffee, tea, sugar and milk ready. A small gift from the house awaits you in the fridge.",
+  "info.i3.t":"Contactless check-in","info.i3.p":"Digital access code or key safe — arrive whenever suits you, 24/7.",
+  "info.i4.t":"Fast wifi","info.i4.p":"Fibre internet in both rentals — ideal for a workday on the terrace or a movie night.",
+  "info.i5.t":"Local tips","info.i5.p":"A personal booklet with our favourite restaurants, walks and addresses in Ostend.",
+  "info.i6.t":"Pets welcome*","info.i6.p":"Dogs welcome at t'Hoeveke (on request). At La Brise et La Mer pets are not permitted.",
+  "info.i7.t":"Family-friendly","info.i7.p":"Baby cot, high chair and children's tableware available on request, at no extra cost.",
+  "info.i8.t":"Always reachable","info.i8.p":"Via WhatsApp, phone or email. In Dutch, French, English or German.",
+  "compare.title":"Which rental suits you?","compare.feature":"Feature",
+  "cmp.1":"Max. guests","cmp.2":"Bedrooms","cmp.3":"Sea view","cmp.4":"Garden / outdoor","cmp.5":"Free parking","cmp.6":"Pets allowed","cmp.7":"Beach 30 sec.","cmp.8":"10 min. from centre","cmp.9":"Terrace","cmp.10":"Wifi",
+  "rev.eyebrow":"What guests say","rev.title":"Real experiences, real people",
+  "rev.r1.text":"\"Great welcome, ideal location in a quiet corner of Ostend. Perfect for a cycling weekend through the polders. The house has a real soul.\"",
+  "rev.r2.text":"\"Fantastic apartment with everything you need! Very clean, very friendly, and the garden is a treat. Absolute must for families.\"",
+  "rev.r3.text":"\"The view is simply spectacular. Right on the seafront, couldn't be better. The apartment is clean, stylish and the host is incredibly helpful.\"",
+  "loc.eyebrow":"Where to find us","loc.title":"Ostend, Queen of the Seaside Resorts",
+  "loc.p1":"t'Hoeveke is in the historic village of Stene, the green and quiet side of Ostend. 10 minutes by bike from the beach and centre, with polder walks at the door.",
+  "loc.p2":"La Brise et La Mer is at Seafront 170 in Mariakerke. The beach, the tram and the city centre are all within walking distance of this frontal sea view apartment.",
+  "loc.f1":"Beach & centre (Farmhouse)","loc.f2":"To the beach (Seafront)","loc.f3":"Parking at t'Hoeveke","loc.f4":"Languages available","loc.cta":"Contact us",
+  "faq.eyebrow":"FAQ","faq.title":"Frequently asked questions",
+  "faq.q1":"How does check-in work?","faq.a1":"A few days before arrival you'll receive a personal access code or the location of the key safe. Check in 24/7, no waiting.",
+  "faq.q2":"What linen and towels are provided?","faq.a2":"All beds are made on arrival. Towels and kitchen linen included. Beach towels at La Brise et La Mer.",
+  "faq.q3":"Are pets allowed?","faq.a3":"Dogs welcome at t'Hoeveke (prior agreement required). Not permitted at La Brise et La Mer.",
+  "faq.q4":"Is parking available?","faq.a4":"t'Hoeveke: free parking on-site. La Brise: paid street parking and neighbourhood car park within walking distance.",
+  "faq.q5":"How do I cancel my booking?","faq.a5":"Cancellation terms depend on the channel and period. Most flexible via Booking.com. Direct bookings: fair terms, see confirmation email.",
+  "faq.q6":"Best time to visit Ostend?","faq.a6":"Open year-round. Summer lively; shoulder seasons peaceful with gentle sea breezes. Winter: empty beaches and a crackling fireplace.",
+  "faq.q7":"Is breakfast included?","faq.a7":"No. Self-catering apartments with full kitchen. Coffee, tea and a welcome surprise always ready. We share our favourite breakfast spots.",
+  "faq.q8":"Can I request a baby cot?","faq.a8":"Yes, baby cot and high chair available free on request. Mention it at booking.",
+  "faq.q9":"How far is the city centre?","faq.a9":"La Brise: 20 min. walk along the seafront or by tram. t'Hoeveke: 10 min. by bike via polder routes.",
+  "faq.q10":"Book both rentals together?","faq.a10":"Absolutely! Special deal for simultaneous bookings. Contact us for a quote.",
+  "book.eyebrow":"Book","book.title":"Choose your stay & book",
+  "book.subtitle":"Book via Booking.com, Airbnb or directly with us. All calendars synchronised via Lodgify.",
+  "book.hoeve.desc":"The rural farmhouse apartment for families and friends. Garden, parking and polder peace included.",
+  "book.zee.desc":"The stylish sea view apartment for couples. Frontal North Sea views, 30 sec. from the beach.",
+  "book.ch.flexible":"Flexible cancellation","book.ch.reviews":"Incl. guest reviews","book.ch.best":"Best price · no commission",
+  "book.direct":"Book directly","book.soon":"Coming soon",
+  "lodgify.title":"Lodgify availability widget","lodgify.desc":"The real-time booking calendar will be placed here once the Lodgify integration is configured.",
+  "contact.eyebrow":"Contact","contact.title":"Ask a question or book directly",
+  "contact.info.eyebrow":"Our details","contact.email":"Email","contact.phone":"Phone",
+  "contact.whatsapp":"WhatsApp","contact.wa.label":"Send us a WhatsApp message →",
+  "contact.lang.label":"We speak","contact.langs":"Dutch · French · English · German",
+  "contact.addr.label":"Addresses","contact.response":"We typically respond within 4 hours.",
+  "form.name":"Name","form.email":"Email","form.which":"Which rental","form.both":"No preference / both",
+  "form.dates":"Preferred dates","form.persons":"Number of guests","form.phone":"Phone (optional)",
+  "form.message":"Message","form.submit":"Send message","form.note":"No spam. Your data is never shared.",
+  "cta.label":"Book today","cta.title":"Ready for your Ostend escape?",
+  "cta.desc":"Choose your rental and check availability. Want to know more first? We're happy to help personally.",
+  "cta.hoeve":"Book t'Hoeveke →","cta.zee":"Book La Brise et La Mer →","cta.contact":"Ask a question",
+  "footer.tagline":"Two unique stays on the Belgian coast — from authentic Stene to frontal sea views on the Mariakerke seafront.",
+  "footer.h.rentals":"Rentals","footer.h.info":"Information","footer.h.contact":"Contact",
+  "footer.gallery":"Gallery","footer.availability":"Availability","footer.location":"Location & directions",
+  "footer.facilities":"Facilities","footer.rules":"House rules","footer.phone":"+32 (0)__ __ __ __",
+  "footer.privacy":"Privacy policy","footer.cookies":"Cookie policy","footer.terms":"Terms & conditions",
+  "cookie.text":"We use cookies to improve your visit and track anonymous statistics.","cookie.decline":"Decline","cookie.accept":"Accept"
+},
+de:{
+  "nav.rentals":"Unterkünfte","nav.gallery":"Galerie","nav.info":"Info","nav.faq":"FAQ","nav.book":"Buchen","nav.contact":"Kontakt",
+  "nav.bookHoeve":"Hof buchen","nav.bookSea":"Meerblick buchen",
+  "hero.hoeve.location":"Stene · Ostende","hero.hoeve.tagline":"Ländlich & authentisch",
+  "hero.hoeve.desc":"Ein charaktervolles Hofappartement im historischen Dorf Stene. Von grünen Poldern umgeben, 10 Minuten vom Meer entfernt.",
+  "hero.hoeve.cta":"Den Hof entdecken",
+  "hero.zee.location":"Strandpromenade 170 · Mariakerke, Ostende","hero.zee.tagline":"Das Meer vor Ihrer Tür",
+  "hero.zee.desc":"Mit der Nordsee als Ausblick aufwachen. Frontaler Meerblick aus jedem Fenster auf der Promenade von Mariakerke.",
+  "hero.zee.cta":"Die Wohnung entdecken",
+  "stats.rentals":"Einzigartige Unterkünfte","stats.score":"Durchschnittliche Gästebewertung","stats.beach":"Von Strand & Zentrum","stats.langs":"Gesprochene Sprachen",
+  "story.eyebrow":"Unsere Geschichte","story.title":"Zwei Gesichter von Ostende, ein Gastgeber",
+  "story.p1":"Ostende ist mehr als ein Badeort. Es ist auch Stene: ein malerisches, historisches Dorf nur 10 Minuten von Strand und Zentrum entfernt. Hier steht t'Hoeveke — ein warmes und authentisches Hofappartement, umgeben von Poldern.",
+  "story.p2":"Und dann gibt es die Strandpromenade von Mariakerke. Nummer 170 ist der Ort, wo La Brise et La Mer Sie begrüßt: eine moderne, elegante Wohnung, in der die Nordsee buchstäblich vor Ihrem Fenster liegt.",
+  "story.quote":"\"Wählen Sie Ihr eigenes Ostende — das Meer oder die Stille, oder beides.\"",
+  "props.eyebrow":"Unsere Unterkünfte","props.title":"Zwei Welten, ein Reiseziel",
+  "hoeve.type":"t'Hoeveke · Stene-Dorpstraat 36, Stene","hoeve.title":"Authentisches Hofappartement im Grünen",
+  "hoeve.desc":"Ein warmes Ferienapartment im ruhigen Dorf Stene. Draußen spazieren Sie durch Polder; drinnen genießen Sie großzügigen Raum und eigenen Außenbereich. 10 Minuten mit dem Rad zum Strand.",
+  "hoeve.tag1":"4 Personen","hoeve.tag2":"2 Schlafzimmer","hoeve.tag3":"Privater Garten","hoeve.tag4":"Kostenloser Parkplatz","hoeve.tag5":"Vollküche","hoeve.tag6":"10 Min. vom Strand",
+  "zee.type":"La Brise et La Mer · Promenade 170, Mariakerke","zee.title":"Frontaler Meerblick auf der Promenade",
+  "zee.desc":"Die Nordsee ist Ihr Ausblick, der Strand Ihr Vorgarten. Diese elegant eingerichtete Wohnung an der Promenade von Mariakerke bietet aus jedem Fenster Panoramablick auf das Meer. Auf Booking.com mit 9.2 bewertet.",
+  "zee.tag1":"2 Personen","zee.tag2":"1 Schlafzimmer","zee.tag3":"Frontaler Meerblick","zee.tag4":"Terrasse","zee.tag5":"Vollküche","zee.tag6":"Note 9.2 ★",
+  "prop.cta":"Verfügbarkeit prüfen","prop.photos":"Fotos ansehen",
+  "cont.hoeve.tag":"t'Hoeveke · Stene","cont.hoeve.title":"Ruhe, Natur\nund Authentizität",
+  "cont.hoeve.desc":"Stene ist ein verborgenes Juwel von Ostende. Weit genug vom Trubel, nah genug an allem, was die Küste zu bieten hat.",
+  "cont.hoeve.li1":"Charaktervolles Hofappartement","cont.hoeve.li2":"Grüner Garten & privater Außenbereich","cont.hoeve.li3":"Kostenloser Parkplatz auf eigenem Grund","cont.hoeve.li4":"Polderwanderungen direkt vor der Tür","cont.hoeve.li5":"Radrouten zum Meer & Zentrum","cont.hoeve.li6":"Ideal für Familien & Gruppen",
+  "cont.hoeve.cta":"t'Hoeveke buchen →",
+  "cont.zee.tag":"La Brise et La Mer · Mariakerke","cont.zee.title":"Meer, Wind\nund reiner Horizont",
+  "cont.zee.desc":"Mit der Nordsee vor Augen aufwachen. Die Wellen beim Frühstück hören. Den Wind auf der Terrasse spüren. Das ist das Ostende, das Sie nicht vergessen werden.",
+  "cont.zee.li1":"Direkt auf der Promenade Mariakerke","cont.zee.li2":"Frontaler Meerblick aus jedem Fenster","cont.zee.li3":"Strand 30 Sekunden entfernt","cont.zee.li4":"Modern & vollständig renoviert","cont.zee.li5":"Schnelles WLAN & vollausgestattete Küche","cont.zee.li6":"Note 9.2/10 auf Booking.com",
+  "cont.zee.cta":"La Brise et La Mer buchen →",
+  "gallery.eyebrow":"Galerie","gallery.title":"Werfen Sie einen Blick hinein","gallery.all":"Alle Fotos","gallery.hoeve":"t'Hoeveke","gallery.zee":"La Brise et La Mer","gallery.note":"Echte Fotos folgen nach dem Fotoshooting",
+  "gal.h1":"t'Hoeveke · Wohnzimmer","gal.z1":"La Brise · Meerblick","gal.z2":"La Brise · Küche","gal.h2":"t'Hoeveke · Schlafzimmer","gal.z3":"La Brise · Schlafzimmer","gal.h3":"t'Hoeveke · Garten","gal.h4":"t'Hoeveke · Küche","gal.z4":"La Brise · Terrasse",
+  "info.eyebrow":"Was Sie erwartet","info.title":"Bis ins letzte Detail gepflegt",
+  "info.i1.t":"Frische Betten & Wäsche","info.i1.p":"Qualitätswäsche, gemachte Betten und saubere Handtücher bei Ankunft. Zusätzliche Kissen und Decken im Schrank.",
+  "info.i2.t":"Willkommensgeschenk","info.i2.p":"Kaffee, Tee, Zucker und Milch bereit. Eine kleine Aufmerksamkeit des Hauses wartet im Kühlschrank.",
+  "info.i3.t":"Kontaktloses Einchecken","info.i3.p":"Digitaler Zugangscode oder Schlüsseltresor — kommen Sie wann es Ihnen passt, 24/7.",
+  "info.i4.t":"Schnelles WLAN","info.i4.p":"Glasfaser in beiden Unterkünften — ideal für einen Arbeitstag auf der Terrasse oder einen Filmabend.",
+  "info.i5.t":"Lokale Tipps","info.i5.p":"Ein persönliches Heft mit unseren Lieblingsrestaurants, Spaziergängen und Adressen in Ostende.",
+  "info.i6.t":"Haustiere willkommen*","info.i6.p":"Hunde willkommen bei t'Hoeveke (nach Absprache). Bei La Brise et La Mer nicht erlaubt.",
+  "info.i7.t":"Familienfreundlich","info.i7.p":"Babybett, Hochstuhl und Kindergeschirr auf Anfrage kostenlos.",
+  "info.i8.t":"Immer erreichbar","info.i8.p":"Via WhatsApp, Telefon oder E-Mail. Auf Niederländisch, Französisch, Englisch oder Deutsch.",
+  "compare.title":"Welche Unterkunft passt zu Ihnen?","compare.feature":"Merkmal",
+  "cmp.1":"Max. Personen","cmp.2":"Schlafzimmer","cmp.3":"Meerblick","cmp.4":"Garten / Außen","cmp.5":"Kostenloser Parkplatz","cmp.6":"Haustiere","cmp.7":"Strand 30 Sek.","cmp.8":"10 Min. vom Zentrum","cmp.9":"Terrasse","cmp.10":"WLAN",
+  "rev.eyebrow":"Was Gäste sagen","rev.title":"Echte Erfahrungen, echte Menschen",
+  "rev.r1.text":"\"Herzliche Begrüßung, perfekte Lage in einem ruhigen Winkel von Ostende. Ideal für ein Radwochenende durch die Polder. Das Haus hat eine echte Seele.\"",
+  "rev.r2.text":"\"Tolles Appartement mit allem was man braucht! Sehr sauber, sehr freundlich, und der Garten ist ein Geschenk. Absolute Empfehlung für Familien.\"",
+  "rev.r3.text":"\"The view is simply spectacular. Right on the seafront, couldn't be better. The apartment is clean, stylish and the host is incredibly helpful.\"",
+  "loc.eyebrow":"Wo finden Sie uns?","loc.title":"Ostende, die Königin der Seebäder",
+  "loc.p1":"t'Hoeveke liegt im historischen Dorf Stene, der grünen und ruhigen Seite Ostende's. 10 Minuten mit dem Rad von Strand und Zentrum, mit Polderwanderungen direkt vor der Tür.",
+  "loc.p2":"La Brise et La Mer befindet sich auf der Strandpromenade 170 in Mariakerke. Strand, Tram und Stadtzentrum sind zu Fuß von dieser Wohnung mit frontalem Meerblick erreichbar.",
+  "loc.f1":"Strand & Zentrum (Hof)","loc.f2":"Bis zum Strand (Promenade)","loc.f3":"Parkplatz bei t'Hoeveke","loc.f4":"Verfügbare Sprachen","loc.cta":"Uns kontaktieren",
+  "faq.eyebrow":"FAQ","faq.title":"Häufig gestellte Fragen",
+  "faq.q1":"Wie läuft der Check-in ab?","faq.a1":"Einige Tage vor Ankunft erhalten Sie einen persönlichen Zugangscode oder den Standort des Schlüsseltresors. Check-in 24/7, ohne auf jemanden zu warten.",
+  "faq.q2":"Welche Wäsche und Handtücher werden gestellt?","faq.a2":"Alle Betten sind bei Ankunft gemacht. Handtücher und Küchenwäsche inklusive. Strandtücher bei La Brise et La Mer.",
+  "faq.q3":"Sind Haustiere erlaubt?","faq.a3":"Hunde willkommen bei t'Hoeveke (vorherige Absprache erforderlich). Bei La Brise et La Mer nicht erlaubt.",
+  "faq.q4":"Gibt es Parkplätze?","faq.a4":"t'Hoeveke: kostenloser Parkplatz auf eigenem Grund. La Brise: kostenpflichtiges Straßenparken und Quartiersparkplatz in Gehweite.",
+  "faq.q5":"Wie storniere ich meine Buchung?","faq.a5":"Stornierungsbedingungen je nach Kanal und Zeitraum. Flexibelste Bedingungen via Booking.com. Direktbuchungen: faire Bedingungen, siehe Bestätigungs-E-Mail.",
+  "faq.q6":"Beste Zeit für Ostende?","faq.a6":"Ganzjährig geöffnet. Sommer lebhaft; Nebensaison ruhig mit sanften Meeresbrisen. Winter: leere Strände und ein knisternder Kamin.",
+  "faq.q7":"Ist Frühstück inbegriffen?","faq.a7":"Nein. Selbstversorger-Appartements mit Vollküche. Kaffee, Tee und Willkommensüberraschung immer bereit. Wir teilen unsere Lieblingsfrühstücksadressen.",
+  "faq.q8":"Kann ich ein Babybett anfordern?","faq.a8":"Ja, Babybett und Hochstuhl kostenlos auf einfache Anfrage. Bei Buchung angeben.",
+  "faq.q9":"Wie weit ist das Stadtzentrum?","faq.a9":"La Brise: 20 Min. Spaziergang entlang der Promenade oder mit Tram. t'Hoeveke: 10 Min. mit dem Rad über Polderrouten.",
+  "faq.q10":"Beide Unterkünfte zusammen buchen?","faq.a10":"Ja! Sonderangebot bei gleichzeitiger Buchung beider. Kontaktieren Sie uns für ein Angebot.",
+  "book.eyebrow":"Buchen","book.title":"Wählen Sie Ihren Aufenthalt & buchen",
+  "book.subtitle":"Buchen Sie über Booking.com, Airbnb oder direkt bei uns. Alle Kalender über Lodgify synchronisiert.",
+  "book.hoeve.desc":"Das ländliche Hofappartement für Familien und Freunde. Garten, Parkplatz und Polderruhe inklusive.",
+  "book.zee.desc":"Das elegante Meeresblick-Appartement für Paare. Frontaler Blick auf die Nordsee, 30 Sek. vom Strand.",
+  "book.ch.flexible":"Flexible Stornierung","book.ch.reviews":"Inkl. Gästebewertungen","book.ch.best":"Bester Preis · keine Provision",
+  "book.direct":"Direkt buchen","book.soon":"Demnächst",
+  "lodgify.title":"Lodgify Verfügbarkeits-Widget","lodgify.desc":"Der Echtzeit-Buchungskalender wird hier platziert, sobald die Lodgify-Integration konfiguriert ist.",
+  "contact.eyebrow":"Kontakt","contact.title":"Fragen stellen oder direkt buchen",
+  "contact.info.eyebrow":"Unsere Daten","contact.email":"E-Mail","contact.phone":"Telefon",
+  "contact.whatsapp":"WhatsApp","contact.wa.label":"WhatsApp-Nachricht senden →",
+  "contact.lang.label":"Wir sprechen","contact.langs":"Niederländisch · Französisch · Englisch · Deutsch",
+  "contact.addr.label":"Adressen","contact.response":"Wir antworten in der Regel innerhalb von 4 Stunden.",
+  "form.name":"Name","form.email":"E-Mail","form.which":"Welche Unterkunft","form.both":"Keine Präferenz / beide",
+  "form.dates":"Gewünschte Daten","form.persons":"Anzahl Personen","form.phone":"Telefon (optional)",
+  "form.message":"Nachricht","form.submit":"Nachricht senden","form.note":"Kein Spam. Ihre Daten werden nie weitergegeben.",
+  "cta.label":"Heute buchen","cta.title":"Bereit für Ihren Ostende-Ausflug?",
+  "cta.desc":"Wählen Sie Ihre Unterkunft und prüfen Sie die Verfügbarkeit. Möchten Sie zuerst mehr wissen? Wir helfen Ihnen gerne persönlich weiter.",
+  "cta.hoeve":"t'Hoeveke buchen →","cta.zee":"La Brise et La Mer buchen →","cta.contact":"Eine Frage stellen",
+  "footer.tagline":"Zwei einzigartige Unterkünfte an der belgischen Küste — vom authentischen Stene bis zum frontalen Meerblick in Mariakerke.",
+  "footer.h.rentals":"Unterkünfte","footer.h.info":"Informationen","footer.h.contact":"Kontakt",
+  "footer.gallery":"Galerie","footer.availability":"Verfügbarkeit","footer.location":"Lage & Anreise",
+  "footer.facilities":"Ausstattung","footer.rules":"Hausordnung","footer.phone":"+32 (0)__ __ __ __",
+  "footer.privacy":"Datenschutz","footer.cookies":"Cookie-Richtlinie","footer.terms":"AGB",
+  "cookie.text":"Wir verwenden Cookies, um Ihren Besuch zu verbessern und anonyme Statistiken zu erfassen.","cookie.decline":"Ablehnen","cookie.accept":"Akzeptieren"
+}
+};
+
+let currentLang = 'nl';
+function setLang(lang){
+  if(!DICT[lang]) return;
+  currentLang = lang;
+  document.documentElement.lang = lang;
+  const d = DICT[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k = el.getAttribute('data-i18n');
+    if(d[k] !== undefined) el.textContent = d[k];
+  });
+  document.querySelectorAll('.lang-switch button').forEach(b=>{
+    b.classList.toggle('active', b.getAttribute('data-lang')===lang);
+  });
+  try{ localStorage.setItem('lang',lang); }catch(e){}
+}
+document.querySelectorAll('.lang-switch button').forEach(b=>{
+  b.addEventListener('click',()=>setLang(b.getAttribute('data-lang')));
+});
+// Auto-detect saved lang
+try{
+  const saved = localStorage.getItem('lang');
+  if(saved && DICT[saved]) setLang(saved);
+}catch(e){}
+
+// Scrolled nav
+window.addEventListener('scroll',()=>{
+  document.getElementById('main-nav').classList.toggle('scrolled',window.scrollY>50);
+},{passive:true});
+
+// Mobile nav
+document.getElementById('mob-toggle').addEventListener('click',()=>{
+  document.getElementById('mobile-nav').classList.toggle('open');
+});
+document.querySelectorAll('.mobile-nav a').forEach(a=>{
+  a.addEventListener('click',()=>document.getElementById('mobile-nav').classList.remove('open'));
+});
+
+// Scroll reveal
+const obs = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+},{threshold:0.1});
+document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(el=>obs.observe(el));
+
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item = btn.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+    if(!wasOpen) item.classList.add('open');
+  });
+});
+
+// Gallery filter
+document.querySelectorAll('.gallery-filter button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.gallery-filter button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.getAttribute('data-gfilter');
+    document.querySelectorAll('.g-item').forEach(item=>{
+      item.style.display = (filter==='all' || item.getAttribute('data-gcat')===filter) ? '' : 'none';
+    });
+  });
+});
+
+// Contact form
+function handleForm(e){
+  e.preventDefault();
+  const btn = e.target.querySelector('[type="submit"]');
+  const orig = btn.textContent;
+  btn.textContent = '✓ Verstuurd!';
+  btn.style.background = '#2e7d32';
+  btn.disabled = true;
+  setTimeout(()=>{ btn.textContent=orig; btn.style.background=''; btn.disabled=false; e.target.reset(); },3000);
+}
+
+// Cookie
+(function(){
+  try{if(!localStorage.getItem('cv')){setTimeout(()=>document.getElementById('cookie').classList.add('show'),1400);}}catch(e){}
+})();
+function closeCookie(v){
+  try{localStorage.setItem('cv',v);}catch(e){}
+  document.getElementById('cookie').classList.remove('show');
+}
+
+// Footer year
+document.getElementById('fyear').textContent = new Date().getFullYear();
+
+// ======= CMS Data Loader =======
+// All editable content lives in _data/ — managed via /admin (Decap CMS)
+// Falls back gracefully to baked-in HTML if running offline
+
+async function loadSiteData() {
+
+  // 1. CONTACT INFO
+  try {
+    const res = await fetch('/_data/contact.json');
+    if (res.ok) {
+      const c = await res.json();
+      if (c.email) {
+        document.querySelectorAll('a[href^="mailto:"]').forEach(el => {
+          el.href = 'mailto:' + c.email;
+          if (!el.hasAttribute('data-i18n') && el.textContent.includes('@')) el.textContent = c.email;
+        });
+      }
+      if (c.phone) {
+        document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+          el.href = 'tel:' + c.phone.replace(/\s/g,'');
+          if (!el.hasAttribute('data-i18n')) el.textContent = c.phone;
+        });
+      }
+      if (c.whatsapp) {
+        document.querySelectorAll('a[href*="wa.me"]').forEach(el => {
+          el.href = 'https://wa.me/' + c.whatsapp.replace(/\D/g,'');
+        });
+      }
+      if (c.facebook && c.facebook.trim()) {
+        document.querySelectorAll('.social-link[aria-label="Facebook"]').forEach(el => {
+          el.href = c.facebook;
+        });
+      }
+      if (c.instagram && c.instagram.trim()) {
+        document.querySelectorAll('.social-link[aria-label="Instagram"]').forEach(el => {
+          el.href = c.instagram;
+        });
+      }
+    }
+  } catch(e) {}
+
+  // 2. BOOKING LINKS
+  try {
+    const res = await fetch('/_data/booking.json');
+    if (res.ok) {
+      const b = await res.json();
+      const activate = (selector, url) => {
+        if (!url || !url.trim()) return;
+        document.querySelectorAll(selector).forEach(el => {
+          el.href = url;
+          el.removeAttribute('onclick');
+          const badge = el.querySelector('.ch-best[data-i18n="book.soon"]');
+          if (badge) badge.remove();
+        });
+      };
+      activate('[data-booking="hoeve-booking"]', b.hoeve_booking);
+      activate('[data-booking="hoeve-airbnb"]', b.hoeve_airbnb);
+      activate('[data-booking="zee-booking"]', b.zee_booking);
+      activate('[data-booking="zee-airbnb"]', b.zee_airbnb);
+      // Lodgify widgets
+      if (b.lodgify_hoeve && b.lodgify_hoeve.trim()) {
+        const el = document.getElementById('lodgify-hoeve');
+        if (el) { el.className = ''; el.innerHTML = b.lodgify_hoeve; }
+      }
+      if (b.lodgify_zee && b.lodgify_zee.trim()) {
+        const el = document.getElementById('lodgify-zee');
+        if (el) { el.className = ''; el.innerHTML = b.lodgify_zee; }
+      }
+    }
+  } catch(e) {}
+
+  // 3. HERO & CARD PHOTOS
+  try {
+    const res = await fetch('/_data/photos.json');
+    if (res.ok) {
+      const p = await res.json();
+      if (p.hoeve_hero) {
+        const el = document.querySelector('.hoeve-half .hero-bg');
+        if (el) el.style.backgroundImage = "url('" + p.hoeve_hero + "')";
+      }
+      if (p.hoeve_card) {
+        const el = document.querySelector('#hoeveke .prop-img-wrap img');
+        if (el) el.src = p.hoeve_card;
+      }
+      if (p.zee_hero) {
+        const el = document.querySelector('.zee-half .hero-bg');
+        if (el) el.style.backgroundImage = "url('" + p.zee_hero + "')";
+      }
+      if (p.zee_card) {
+        const el = document.querySelector('#brise .prop-img-wrap img');
+        if (el) el.src = p.zee_card;
+      }
+    }
+  } catch(e) {}
+
+  // 4. REVIEWS
+  try {
+    const res = await fetch('/_data/reviews.json');
+    if (res.ok) {
+      const data = await res.json();
+      const items = data.items || data;
+      if (Array.isArray(items) && items.length) renderReviews(items);
+    }
+  } catch(e) {}
+
+  // 5. FAQ
+  try {
+    const res = await fetch('/_data/faq.json');
+    if (res.ok) {
+      const data = await res.json();
+      const items = Array.isArray(data) ? data : (data.items || []);
+      if (items.length) renderFaq(items);
+    }
+  } catch(e) {}
+}
+
+function renderReviews(items) {
+  const grid = document.getElementById('reviews-grid');
+  if (!grid) return;
+  const lang = currentLang || 'nl';
+  grid.innerHTML = items.map(r => {
+    const stars = '★'.repeat(Math.min(5, Math.max(1, r.stars || 5)));
+    const text = r['text_' + lang] || r.text_nl || r.text_en || '';
+    const badgeClass = r.property === 'hoeve' ? 'badge-h' : 'badge-s';
+    const badgeLabel = r.property === 'hoeve' ? "t'Hoeveke" : 'La Brise et La Mer';
+    return `<div class="review-card">
+      <div class="review-stars">${stars}</div>
+      <p class="review-text">"${text}"</p>
+      <span class="review-author">${r.author}&nbsp;<span class="review-badge ${badgeClass}">${badgeLabel}</span></span>
+    </div>`;
+  }).join('');
+}
+
+function renderFaq(items) {
+  const list = document.getElementById('faq-list');
+  if (!list) return;
+  const lang = currentLang || 'nl';
+  list.innerHTML = items.map(item => {
+    const q = item['q_' + lang] || item.q_nl || '';
+    const a = item['a_' + lang] || item.a_nl || '';
+    return `<div class="faq-item">
+      <button class="faq-q"><span>${q}</span><span class="faq-toggle">+</span></button>
+      <div class="faq-a"><p>${a}</p></div>
+    </div>`;
+  }).join('');
+  list.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const wasOpen = item.classList.contains('open');
+      list.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+}
+
+// Re-render FAQ in new language when user switches
+const origSetLang = setLang;
+window.setLang = function(lang) {
+  origSetLang(lang);
+  fetch('/_data/faq.json').then(r => r.ok ? r.json() : null).then(d => {
+    if (!d) return;
+    const items = Array.isArray(d) ? d : (d.items || []);
+    if (items.length) renderFaq(items);
+  }).catch(()=>{});
+  fetch('/_data/reviews.json').then(r => r.ok ? r.json() : null).then(d => {
+    if (!d) return;
+    const items = d.items || d;
+    if (Array.isArray(items) && items.length) renderReviews(items);
+  }).catch(()=>{});
+};
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', loadSiteData);
+
+// Netlify Identity redirect (required for CMS login)
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on('init', user => {
+    if (!user) {
+      window.netlifyIdentity.on('login', () => {
+        document.location.href = '/admin/';
+      });
+    }
+  });
+}
+</script>
+</body>
+</html>
