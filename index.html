@@ -337,7 +337,7 @@ img { display: block; max-width: 100%; }
 .hero-title {
   font-family: var(--serif);
   font-size: clamp(2.4rem, 4vw, 3.8rem);
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.0;
   letter-spacing: -0.01em;
   margin-bottom: 0.65rem;
@@ -951,8 +951,9 @@ footer {
   .hero-panel { min-height: 62vw; padding: 3rem 2rem 3.5rem; }
   .hero-divider { display: none; }
   .intro { grid-template-columns: 1fr; }
+  .intro-img:last-child { display: none; }
   .intro-img { min-height: 320px; }
-  .intro-text { padding: 4rem 2rem; }
+  .intro-text { padding: 4rem 2rem; text-align: center; }
   .cards { grid-template-columns: 1fr; padding: 0 1.5rem; gap: 2rem; }
   .gallery-grid {
     grid-template-columns: repeat(6, 1fr);
@@ -990,7 +991,8 @@ footer {
   </a>
 
   <ul class="nav-links">
-    <li><a href="woningen.html" data-i18n="nav.rentals">Woningen</a></li>
+    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+    <li><a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a></li>
     <li><a href="galerij.html" data-i18n="nav.gallery">Galerij</a></li>
     <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
     <li><a href="boeken.html" data-i18n="nav.book">Boeken</a></li>
@@ -1013,7 +1015,8 @@ footer {
 </nav>
 
 <div class="mobile-menu" id="mobile-menu">
-  <a href="woningen.html" data-i18n="nav.rentals">Woningen</a>
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a>
   <a href="galerij.html" data-i18n="nav.gallery">Galerij</a>
   <a href="faq.html" data-i18n="nav.faq">FAQ</a>
   <a href="boeken.html" data-i18n="nav.book">Boeken</a>
@@ -1036,7 +1039,7 @@ footer {
         <em data-i18n="hero.hoeve.sub">Landelijk &amp; authentiek</em>
       </h1>
       <p class="hero-desc" data-i18n="hero.hoeve.desc">
-        Een karaktervol vakantieappartement in het historische Stene — met SMEG-keuken, vrijstaande badkuip en een sfeervolle privétuin.
+        Een verblijf in Stene's oudste hoeve — met SMEG-keuken, vrijstaande badkuip en een sfeervolle privétuin.
       </p>
       <span class="hero-cta" data-i18n="hero.hoeve.cta">Ontdek Het Relax Hoeveke</span>
     </div>
@@ -1055,7 +1058,7 @@ footer {
         <em data-i18n="hero.zee.sub">De zee voor uw deur</em>
       </h1>
       <p class="hero-desc" data-i18n="hero.zee.desc">
-        Frontaal zeezicht vanuit elk raam. Wakker worden met de Noordzee als uitzicht op de Zeedijk van Mariakerke.
+        Wakker worden met de Noordzee als uitzicht. Rechtstreeks aan de Zeedijk van Mariakerke.
       </p>
       <span class="hero-cta" data-i18n="hero.zee.cta">Ontdek het appartement</span>
     </div>
@@ -1069,16 +1072,24 @@ footer {
      INTRO / VERHAAL
      ====================================================== -->
 <section class="intro">
+  <!-- Foto links — inschuiven van links -->
   <div class="intro-img reveal-l">
     <img src="images/hoeve-dining.jpg" alt="Het Relax Hoeveke interieur" loading="lazy"/>
   </div>
-  <div class="intro-text reveal-r">
+
+  <!-- Tekst midden -->
+  <div class="intro-text reveal">
     <div class="eyebrow" data-i18n="intro.eyebrow">Welkom</div>
     <h2 class="serif" data-i18n="intro.title">Twee adressen,<br><em>één onvergetelijke vakantie</em></h2>
-    <p data-i18n="intro.p1">Vlak aan de Noordzee of midden in de rust van de polders — bij ons kiest u bewust. <strong>La Brise et La Mer</strong> op de Zeedijk van Mariakerke biedt frontaal zeezicht en het ritme van de golven als decor.</p>
-    <p data-i18n="intro.p2"><strong>Het Relax Hoeveke</strong> in het historische Stene is heel anders: authentieke balken, een SMEG-keuken, een vrijstaande badkuip en een sfeervolle tuin. Allebei op 10 minuten van het centrum van Oostende.</p>
+    <p data-i18n="intro.p1">Vlak aan de Noordzee of in het historische Stene — bij ons kiest u bewust. <strong>La Brise et La Mer</strong> op de Zeedijk van Mariakerke biedt zeezicht en het ritme van de golven als decor.</p>
+    <p data-i18n="intro.p2"><strong>Het Relax Hoeveke</strong>, Stene's oudste hoevetje, is heel anders: authentieke balken, een SMEG-keuken, een vrijstaande badkuip en een sfeervolle tuin. Allebei op 10 minuten van het centrum van Oostende.</p>
     <div class="deco-line"></div>
     <p class="intro-quote" data-i18n="intro.quote">"Kies uw eigen Oostende — de zee of de stilte, of de twee samen."</p>
+  </div>
+
+  <!-- Foto rechts — inschuiven van rechts -->
+  <div class="intro-img reveal-r">
+    <img src="images/zee-hero.jpg" alt="La Brise et La Mer zeezicht" loading="lazy"/>
   </div>
 </section>
 
@@ -1111,7 +1122,7 @@ footer {
           <span class="tag" data-i18n="tag.parking">Gratis parking</span>
           <span class="tag">SMEG keuken</span>
           <span class="tag" data-i18n="tag.bathtub">Vrijst. badkuip</span>
-          <span class="tag">Score 8.4 ★</span>
+          <span class="tag">Score 9.2 ★</span>
         </div>
         <div class="card-actions">
           <a href="boeken.html#hoeveke" class="btn-primary" data-i18n="card.cta.book">Beschikbaarheid</a>
@@ -1130,14 +1141,14 @@ footer {
         <p class="card-type" data-i18n="card.zee.type">Appartement &middot; Zeedijk 170, Mariakerke</p>
         <h3 class="card-title">La Brise et La Mer</h3>
         <p class="card-addr">Zeedijk 170 &middot; Mariakerke, 8400 Oostende</p>
-        <p class="card-desc" data-i18n="card.zee.desc">Licht en modern appartement met frontaal zeezicht op de Zeedijk van Mariakerke. Het strand ligt 30 seconden van de voordeur. Gewaardeerd met 8.4/10 op Booking.com.</p>
+        <p class="card-desc" data-i18n="card.zee.desc">Licht en modern appartement met frontaal zeezicht op de Zeedijk van Mariakerke. Het strand ligt 30 seconden van de voordeur. Gewaardeerd met 8.9/10 op Booking.com.</p>
         <div class="card-tags">
           <span class="tag">2 pers.</span>
           <span class="tag">1 slpk.</span>
           <span class="tag" data-i18n="tag.seaview">Frontaal zeezicht</span>
           <span class="tag" data-i18n="tag.terrace">Terras</span>
           <span class="tag" data-i18n="tag.wifi">Gratis wifi</span>
-          <span class="tag">Score 9.2 ★</span>
+          <span class="tag">Score 8.9 ★</span>
         </div>
         <div class="card-actions">
           <a href="boeken.html#brise" class="btn-primary" data-i18n="card.cta.book">Beschikbaarheid</a>
@@ -1226,18 +1237,18 @@ footer {
   <div class="reviews-grid" id="reviews-grid">
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">"Fijne ontvangst, perfecte locatie in een stil hoekje van Oostende. Ideaal voor een fietsweekend door de polders. Het huisje heeft een echte ziel."</p>
-      <div class="review-meta">Johan &amp; Lies <span class="review-badge badge-h">Het Relax Hoeveke</span></div>
+      <p class="review-text">"Fantastisch verblijf! Het hoeveke is een prachtige, authentieke plek. Alles was tip-top in orde. De tuin is heerlijk rustig en de eigenaars zijn super vriendelijk. Zeker voor herhaling!"</p>
+      <div class="review-meta">Lore V. <span class="review-badge badge-h">Het Relax Hoeveke</span></div>
     </div>
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">"Super fijn appartement met alles wat je nodig hebt! Heel proper, heel vriendelijk, en die tuin is een cadeau. Absolute aanrader voor families."</p>
-      <div class="review-meta">Familie De Smedt <span class="review-badge badge-h">Het Relax Hoeveke</span></div>
+      <p class="review-text">"Geweldig appartement met een prachtig uitzicht op zee. Het appartement was netjes en goed uitgerust. De ligging is ideaal — het strand ligt pal voor de deur. Aanrader!"</p>
+      <div class="review-meta">Nathalie D. <span class="review-badge badge-s">La Brise et La Mer</span></div>
     </div>
     <div class="review-card">
       <div class="review-stars">★★★★★</div>
-      <p class="review-text">"The view is simply spectacular. Right on the seafront, couldn't be better. The apartment is clean, stylish and the host is incredibly helpful."</p>
-      <div class="review-meta">Michael &amp; Sarah <span class="review-badge badge-s">La Brise et La Mer</span></div>
+      <p class="review-text">"Très bel appartement, vue magnifique sur la mer. Très propre, bien équipé et idéalement situé. Hôte très sympathique et réactif. Nous reviendrons avec plaisir!"</p>
+      <div class="review-meta">Marie-Claire B. <span class="review-badge badge-s">La Brise et La Mer</span></div>
     </div>
   </div>
 </section>
@@ -1250,15 +1261,12 @@ footer {
     <div>
       <div class="footer-brand">Vakantiewoningen<br>in Oostende</div>
       <p class="footer-tagline" data-i18n="footer.tagline">Twee unieke verblijven aan de Belgische kust — Het Relax Hoeveke in het landelijke Stene en La Brise et La Mer op de Zeedijk van Mariakerke.</p>
-      <div class="footer-social">
-        <a href="#" class="social-btn" aria-label="Facebook">f</a>
-        <a href="#" class="social-btn" aria-label="Instagram">ig</a>
-      </div>
+
     </div>
     <div class="footer-col">
       <h5 data-i18n="footer.nav">Navigatie</h5>
       <ul>
-        <li><a href="woningen.html" data-i18n="nav.rentals">Woningen</a></li>
+        <li><a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a></li>
         <li><a href="galerij.html" data-i18n="nav.gallery">Galerij</a></li>
         <li><a href="boeken.html" data-i18n="nav.book">Boeken</a></li>
         <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
@@ -1268,8 +1276,7 @@ footer {
     <div class="footer-col">
       <h5 data-i18n="footer.book">Boeken</h5>
       <ul>
-        <li><a href="https://www.booking.com/hotel/be/t-hoeveke.nl.html" target="_blank" rel="noopener">Booking.com — Het Relax Hoeveke</a></li>
-        <li><a href="https://www.booking.com/hotel/be/la-brise-et-la-mer-frontaal-zeezicht.nl.html" target="_blank" rel="noopener">Booking.com — La Brise</a></li>
+
         <li><a href="boeken.html" data-i18n="footer.direct">Rechtstreeks boeken</a></li>
       </ul>
     </div>
@@ -1302,10 +1309,10 @@ nl:{
   "nav.rentals":"Woningen","nav.gallery":"Galerij","nav.faq":"FAQ",
   "nav.book":"Boeken","nav.contact":"Contact","nav.bookNow":"Reserveer nu",
   "hero.hoeve.loc":"Stene · Oostende","hero.hoeve.sub":"Landelijk & authentiek",
-  "hero.hoeve.desc":"Een karaktervol vakantieappartement in het historische Stene — met SMEG-keuken, vrijstaande badkuip en een sfeervolle privétuin.",
+  "hero.hoeve.desc":"Een verblijf in Stene's oudste hoeve — met SMEG-keuken, vrijstaande badkuip en een sfeervolle privétuin.",
   "hero.hoeve.cta":"Ontdek Het Relax Hoeveke",
   "hero.zee.loc":"Zeedijk 170 · Mariakerke","hero.zee.sub":"De zee voor uw deur",
-  "hero.zee.desc":"Frontaal zeezicht vanuit elk raam. Wakker worden met de Noordzee als uitzicht op de Zeedijk van Mariakerke.",
+  "hero.zee.desc":"Wakker worden met de Noordzee als uitzicht. Rechtstreeks aan de Zeedijk van Mariakerke.",
   "hero.zee.cta":"Ontdek het appartement",
   "stat.rentals":"Unieke verblijven","stat.score":"Gastenscore Booking",
   "stat.beach":"Van strand & centrum","stat.langs":"Talen gesproken",
@@ -1317,7 +1324,7 @@ nl:{
   "card.hoeve.badge":"01 · Stene","card.hoeve.type":"Het Relax Hoeveke · Stene-Dorpstraat 36",
   "card.hoeve.desc":"Het Relax Hoeveke in het landelijke Stene. Kook op een professionele SMEG, geniet van een bad in de vrijstaande kuip, ontspan in de privétuin met hangstoel en sfeerverlichting.",
   "card.zee.badge":"02 · Zeedijk","card.zee.type":"Appartement · Zeedijk 170, Mariakerke",
-  "card.zee.desc":"Licht en modern appartement met frontaal zeezicht op de Zeedijk van Mariakerke. Het strand ligt 30 seconden van de voordeur. Gewaardeerd met 8.4/10 op Booking.com.",
+  "card.zee.desc":"Licht en modern appartement met frontaal zeezicht op de Zeedijk van Mariakerke. Het strand ligt 30 seconden van de voordeur. Gewaardeerd met 8.9/10 op Booking.com.",
   "card.cta.book":"Beschikbaarheid","card.cta.more":"Meer info",
   "tag.garden":"Privétuin","tag.parking":"Gratis parking","tag.bathtub":"Vrijst. badkuip",
   "tag.seaview":"Frontaal zeezicht","tag.terrace":"Terras","tag.wifi":"Gratis wifi",
