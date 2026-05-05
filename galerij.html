@@ -66,7 +66,7 @@ img{display:block;max-width:100%}
 .mobile-menu a{font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--warm2);padding:0.5rem 0;border-bottom:1px solid var(--light-line)}
 
 /* PAGE HERO */
-.page-hero{margin-top:70px;background:var(--cream2);padding:5rem 3rem 4rem;text-align:center;border-bottom:1px solid var(--light-line)}
+
 .eyebrow{display:flex;align-items:center;justify-content:center;gap:0.75rem;font-size:0.62rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:1rem}
 .page-hero h1{font-family:var(--serif);font-size:clamp(2.4rem,4vw,3.5rem);font-weight:400;color:var(--warm);letter-spacing:-0.01em;line-height:1.1;margin-bottom:1rem}
 .page-hero h1 em{font-style:italic}
@@ -243,7 +243,7 @@ footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
   .filter-btn{padding:1rem 1.25rem;white-space:nowrap}
   .gallery-section{padding:3rem 1.25rem 5rem}
   .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
-  .page-hero{padding:4rem 1.5rem 3rem}
+  
   .gal-cta{padding:4rem 1.5rem}
   .lb-prev{left:0.5rem}.lb-next{right:0.5rem}
 }
@@ -253,6 +253,15 @@ footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
   footer{padding:3.5rem 1.5rem 2rem}
   .cta-row{flex-direction:column;align-items:center}
 }
+/* PAGE HERO — uniform dark with photo background */
+.page-hero{margin-top:70px;position:relative;overflow:hidden;background:var(--sea);padding:6rem 3rem 5rem;text-align:center}
+.page-hero::before{content:"";position:absolute;inset:0;background-image:url("images/zee-hero.jpg");background-size:cover;background-position:center;opacity:0.12}
+.page-hero-inner{position:relative;z-index:2}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:0.85rem;font-size:0.62rem;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:1.5rem}
+.hero-eyebrow::before,.hero-eyebrow::after{content:"";width:28px;height:1px;background:rgba(255,255,255,0.2)}
+.page-hero h1{font-family:var(--serif);font-size:clamp(2.4rem,4vw,3.8rem);font-weight:300;color:#fff;letter-spacing:-0.02em;line-height:1.05;margin-bottom:1.25rem}
+.page-hero h1 em{font-style:italic;font-weight:400}
+.page-hero p{font-size:1rem;color:rgba(255,255,255,0.6);max-width:520px;margin:0 auto;line-height:1.85}
 </style>
 </head>
 <body>
@@ -292,7 +301,11 @@ footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
 <!-- PAGE HERO -->
 <div class="page-hero">
   <div class="page-hero-inner">
-  <div style="font-size:0.62rem;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:1.25rem;display:inline-flex;align-items:center;gap:0.85rem"><span style="width:28px;height:1px;background:rgba(255,255,255,0.2);display:inline-block"></span>Galerij<span style="width:28px;height:1px;background:rgba(255,255,255,0.2);display:inline-block"></span></div>
+    <div class="hero-eyebrow">Galerij</div>
+    <h1>Neem een kijkje <em>binnen</em></h1>
+    <p>Ontdek beide vakantiewoningen door de ogen van onze fotograaf — van de zeehorizon tot de SMEG-keuken.</p>
+  </div>
+</div>
   <h1>Neem een kijkje <em>binnen</em></h1>
   <p>Ontdek beide vakantiewoningen door de ogen van onze fotograaf — van de zeehorizon tot de SMEG-keuken.</p>
   </div>

@@ -64,11 +64,8 @@ a{text-decoration:none;color:inherit}
 .mobile-menu a{font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--warm2);padding:0.5rem 0;border-bottom:1px solid var(--line)}
 
 /* HERO */
-.page-hero{margin-top:70px;position:relative;overflow:hidden;background:var(--sea);padding:7rem 3rem 6rem;text-align:center}
-.page-hero::before{content:"";position:absolute;inset:0;background-image:url("images/zee-hero.jpg");background-size:cover;background-position:center;opacity:0.12}
-.page-hero-inner{position:relative;z-index:2}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:0.85rem;font-size:0.62rem;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1.5rem}
-.hero-eyebrow::before,.hero-eyebrow::after{content:"";width:28px;height:1px;background:rgba(255,255,255,0.2)}
+
+
 .page-hero h1{font-family:var(--serif);font-size:clamp(2.8rem,5vw,4.5rem);font-weight:300;color:#fff;letter-spacing:-0.02em;line-height:1.05;margin-bottom:1.25rem}
 .page-hero h1 em{font-style:italic;font-weight:400}
 .page-hero p{font-size:1rem;color:rgba(255,255,255,0.55);max-width:480px;margin:0 auto;line-height:1.85}
@@ -205,7 +202,7 @@ footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
   .contact-form{padding:2rem}
   .form-row{grid-template-columns:1fr}
   .fg{grid-template-columns:1fr 1fr;gap:2rem}
-  .page-hero{padding:5rem 1.5rem 4rem}
+  
   .contact-cta{padding:5rem 1.5rem}
 }
 @media(max-width:600px){
@@ -214,6 +211,15 @@ footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
   .cta-btns{flex-direction:column;align-items:center}
   .form-submit-row{flex-direction:column;align-items:flex-start}
 }
+/* PAGE HERO — uniform dark with photo background */
+.page-hero{margin-top:70px;position:relative;overflow:hidden;background:var(--sea);padding:6rem 3rem 5rem;text-align:center}
+.page-hero::before{content:"";position:absolute;inset:0;background-image:url("images/zee-woonkamer.jpg");background-size:cover;background-position:center;opacity:0.12}
+.page-hero-inner{position:relative;z-index:2}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:0.85rem;font-size:0.62rem;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:1.5rem}
+.hero-eyebrow::before,.hero-eyebrow::after{content:"";width:28px;height:1px;background:rgba(255,255,255,0.2)}
+.page-hero h1{font-family:var(--serif);font-size:clamp(2.4rem,4vw,3.8rem);font-weight:300;color:#fff;letter-spacing:-0.02em;line-height:1.05;margin-bottom:1.25rem}
+.page-hero h1 em{font-style:italic;font-weight:400}
+.page-hero p{font-size:1rem;color:rgba(255,255,255,0.6);max-width:520px;margin:0 auto;line-height:1.85}
 </style>
 </head>
 <body>
@@ -250,6 +256,10 @@ footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="hero-eyebrow">Contact</div>
+    <h1>Neem <em>contact op</em></h1>
+    <p>Een vraag over een verblijf, datum of prijs? We helpen u graag verder.</p>
+  </div>
+</div>
     <h1>Neem <em>contact op</em></h1>
     <p>We antwoorden doorgaans binnen de 4 uur — in het Nederlands, Frans, Engels of Duits.</p>
   </div>

@@ -410,33 +410,42 @@ img { display: block; max-width: 100%; }
 
 
 /* ============================================================
-   INTRO SECTION
+   INTRO SECTION — 3 kolommen: foto | tekst | foto
+   Stijl gebaseerd op dekaleihoeve.be
    ============================================================ */
 .intro {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 520px;
-}
-.intro-img {
-  position: relative;
+  background: #faf8f4;
+  padding: 6rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
   overflow: hidden;
 }
+.intro-img {
+  flex: 0 0 300px;
+  overflow: hidden;
+  box-shadow: 0 8px 40px rgba(42,33,24,0.12);
+}
 .intro-img img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 420px;
   object-fit: cover;
+  display: block;
   transition: transform 1.2s ease;
 }
-.intro:hover .intro-img img { transform: scale(1.03); }
+.intro-img:hover img { transform: scale(1.04); }
 .intro-text {
-  background: var(--cream2);
-  padding: 6rem 5.5rem;
+  flex: 0 1 480px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 .eyebrow {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   font-size: 0.62rem;
   font-weight: 500;
@@ -453,9 +462,9 @@ img { display: block; max-width: 100%; }
 }
 h2.serif {
   font-family: var(--serif);
-  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  font-size: clamp(2rem, 3.2vw, 3rem);
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.12;
   letter-spacing: -0.01em;
   color: var(--warm);
   margin-bottom: 1.5rem;
@@ -466,20 +475,20 @@ h2.serif em { font-style: italic; }
   line-height: 1.9;
   color: var(--warm2);
   margin-bottom: 0.9rem;
-  max-width: 460px;
+  max-width: 400px;
 }
 .deco-line {
   width: 44px; height: 1px;
   background: var(--warm3);
-  margin: 1.75rem 0;
+  margin: 1.5rem auto;
 }
 .intro-quote {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--warm);
   line-height: 1.65;
-  max-width: 420px;
+  max-width: 360px;
 }
 
 /* ============================================================
@@ -950,10 +959,11 @@ footer {
   .hero { grid-template-columns: 1fr; height: auto; }
   .hero-panel { min-height: 62vw; padding: 3rem 2rem 3.5rem; }
   .hero-divider { display: none; }
-  .intro { grid-template-columns: 1fr; }
+  .intro { flex-direction: column; padding: 4rem 1.5rem; gap: 2rem; }
+  .intro-img { flex: none; width: 100%; }
   .intro-img:last-child { display: none; }
-  .intro-img { min-height: 320px; }
-  .intro-text { padding: 4rem 2rem; text-align: center; }
+  .intro-img img { height: 280px; }
+  .intro-text { flex: none; }
   .cards { grid-template-columns: 1fr; padding: 0 1.5rem; gap: 2rem; }
   .gallery-grid {
     grid-template-columns: repeat(6, 1fr);
@@ -1069,28 +1079,30 @@ footer {
 
 
 <!-- ======================================================
-     INTRO / VERHAAL
+     INTRO / VERHAAL — foto links | tekst midden | foto rechts
      ====================================================== -->
 <section class="intro">
-  <!-- Foto links — inschuiven van links -->
+
+  <!-- Foto links — schuift van links in bij scrollen -->
   <div class="intro-img reveal-l">
     <img src="images/hoeve-dining.jpg" alt="Het Relax Hoeveke interieur" loading="lazy"/>
   </div>
 
-  <!-- Tekst midden -->
+  <!-- Tekst in het midden -->
   <div class="intro-text reveal">
-    <div class="eyebrow" data-i18n="intro.eyebrow">Welkom</div>
-    <h2 class="serif" data-i18n="intro.title">Twee adressen,<br><em>één onvergetelijke vakantie</em></h2>
-    <p data-i18n="intro.p1">Vlak aan de Noordzee of in het historische Stene — bij ons kiest u bewust. <strong>La Brise et La Mer</strong> op de Zeedijk van Mariakerke biedt zeezicht en het ritme van de golven als decor.</p>
-    <p data-i18n="intro.p2"><strong>Het Relax Hoeveke</strong>, Stene's oudste hoevetje, is heel anders: authentieke balken, een SMEG-keuken, een vrijstaande badkuip en een sfeervolle tuin. Allebei op 10 minuten van het centrum van Oostende.</p>
+    <div class="eyebrow">Welkom</div>
+    <h2 class="serif">Twee adressen,<br><em>één onvergetelijke vakantie</em></h2>
+    <p>Vlak aan de Noordzee of in het historische Stene — bij ons kiest u bewust. <strong>La Brise et La Mer</strong> op de Zeedijk van Mariakerke biedt zeezicht en het ritme van de golven als decor.</p>
+    <p><strong>Het Relax Hoeveke</strong>, Stene's oudste hoevetje, is heel anders: authentieke balken, een SMEG-keuken, een vrijstaande badkuip en een sfeervolle tuin. Allebei op 10 minuten van het centrum van Oostende.</p>
     <div class="deco-line"></div>
-    <p class="intro-quote" data-i18n="intro.quote">"Kies uw eigen Oostende — de zee of de stilte, of de twee samen."</p>
+    <p class="intro-quote">"Kies uw eigen Oostende — de zee of de stilte, of de twee samen."</p>
   </div>
 
-  <!-- Foto rechts — inschuiven van rechts -->
+  <!-- Foto rechts — schuift van rechts in bij scrollen -->
   <div class="intro-img reveal-r">
     <img src="images/zee-hero.jpg" alt="La Brise et La Mer zeezicht" loading="lazy"/>
   </div>
+
 </section>
 
 <!-- ======================================================
