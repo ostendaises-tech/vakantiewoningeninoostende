@@ -172,16 +172,9 @@ img { display: block; max-width: 100%; }
   transition: color 0.2s;
   position: relative;
 }
-.nav-links a::after {
-  content: '';
-  position: absolute;
-  bottom: -3px; left: 0;
-  width: 0; height: 1px;
-  background: var(--warm);
-  transition: width 0.3s;
-}
-.nav-links a:hover { color: var(--warm); }
-.nav-links a:hover::after { width: 100%; }
+
+
+
 .nav-right {
   display: flex;
   align-items: center;
@@ -192,72 +185,17 @@ img { display: block; max-width: 100%; }
   gap: 0;
   border: 1px solid var(--light-line);
 }
-.lang-bar button {
-  background: none;
-  border: none;
-  border-right: 1px solid var(--light-line);
-  font-family: var(--sans);
-  font-size: 0.62rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  padding: 0.3rem 0.55rem;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.lang-bar button:last-child { border-right: none; }
-.lang-bar button:hover { color: var(--warm); background: var(--cream2); }
-.lang-bar button.active { background: var(--warm); color: #fff; }
-.btn-book-nav {
-  font-family: var(--sans);
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #fff;
-  background: var(--warm);
-  padding: 0.55rem 1.4rem;
-  transition: background 0.2s;
-}
-.btn-book-nav:hover { background: #2a1a0e; }
-.nav-hamburger {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 6px;
-  flex-direction: column;
-  gap: 5px;
-}
-.nav-hamburger span {
-  display: block;
-  width: 22px; height: 1.5px;
-  background: var(--warm);
-  transition: all 0.3s;
-}
-.mobile-menu {
-  display: none;
-  position: fixed;
-  top: 60px; left: 0; right: 0;
-  background: var(--cream);
-  border-bottom: 1px solid var(--light-line);
-  padding: 1.5rem 2rem;
-  flex-direction: column;
-  gap: 0.75rem;
-  z-index: 99;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.07);
-}
-.mobile-menu.open { display: flex; }
-.mobile-menu a {
-  font-size: 0.78rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: var(--warm2);
-  padding: 0.5rem 0;
-  border-bottom: 1px solid var(--light-line);
-}
+
+
+
+
+
+
+
+
+
+
+
 
 /* ============================================================
    HERO — SPLIT
@@ -954,8 +892,8 @@ footer {
 }
 
 @media (max-width: 820px) {
-  .nav-links, .btn-book-nav { display: none; }
-  .nav-hamburger { display: flex; }
+  .nav-links, 
+  
   .hero { grid-template-columns: 1fr; height: auto; }
   .hero-panel { min-height: 62vw; padding: 3rem 2rem 3.5rem; }
   .hero-divider { display: none; }
@@ -987,6 +925,77 @@ footer {
   .cta-banner-btns { flex-direction: column; align-items: center; }
   .hero-panel { min-height: 75vw; }
 }
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;background:rgba(250,248,244,0.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color 0.3s,height 0.3s}
+.nav.scrolled{border-bottom-color:rgba(42,33,24,0.10);height:60px}
+.nav-logo{display:flex;flex-direction:column;gap:1px;text-decoration:none}
+.nav-logo-main{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--warm);letter-spacing:0.02em;line-height:1}
+.nav-logo-sub{font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.nav-links{display:flex;gap:2rem;list-style:none;margin:0;padding:0}
+.nav-links li{display:block}
+.nav-links a{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;font-weight:500;color:var(--warm2);transition:color 0.2s;position:relative;text-decoration:none;white-space:nowrap}
+.nav-links a::after{content:"";position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--warm);transition:width 0.3s}
+.nav-links a:hover{color:var(--warm)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-links a.active{color:var(--warm)}
+.nav-right{display:flex;align-items:center;gap:1rem;flex-shrink:0}
+.lang-bar{display:flex;border:1px solid rgba(42,33,24,0.10)}
+.lang-bar button{background:none;border:none;border-right:1px solid rgba(42,33,24,0.10);font-family:var(--sans);font-size:0.62rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding:0.3rem 0.5rem;cursor:pointer;transition:all 0.2s;line-height:1}
+.lang-bar button:last-child{border-right:none}
+.lang-bar button:hover{color:var(--warm);background:var(--cream2)}
+.lang-bar button.active{background:var(--warm);color:#fff}
+.btn-book-nav{font-family:var(--sans);font-size:0.68rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#fff;background:var(--warm);padding:0.55rem 1.3rem;transition:background 0.2s;white-space:nowrap;text-decoration:none}
+.btn-book-nav:hover{background:#2a1a0e}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
+.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--warm);transition:all 0.3s}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:var(--cream);border-bottom:1px solid rgba(42,33,24,0.10);padding:1.5rem 2rem;flex-direction:column;gap:0.75rem;z-index:99;box-shadow:0 8px 30px rgba(0,0,0,0.07)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--warm2);padding:0.5rem 0;border-bottom:1px solid rgba(42,33,24,0.10);text-decoration:none}
+</style>
+<style id="nav-override">
+/* ═══ NAVIGATION OVERRIDE — uniform on all pages ═══ */
+.nav{position:fixed!important;top:0!important;left:0!important;right:0!important;z-index:100!important;height:70px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;padding:0 3rem!important;background:rgba(250,248,244,0.96)!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important;border-bottom:1px solid transparent!important;transition:border-color 0.3s,height 0.3s!important}
+.nav.scrolled{border-bottom-color:rgba(42,33,24,0.10)!important;height:60px!important}
+.nav-logo{display:flex!important;flex-direction:column!important;gap:1px!important;text-decoration:none!important}
+.nav-logo-main{font-family:'Cormorant Garamond',Georgia,serif!important;font-size:1.15rem!important;font-weight:500!important;color:#3d2b1f!important;letter-spacing:0.02em!important;line-height:1!important}
+.nav-logo-sub{font-size:0.6rem!important;letter-spacing:0.22em!important;text-transform:uppercase!important;color:#8a7a6a!important;font-weight:400!important}
+.nav-links{display:flex!important;gap:2rem!important;list-style:none!important;margin:0!important;padding:0!important;align-items:center!important}
+.nav-links li{display:list-item!important;padding:0!important;margin:0!important}
+.nav-links a{font-size:0.7rem!important;letter-spacing:0.14em!important;text-transform:uppercase!important;font-weight:500!important;color:#7a5c42!important;transition:color 0.2s!important;position:relative!important;text-decoration:none!important;white-space:nowrap!important;display:inline-block!important;padding:0!important;border:none!important;background:none!important}
+.nav-links a::after{content:""!important;position:absolute!important;bottom:-3px!important;left:0!important;width:0!important;height:1px!important;background:#3d2b1f!important;transition:width 0.3s!important}
+.nav-links a:hover{color:#3d2b1f!important}
+.nav-links a:hover::after{width:100%!important}
+.nav-links a.active{color:#3d2b1f!important}
+.nav-links a.active::after{width:100%!important}
+.nav-right{display:flex!important;align-items:center!important;gap:1rem!important;flex-shrink:0!important}
+.lang-bar{display:flex!important;border:1px solid rgba(42,33,24,0.10)!important}
+.lang-bar button{background:none!important;border:none!important;border-right:1px solid rgba(42,33,24,0.10)!important;font-family:'Jost',sans-serif!important;font-size:0.62rem!important;font-weight:500!important;letter-spacing:0.1em!important;text-transform:uppercase!important;color:#8a7a6a!important;padding:0.3rem 0.5rem!important;cursor:pointer!important;transition:all 0.2s!important;line-height:1!important}
+.lang-bar button:last-child{border-right:none!important}
+.lang-bar button:hover{color:#3d2b1f!important;background:#f2ede4!important}
+.lang-bar button.active{background:#3d2b1f!important;color:#fff!important}
+.btn-book-nav{font-family:'Jost',sans-serif!important;font-size:0.68rem!important;font-weight:500!important;letter-spacing:0.14em!important;text-transform:uppercase!important;color:#fff!important;background:#3d2b1f!important;padding:0.55rem 1.3rem!important;transition:background 0.2s!important;white-space:nowrap!important;text-decoration:none!important;display:inline-block!important}
+.btn-book-nav:hover{background:#2a1a0e!important}
+.nav-hamburger{display:none;background:none!important;border:none!important;cursor:pointer!important;padding:6px!important;flex-direction:column!important;gap:5px!important}
+.nav-hamburger span{display:block!important;width:22px!important;height:1.5px!important;background:#3d2b1f!important}
+.mobile-menu{display:none;position:fixed!important;top:60px!important;left:0!important;right:0!important;background:#faf8f4!important;border-bottom:1px solid rgba(42,33,24,0.10)!important;padding:1.5rem 2rem!important;flex-direction:column!important;gap:0.75rem!important;z-index:99!important;box-shadow:0 8px 30px rgba(0,0,0,0.07)!important}
+.mobile-menu.open{display:flex!important}
+.mobile-menu a{font-size:0.78rem!important;letter-spacing:0.16em!important;text-transform:uppercase!important;font-weight:500!important;color:#7a5c42!important;padding:0.5rem 0!important;border-bottom:1px solid rgba(42,33,24,0.10)!important;text-decoration:none!important;display:block!important}
+/* ═══ PAGE HERO OVERRIDE ═══ */
+.page-hero{margin-top:70px!important;position:relative!important;overflow:hidden!important;padding:6rem 3rem 5rem!important;text-align:center!important}
+.page-hero::before{content:""!important;position:absolute!important;inset:0!important;background-size:cover!important;background-position:center!important;opacity:0.13!important;z-index:0!important}
+.page-hero-inner{position:relative!important;z-index:2!important}
+.page-hero-eyebrow{display:inline-flex!important;align-items:center!important;gap:0.85rem!important;font-size:0.62rem!important;font-weight:500!important;letter-spacing:0.3em!important;text-transform:uppercase!important;color:rgba(255,255,255,0.5)!important;margin-bottom:1.5rem!important}
+.page-hero-eyebrow::before,.page-hero-eyebrow::after{content:""!important;width:28px!important;height:1px!important;background:rgba(255,255,255,0.25)!important}
+.page-hero h1{font-family:'Cormorant Garamond',Georgia,serif!important;font-size:clamp(2.4rem,4vw,3.8rem)!important;font-weight:300!important;color:#fff!important;letter-spacing:-0.02em!important;line-height:1.05!important;margin-bottom:1.25rem!important}
+.page-hero h1 em{font-style:italic!important;font-weight:400!important}
+.page-hero p{font-size:1rem!important;color:rgba(255,255,255,0.6)!important;max-width:520px!important;margin:0 auto!important;line-height:1.85!important}
+/* Specific backgrounds per page */
+.page-hero.hero-warm{background:#3d2b1f!important}
+.page-hero.hero-sea{background:#1c3f5e!important}
+@media(max-width:900px){
+  .nav-links,.btn-book-nav{display:none!important}
+  .nav-hamburger{display:flex!important}
+  .nav{padding:0 1.5rem!important}
+}
 </style>
 </head>
 <body>
@@ -999,16 +1008,14 @@ footer {
     <span class="nav-logo-main">Vakantiewoningen in Oostende</span>
     <span class="nav-logo-sub">La Brise et La Mer &middot; Het Relax Hoeveke</span>
   </a>
-
   <ul class="nav-links">
-    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-    <li><a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a></li>
-    <li><a href="galerij.html" data-i18n="nav.gallery">Galerij</a></li>
-    <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
-    <li><a href="boeken.html" data-i18n="nav.book">Boeken</a></li>
-    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="woningen.html">Onze verblijven</a></li>
+    <li><a href="galerij.html">Galerij</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="boeken.html">Boeken</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
-
   <div class="nav-right">
     <div class="lang-bar">
       <button data-lang="nl" class="active">NL</button>
@@ -1016,6 +1023,18 @@ footer {
       <button data-lang="en">EN</button>
       <button data-lang="de">DE</button>
     </div>
+    <a href="boeken.html" class="btn-book-nav">Reserveer nu</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html">Home</a>
+  <a href="woningen.html">Onze verblijven</a>
+  <a href="galerij.html">Galerij</a>
+  <a href="faq.html">FAQ</a>
+  <a href="boeken.html">Boeken</a>
+  <a href="contact.html">Contact</a>
+</div>
     <a href="boeken.html" class="btn-book-nav" data-i18n="nav.bookNow">Reserveer nu</a>
   </div>
 
@@ -1126,15 +1145,15 @@ footer {
         <p class="card-type" data-i18n="card.hoeve.type">Het Relax Hoeveke &middot; Stene-Dorpstraat 36</p>
         <h3 class="card-title">Het Relax Hoeveke</h3>
         <p class="card-addr">Stene-Dorpstraat 36 &middot; Stene, 8400 Oostende</p>
-        <p class="card-desc" data-i18n="card.hoeve.desc">Karaktervol hoeveappartement in het landelijke Stene. Kook op een professionele SMEG, geniet van een bad in de vrijstaande kuip, ontspan in de privétuin met hangstoel en sfeerverlichting.</p>
+        <p class="card-desc" data-i18n="card.hoeve.desc">Stene's oudste hoevetje. Slaapkamer + slaapbank. Kook op de professionele SMEG, geniet van de vrijstaande badkuip en de sfeervolle tuin. Gewaardeerd met 9.2 op Booking.</p>
         <div class="card-tags">
           <span class="tag">4 pers.</span>
-          <span class="tag">2 slpk.</span>
+          <span class="tag">1 slpk. + slaapbank</span>
           <span class="tag" data-i18n="tag.garden">Privétuin</span>
           <span class="tag" data-i18n="tag.parking">Gratis parking</span>
           <span class="tag">SMEG keuken</span>
           <span class="tag" data-i18n="tag.bathtub">Vrijst. badkuip</span>
-          <span class="tag">Score 9.2 ★</span>
+          <span class="tag">9.2 ★ Booking</span>
         </div>
         <div class="card-actions">
           <a href="boeken.html#hoeveke" class="btn-primary" data-i18n="card.cta.book">Beschikbaarheid</a>
@@ -1153,14 +1172,14 @@ footer {
         <p class="card-type" data-i18n="card.zee.type">Appartement &middot; Zeedijk 170, Mariakerke</p>
         <h3 class="card-title">La Brise et La Mer</h3>
         <p class="card-addr">Zeedijk 170 &middot; Mariakerke, 8400 Oostende</p>
-        <p class="card-desc" data-i18n="card.zee.desc">Licht en modern appartement met frontaal zeezicht op de Zeedijk van Mariakerke. Het strand ligt 30 seconden van de voordeur. Gewaardeerd met 8.9/10 op Booking.com.</p>
+        <p class="card-desc" data-i18n="card.zee.desc">Licht en modern appartement met zeezicht op de Zeedijk van Mariakerke. Het strand ligt 30 seconden van de voordeur. Slaapkamer voor 2 + comfortabele slaapbank. Gewaardeerd met 8.9/10 op Booking.com.</p>
         <div class="card-tags">
-          <span class="tag">2 pers.</span>
-          <span class="tag">1 slpk.</span>
+          <span class="tag">4 pers.</span>
+          <span class="tag">1 slpk. + slaapbank</span>
           <span class="tag" data-i18n="tag.seaview">Frontaal zeezicht</span>
           <span class="tag" data-i18n="tag.terrace">Terras</span>
           <span class="tag" data-i18n="tag.wifi">Gratis wifi</span>
-          <span class="tag">Score 8.9 ★</span>
+          <span class="tag">8.9 ★ Booking</span>
         </div>
         <div class="card-actions">
           <a href="boeken.html#brise" class="btn-primary" data-i18n="card.cta.book">Beschikbaarheid</a>
@@ -1314,11 +1333,35 @@ footer {
 <!-- ======================================================
      SCRIPTS
      ====================================================== -->
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1e120a;color:rgba(255,255,255,0.8);padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;border-top:3px solid #c9a050;box-shadow:0 -4px 30px rgba(0,0,0,0.3)">
+  <p style="font-size:0.82rem;line-height:1.65;max-width:640px;margin:0">
+    Wij gebruiken cookies om uw bezoek te verbeteren en anonieme statistieken bij te houden. 
+    Meer info in ons <a href="#" style="color:#c9a050;text-decoration:underline">cookiebeleid</a>.
+  </p>
+  <div style="display:flex;gap:0.75rem;flex-shrink:0">
+    <button onclick="closeCookie('declined')" style="background:transparent;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.5);padding:0.55rem 1.25rem;font-family:inherit;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.2s">Weigeren</button>
+    <button onclick="closeCookie('accepted')" style="background:#c9a050;border:none;color:#3d2b1f;padding:0.55rem 1.5rem;font-family:inherit;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.2s">Aanvaarden</button>
+  </div>
+</div>
 <script>
-// ── i18n ─────────────────────────────────────────────────────
+// ── Nav scroll ────────────────────────────────────────────────────
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () =>
+  nav.classList.toggle('scrolled', window.scrollY > 50), { passive: true });
+
+// ── Mobile menu ───────────────────────────────────────────────────
+document.getElementById('hamburger').addEventListener('click', () =>
+  document.getElementById('mobile-menu').classList.toggle('open'));
+document.querySelectorAll('.mobile-menu a').forEach(a =>
+  a.addEventListener('click', () =>
+    document.getElementById('mobile-menu').classList.remove('open')));
+
+// ── Language switcher ─────────────────────────────────────────────
 const T = {
 nl:{
-  "nav.rentals":"Woningen","nav.gallery":"Galerij","nav.faq":"FAQ",
+  "nav.home":"Home","nav.rentals":"Onze verblijven","nav.gallery":"Galerij","nav.faq":"FAQ",
   "nav.book":"Boeken","nav.contact":"Contact","nav.bookNow":"Reserveer nu",
   "hero.hoeve.loc":"Stene · Oostende","hero.hoeve.sub":"Landelijk & authentiek",
   "hero.hoeve.desc":"Een verblijf in Stene's oudste hoeve — met SMEG-keuken, vrijstaande badkuip en een sfeervolle privétuin.",
@@ -1326,164 +1369,35 @@ nl:{
   "hero.zee.loc":"Zeedijk 170 · Mariakerke","hero.zee.sub":"De zee voor uw deur",
   "hero.zee.desc":"Wakker worden met de Noordzee als uitzicht. Rechtstreeks aan de Zeedijk van Mariakerke.",
   "hero.zee.cta":"Ontdek het appartement",
-  "stat.rentals":"Unieke verblijven","stat.score":"Gastenscore Booking",
-  "stat.beach":"Van strand & centrum","stat.langs":"Talen gesproken",
-  "intro.eyebrow":"Welkom","intro.title":"Twee adressen,",
-  "intro.p1":"Vlak aan de Noordzee of midden in de rust van de polders — bij ons kiest u bewust. La Brise et La Mer op de Zeedijk van Mariakerke biedt frontaal zeezicht en het ritme van de golven als decor.",
-  "intro.p2":"Het Relax Hoeveke in het historische Stene is heel anders: authentieke balken, een SMEG-keuken, een vrijstaande badkuip en een sfeervolle tuin. Allebei op 10 minuten van het centrum van Oostende.",
-  "intro.quote":"\"Kies uw eigen Oostende — de zee of de stilte, of de twee samen.\"",
-  "props.eyebrow":"Onze verblijven","props.title":"Twee werelden, één bestemming",
-  "card.hoeve.badge":"01 · Stene","card.hoeve.type":"Het Relax Hoeveke · Stene-Dorpstraat 36",
-  "card.hoeve.desc":"Het Relax Hoeveke in het landelijke Stene. Kook op een professionele SMEG, geniet van een bad in de vrijstaande kuip, ontspan in de privétuin met hangstoel en sfeerverlichting.",
-  "card.zee.badge":"02 · Zeedijk","card.zee.type":"Appartement · Zeedijk 170, Mariakerke",
-  "card.zee.desc":"Licht en modern appartement met frontaal zeezicht op de Zeedijk van Mariakerke. Het strand ligt 30 seconden van de voordeur. Gewaardeerd met 8.9/10 op Booking.com.",
+  "intro.eyebrow":"Welkom",
+  "intro.title":"Twee adressen,",
   "card.cta.book":"Beschikbaarheid","card.cta.more":"Meer info",
-  "tag.garden":"Privétuin","tag.parking":"Gratis parking","tag.bathtub":"Vrijst. badkuip",
-  "tag.seaview":"Frontaal zeezicht","tag.terrace":"Terras","tag.wifi":"Gratis wifi",
-  "usp.1.t":"Verse bedden","usp.1.p":"Kwaliteitslinnen en opgemaakte bedden bij aankomst. Handdoeken en strandlakens inbegrepen.",
-  "usp.2.t":"Contactloos inchecken","usp.2.p":"Digitale sleutelcode of sleutelkluis — aankomst op het uur dat u zelf kiest, 24/7.",
-  "usp.3.t":"Welkomstgeschenk","usp.3.p":"Koffie, thee en een kleine verrassing staan klaar bij aankomst.",
-  "usp.4.t":"Altijd bereikbaar","usp.4.p":"Via WhatsApp, telefoon of e-mail. We antwoorden in NL, FR, EN of DE.",
-  "gal.eyebrow":"Galerij","gal.title":"Neem een kijkje binnen",
-  "gal.z1":"La Brise · Vensterbank met zeezicht","gal.z2":"La Brise · Eethoek",
-  "gal.z3":"La Brise · Keuken","gal.z4":"La Brise · Slaapkamer",
-  "gal.h1":"Het Relax Hoeveke · Tuin bij nacht","gal.h2":"Het Relax Hoeveke · Zolderslaapkamer",
-  "gal.h3":"Het Relax Hoeveke · Vrijstaande badkuip","gal.h4":"Het Relax Hoeveke · SMEG keuken",
-  "gal.all":"Alle foto's bekijken",
   "cta.eyebrow":"Reserveer vandaag","cta.title":"Klaar voor uw Oostende-escape?",
-  "cta.desc":"Kies uw verblijf en bekijk de beschikbaarheid. Alle kalenders zijn gesynchroniseerd via Lodgify — altijd actueel.",
   "cta.hoeve":"Boek Het Relax Hoeveke","cta.zee":"Boek La Brise et La Mer","cta.question":"Stel een vraag",
   "rev.eyebrow":"Ervaringen","rev.title":"Wat onze gasten zeggen",
-  "footer.tagline":"Twee unieke verblijven aan de Belgische kust.",
-  "footer.nav":"Navigatie","footer.book":"Boeken","footer.contact":"Contact",
-  "footer.direct":"Rechtstreeks boeken",
-  "footer.privacy":"Privacybeleid","footer.cookies":"Cookiebeleid","footer.terms":"Algemene voorwaarden"
+  "gal.all":"Alle foto's bekijken",
+  "footer.tagline":"Twee unieke verblijven aan de Belgische kust."
 },
 fr:{
-  "nav.rentals":"Logements","nav.gallery":"Galerie","nav.faq":"FAQ",
+  "nav.home":"Accueil","nav.rentals":"Logements","nav.gallery":"Galerie","nav.faq":"FAQ",
   "nav.book":"Réserver","nav.contact":"Contact","nav.bookNow":"Réserver maintenant",
-  "hero.hoeve.loc":"Stene · Ostende","hero.hoeve.sub":"Rural & authentique",
-  "hero.hoeve.desc":"Un appartement de ferme plein de caractère à Stene — avec cuisine SMEG, baignoire îlot et jardin privé.",
-  "hero.hoeve.cta":"Découvrir Het Relax Hoeveke",
-  "hero.zee.loc":"Digue 170 · Mariakerke","hero.zee.sub":"La mer devant votre porte",
-  "hero.zee.desc":"Vue frontale sur la mer depuis chaque fenêtre. Se réveiller avec la mer du Nord en face.",
-  "hero.zee.cta":"Découvrir l'appartement",
-  "stat.rentals":"Hébergements uniques","stat.score":"Note Booking.com",
-  "stat.beach":"De la plage & du centre","stat.langs":"Langues parlées",
-  "intro.eyebrow":"Bienvenue",
-  "intro.p1":"En bord de mer ou dans la quiétude des polders — chez nous, le choix est votre. La Brise et La Mer sur la digue de Mariakerke offre une vue frontale et le rythme des vagues.",
-  "intro.p2":"Het Relax Hoeveke dans le village historique de Stene est tout autre: poutres authentiques, cuisine SMEG, baignoire îlot et jardin. À 10 minutes du centre d'Ostende.",
-  "intro.quote":"\"Choisissez votre Ostende — la mer ou le silence, ou les deux.\"",
-  "props.eyebrow":"Nos hébergements","props.title":"Deux mondes, une destination",
-  "card.hoeve.badge":"01 · Stene","card.hoeve.type":"Appartement de ferme · Stene-Dorpstraat 36",
-  "card.hoeve.desc":"Het Relax Hoeveke à Stene. Cuisinez sur un SMEG professionnel, profitez d'un bain dans la baignoire îlot, détendez-vous dans le jardin privé.",
-  "card.zee.badge":"02 · Digue","card.zee.type":"Appartement · Digue 170, Mariakerke",
-  "card.zee.desc":"Appartement lumineux avec vue frontale sur la mer. La plage est à 30 secondes. Noté 8.4/10 sur Booking.com.",
+  "hero.hoeve.cta":"Découvrir Het Relax Hoeveke","hero.zee.cta":"Découvrir l'appartement",
   "card.cta.book":"Disponibilité","card.cta.more":"Plus d'infos",
-  "tag.garden":"Jardin privé","tag.parking":"Parking gratuit","tag.bathtub":"Baignoire îlot",
-  "tag.seaview":"Vue frontale mer","tag.terrace":"Terrasse","tag.wifi":"Wifi gratuit",
-  "usp.1.t":"Lits frais","usp.1.p":"Linge de qualité et lits faits à l'arrivée. Serviettes et draps de plage inclus.",
-  "usp.2.t":"Check-in sans contact","usp.2.p":"Code d'accès ou boîte à clés — arrivez quand vous voulez, 24h/24.",
-  "usp.3.t":"Cadeau de bienvenue","usp.3.p":"Café, thé et une petite surprise vous attendent à l'arrivée.",
-  "usp.4.t":"Toujours joignables","usp.4.p":"Via WhatsApp, téléphone ou e-mail. En NL, FR, EN ou DE.",
-  "gal.eyebrow":"Galerie","gal.title":"Jetez un œil à l'intérieur",
-  "gal.z1":"La Brise · Vue mer","gal.z2":"La Brise · Salle à manger",
-  "gal.z3":"La Brise · Cuisine","gal.z4":"La Brise · Chambre",
-  "gal.h1":"Het Relax Hoeveke · Jardin la nuit","gal.h2":"Het Relax Hoeveke · Chambre mansardée",
-  "gal.h3":"Het Relax Hoeveke · Baignoire îlot","gal.h4":"Het Relax Hoeveke · Cuisine SMEG",
-  "gal.all":"Voir toutes les photos",
-  "cta.eyebrow":"Réservez aujourd'hui","cta.title":"Prêt pour votre escapade?",
-  "cta.desc":"Choisissez votre séjour et consultez les disponibilités. Tous les calendriers sont synchronisés via Lodgify.",
-  "cta.hoeve":"Réserver Het Relax Hoeveke","cta.zee":"Réserver La Brise et La Mer","cta.question":"Poser une question",
-  "rev.eyebrow":"Expériences","rev.title":"Ce que disent nos clients",
-  "footer.tagline":"Deux hébergements uniques sur la côte belge.",
-  "footer.nav":"Navigation","footer.book":"Réserver","footer.contact":"Contact",
-  "footer.direct":"Réservation directe",
-  "footer.privacy":"Politique de confidentialité","footer.cookies":"Politique cookies","footer.terms":"Conditions générales"
+  "gal.all":"Voir toutes les photos","footer.tagline":"Deux hébergements uniques sur la côte belge."
 },
 en:{
-  "nav.rentals":"Rentals","nav.gallery":"Gallery","nav.faq":"FAQ",
+  "nav.home":"Home","nav.rentals":"Rentals","nav.gallery":"Gallery","nav.faq":"FAQ",
   "nav.book":"Book","nav.contact":"Contact","nav.bookNow":"Book now",
-  "hero.hoeve.loc":"Stene · Ostend","hero.hoeve.sub":"Rural & authentic",
-  "hero.hoeve.desc":"A characterful farmhouse apartment in historic Stene — with SMEG kitchen, freestanding bathtub and private garden.",
-  "hero.hoeve.cta":"Discover Het Relax Hoeveke",
-  "hero.zee.loc":"Seafront 170 · Mariakerke","hero.zee.sub":"The sea at your doorstep",
-  "hero.zee.desc":"Frontal sea view from every window. Wake up with the North Sea right in front of you.",
-  "hero.zee.cta":"Discover the apartment",
-  "stat.rentals":"Unique rentals","stat.score":"Booking.com score",
-  "stat.beach":"From beach & centre","stat.langs":"Languages spoken",
-  "intro.eyebrow":"Welcome",
-  "intro.p1":"Right on the North Sea or in the heart of the polders — with us, the choice is yours. La Brise et La Mer on the Mariakerke seafront offers frontal sea views and the sound of the waves.",
-  "intro.p2":"Het Relax Hoeveke in the historic village of Stene is completely different: authentic beams, a SMEG kitchen, a freestanding bathtub and a lovely garden. Both 10 minutes from Ostend city centre.",
-  "intro.quote":"\"Choose your own Ostend — the sea or the silence, or both.\"",
-  "props.eyebrow":"Our rentals","props.title":"Two worlds, one destination",
-  "card.hoeve.badge":"01 · Stene","card.hoeve.type":"Farmhouse apartment · Stene-Dorpstraat 36",
-  "card.hoeve.desc":"Het Relax Hoeveke in rural Stene. Cook on a professional SMEG, enjoy a bath in the freestanding tub, relax in the private garden with hammock chair.",
-  "card.zee.badge":"02 · Seafront","card.zee.type":"Apartment · Seafront 170, Mariakerke",
-  "card.zee.desc":"Light, modern apartment with frontal sea views on the Mariakerke seafront. The beach is 30 seconds away. Rated 8.4/10 on Booking.com.",
+  "hero.hoeve.cta":"Discover Het Relax Hoeveke","hero.zee.cta":"Discover the apartment",
   "card.cta.book":"Availability","card.cta.more":"More info",
-  "tag.garden":"Private garden","tag.parking":"Free parking","tag.bathtub":"Freestand. bathtub",
-  "tag.seaview":"Frontal sea view","tag.terrace":"Terrace","tag.wifi":"Free wifi",
-  "usp.1.t":"Fresh beds","usp.1.p":"Quality linen and made beds on arrival. Towels and beach towels included.",
-  "usp.2.t":"Contactless check-in","usp.2.p":"Digital code or key safe — arrive whenever suits you, 24/7.",
-  "usp.3.t":"Welcome gift","usp.3.p":"Coffee, tea and a small surprise waiting for you on arrival.",
-  "usp.4.t":"Always reachable","usp.4.p":"Via WhatsApp, phone or email. We reply in NL, FR, EN or DE.",
-  "gal.eyebrow":"Gallery","gal.title":"Take a look inside",
-  "gal.z1":"La Brise · Sea view","gal.z2":"La Brise · Dining area",
-  "gal.z3":"La Brise · Kitchen","gal.z4":"La Brise · Bedroom",
-  "gal.h1":"Het Relax Hoeveke · Garden at night","gal.h2":"Het Relax Hoeveke · Attic bedroom",
-  "gal.h3":"Het Relax Hoeveke · Freestanding bathtub","gal.h4":"Het Relax Hoeveke · SMEG kitchen",
-  "gal.all":"View all photos",
-  "cta.eyebrow":"Book today","cta.title":"Ready for your Ostend escape?",
-  "cta.desc":"Choose your rental and check availability. All calendars are synchronised via Lodgify.",
-  "cta.hoeve":"Book Het Relax Hoeveke","cta.zee":"Book La Brise et La Mer","cta.question":"Ask a question",
-  "rev.eyebrow":"Experiences","rev.title":"What our guests say",
-  "footer.tagline":"Two unique stays on the Belgian coast.",
-  "footer.nav":"Navigation","footer.book":"Book","footer.contact":"Contact",
-  "footer.direct":"Book directly",
-  "footer.privacy":"Privacy policy","footer.cookies":"Cookie policy","footer.terms":"Terms & conditions"
+  "gal.all":"View all photos","footer.tagline":"Two unique stays on the Belgian coast."
 },
 de:{
-  "nav.rentals":"Unterkünfte","nav.gallery":"Galerie","nav.faq":"FAQ",
+  "nav.home":"Home","nav.rentals":"Unterkünfte","nav.gallery":"Galerie","nav.faq":"FAQ",
   "nav.book":"Buchen","nav.contact":"Kontakt","nav.bookNow":"Jetzt buchen",
-  "hero.hoeve.loc":"Stene · Ostende","hero.hoeve.sub":"Ländlich & authentisch",
-  "hero.hoeve.desc":"Ein charaktervolles Hofappartement in Stene — mit SMEG-Küche, freistehender Badewanne und privatem Garten.",
-  "hero.hoeve.cta":"Het Relax Hoeveke entdecken",
-  "hero.zee.loc":"Promenade 170 · Mariakerke","hero.zee.sub":"Das Meer vor Ihrer Tür",
-  "hero.zee.desc":"Frontaler Meerblick aus jedem Fenster. Mit der Nordsee als Ausblick aufwachen.",
-  "hero.zee.cta":"Die Wohnung entdecken",
-  "stat.rentals":"Einzigartige Unterkünfte","stat.score":"Booking.com Bewertung",
-  "stat.beach":"Von Strand & Zentrum","stat.langs":"Gesprochene Sprachen",
-  "intro.eyebrow":"Willkommen",
-  "intro.p1":"Direkt an der Nordsee oder inmitten der Polderruhe — bei uns ist die Wahl Ihre. La Brise et La Mer auf der Promenade von Mariakerke bietet frontalen Meerblick.",
-  "intro.p2":"Het Relax Hoeveke im historischen Dorf Stene ist ganz anders: authentische Balken, SMEG-Küche, freistehende Badewanne und Garten. Beides 10 Minuten vom Zentrum Ostendes.",
-  "intro.quote":"\"Wählen Sie Ihr eigenes Ostende — das Meer oder die Stille, oder beides.\"",
-  "props.eyebrow":"Unsere Unterkünfte","props.title":"Zwei Welten, ein Reiseziel",
-  "card.hoeve.badge":"01 · Stene","card.hoeve.type":"Hofappartement · Stene-Dorpstraat 36",
-  "card.hoeve.desc":"Het Relax Hoeveke in Stene. Kochen auf einem professionellen SMEG, genießen Sie ein Bad in der freistehenden Wanne, entspannen Sie im privaten Garten.",
-  "card.zee.badge":"02 · Promenade","card.zee.type":"Appartement · Promenade 170, Mariakerke",
-  "card.zee.desc":"Helles, modernes Appartement mit frontalem Meerblick. Der Strand ist 30 Sekunden entfernt. Mit 8.4/10 auf Booking.com bewertet.",
+  "hero.hoeve.cta":"Het Relax Hoeveke entdecken","hero.zee.cta":"Die Wohnung entdecken",
   "card.cta.book":"Verfügbarkeit","card.cta.more":"Mehr Info",
-  "tag.garden":"Privater Garten","tag.parking":"Kostenlos Parken","tag.bathtub":"Freisteh. Badewanne",
-  "tag.seaview":"Frontaler Meerblick","tag.terrace":"Terrasse","tag.wifi":"Gratis WLAN",
-  "usp.1.t":"Frische Betten","usp.1.p":"Qualitätswäsche und gemachte Betten bei Ankunft. Handtücher und Strandtücher inklusive.",
-  "usp.2.t":"Kontaktloses Einchecken","usp.2.p":"Digitaler Zugangscode oder Schlüsseltresor — kommen Sie wann es passt, 24/7.",
-  "usp.3.t":"Willkommensgeschenk","usp.3.p":"Kaffee, Tee und eine kleine Überraschung bei der Ankunft.",
-  "usp.4.t":"Immer erreichbar","usp.4.p":"Via WhatsApp, Telefon oder E-Mail. Wir antworten auf NL, FR, EN oder DE.",
-  "gal.eyebrow":"Galerie","gal.title":"Werfen Sie einen Blick hinein",
-  "gal.z1":"La Brise · Meerblick","gal.z2":"La Brise · Essbereich",
-  "gal.z3":"La Brise · Küche","gal.z4":"La Brise · Schlafzimmer",
-  "gal.h1":"Het Relax Hoeveke · Garten bei Nacht","gal.h2":"Het Relax Hoeveke · Dachschlafzimmer",
-  "gal.h3":"Het Relax Hoeveke · Freistehende Badewanne","gal.h4":"Het Relax Hoeveke · SMEG-Küche",
-  "gal.all":"Alle Fotos ansehen",
-  "cta.eyebrow":"Heute buchen","cta.title":"Bereit für Ihren Ostende-Ausflug?",
-  "cta.desc":"Wählen Sie Ihre Unterkunft und prüfen Sie die Verfügbarkeit. Alle Kalender über Lodgify synchronisiert.",
-  "cta.hoeve":"Het Relax Hoeveke buchen","cta.zee":"La Brise et La Mer buchen","cta.question":"Eine Frage stellen",
-  "rev.eyebrow":"Erfahrungen","rev.title":"Was unsere Gäste sagen",
-  "footer.tagline":"Zwei einzigartige Unterkünfte an der belgischen Küste.",
-  "footer.nav":"Navigation","footer.book":"Buchen","footer.contact":"Kontakt",
-  "footer.direct":"Direkt buchen",
-  "footer.privacy":"Datenschutz","footer.cookies":"Cookie-Richtlinie","footer.terms":"AGB"
+  "gal.all":"Alle Fotos ansehen","footer.tagline":"Zwei einzigartige Unterkünfte an der belgischen Küste."
 }
 };
 
@@ -1507,51 +1421,24 @@ try {
   if (s && T[s]) setLang(s);
 } catch(e) {}
 
-// ── Scrolled nav ──────────────────────────────────────────────
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () =>
-  nav.classList.toggle('scrolled', window.scrollY > 50), { passive: true });
-
-// ── Mobile menu ───────────────────────────────────────────────
-document.getElementById('hamburger').addEventListener('click', () =>
-  document.getElementById('mobile-menu').classList.toggle('open'));
-document.querySelectorAll('.mobile-menu a').forEach(a =>
-  a.addEventListener('click', () =>
-    document.getElementById('mobile-menu').classList.remove('open')));
-
-// ── Scroll reveal ─────────────────────────────────────────────
+// ── Scroll reveal — bidirectioneel (in én uit bij terugscrollen) ──
 const obs = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
-}, { threshold: 0.1 });
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+    } else {
+      // Fade OUT wanneer element terug boven de viewport scrollt
+      if (e.boundingClientRect.top < 0) {
+        e.target.classList.remove('in');
+      }
+    }
+  });
+}, { threshold: 0.12 });
 document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => obs.observe(el));
 
-// ── Footer year ───────────────────────────────────────────────
-document.getElementById('yr').textContent = new Date().getFullYear();
-</script>
-
-<!-- COOKIE BANNER -->
-<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1e120a;color:rgba(255,255,255,0.8);padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;border-top:3px solid #c9a050;box-shadow:0 -4px 30px rgba(0,0,0,0.3)">
-  <p style="font-size:0.82rem;line-height:1.65;max-width:640px;margin:0">
-    Wij gebruiken cookies om uw bezoek te verbeteren en anonieme statistieken bij te houden. 
-    Meer info in ons <a href="#" style="color:#c9a050;text-decoration:underline">cookiebeleid</a>.
-  </p>
-  <div style="display:flex;gap:0.75rem;flex-shrink:0">
-    <button onclick="closeCookie('declined')" style="background:transparent;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.5);padding:0.55rem 1.25rem;font-family:inherit;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.2s">Weigeren</button>
-    <button onclick="closeCookie('accepted')" style="background:#c9a050;border:none;color:#3d2b1f;padding:0.55rem 1.5rem;font-family:inherit;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.2s">Aanvaarden</button>
-  </div>
-</div>
-<script>
-(function(){
-  try{
-    if(!localStorage.getItem('cookie-consent')){
-      document.getElementById('cookie-banner').style.display='flex';
-    }
-  }catch(e){}
-})();
-function closeCookie(v){
-  try{localStorage.setItem('cookie-consent',v);}catch(e){}
-  document.getElementById('cookie-banner').style.display='none';
-}
+// ── Footer year ───────────────────────────────────────────────────
+const yrEl = document.getElementById('yr');
+if (yrEl) yrEl.textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
