@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Galerij | Vakantiewoningen in Oostende</title>
+<meta name="description" content="Bekijk foto's van Het Relax Hoeveke in Stene en La Brise et La Mer op de Zeedijk van Mariakerke, Oostende."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.vakantiewoningeninoostende.be/galerij.html"/>
+<meta property="og:title" content="Galerij | Vakantiewoningen in Oostende"/>
+<meta property="og:description" content="Bekijk foto's van Het Relax Hoeveke in Stene en La Brise et La Mer op de Zeedijk van Mariakerke, Oostende."/>
+<meta property="og:image" content="https://www.vakantiewoningeninoostende.be/images/zee-hero.jpg"/>
+<meta property="og:locale" content="nl_BE"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Galerij | Vakantiewoningen in Oostende"/>
+<meta name="twitter:description" content="Bekijk foto's van Het Relax Hoeveke in Stene en La Brise et La Mer op de Zeedijk van Mariakerke, Oostende."/>
+<meta name="twitter:image" content="https://www.vakantiewoningeninoostende.be/images/zee-hero.jpg"/>
+<link rel="canonical" href="https://www.vakantiewoningeninoostende.be/galerij.html"/>
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="Vakantiewoningen in Oostende"/>
+<meta name="geo.region" content="BE-VWV"/>
+<meta name="geo.placename" content="Oostende"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;font-weight:300;background:#faf8f4;color:#2a2118;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+:root{
+  --cream:#faf8f4;--cream2:#f2ede4;--cream3:#e8dfd0;
+  --warm:#3d2b1f;--warm2:#7a5c42;--warm3:#b8956a;
+  --sea:#1c3f5e;--sea2:#2d6a9f;
+  --gold:#c9a050;--muted:#8a7a6a;
+  --light-line:rgba(42,33,24,0.10);
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',sans-serif;
+}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;background:rgba(250,248,244,0.96);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color 0.3s,height 0.3s}
+.nav.scrolled{border-bottom-color:var(--light-line);height:60px}
+.nav-logo{display:flex;flex-direction:column;gap:1px}
+.nav-logo-main{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--warm);letter-spacing:0.02em;line-height:1}
+.nav-logo-sub{font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--warm2);transition:color 0.2s;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--warm);transition:width 0.3s}
+.nav-links a:hover{color:var(--warm)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-links a.active{color:var(--warm)}
+.nav-right{display:flex;align-items:center;gap:1.25rem}
+.lang-bar{display:flex;gap:0;border:1px solid var(--light-line)}
+.lang-bar button{background:none;border:none;border-right:1px solid var(--light-line);font-family:var(--sans);font-size:0.62rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding:0.3rem 0.55rem;cursor:pointer;transition:all 0.2s}
+.lang-bar button:last-child{border-right:none}
+.lang-bar button:hover{color:var(--warm);background:var(--cream2)}
+.lang-bar button.active{background:var(--warm);color:#fff}
+.btn-book-nav{font-family:var(--sans);font-size:0.68rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#fff;background:var(--warm);padding:0.55rem 1.4rem;transition:background 0.2s}
+.btn-book-nav:hover{background:#2a1a0e}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
+.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--warm);transition:all 0.3s}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--light-line);padding:1.5rem 2rem;flex-direction:column;gap:0.75rem;z-index:99;box-shadow:0 8px 30px rgba(0,0,0,0.07)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--warm2);padding:0.5rem 0;border-bottom:1px solid var(--light-line)}
+
+/* PAGE HERO */
+.page-hero{margin-top:70px;background:var(--cream2);padding:5rem 3rem 4rem;text-align:center;border-bottom:1px solid var(--light-line)}
+.eyebrow{display:flex;align-items:center;justify-content:center;gap:0.75rem;font-size:0.62rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--warm3);margin-bottom:1rem}
+.page-hero h1{font-family:var(--serif);font-size:clamp(2.4rem,4vw,3.5rem);font-weight:400;color:var(--warm);letter-spacing:-0.01em;line-height:1.1;margin-bottom:1rem}
+.page-hero h1 em{font-style:italic}
+.page-hero p{font-size:1rem;color:var(--warm2);max-width:520px;margin:0 auto;line-height:1.8}
+
+/* FILTER BAR */
+.filter-bar{position:sticky;top:70px;z-index:50;background:var(--cream);border-bottom:1px solid var(--light-line);padding:0 3rem;display:flex;align-items:center;gap:0;transition:top 0.3s}
+.nav.scrolled ~ .filter-bar,
+body.scrolled .filter-bar{top:60px}
+.filter-btn{background:none;border:none;border-right:1px solid var(--light-line);font-family:var(--sans);font-size:0.68rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted);padding:1.1rem 2.2rem;cursor:pointer;transition:all 0.2s;position:relative}
+.filter-btn:first-child{border-left:none}
+.filter-btn::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:transparent;transition:background 0.2s}
+.filter-btn:hover{color:var(--warm)}
+.filter-btn.active{color:var(--warm)}
+.filter-btn.active::after{background:var(--warm)}
+.filter-btn.active.hoeve-filter::after{background:var(--warm)}
+.filter-btn.active.zee-filter::after{background:var(--sea)}
+.filter-count{display:inline-block;font-size:0.55rem;vertical-align:super;margin-left:0.35rem;opacity:0.6}
+
+/* GALLERY GRID */
+.gallery-section{padding:4rem 3rem 6rem;background:var(--cream)}
+.gallery-grid{
+  columns:3;
+  column-gap:8px;
+  max-width:1440px;
+  margin:0 auto;
+}
+.gal-item{
+  break-inside:avoid;
+  margin-bottom:8px;
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+  display:block;
+}
+.gal-item img{
+  width:100%;
+  display:block;
+  transition:transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.gal-item:hover img{transform:scale(1.04)}
+.gal-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top,rgba(30,18,8,0.7) 0%,transparent 55%);
+  opacity:0;
+  transition:opacity 0.3s;
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  padding:1.25rem 1.4rem;
+}
+.gal-item:hover .gal-overlay{opacity:1}
+.gal-caption{font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.9);font-weight:500;line-height:1.4}
+.gal-zoom{width:32px;height:32px;border:1px solid rgba(255,255,255,0.5);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;flex-shrink:0}
+
+/* Property label badges on images */
+.gal-prop-badge{
+  position:absolute;
+  top:0.85rem;left:0.85rem;
+  font-size:0.55rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;
+  padding:0.22rem 0.65rem;color:#fff;
+  opacity:0;
+  transition:opacity 0.3s;
+  z-index:2;
+}
+.gal-item:hover .gal-prop-badge{opacity:1}
+.badge-h{background:var(--warm)}
+.badge-z{background:var(--sea)}
+
+/* Hidden state for filter */
+.gal-item.hidden{
+  display:none;
+}
+
+/* LIGHTBOX */
+.lightbox{
+  position:fixed;
+  inset:0;
+  z-index:1000;
+  background:rgba(14,9,5,0.96);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:2rem;
+}
+.lightbox.open{display:flex}
+.lb-inner{
+  position:relative;
+  max-width:1100px;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.lb-img{
+  max-height:80vh;
+  max-width:100%;
+  object-fit:contain;
+  display:block;
+}
+.lb-caption{
+  margin-top:1.25rem;
+  font-size:0.75rem;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:rgba(255,255,255,0.5);
+  text-align:center;
+}
+.lb-close{
+  position:fixed;
+  top:1.5rem;right:1.5rem;
+  background:none;border:1px solid rgba(255,255,255,0.25);
+  color:#fff;width:44px;height:44px;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:1.2rem;
+  transition:background 0.2s,border-color 0.2s;
+}
+.lb-close:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.5)}
+.lb-prev,.lb-next{
+  position:fixed;
+  top:50%;transform:translateY(-50%);
+  background:none;border:1px solid rgba(255,255,255,0.2);
+  color:#fff;width:50px;height:50px;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;font-size:1.4rem;
+  transition:all 0.2s;
+}
+.lb-prev{left:1.5rem}.lb-next{right:1.5rem}
+.lb-prev:hover,.lb-next:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.5)}
+.lb-counter{
+  position:fixed;
+  bottom:1.5rem;left:50%;transform:translateX(-50%);
+  font-size:0.7rem;letter-spacing:0.14em;
+  color:rgba(255,255,255,0.35);
+}
+
+/* CTA */
+.gal-cta{background:var(--cream2);padding:5rem 3rem;text-align:center;border-top:1px solid var(--light-line)}
+.gal-cta h2{font-family:var(--serif);font-size:clamp(1.8rem,3vw,2.6rem);font-weight:400;color:var(--warm);margin:0.5rem 0 0.75rem}
+.gal-cta h2 em{font-style:italic}
+.gal-cta p{font-size:0.92rem;color:var(--warm2);max-width:480px;margin:0 auto 2rem;line-height:1.8}
+.cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-fill{font-family:var(--sans);font-size:0.7rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;padding:0.9rem 2.2rem;color:#fff;display:inline-flex;align-items:center;gap:0.5rem;transition:all 0.2s}
+.btn-fill.warm{background:var(--warm)}.btn-fill.warm:hover{background:#2a1a0e}
+.btn-fill.sea{background:var(--sea)}.btn-fill.sea:hover{background:#0f2438}
+.btn-outline{font-family:var(--sans);font-size:0.7rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--warm);border:1px solid var(--warm);padding:0.9rem 2.2rem;transition:all 0.2s;display:inline-flex;align-items:center;gap:0.5rem}
+.btn-outline:hover{background:var(--warm);color:#fff}
+
+/* FOOTER */
+footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;max-width:1280px;margin:0 auto;padding-bottom:3.5rem;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2rem}
+.footer-brand{font-family:var(--serif);font-size:1.4rem;font-weight:400;color:#fff;margin-bottom:0.75rem;line-height:1.2}
+.footer-tagline{font-size:0.83rem;line-height:1.85;max-width:320px;margin-bottom:1.75rem}
+.footer-social{display:flex;gap:0.6rem}
+.social-btn{width:36px;height:36px;border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:rgba(255,255,255,0.4);text-decoration:none;transition:all 0.2s}
+.social-btn:hover{border-color:rgba(255,255,255,0.45);color:#fff;background:rgba(255,255,255,0.06)}
+.footer-col h5{font-size:0.6rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--warm3);margin-bottom:1.2rem}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:0.6rem;font-size:0.82rem}
+.footer-col a{color:rgba(255,255,255,0.45);transition:color 0.2s}
+.footer-col a:hover{color:#fff}
+.footer-bottom{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;font-size:0.72rem}
+.footer-legal{display:flex;gap:1.75rem}
+.footer-legal a{color:rgba(255,255,255,0.3);transition:color 0.2s}
+.footer-legal a:hover{color:rgba(255,255,255,0.65)}
+
+@media(max-width:900px){
+  .nav-links,.btn-book-nav{display:none}
+  .nav-hamburger{display:flex}
+  .nav{padding:0 1.5rem}
+  .gallery-grid{columns:2}
+  .filter-bar{padding:0 1rem;overflow-x:auto}
+  .filter-btn{padding:1rem 1.25rem;white-space:nowrap}
+  .gallery-section{padding:3rem 1.25rem 5rem}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2rem}
+  .page-hero{padding:4rem 1.5rem 3rem}
+  .gal-cta{padding:4rem 1.5rem}
+  .lb-prev{left:0.5rem}.lb-next{right:0.5rem}
+}
+@media(max-width:580px){
+  .gallery-grid{columns:1}
+  .footer-grid{grid-template-columns:1fr}
+  footer{padding:3.5rem 1.5rem 2rem}
+  .cta-row{flex-direction:column;align-items:center}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-main">Vakantiewoningen in Oostende</span>
+    <span class="nav-logo-sub">La Brise et La Mer · Het Relax Hoeveke</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="woningen.html">Woningen</a></li>
+    <li><a href="galerij.html" class="active">Galerij</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="boeken.html">Boeken</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-bar">
+      <button data-lang="nl" class="active">NL</button>
+      <button data-lang="fr">FR</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="de">DE</button>
+    </div>
+    <a href="boeken.html" class="btn-book-nav">Reserveer nu</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="woningen.html">Woningen</a>
+  <a href="galerij.html">Galerij</a>
+  <a href="faq.html">FAQ</a>
+  <a href="boeken.html">Boeken</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="eyebrow">Galerij</div>
+  <h1>Neem een kijkje <em>binnen</em></h1>
+  <p>Ontdek beide vakantiewoningen door de ogen van onze fotograaf — van de zeehorizon tot de SMEG-keuken.</p>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar" id="filter-bar">
+  <button class="filter-btn active" data-filter="all">Alle foto's <span class="filter-count" id="count-all">21</span></button>
+  <button class="filter-btn hoeve-filter" data-filter="hoeve">Het Relax Hoeveke <span class="filter-count" id="count-hoeve">10</span></button>
+  <button class="filter-btn zee-filter" data-filter="zee">La Brise et La Mer <span class="filter-count" id="count-zee">11</span></button>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery-section">
+  <div class="gallery-grid" id="gallery-grid">
+
+    <!-- La Brise -->
+    <div class="gal-item" data-cat="zee" data-src="images/zee-hero.jpg" data-cap="La Brise et La Mer · Vensterbank met zeezicht">
+      <img src="images/zee-hero.jpg" alt="La Brise et La Mer vensterbank zeezicht" loading="lazy"/>
+      <span class="gal-prop-badge badge-z">La Brise et La Mer</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Vensterbank · zeezicht</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Hoeve exterior -->
+    <div class="gal-item" data-cat="hoeve" data-src="images/hoeve-nacht.jpg" data-cap="Het Relax Hoeveke · Tuin bij nacht">
+      <img src="images/hoeve-nacht.jpg" alt="Het Relax Hoeveke tuin bij nacht" loading="lazy"/>
+      <span class="gal-prop-badge badge-h">Het Relax Hoeveke</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Tuin bij nacht</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Zee woonkamer -->
+    <div class="gal-item" data-cat="zee" data-src="images/zee-woonkamer.jpg" data-cap="La Brise et La Mer · Woonkamer met zeezicht">
+      <img src="images/zee-woonkamer.jpg" alt="La Brise woonkamer zeezicht" loading="lazy"/>
+      <span class="gal-prop-badge badge-z">La Brise et La Mer</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Woonkamer · zeezicht</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Hoeve keuken -->
+    <div class="gal-item" data-cat="hoeve" data-src="images/hoeve-keuken.jpg" data-cap="Het Relax Hoeveke · SMEG keuken">
+      <img src="images/hoeve-keuken.jpg" alt="Het Relax Hoeveke SMEG keuken" loading="lazy"/>
+      <span class="gal-prop-badge badge-h">Het Relax Hoeveke</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">SMEG keuken</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Zee eethoek -->
+    <div class="gal-item" data-cat="zee" data-src="images/zee-eethoek.jpg" data-cap="La Brise et La Mer · Eethoek met zeezicht">
+      <img src="images/zee-eethoek.jpg" alt="La Brise eethoek zeezicht" loading="lazy"/>
+      <span class="gal-prop-badge badge-z">La Brise et La Mer</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Eethoek · zeezicht</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Hoeve badkamer -->
+    <div class="gal-item" data-cat="hoeve" data-src="images/hoeve-badkamer.jpg" data-cap="Het Relax Hoeveke · Vrijstaande badkuip">
+      <img src="images/hoeve-badkamer.jpg" alt="Het Relax Hoeveke vrijstaande badkuip" loading="lazy"/>
+      <span class="gal-prop-badge badge-h">Het Relax Hoeveke</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Vrijstaande badkuip</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Zee slaapkamer -->
+    <div class="gal-item" data-cat="zee" data-src="images/zee-slaapkamer.png" data-cap="La Brise et La Mer · Slaapkamer">
+      <img src="images/zee-slaapkamer.png" alt="La Brise slaapkamer" loading="lazy"/>
+      <span class="gal-prop-badge badge-z">La Brise et La Mer</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Slaapkamer</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Hoeve slaapkamer -->
+    <div class="gal-item" data-cat="hoeve" data-src="images/hoeve-slaapkamer.jpg" data-cap="Het Relax Hoeveke · Zolderslaapkamer met balken">
+      <img src="images/hoeve-slaapkamer.jpg" alt="Het Relax Hoeveke zolderslaapkamer dakbalken" loading="lazy"/>
+      <span class="gal-prop-badge badge-h">Het Relax Hoeveke</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Zolderslaapkamer</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Zee keuken -->
+    <div class="gal-item" data-cat="zee" data-src="images/zee-keuken.jpg" data-cap="La Brise et La Mer · Keuken">
+      <img src="images/zee-keuken.jpg" alt="La Brise keuken" loading="lazy"/>
+      <span class="gal-prop-badge badge-z">La Brise et La Mer</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Keuken</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Hoeve exterior day -->
+    <div class="gal-item" data-cat="hoeve" data-src="images/hoeve-exterior.jpg" data-cap="Het Relax Hoeveke · Buitenaanzicht">
+      <img src="images/hoeve-exterior.jpg" alt="Het Relax Hoeveke buitenkant" loading="lazy"/>
+      <span class="gal-prop-badge badge-h">Het Relax Hoeveke</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Buitenaanzicht</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Zee salon -->
+    <div class="gal-item" data-cat="zee" data-src="images/zee-salon.png" data-cap="La Brise et La Mer · Salon">
+      <img src="images/zee-salon.png" alt="La Brise salon" loading="lazy"/>
+      <span class="gal-prop-badge badge-z">La Brise et La Mer</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Salon</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Hoeve smeg detail -->
+    <div class="gal-item" data-cat="hoeve" data-src="images/hoeve-smeg.jpg" data-cap="Het Relax Hoeveke · SMEG fornuis detail">
+      <img src="images/hoeve-smeg.jpg" alt="Het Relax Hoeveke SMEG fornuis" loading="lazy"/>
+      <span class="gal-prop-badge badge-h">Het Relax Hoeveke</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">SMEG fornuis</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Zee badkamer -->
+    <div class="gal-item" data-cat="zee" data-src="images/zee-badkamer.png" data-cap="La Brise et La Mer · Badkamer">
+      <img src="images/zee-badkamer.png" alt="La Brise badkamer" loading="lazy"/>
+      <span class="gal-prop-badge badge-z">La Brise et La Mer</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Badkamer</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Hoeve living -->
+    <div class="gal-item" data-cat="hoeve" data-src="images/hoeve-living.jpg" data-cap="Het Relax Hoeveke · Woonkamer">
+      <img src="images/hoeve-living.jpg" alt="Het Relax Hoeveke woonkamer" loading="lazy"/>
+      <span class="gal-prop-badge badge-h">Het Relax Hoeveke</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Woonkamer</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Zee living2 -->
+    <div class="gal-item" data-cat="zee" data-src="images/zee-living2.jpg" data-cap="La Brise et La Mer · Living vanuit de deur">
+      <img src="images/zee-living2.jpg" alt="La Brise living deur" loading="lazy"/>
+      <span class="gal-prop-badge badge-z">La Brise et La Mer</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Living · inkomhal</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Hoeve eethoek -->
+    <div class="gal-item" data-cat="hoeve" data-src="images/hoeve-eethoek.jpg" data-cap="Het Relax Hoeveke · Eethoek gedekt">
+      <img src="images/hoeve-eethoek.jpg" alt="Het Relax Hoeveke eethoek" loading="lazy"/>
+      <span class="gal-prop-badge badge-h">Het Relax Hoeveke</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Eethoek gedekt</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Zee detail Oostende boek -->
+    <div class="gal-item" data-cat="zee" data-src="images/zee-detail.png" data-cap="La Brise et La Mer · Sfeerdetail Oostende">
+      <img src="images/zee-detail.png" alt="La Brise Oostende detail" loading="lazy"/>
+      <span class="gal-prop-badge badge-z">La Brise et La Mer</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Sfeerdetail</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Hoeve mirror -->
+    <div class="gal-item" data-cat="hoeve" data-src="images/hoeve-mirror.jpg" data-cap="Het Relax Hoeveke · Badkamer spiegel">
+      <img src="images/hoeve-mirror.jpg" alt="Het Relax Hoeveke badkamer spiegel" loading="lazy"/>
+      <span class="gal-prop-badge badge-h">Het Relax Hoeveke</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Badkamer · spiegel</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Zee inkom -->
+    <div class="gal-item" data-cat="zee" data-src="images/zee-inkom.png" data-cap="La Brise et La Mer · Inkomhal met zeezicht">
+      <img src="images/zee-inkom.png" alt="La Brise inkomhal" loading="lazy"/>
+      <span class="gal-prop-badge badge-z">La Brise et La Mer</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Inkomhal · zeezicht</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Hoeve dining -->
+    <div class="gal-item" data-cat="hoeve" data-src="images/hoeve-dining.jpg" data-cap="Het Relax Hoeveke · Sfeervolle tafel">
+      <img src="images/hoeve-dining.jpg" alt="Het Relax Hoeveke dining" loading="lazy"/>
+      <span class="gal-prop-badge badge-h">Het Relax Hoeveke</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Sfeervolle tafel</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+    <!-- Hoeve street -->
+    <div class="gal-item" data-cat="hoeve" data-src="images/hoeve-street.jpg" data-cap="Het Relax Hoeveke · Straatzicht Stene-Dorp">
+      <img src="images/hoeve-street.jpg" alt="Het Relax Hoeveke straatzicht" loading="lazy"/>
+      <span class="gal-prop-badge badge-h">Het Relax Hoeveke</span>
+      <div class="gal-overlay">
+        <span class="gal-caption">Straatzicht · Stene-Dorp</span>
+        <span class="gal-zoom">+</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="gal-cta">
+  <div class="eyebrow">Overtuigd?</div>
+  <h2>Reserveer uw <em>verblijf</em></h2>
+  <p>Kies uw favoriete woning en reserveer rechtstreeks bij ons voor de beste prijs.</p>
+  <div class="cta-row">
+    <a href="boeken.html#hoeveke" class="btn-fill warm">Reserveer Het Relax Hoeveke</a>
+    <a href="boeken.html#brise" class="btn-fill sea">Reserveer La Brise et La Mer</a>
+    <a href="contact.html" class="btn-outline">Stel een vraag</a>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto vergroten">
+  <button class="lb-close" id="lb-close" aria-label="Sluiten">✕</button>
+  <button class="lb-prev" id="lb-prev" aria-label="Vorige">‹</button>
+  <div class="lb-inner">
+    <img class="lb-img" id="lb-img" src="" alt=""/>
+    <p class="lb-caption" id="lb-caption"></p>
+  </div>
+  <button class="lb-next" id="lb-next" aria-label="Volgende">›</button>
+  <div class="lb-counter" id="lb-counter"></div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">Vakantiewoningen<br>in Oostende</div>
+      <p class="footer-tagline">Twee unieke verblijven aan de Belgische kust — Het Relax Hoeveke in Stene en La Brise et La Mer op de Zeedijk van Mariakerke.</p>
+      <div class="footer-social">
+        <a href="#" class="social-btn" aria-label="Facebook">f</a>
+        <a href="#" class="social-btn" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Navigatie</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="woningen.html">Woningen</a></li>
+        <li><a href="galerij.html">Galerij</a></li>
+        <li><a href="boeken.html">Boeken</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Boeken</h5>
+      <ul>
+        <li><a href="boeken.html#hoeveke">Het Relax Hoeveke</a></li>
+        <li><a href="boeken.html#brise">La Brise et La Mer</a></li>
+        <li><a href="boeken.html">Beste prijs — rechtstreeks</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="mailto:vakantiewoningeninoostende@hotmail.com">vakantiewoningeninoostende@hotmail.com</a></li>
+        <li><a href="tel:+32475687243">0475 68 72 43</a></li>
+        <li><a href="https://wa.me/32475687243">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="yr"></span> Vakantiewoningen in Oostende</span>
+    <div class="footer-legal">
+      <a href="#">Privacybeleid</a>
+      <a href="#">Cookiebeleid</a>
+      <a href="#">Algemene voorwaarden</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── Nav ────────────────────────────────────────────
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50), {passive:true});
+document.getElementById('hamburger').addEventListener('click', () =>
+  document.getElementById('mobile-menu').classList.toggle('open'));
+document.querySelectorAll('.mobile-menu a').forEach(a =>
+  a.addEventListener('click', () => document.getElementById('mobile-menu').classList.remove('open')));
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// ── Lang ───────────────────────────────────────────
+document.querySelectorAll('.lang-bar button').forEach(b => {
+  b.addEventListener('click', () => {
+    document.querySelectorAll('.lang-bar button').forEach(x => x.classList.remove('active'));
+    b.classList.add('active');
+    try { localStorage.setItem('lang', b.dataset.lang); } catch(e) {}
+  });
+});
+try {
+  const s = localStorage.getItem('lang');
+  if (s) document.querySelector(`.lang-bar button[data-lang="${s}"]`)?.classList.add('active');
+} catch(e) {}
+
+// ── Filter ─────────────────────────────────────────
+const items = Array.from(document.querySelectorAll('.gal-item'));
+const countAll = document.getElementById('count-all');
+const countH = document.getElementById('count-hoeve');
+const countZ = document.getElementById('count-zee');
+
+// Set counts
+countAll.textContent = items.length;
+countH.textContent = items.filter(i => i.dataset.cat === 'hoeve').length;
+countZ.textContent = items.filter(i => i.dataset.cat === 'zee').length;
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const f = btn.dataset.filter;
+    items.forEach(item => {
+      item.classList.toggle('hidden', f !== 'all' && item.dataset.cat !== f);
+    });
+  });
+});
+
+// ── Lightbox ───────────────────────────────────────
+const lb = document.getElementById('lightbox');
+const lbImg = document.getElementById('lb-img');
+const lbCap = document.getElementById('lb-caption');
+const lbCounter = document.getElementById('lb-counter');
+let currentIndex = 0;
+let visibleItems = [];
+
+function openLightbox(index) {
+  visibleItems = items.filter(i => !i.classList.contains('hidden'));
+  currentIndex = index;
+  showSlide(currentIndex);
+  lb.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lb.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function showSlide(idx) {
+  const item = visibleItems[idx];
+  if (!item) return;
+  lbImg.src = item.dataset.src;
+  lbImg.alt = item.dataset.cap;
+  lbCap.textContent = item.dataset.cap;
+  lbCounter.textContent = `${idx + 1} / ${visibleItems.length}`;
+}
+
+items.forEach((item, i) => {
+  item.addEventListener('click', () => {
+    visibleItems = items.filter(x => !x.classList.contains('hidden'));
+    const visIdx = visibleItems.indexOf(item);
+    openLightbox(visIdx >= 0 ? visIdx : 0);
+  });
+});
+
+document.getElementById('lb-close').addEventListener('click', closeLightbox);
+document.getElementById('lb-prev').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+  showSlide(currentIndex);
+});
+document.getElementById('lb-next').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % visibleItems.length;
+  showSlide(currentIndex);
+});
+
+// Click outside image
+lb.addEventListener('click', e => { if (e.target === lb) closeLightbox(); });
+
+// Keyboard navigation
+document.addEventListener('keydown', e => {
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') { currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length; showSlide(currentIndex); }
+  if (e.key === 'ArrowRight') { currentIndex = (currentIndex + 1) % visibleItems.length; showSlide(currentIndex); }
+});
+
+// ── Read URL filter param (e.g. galerij.html?filter=hoeve) ──
+(function(){
+  const params = new URLSearchParams(window.location.search);
+  const f = params.get('filter');
+  if(f && f !== 'all'){
+    const btn = document.querySelector(`.filter-btn[data-filter="${f}"]`);
+    if(btn) btn.click();
+  }
+})();
+</script>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1e120a;color:rgba(255,255,255,0.8);padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;border-top:3px solid #c9a050;box-shadow:0 -4px 30px rgba(0,0,0,0.3)">
+  <p style="font-size:0.82rem;line-height:1.65;max-width:640px;margin:0">
+    Wij gebruiken cookies om uw bezoek te verbeteren en anonieme statistieken bij te houden. 
+    Meer info in ons <a href="#" style="color:#c9a050;text-decoration:underline">cookiebeleid</a>.
+  </p>
+  <div style="display:flex;gap:0.75rem;flex-shrink:0">
+    <button onclick="closeCookie('declined')" style="background:transparent;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.5);padding:0.55rem 1.25rem;font-family:inherit;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.2s">Weigeren</button>
+    <button onclick="closeCookie('accepted')" style="background:#c9a050;border:none;color:#3d2b1f;padding:0.55rem 1.5rem;font-family:inherit;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.2s">Aanvaarden</button>
+  </div>
+</div>
+<script>
+(function(){
+  try{
+    if(!localStorage.getItem('cookie-consent')){
+      document.getElementById('cookie-banner').style.display='flex';
+    }
+  }catch(e){}
+})();
+function closeCookie(v){
+  try{localStorage.setItem('cookie-consent',v);}catch(e){}
+  document.getElementById('cookie-banner').style.display='none';
+}
+</script>
+</body>
+</html>

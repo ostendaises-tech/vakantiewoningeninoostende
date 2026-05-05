@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Boeken | Vakantiewoningen in Oostende</title>
+<meta name="description" content="Reserveer rechtstreeks bij ons voor de beste prijs. Het Relax Hoeveke in Stene en La Brise et La Mer op de Zeedijk van Mariakerke."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.vakantiewoningeninoostende.be/boeken.html"/>
+<meta property="og:title" content="Boeken | Vakantiewoningen in Oostende — Beste Prijs Gegarandeerd"/>
+<meta property="og:description" content="Reserveer rechtstreeks voor de beste prijs. Het Relax Hoeveke (Stene) en La Brise et La Mer (Zeedijk Mariakerke). Geen commissie, geen tussenpersoon."/>
+<meta property="og:image" content="https://www.vakantiewoningeninoostende.be/images/zee-woonkamer.jpg"/>
+<meta property="og:locale" content="nl_BE"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Boeken | Vakantiewoningen in Oostende — Beste Prijs Gegarandeerd"/>
+<meta name="twitter:description" content="Reserveer rechtstreeks voor de beste prijs. Het Relax Hoeveke (Stene) en La Brise et La Mer (Zeedijk Mariakerke). Geen commissie, geen tussenpersoon."/>
+<meta name="twitter:image" content="https://www.vakantiewoningeninoostende.be/images/zee-woonkamer.jpg"/>
+<link rel="canonical" href="https://www.vakantiewoningeninoostende.be/boeken.html"/>
+<meta name="robots" content="index, follow"/>
+<meta name="author" content="Vakantiewoningen in Oostende"/>
+<meta name="geo.region" content="BE-VWV"/>
+<meta name="geo.placename" content="Oostende"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Jost",sans-serif;font-weight:300;background:#faf8f4;color:#2a2118;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+:root{
+  --cream:#faf8f4;--cream2:#f2ede4;--cream3:#e8dfd0;
+  --warm:#3d2b1f;--warm2:#7a5c42;--warm3:#b8956a;
+  --sea:#1c3f5e;--sea2:#2d6a9f;
+  --gold:#c9a050;--muted:#8a7a6a;
+  --line:rgba(42,33,24,0.10);
+  --serif:"Cormorant Garamond",Georgia,serif;
+  --sans:"Jost",sans-serif;
+}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;background:rgba(250,248,244,0.96);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:all 0.3s}
+.nav.scrolled{border-bottom-color:var(--line);height:60px}
+.nav-logo{display:flex;flex-direction:column;gap:1px}
+.nav-logo-main{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--warm);letter-spacing:0.02em;line-height:1}
+.nav-logo-sub{font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--warm2);transition:color 0.2s;position:relative}
+.nav-links a::after{content:"";position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--warm);transition:width 0.3s}
+.nav-links a:hover,.nav-links a.active{color:var(--warm)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:1.25rem}
+.lang-bar{display:flex;border:1px solid var(--line)}
+.lang-bar button{background:none;border:none;border-right:1px solid var(--line);font-family:var(--sans);font-size:0.62rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding:0.3rem 0.55rem;cursor:pointer;transition:all 0.2s}
+.lang-bar button:last-child{border-right:none}
+.lang-bar button:hover{color:var(--warm);background:var(--cream2)}
+.lang-bar button.active{background:var(--warm);color:#fff}
+.btn-book-nav{font-family:var(--sans);font-size:0.68rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#fff;background:var(--warm);padding:0.55rem 1.4rem;transition:background 0.2s}
+.btn-book-nav:hover{background:#2a1a0e}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
+.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--warm)}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--line);padding:1.5rem 2rem;flex-direction:column;gap:0.75rem;z-index:99;box-shadow:0 8px 30px rgba(0,0,0,0.07)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--warm2);padding:0.5rem 0;border-bottom:1px solid var(--line)}
+
+/* HERO */
+.page-hero{margin-top:70px;position:relative;overflow:hidden;background:var(--warm);padding:6rem 3rem 5rem;text-align:center}
+.page-hero::before{content:"";position:absolute;inset:0;background-image:url("images/zee-eethoek.jpg");background-size:cover;background-position:center;opacity:0.1}
+.page-hero-inner{position:relative;z-index:2}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:0.85rem;font-size:0.62rem;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1.5rem}
+.hero-eyebrow::before,.hero-eyebrow::after{content:"";width:28px;height:1px;background:rgba(255,255,255,0.2)}
+.page-hero h1{font-family:var(--serif);font-size:clamp(2.8rem,5vw,4.2rem);font-weight:300;color:#fff;letter-spacing:-0.02em;line-height:1.05;margin-bottom:1.25rem}
+.page-hero h1 em{font-style:italic;font-weight:400}
+.page-hero p{font-size:1rem;color:rgba(255,255,255,0.55);max-width:500px;margin:0 auto;line-height:1.85}
+
+/* BEST PRICE STRIP */
+.best-price-strip{background:var(--gold);padding:1.1rem 3rem;display:flex;align-items:center;justify-content:center;gap:3rem;flex-wrap:wrap}
+.bp-item{font-size:0.72rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--warm);display:flex;align-items:center;gap:0.6rem}
+.bp-item::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--warm);opacity:0.5;flex-shrink:0}
+
+/* BOOKING SECTIONS */
+.booking-section{padding:6rem 0;border-bottom:1px solid var(--line)}
+.booking-section:last-of-type{border-bottom:none}
+.booking-section.hoeve{background:var(--cream)}
+.booking-section.zee{background:var(--cream2)}
+
+.booking-inner{max-width:1280px;margin:0 auto;padding:0 3rem;display:grid;grid-template-columns:1fr 1.6fr;gap:6rem;align-items:start}
+.booking-section.zee .booking-inner{grid-template-columns:1.6fr 1fr}
+
+/* Property info panel */
+.prop-info{}
+.prop-number{font-family:var(--serif);font-size:5rem;font-weight:600;line-height:1;color:var(--cream3);margin-bottom:-1rem;display:block;user-select:none}
+.booking-section.zee .prop-number{color:rgba(28,63,94,0.08)}
+.prop-eyebrow{font-size:0.62rem;font-weight:600;letter-spacing:0.28em;text-transform:uppercase;color:var(--warm3);margin-bottom:1rem;display:flex;align-items:center;gap:0.75rem}
+.prop-eyebrow::before{content:"";width:24px;height:1px;background:var(--warm3);flex-shrink:0}
+.booking-section.zee .prop-eyebrow{color:var(--sea2)}
+.booking-section.zee .prop-eyebrow::before{background:var(--sea2)}
+.prop-info h2{font-family:var(--serif);font-size:clamp(2rem,3vw,2.8rem);font-weight:400;color:var(--warm);letter-spacing:-0.01em;line-height:1.1;margin-bottom:0.4rem}
+.prop-info h2 em{font-style:italic}
+.booking-section.zee .prop-info h2{color:var(--sea)}
+.prop-addr{font-size:0.78rem;color:var(--muted);letter-spacing:0.05em;margin-bottom:1.75rem}
+.prop-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;margin-bottom:1.75rem}
+
+/* Quick specs */
+.prop-specs{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.spec-item{padding:0.85rem 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.spec-label{font-size:0.6rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--muted)}
+.spec-val{font-size:0.9rem;color:var(--warm);font-weight:400}
+
+/* Lodgify widget area */
+.widget-area{background:#fff;box-shadow:0 2px 40px rgba(42,33,24,0.07);min-height:400px}
+
+/* Placeholder — te vervangen door Lodgify embed */
+.widget-placeholder{
+  min-height:420px;
+  display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+  gap:1.25rem;text-align:center;
+  padding:3rem;
+  border:2px dashed rgba(42,33,24,0.12);
+  background:var(--cream);
+}
+.wp-icon{
+  width:56px;height:56px;
+  border:1px solid var(--line);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:1.4rem;color:var(--warm3);
+}
+.wp-title{font-family:var(--serif);font-size:1.3rem;font-weight:400;color:var(--warm)}
+.wp-text{font-size:0.82rem;color:var(--muted);max-width:320px;line-height:1.7}
+.wp-text code{display:block;margin-top:1rem;background:var(--cream2);padding:0.6rem 1rem;font-size:0.78rem;color:var(--warm2);font-family:monospace;letter-spacing:0.05em;text-align:left;line-height:1.5}
+
+/* Notice box */
+.notice{background:var(--cream2);border-left:3px solid var(--gold);padding:1.25rem 1.5rem;margin-top:1.5rem}
+.notice p{font-size:0.82rem;color:var(--warm2);line-height:1.7}
+.notice strong{color:var(--warm);font-weight:500}
+
+/* Prices overview */
+.prices-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);overflow:hidden;margin-top:1.5rem}
+.price-row{padding:0.85rem 1.25rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);font-size:0.85rem}
+.price-row:last-child{border-bottom:none}
+.price-row .pr-label{color:var(--muted)}
+.price-row .pr-val{font-weight:500;color:var(--warm)}
+.prices-grid.full-width{grid-template-columns:1fr}
+
+/* CONTACT CTA */
+.contact-cta{background:var(--sea);padding:5rem 3rem;text-align:center;position:relative;overflow:hidden}
+.contact-cta::before{content:"";position:absolute;inset:0;background-image:url("images/zee-hero.jpg");background-size:cover;background-position:center;opacity:0.08}
+.cta-inner{position:relative;z-index:2}
+.cta-ew{font-size:0.62rem;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:1rem}
+.cta-ew::before,.cta-ew::after{content:"";width:28px;height:1px;background:rgba(255,255,255,0.2)}
+.contact-cta h2{font-family:var(--serif);font-size:clamp(1.9rem,3.5vw,3rem);font-weight:300;color:#fff;line-height:1.1;margin-bottom:0.85rem}
+.contact-cta h2 em{font-style:italic;font-weight:400}
+.contact-cta p{font-size:0.95rem;color:rgba(255,255,255,0.5);max-width:440px;margin:0 auto 2.25rem;line-height:1.85}
+.cta-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-white{font-family:var(--sans);font-size:0.7rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--sea);background:#fff;padding:0.9rem 2.2rem;transition:all 0.2s}
+.btn-white:hover{background:var(--cream2)}
+.btn-gw{font-family:var(--sans);font-size:0.7rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,0.28);padding:0.9rem 2.2rem;transition:all 0.2s}
+.btn-gw:hover{border-color:#fff;background:rgba(255,255,255,0.07)}
+
+/* FOOTER */
+footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;max-width:1280px;margin:0 auto;padding-bottom:3.5rem;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2rem}
+.fbrand{font-family:var(--serif);font-size:1.4rem;font-weight:400;color:#fff;margin-bottom:0.75rem;line-height:1.2}
+.ftag{font-size:0.83rem;line-height:1.85;max-width:320px;margin-bottom:1.75rem}
+.fsoc{display:flex;gap:0.6rem}
+.fsoc a{width:36px;height:36px;border:1px solid rgba(255,255,255,0.14);display:flex;align-items:center;justify-content:center;font-size:0.7rem;font-weight:600;color:rgba(255,255,255,0.4);transition:all 0.2s}
+.fsoc a:hover{border-color:rgba(255,255,255,0.45);color:#fff}
+.fc h5{font-size:0.6rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--warm3);margin-bottom:1.2rem}
+.fc ul{list-style:none}
+.fc li{margin-bottom:0.6rem;font-size:0.82rem}
+.fc a{color:rgba(255,255,255,0.45);transition:color 0.2s}
+.fc a:hover{color:#fff}
+.fb{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;font-size:0.72rem}
+.fleg{display:flex;gap:1.75rem}
+.fleg a{color:rgba(255,255,255,0.3);transition:color 0.2s}
+.fleg a:hover{color:rgba(255,255,255,0.65)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .booking-inner,.booking-section.zee .booking-inner{grid-template-columns:1fr;gap:3rem}
+}
+@media(max-width:900px){
+  .nav-links,.btn-book-nav{display:none}
+  .nav-hamburger{display:flex}
+  .nav{padding:0 1.5rem}
+  .booking-inner{padding:0 1.5rem}
+  .booking-section{padding:4rem 0}
+  .page-hero{padding:5rem 1.5rem 4rem}
+  .best-price-strip{padding:1rem 1.5rem;gap:1.5rem}
+  .contact-cta{padding:4rem 1.5rem}
+  .fg{grid-template-columns:1fr 1fr;gap:2rem}
+}
+@media(max-width:600px){
+  .fg{grid-template-columns:1fr}
+  footer{padding:3.5rem 1.5rem 2rem}
+  .cta-btns{flex-direction:column;align-items:center}
+  .prop-specs{grid-template-columns:1fr}
+  .prices-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-main">Vakantiewoningen in Oostende</span>
+    <span class="nav-logo-sub">La Brise et La Mer &middot; Het Relax Hoeveke</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="woningen.html">Woningen</a></li>
+    <li><a href="galerij.html">Galerij</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="boeken.html" class="active">Boeken</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-bar">
+      <button data-lang="nl" class="active">NL</button>
+      <button data-lang="fr">FR</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="de">DE</button>
+    </div>
+    <a href="boeken.html" class="btn-book-nav">Reserveer nu</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="woningen.html">Woningen</a><a href="galerij.html">Galerij</a>
+  <a href="faq.html">FAQ</a><a href="boeken.html">Boeken</a><a href="contact.html">Contact</a>
+</div>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="hero-eyebrow">Reserveer rechtstreeks</div>
+    <h1>Kies uw <em>verblijf</em></h1>
+    <p>Beste prijs gegarandeerd. Geen commissie, geen tussenpersoon.</p>
+  </div>
+</div>
+
+<!-- BEST PRICE STRIP -->
+<div class="best-price-strip">
+  <span class="bp-item">Beste prijs gegarandeerd</span>
+  <span class="bp-item">Geen extra kosten</span>
+  <span class="bp-item">Persoonlijke service</span>
+  <span class="bp-item">NL &middot; FR &middot; EN &middot; DE</span>
+</div>
+
+<!-- ═══════════════════════════════════════
+     HET RELAX HOEVEKE
+     ═══════════════════════════════════════ -->
+<section class="booking-section hoeve" id="hoeveke">
+  <div class="booking-inner">
+
+    <!-- Info links -->
+    <div class="prop-info">
+      <span class="prop-number">01</span>
+      <div class="prop-eyebrow">Stene &middot; Oostende</div>
+      <h2>Het Relax <em>Hoeveke</em></h2>
+      <p class="prop-addr">Stene-Dorpstraat 36 &middot; Stene, 8400 Oostende</p>
+
+      <img class="prop-img" src="images/hoeve-exterior.jpg" alt="Het Relax Hoeveke"/>
+
+      <div class="prop-specs">
+        <div class="spec-item">
+          <span class="spec-label">Personen</span>
+          <span class="spec-val">Tot 4 personen</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Slaapkamers</span>
+          <span class="spec-val">2 slaapkamers</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Huisdieren</span>
+          <span class="spec-val">Welkom (+&euro; 25)</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Parking</span>
+          <span class="spec-val">Gratis op eigen terrein</span>
+        </div>
+      </div>
+
+      <div class="prices-grid full-width" style="margin-top:1.5rem">
+        <div class="price-row"><span class="pr-label">Kuiskost</span><span class="pr-val">&euro; 50 / verblijf</span></div>
+        <div class="price-row"><span class="pr-label">Extra persoon (v.a. 3e)</span><span class="pr-val">&euro; 20 / persoon</span></div>
+        <div class="price-row"><span class="pr-label">Huisdier</span><span class="pr-val">&euro; 25 / verblijf</span></div>
+      </div>
+    </div>
+
+    <!-- Lodgify widget rechts -->
+    <div>
+      <div class="widget-area" id="lodgify-hoeve">
+        <!-- ═══════════════════════════════════════════════
+             LODGIFY WIDGET — HET RELAX HOEVEKE
+             Vervang dit blok door uw Lodgify embed code:
+
+             1. Log in op Lodgify
+             2. Ga naar Website > Booking Widget
+             3. Selecteer "Het Relax Hoeveke"
+             4. Kopieer de embed code
+             5. Plak de code hier in plaats van de placeholder
+             ═══════════════════════════════════════════════ -->
+        <div class="widget-placeholder">
+          <div class="wp-icon">L</div>
+          <p class="wp-title">Lodgify Boekingswidget</p>
+          <p class="wp-text">
+            De beschikbaarheidskalender en boekingsmodule van Het Relax Hoeveke wordt hier geplaatst.
+            <code>
+              1. Login op Lodgify<br/>
+              2. Website &rarr; Booking Widget<br/>
+              3. Selecteer Het Relax Hoeveke<br/>
+              4. Plak embed code hier
+            </code>
+          </p>
+        </div>
+      </div>
+
+      <div class="notice">
+        <p>Vragen over beschikbaarheid of een persoonlijke offerte? <strong><a href="contact.html" style="color:var(--warm);text-decoration:underline">Contacteer ons</a></strong> of bel <strong><a href="tel:+32475687243" style="color:var(--warm)">0475 68 72 43</a></strong>.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     LA BRISE ET LA MER
+     ═══════════════════════════════════════ -->
+<section class="booking-section zee" id="brise">
+  <div class="booking-inner">
+
+    <!-- Lodgify widget links -->
+    <div>
+      <div class="widget-area" id="lodgify-zee">
+        <!-- ═══════════════════════════════════════════════
+             LODGIFY WIDGET — LA BRISE ET LA MER
+             Vervang dit blok door uw Lodgify embed code:
+
+             1. Log in op Lodgify
+             2. Ga naar Website > Booking Widget
+             3. Selecteer "La Brise et La Mer"
+             4. Kopieer de embed code
+             5. Plak de code hier in plaats van de placeholder
+             ═══════════════════════════════════════════════ -->
+        <div class="widget-placeholder">
+          <div class="wp-icon">L</div>
+          <p class="wp-title">Lodgify Boekingswidget</p>
+          <p class="wp-text">
+            De beschikbaarheidskalender en boekingsmodule van La Brise et La Mer wordt hier geplaatst.
+            <code>
+              1. Login op Lodgify<br/>
+              2. Website &rarr; Booking Widget<br/>
+              3. Selecteer La Brise et La Mer<br/>
+              4. Plak embed code hier
+            </code>
+          </p>
+        </div>
+      </div>
+
+      <div class="notice">
+        <p>Vragen over beschikbaarheid of een persoonlijke offerte? <strong><a href="contact.html" style="color:var(--warm);text-decoration:underline">Contacteer ons</a></strong> of bel <strong><a href="tel:+32475687243" style="color:var(--warm)">0475 68 72 43</a></strong>.</p>
+      </div>
+    </div>
+
+    <!-- Info rechts -->
+    <div class="prop-info">
+      <span class="prop-number" style="color:rgba(28,63,94,0.08)">02</span>
+      <div class="prop-eyebrow" style="color:var(--sea2)"><span style="display:block;width:24px;height:1px;background:var(--sea2);flex-shrink:0;margin-right:0.75rem;display:inline-block"></span>Zeedijk &middot; Mariakerke</div>
+      <h2 style="color:var(--sea)">La Brise <em>et La Mer</em></h2>
+      <p class="prop-addr">Zeedijk 170 &middot; Mariakerke, 8400 Oostende</p>
+
+      <img class="prop-img" src="images/zee-woonkamer.jpg" alt="La Brise et La Mer zeezicht"/>
+
+      <div class="prop-specs">
+        <div class="spec-item">
+          <span class="spec-label">Personen</span>
+          <span class="spec-val">Tot 2 personen</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Slaapkamer</span>
+          <span class="spec-val">1 slaapkamer</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Uitzicht</span>
+          <span class="spec-val">Frontaal zeezicht</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">Strand</span>
+          <span class="spec-val">30 seconden te voet</span>
+        </div>
+      </div>
+
+      <div class="prices-grid full-width" style="margin-top:1.5rem">
+        <div class="price-row"><span class="pr-label">Kuiskost</span><span class="pr-val">&euro; 60 / verblijf</span></div>
+        <div class="price-row"><span class="pr-label">Extra persoon (v.a. 3e)</span><span class="pr-val">&euro; 20 / persoon</span></div>
+        <div class="price-row"><span class="pr-label">Huisdier</span><span class="pr-val">&euro; 25 / verblijf</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section class="contact-cta">
+  <div class="cta-inner">
+    <div class="cta-ew">Hulp nodig?</div>
+    <h2>Een vraag over uw <em>boeking?</em></h2>
+    <p>We helpen u graag persoonlijk verder via telefoon, WhatsApp of e-mail.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/32475687243" class="btn-white">WhatsApp &nbsp;0475 68 72 43</a>
+      <a href="contact.html" class="btn-gw">Contactformulier</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fg">
+    <div>
+      <div class="fbrand">Vakantiewoningen<br>in Oostende</div>
+      <p class="ftag">Twee unieke verblijven aan de Belgische kust &mdash; Het Relax Hoeveke in Stene en La Brise et La Mer op de Zeedijk van Mariakerke.</p>
+      <div class="fsoc">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+    <div class="fc"><h5>Navigatie</h5><ul>
+      <li><a href="index.html">Home</a></li><li><a href="woningen.html">Woningen</a></li>
+      <li><a href="galerij.html">Galerij</a></li><li><a href="boeken.html">Boeken</a></li>
+      <li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></div>
+    <div class="fc"><h5>Boeken</h5><ul>
+      <li><a href="#hoeveke">Het Relax Hoeveke</a></li>
+      <li><a href="#brise">La Brise et La Mer</a></li>
+    </ul></div>
+    <div class="fc"><h5>Contact</h5><ul>
+      <li><a href="mailto:vakantiewoningeninoostende@hotmail.com">vakantiewoningeninoostende@hotmail.com</a></li>
+      <li><a href="tel:+32475687243">0475 68 72 43</a></li>
+      <li><a href="https://wa.me/32475687243">WhatsApp</a></li>
+    </ul></div>
+  </div>
+  <div class="fb">
+    <span>&copy; <span id="yr"></span> Vakantiewoningen in Oostende</span>
+    <div class="fleg"><a href="#">Privacybeleid</a><a href="#">Cookiebeleid</a><a href="#">Algemene voorwaarden</a></div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById("nav");
+window.addEventListener("scroll",()=>nav.classList.toggle("scrolled",window.scrollY>50),{passive:true});
+document.getElementById("hamburger").addEventListener("click",()=>document.getElementById("mobile-menu").classList.toggle("open"));
+document.querySelectorAll(".mobile-menu a").forEach(a=>a.addEventListener("click",()=>document.getElementById("mobile-menu").classList.remove("open")));
+document.getElementById("yr").textContent=new Date().getFullYear();
+document.querySelectorAll(".lang-bar button").forEach(b=>{
+  b.addEventListener("click",()=>{
+    document.querySelectorAll(".lang-bar button").forEach(x=>x.classList.remove("active"));
+    b.classList.add("active");
+    try{localStorage.setItem("lang",b.dataset.lang)}catch(e){}
+  });
+});
+try{const s=localStorage.getItem("lang");if(s)document.querySelector(`.lang-bar button[data-lang="${s}"]`)?.classList.add("active")}catch(e){}
+</script>
+
+<!-- COOKIE BANNER -->
+<div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1e120a;color:rgba(255,255,255,0.8);padding:1.25rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap;border-top:3px solid #c9a050;box-shadow:0 -4px 30px rgba(0,0,0,0.3)">
+  <p style="font-size:0.82rem;line-height:1.65;max-width:640px;margin:0">
+    Wij gebruiken cookies om uw bezoek te verbeteren en anonieme statistieken bij te houden. 
+    Meer info in ons <a href="#" style="color:#c9a050;text-decoration:underline">cookiebeleid</a>.
+  </p>
+  <div style="display:flex;gap:0.75rem;flex-shrink:0">
+    <button onclick="closeCookie('declined')" style="background:transparent;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.5);padding:0.55rem 1.25rem;font-family:inherit;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.2s">Weigeren</button>
+    <button onclick="closeCookie('accepted')" style="background:#c9a050;border:none;color:#3d2b1f;padding:0.55rem 1.5rem;font-family:inherit;font-size:0.68rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.2s">Aanvaarden</button>
+  </div>
+</div>
+<script>
+(function(){
+  try{
+    if(!localStorage.getItem('cookie-consent')){
+      document.getElementById('cookie-banner').style.display='flex';
+    }
+  }catch(e){}
+})();
+function closeCookie(v){
+  try{localStorage.setItem('cookie-consent',v);}catch(e){}
+  document.getElementById('cookie-banner').style.display='none';
+}
+</script>
+</body>
+</html>
