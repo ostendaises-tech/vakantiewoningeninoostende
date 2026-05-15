@@ -65,7 +65,7 @@
       },
       "numberOfRooms": 2,
       "amenityFeature": [
-        {"@type": "LocationFeatureSpecification", "name": "Privétuin", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Tuin", "value": true},
         {"@type": "LocationFeatureSpecification", "name": "Gratis parking", "value": true},
         {"@type": "LocationFeatureSpecification", "name": "Huisdieren toegestaan", "value": true},
         {"@type": "LocationFeatureSpecification", "name": "Wifi", "value": true}
@@ -630,6 +630,108 @@ h2.serif em { font-style: italic; }
   text-align: center;
   margin-top: 0.5rem;
 }
+
+/* ── GALLERY SPLIT ── */
+.gal-split {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0;
+  max-width: 1360px;
+  margin: 0 auto;
+  align-items: start;
+}
+.gal-split-divider {
+  background: var(--light-line);
+  align-self: stretch;
+  margin: 0 2rem;
+}
+.gal-half {
+  padding: 0 1rem;
+}
+.gal-half-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 0 1.5rem;
+  border-bottom: 2px solid;
+  margin-bottom: 1.25rem;
+}
+.gal-half-hoeve .gal-half-header { border-color: var(--warm3); }
+.gal-half-zee   .gal-half-header { border-color: var(--sea3); }
+.gal-half-num {
+  font-family: var(--serif);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+  color: rgba(61,43,31,0.12);
+  flex-shrink: 0;
+}
+.gal-half-num-z { color: rgba(28,63,94,0.12); }
+.gal-half-name {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--warm);
+  line-height: 1.2;
+}
+.gal-half-zee .gal-half-name { color: var(--sea); }
+.gal-half-loc {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+.gal-half-link {
+  margin-left: auto;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--warm2);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+.gal-half-link:hover { color: var(--warm); }
+.gal-half-link-z { color: var(--sea2); }
+.gal-half-link-z:hover { color: var(--sea); }
+.gal-mini-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 260px 180px;
+  gap: 6px;
+}
+.gal-mini {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gal-mini img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.7s ease;
+}
+.gal-mini:hover img { transform: scale(1.06); }
+.gal-mini .gal-cap {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(20,12,5,0.62) 0%, transparent 50%);
+  opacity: 0; transition: opacity 0.3s;
+  display: flex; align-items: flex-end;
+  padding: 0.75rem 1rem;
+}
+.gal-mini:hover .gal-cap { opacity: 1; }
+.gm-tall {
+  grid-row: span 2;
+}
+@media (max-width: 820px) {
+  .gal-split { grid-template-columns: 1fr; }
+  .gal-split-divider { display: none; }
+  .gal-half { padding: 0; margin-bottom: 2.5rem; }
+  .gal-mini-grid { grid-template-rows: 220px 150px; }
+}
 .btn-outline {
   display: inline-flex;
   align-items: center;
@@ -1068,7 +1170,7 @@ footer {
         <em data-i18n="hero.hoeve.sub">Landelijk &amp; authentiek</em>
       </h1>
       <p class="hero-desc" data-i18n="hero.hoeve.desc">
-        Een verblijf in Stene's oudste hoeve — met SMEG-keuken, vrijstaande badkuip en een sfeervolle privétuin.
+        Een verblijf in Stene's oudste hoeve — met SMEG-keuken, vrijstaande badkuip en een sfeervolle tuin.
       </p>
       <span class="hero-cta" data-i18n="hero.hoeve.cta">Ontdek Het Relax Hoeveke</span>
     </div>
@@ -1087,7 +1189,7 @@ footer {
         <em data-i18n="hero.zee.sub">De zee voor uw deur</em>
       </h1>
       <p class="hero-desc" data-i18n="hero.zee.desc">
-        Wakker worden met de Noordzee als uitzicht. Rechtstreeks aan de Zeedijk van Mariakerke.
+        Wakker worden met de Noordzee als uitzicht. Rechtstreeks aan de Zeedijk.
       </p>
       <span class="hero-cta" data-i18n="hero.zee.cta">Ontdek het appartement</span>
     </div>
@@ -1145,15 +1247,15 @@ footer {
         <p class="card-type" data-i18n="card.hoeve.type">Het Relax Hoeveke &middot; Stene-Dorpstraat 36</p>
         <h3 class="card-title">Het Relax Hoeveke</h3>
         <p class="card-addr">Stene-Dorpstraat 36 &middot; Stene, 8400 Oostende</p>
-        <p class="card-desc" data-i18n="card.hoeve.desc">Stene's oudste hoevetje. Slaapkamer + slaapbank. Kook op de professionele SMEG, geniet van de vrijstaande badkuip en de sfeervolle tuin. Gewaardeerd met 9.2 op Booking.</p>
+        <p class="card-desc" data-i18n="card.hoeve.desc">Stene's oudste hoevetje. Slaapkamer + slaapbank. Kook op de professionele SMEG, geniet van de vrijstaande badkuip en de sfeervolle tuin. Gewaardeerd met 9.3 op Booking.</p>
         <div class="card-tags">
           <span class="tag">4 pers.</span>
           <span class="tag">1 slpk. + slaapbank</span>
-          <span class="tag" data-i18n="tag.garden">Privétuin</span>
+          <span class="tag" data-i18n="tag.garden">Tuin</span>
           <span class="tag" data-i18n="tag.parking">Gratis parking</span>
           <span class="tag">SMEG keuken</span>
           <span class="tag" data-i18n="tag.bathtub">Vrijst. badkuip</span>
-          <span class="tag">9.2 ★ Booking</span>
+          <span class="tag">9.3 ★ Booking</span>
         </div>
         <div class="card-actions">
           <a href="boeken.html#hoeveke" class="btn-primary" data-i18n="card.cta.book">Beschikbaarheid</a>
@@ -1169,10 +1271,10 @@ footer {
         <img src="images/zee-woonkamer.jpg" alt="La Brise et La Mer zeezicht Mariakerke" loading="lazy"/>
       </div>
       <div class="card-body">
-        <p class="card-type" data-i18n="card.zee.type">Appartement &middot; Zeedijk 170, Mariakerke</p>
+        <p class="card-type" data-i18n="card.zee.type">Appartement &middot; Aan het strand</p>
         <h3 class="card-title">La Brise et La Mer</h3>
-        <p class="card-addr">Zeedijk 170 &middot; Mariakerke, 8400 Oostende</p>
-        <p class="card-desc" data-i18n="card.zee.desc">Licht en modern appartement met zeezicht op de Zeedijk van Mariakerke. Het strand ligt 30 seconden van de voordeur. Slaapkamer voor 2 + comfortabele slaapbank. Gewaardeerd met 8.9/10 op Booking.com.</p>
+        <p class="card-addr">Zeedijk 170 &middot; Aan het strand, Oostende</p>
+        <p class="card-desc" data-i18n="card.zee.desc">Licht en modern appartement met frontaal zeezicht, rechtstreeks aan het strand. Het strand ligt 30 seconden van de voordeur. Slaapkamer voor 2 + comfortabele slaapbank. Gewaardeerd met 8.9/10 op Booking.com.</p>
         <div class="card-tags">
           <span class="tag">4 pers.</span>
           <span class="tag">1 slpk. + slaapbank</span>
@@ -1193,7 +1295,7 @@ footer {
 
 
 <!-- ======================================================
-     GALLERY TEASER
+     GALLERY TEASER — split per verblijf
      ====================================================== -->
 <section class="gallery-teaser">
   <div class="section-head reveal">
@@ -1201,42 +1303,81 @@ footer {
     <h2 class="serif" style="margin-top:0.75rem" data-i18n="gal.title">Neem een <em>kijkje binnen</em></h2>
   </div>
 
-  <div class="gallery-grid">
-    <div class="gal-item g1">
-      <img src="images/zee-hero.jpg" alt="La Brise vensterbank zeezicht" loading="lazy"/>
-      <div class="gal-cap"><span data-i18n="gal.z1">La Brise · Vensterbank met zeezicht</span></div>
+  <div class="gal-split">
+
+    <!-- ── Het Relax Hoeveke ── -->
+    <div class="gal-half gal-half-hoeve">
+      <div class="gal-half-header">
+        <span class="gal-half-num">01</span>
+        <div>
+          <div class="gal-half-name">Het Relax Hoeveke</div>
+          <div class="gal-half-loc">Stene &middot; Oostende</div>
+        </div>
+        <a href="galerij.html?filter=hoeve" class="gal-half-link">Alle foto's →</a>
+      </div>
+      <div class="gal-mini-grid">
+        <div class="gal-mini gm-tall">
+          <img src="images/hoeve-exterior.jpg" alt="Het Relax Hoeveke buitenkant" loading="lazy"/>
+          <div class="gal-cap"><span>Buitenkant</span></div>
+        </div>
+        <div class="gal-mini">
+          <img src="images/hoeve-keuken.jpg" alt="SMEG keuken" loading="lazy"/>
+          <div class="gal-cap"><span>SMEG keuken</span></div>
+        </div>
+        <div class="gal-mini">
+          <img src="images/hoeve-badkamer.jpg" alt="Vrijstaande badkuip" loading="lazy"/>
+          <div class="gal-cap"><span>Vrijstaande badkuip</span></div>
+        </div>
+        <div class="gal-mini">
+          <img src="images/hoeve-nacht.jpg" alt="Tuin bij nacht" loading="lazy"/>
+          <div class="gal-cap"><span>Tuin bij nacht</span></div>
+        </div>
+        <div class="gal-mini">
+          <img src="images/hoeve-slaapkamer.jpg" alt="Slaapkamer" loading="lazy"/>
+          <div class="gal-cap"><span>Slaapkamer</span></div>
+        </div>
+      </div>
     </div>
-    <div class="gal-item g2">
-      <img src="images/hoeve-nacht.jpg" alt="Het Relax Hoeveke tuin bij nacht" loading="lazy"/>
-      <div class="gal-cap"><span data-i18n="gal.h1">Het Relax Hoeveke · Tuin bij nacht</span></div>
+
+    <div class="gal-split-divider"></div>
+
+    <!-- ── La Brise et La Mer ── -->
+    <div class="gal-half gal-half-zee">
+      <div class="gal-half-header">
+        <span class="gal-half-num gal-half-num-z">02</span>
+        <div>
+          <div class="gal-half-name">La Brise et La Mer</div>
+          <div class="gal-half-loc">Aan het strand &middot; Oostende</div>
+        </div>
+        <a href="galerij.html?filter=zee" class="gal-half-link gal-half-link-z">Alle foto's →</a>
+      </div>
+      <div class="gal-mini-grid">
+        <div class="gal-mini gm-tall">
+          <img src="images/zee-hero.jpg" alt="Zeezicht La Brise" loading="lazy"/>
+          <div class="gal-cap"><span>Frontaal zeezicht</span></div>
+        </div>
+        <div class="gal-mini">
+          <img src="images/zee-woonkamer.jpg" alt="Woonkamer" loading="lazy"/>
+          <div class="gal-cap"><span>Woonkamer</span></div>
+        </div>
+        <div class="gal-mini">
+          <img src="images/zee-eethoek.jpg" alt="Eethoek" loading="lazy"/>
+          <div class="gal-cap"><span>Eethoek</span></div>
+        </div>
+        <div class="gal-mini">
+          <img src="images/zee-slaapkamer.png" alt="Slaapkamer" loading="lazy"/>
+          <div class="gal-cap"><span>Slaapkamer</span></div>
+        </div>
+        <div class="gal-mini">
+          <img src="images/zee-keuken.jpg" alt="Keuken" loading="lazy"/>
+          <div class="gal-cap"><span>Keuken</span></div>
+        </div>
+      </div>
     </div>
-    <div class="gal-item g3">
-      <img src="images/zee-eethoek.jpg" alt="La Brise eethoek" loading="lazy"/>
-      <div class="gal-cap"><span data-i18n="gal.z2">La Brise · Eethoek</span></div>
-    </div>
-    <div class="gal-item g4">
-      <img src="images/hoeve-slaapkamer.jpg" alt="Het Relax Hoeveke slaapkamer dakbalken" loading="lazy"/>
-      <div class="gal-cap"><span data-i18n="gal.h2">Het Relax Hoeveke · Zolderslaapkamer</span></div>
-    </div>
-    <div class="gal-item g5">
-      <img src="images/zee-keuken.jpg" alt="La Brise keuken" loading="lazy"/>
-      <div class="gal-cap"><span data-i18n="gal.z3">La Brise · Keuken</span></div>
-    </div>
-    <div class="gal-item g6">
-      <img src="images/hoeve-badkamer.jpg" alt="Het Relax Hoeveke vrijstaande badkuip" loading="lazy"/>
-      <div class="gal-cap"><span data-i18n="gal.h3">Het Relax Hoeveke · Vrijstaande badkuip</span></div>
-    </div>
-    <div class="gal-item g7">
-      <img src="images/hoeve-keuken.jpg" alt="Het Relax Hoeveke SMEG keuken" loading="lazy"/>
-      <div class="gal-cap"><span data-i18n="gal.h4">Het Relax Hoeveke · SMEG keuken</span></div>
-    </div>
-    <div class="gal-item g8">
-      <img src="images/zee-slaapkamer.png" alt="La Brise slaapkamer" loading="lazy"/>
-      <div class="gal-cap"><span data-i18n="gal.z4">La Brise · Slaapkamer</span></div>
-    </div>
+
   </div>
 
-  <div class="gallery-link-wrap">
+  <div class="gallery-link-wrap" style="margin-top:2rem">
     <a href="galerij.html" class="btn-outline" data-i18n="gal.all">Alle foto's bekijken</a>
   </div>
 </section>
@@ -1364,10 +1505,10 @@ nl:{
   "nav.home":"Home","nav.rentals":"Onze verblijven","nav.gallery":"Galerij","nav.faq":"FAQ",
   "nav.book":"Boeken","nav.contact":"Contact","nav.bookNow":"Reserveer nu",
   "hero.hoeve.loc":"Stene · Oostende","hero.hoeve.sub":"Landelijk & authentiek",
-  "hero.hoeve.desc":"Een verblijf in Stene's oudste hoeve — met SMEG-keuken, vrijstaande badkuip en een sfeervolle privétuin.",
+  "hero.hoeve.desc":"Een verblijf in Stene's oudste hoeve — met SMEG-keuken, vrijstaande badkuip en een sfeervolle tuin.",
   "hero.hoeve.cta":"Ontdek Het Relax Hoeveke",
   "hero.zee.loc":"Zeedijk 170 · Mariakerke","hero.zee.sub":"De zee voor uw deur",
-  "hero.zee.desc":"Wakker worden met de Noordzee als uitzicht. Rechtstreeks aan de Zeedijk van Mariakerke.",
+  "hero.zee.desc":"Wakker worden met de Noordzee als uitzicht. Rechtstreeks aan de Zeedijk.",
   "hero.zee.cta":"Ontdek het appartement",
   "intro.eyebrow":"Welkom",
   "intro.title":"Twee adressen,",
