@@ -313,6 +313,22 @@ footer{background:#1e120a;color:rgba(255,255,255,.5);padding:5rem 3rem 2.5rem}
   .fl{padding:1rem 1rem 3rem!important}
   #sbn a{font-size:0.65rem!important;padding:0.45rem 0.75rem!important}
 }
+
+/* FAQ: tekst correct afbreken, geen horizontale overflow */
+@media(max-width:860px){
+  .fai p, .fai{
+    word-wrap:break-word!important;
+    overflow-wrap:break-word!important;
+    word-break:break-word!important;
+    max-width:100%!important;
+    overflow:hidden!important;
+  }
+  .fib span:first-child{
+    word-wrap:break-word!important;
+    overflow-wrap:break-word!important;
+  }
+  .fc2{overflow:hidden!important}
+}
 </style>
 </head><body>
 <nav class="nav" id="nav"><a href="index.html" class="nav-logo"><span class="logo-main">Vakantiewoningen in Oostende</span><span class="logo-sub">La Brise et La Mer &middot; Het Relax Hoeveke</span></a><ul class="nav-links"><li><a href="index.html" data-i18n="nav.home">Home</a></li><li><a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a></li><li><a href="galerij.html" data-i18n="nav.gallery">Galerij</a></li><li><a href="faq.html" data-i18n="nav.faq" class='active'>FAQ</a></li><li><a href="boeken.html" data-i18n="nav.book">Boeken</a></li><li><a href="contact.html" data-i18n="nav.contact">Contact</a></li><li><a href="ontdek.html">Ontdek</a></li></ul><div class="nav-right"><div class="lang-bar"><button class="lang-btn active" data-lang="nl">NL</button><button class="lang-btn" data-lang="fr">FR</button><button class="lang-btn" data-lang="en">EN</button><button class="lang-btn" data-lang="de">DE</button></div><a href="boeken.html" class="nav-book" data-i18n="nav.reserve">Reserveer nu</a></div><button class="hamburger" id="hbg"><span></span><span></span><span></span></button></nav><div class="mob-menu" id="mmenu"><a href="index.html" data-i18n="nav.home">Home</a><a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a><a href="galerij.html" data-i18n="nav.gallery">Galerij</a><a href="faq.html" data-i18n="nav.faq">FAQ</a><a href="boeken.html" data-i18n="nav.book">Boeken</a><a href="contact.html" data-i18n="nav.contact">Contact</a>
