@@ -361,13 +361,10 @@ footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
     <!-- zorgt dat Netlify het formulier opvangt
       en doorstuurt naar uw e-mailadres. Geen extra code nodig.
     -->
-    <form action="https://formsubmit.co/vakantiewoningeninoostende@hotmail.com" method="POST" id="contact-form">
+    <form name="contact" method="POST" data-netlify="true" id="contact-form">
       <!-- Honeypot tegen spam (verborgen veld) -->
-      <!-- Formsubmit instellingen -->
-      <input type="hidden" name="_subject" value="Nieuw bericht via vakantiewoningeninoostende.be"/>
-      <input type="hidden" name="_next" value="https://vakantiewoningeninoostende.be/contact.html?verstuurd=1"/>
-      <input type="hidden" name="_captcha" value="false"/>
-      <input type="hidden" name="_template" value="table"/>
+      <input type="hidden" name="form-name" value="contact"/>
+      <input type="hidden" name="_next" value="https://papaya-churros-0ad58a.netlify.app/contact?success=1"/>
 
       <div class="form-row">
         <div class="form-field">
@@ -541,13 +538,13 @@ if(form){
   });
 }
 
-// Toon succesbericht na redirect
-if (window.location.search.includes('verstuurd=1')) {
-  var form = document.getElementById('contact-form');
-  if (form) {
-    form.innerHTML = '<div style="text-align:center;padding:3rem 2rem"><div style="font-size:2.5rem;margin-bottom:1rem">✓</div><h3 style="margin-bottom:0.75rem">Bericht verstuurd!</h3><p style="color:var(--muted)">Wij nemen zo snel mogelijk contact op.</p></div>';
+// Form succes feedback
+(function() {
+  if (window.location.search.indexOf('success') !== -1) {
+    var el = document.getElementById('contact-form');
+    if (el) el.innerHTML = '<div style="text-align:center;padding:3rem"><p style="font-size:2rem">✓</p><h3>Verstuurd!</h3><p>We nemen snel contact op.</p></div>';
   }
-}
+})();
 </script>
 <!-- COOKIE BANNER -->
 <div id="ck" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1e120a;color:rgba(255,255,255,0.85);padding:1rem 2rem;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;border-top:3px solid #c9a050;box-shadow:0 -4px 30px rgba(0,0,0,0.3)">
