@@ -464,6 +464,20 @@ function setLang(l) {
   var saved;
   try { saved = localStorage.getItem('lang'); } catch(e) {}
   setLang(saved && T[saved] ? saved : 'nl');
+
+  // Hamburger menu
+  var hbg = document.getElementById('hamburger');
+  var mmenu = document.getElementById('mobile-menu');
+  if (hbg && mmenu) {
+    hbg.addEventListener('click', function() {
+      mmenu.classList.toggle('open');
+    });
+    mmenu.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        mmenu.classList.remove('open');
+      });
+    });
+  }
 })();
 
 </script>
