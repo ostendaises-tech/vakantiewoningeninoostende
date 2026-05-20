@@ -361,7 +361,8 @@ footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
     <!-- zorgt dat Netlify het formulier opvangt
       en doorstuurt naar uw e-mailadres. Geen extra code nodig.
     -->
-    <form name="contact" method="POST" data-netlify="true" id="contact-form">
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" id="contact-form">
+      <p style="display:none"><label>Laat dit veld leeg: <input name="bot-field"></label></p>
       <!-- Honeypot tegen spam (verborgen veld) -->
       <input type="hidden" name="form-name" value="contact"/>
       <input type="hidden" name="_next" value="https://papaya-churros-0ad58a.netlify.app/contact?success=1"/>
