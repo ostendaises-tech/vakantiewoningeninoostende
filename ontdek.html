@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ontdek Oostende | Restaurants, activiteiten & tips</title>
+  <meta name="description" content="Ontdek de beste restaurants, activiteiten, cultuur en evenementen in en rond Oostende. Persoonlijke aanbevelingen van de eigenaars van Het Relax Hoeveke en La Brise et La Mer.">
+  <link rel="canonical" href="https://vakantiewoningeninoostende.be/ontdek.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vakantiewoningeninoostende.be/ontdek.html">
+  <meta property="og:title" content="Ontdek Oostende | Restaurants, activiteiten & tips">
+  <meta property="og:description" content="Ontdek de beste restaurants, activiteiten, cultuur en evenementen in en rond Oostende. Persoonlijke aanbevelingen van de eigenaars van Het Relax Hoeveke en La Brise et La Mer.">
+  <meta property="og:image" content="https://vakantiewoningeninoostende.be/images/zee-hero.jpg">
+  <meta property="og:locale" content="nl_BE">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ontdek Oostende | Restaurants, activiteiten & tips">
+  <meta name="twitter:description" content="Ontdek de beste restaurants, activiteiten, cultuur en evenementen in en rond Oostende. Persoonlijke aanbevelingen van de eigenaars van Het Relax Hoeveke en La Brise et La Mer.">
+  <meta name="twitter:image" content="https://vakantiewoningeninoostende.be/images/zee-hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Jost",sans-serif;font-weight:300;background:#faf8f4;color:#2a2118;line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+:root{
+  --cream:#faf8f4;--cream2:#f2ede4;--cream3:#e8dfd0;
+  --warm:#3d2b1f;--warm2:#7a5c42;--warm3:#b8956a;
+  --sea:#1c3f5e;--sea2:#2d6a9f;--sea3:#a8c4d8;
+  --gold:#c9a050;--muted:#8a7a6a;
+  --line:rgba(42,33,24,0.10);
+  --serif:"Cormorant Garamond",Georgia,serif;
+  --sans:"Jost",sans-serif;
+}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 3rem;background:rgba(250,248,244,0.96);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:all 0.3s}
+.nav.scrolled{border-bottom-color:var(--line);height:60px}
+.nav-logo{display:flex;flex-direction:column;gap:1px;text-decoration:none}
+.nav-logo-main{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--warm);letter-spacing:0.02em;line-height:1}
+.nav-logo-sub{font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);font-weight:400}
+.nav-links{display:flex;gap:2.5rem;list-style:none;margin:0;padding:0}
+.nav-links a{font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--warm2);transition:color 0.2s;position:relative;text-decoration:none;white-space:nowrap}
+.nav-links a::after{content:"";position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--warm);transition:width 0.3s}
+.nav-links a:hover,.nav-links a.active{color:var(--warm)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:1.25rem}
+.lang-bar{display:flex;border:1px solid var(--line)}
+.lang-bar button{background:none;border:none;border-right:1px solid var(--line);font-family:var(--sans);font-size:0.62rem;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);padding:0.3rem 0.55rem;cursor:pointer;transition:all 0.2s}
+.lang-bar button:last-child{border-right:none}
+.lang-bar button.active{background:var(--warm);color:#fff}
+.btn-book-nav{font-family:var(--sans);font-size:0.68rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#fff;background:var(--warm);padding:0.55rem 1.4rem;transition:background 0.2s;text-decoration:none}
+.btn-book-nav:hover{background:#2a1a0e}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
+.nav-hamburger span{display:block;width:22px;height:1.5px;background:var(--warm)}
+.mobile-menu{display:none;position:fixed;top:60px;left:0;right:0;background:var(--cream);border-bottom:1px solid var(--line);padding:1.5rem 2rem;flex-direction:column;gap:0.75rem;z-index:99;box-shadow:0 8px 30px rgba(0,0,0,0.07)}
+.mobile-menu.open{display:flex}
+.mobile-menu a{font-size:0.78rem;letter-spacing:0.16em;text-transform:uppercase;font-weight:500;color:var(--warm2);padding:0.5rem 0;border-bottom:1px solid var(--line)}
+.page-hero{margin-top:70px;position:relative;overflow:hidden;background:var(--warm);padding:6rem 3rem 5rem;text-align:center}
+.page-hero::before{content:"";position:absolute;inset:0;background-image:url("images/oostende-aerial.jpg");background-size:cover;background-position:center 40%;opacity:0.22}
+.phi{position:relative;z-index:2}
+.phe{display:inline-flex;align-items:center;gap:0.85rem;font-size:0.62rem;font-weight:500;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.45);margin-bottom:1.5rem}
+.phe::before,.phe::after{content:"";width:28px;height:1px;background:rgba(255,255,255,0.25)}
+.page-hero h1{font-family:var(--serif);font-size:clamp(2.8rem,5vw,4.2rem);font-weight:300;color:#fff;letter-spacing:-0.02em;line-height:1.05;margin-bottom:1rem}
+.page-hero h1 em{font-style:italic;font-weight:400}
+.page-hero p{font-size:0.95rem;color:rgba(255,255,255,0.6);max-width:560px;margin:0 auto;line-height:1.85}
+.hero-tags{display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}
+.hero-tag{font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);border:1px solid rgba(255,255,255,0.18);padding:0.3rem 0.75rem}
+.filter-bar{position:sticky;top:70px;z-index:50;background:var(--cream);border-bottom:1px solid var(--line);padding:0 3rem;display:flex;align-items:center;overflow-x:auto}
+.filter-btn{background:none;border:none;border-right:1px solid var(--line);font-family:var(--sans);font-size:0.66rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:var(--muted);padding:1.1rem 1.6rem;cursor:pointer;transition:all 0.2s;position:relative;white-space:nowrap;flex-shrink:0}
+.filter-btn::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:transparent;transition:background 0.2s}
+.filter-btn:hover{color:var(--warm)}
+.filter-btn.active{color:var(--warm)}
+.filter-btn.active::after{background:var(--warm)}
+.filter-btn.active.sea-filter{color:var(--sea)}
+.filter-btn.active.sea-filter::after{background:var(--sea)}
+.filter-btn.active.gold-filter{color:var(--gold)}
+.filter-btn.active.gold-filter::after{background:var(--gold)}
+.content-wrap{max-width:1200px;margin:0 auto;padding:0 3rem}
+.odkaz-section{padding:5rem 0;border-bottom:1px solid var(--line)}
+.odkaz-section:last-child{border-bottom:none}
+.odkaz-section.hidden{display:none}
+.section-eyebrow{display:flex;align-items:center;gap:0.75rem;font-size:0.62rem;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;margin-bottom:1.25rem}
+.section-eyebrow .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.dot-warm{background:var(--warm)}
+.dot-sea{background:var(--sea)}
+.dot-gold{background:var(--gold)}
+.dot-green{background:#4a7c59}
+.section-eyebrow.warm-ew{color:var(--warm3)}
+.section-eyebrow.sea-ew{color:var(--sea2)}
+.section-eyebrow.gold-ew{color:var(--gold)}
+.section-eyebrow.green-ew{color:#4a7c59}
+.section-title{font-family:var(--serif);font-size:clamp(2rem,3.5vw,2.8rem);font-weight:400;color:var(--warm);line-height:1.1;margin-bottom:0.6rem}
+.section-title em{font-style:italic}
+.section-subtitle{font-size:0.88rem;color:var(--muted);max-width:620px;margin-bottom:3rem;line-height:1.75}
+.prop-label{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.6rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;padding:0.25rem 0.7rem;margin-bottom:2rem}
+.prop-label.hoeve{background:var(--cream2);color:var(--warm);border:1px solid var(--cream3)}
+.prop-label.zee{background:#eaf3fb;color:var(--sea);border:1px solid var(--sea3)}
+.prop-label .dot{width:6px;height:6px;border-radius:50%}
+.resto-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;margin-bottom:3rem}
+.resto-card{background:#fff;border:1px solid var(--cream3);padding:1.75rem;transition:transform 0.3s,box-shadow 0.3s;position:relative}
+.resto-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(42,33,24,0.08)}
+.resto-name{font-family:var(--serif);font-size:1.35rem;font-weight:500;color:var(--warm);margin-bottom:0.2rem;line-height:1.15}
+.resto-type{font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.2rem;font-weight:500}
+.resto-addr{font-size:0.72rem;color:var(--warm3);letter-spacing:0.04em;margin-bottom:0.75rem;font-weight:400}
+.resto-desc{font-size:0.85rem;line-height:1.75;color:var(--warm2)}
+.resto-tags{display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:1rem}
+.resto-tag{font-size:0.6rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.2rem 0.55rem;background:var(--cream2);border:1px solid var(--cream3);color:var(--muted)}
+.act-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem}
+.act-card{display:flex;gap:0;padding:1.5rem;background:#fff;border:1px solid var(--cream3);transition:transform 0.3s,box-shadow 0.3s}
+.act-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(42,33,24,0.08)}
+.act-icon-wrap{width:48px;height:48px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.4rem;border:1px solid var(--cream3);background:var(--cream2)}
+.act-name{font-family:var(--serif);font-size:1.15rem;font-weight:500;color:var(--warm);margin-bottom:0.15rem;line-height:1.2}
+.act-cat{font-size:0.6rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:0.5rem;font-weight:500}
+.act-addr{font-size:0.72rem;color:var(--warm3);margin-bottom:0.4rem}
+.act-desc{font-size:0.83rem;line-height:1.7;color:var(--warm2)}
+.events-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1.5rem}
+.event-card{background:#fff;border:1px solid var(--cream3);overflow:hidden;transition:transform 0.3s,box-shadow 0.3s}
+.event-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(42,33,24,0.08)}
+.event-month{background:var(--warm);color:#fff;padding:0.55rem 1.25rem;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:500}
+.event-body{padding:1.5rem}
+.event-name{font-family:var(--serif);font-size:1.3rem;font-weight:500;color:var(--warm);margin-bottom:0.25rem;line-height:1.2}
+.event-type{font-size:0.62rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.75rem;font-weight:500}
+.event-desc{font-size:0.85rem;line-height:1.75;color:var(--warm2)}
+.tip-box{background:var(--cream2);border-left:3px solid var(--warm3);padding:1.25rem 1.5rem;margin:2.5rem 0;font-size:0.88rem;line-height:1.75;color:var(--warm2)}
+.tip-box strong{color:var(--warm);font-weight:500}
+.cta-section{background:var(--sea);padding:6rem 3rem;text-align:center;position:relative;overflow:hidden}
+.cta-section::before{content:"";position:absolute;inset:0;background-image:url("images/zee-hero.jpg");background-size:cover;background-position:center;opacity:0.1}
+.cta-inner{position:relative;z-index:2}
+.cta-ew{font-size:0.62rem;letter-spacing:0.3em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:1rem;display:block}
+.cta-title{font-family:var(--serif);font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:#fff;margin-bottom:1rem;line-height:1.1}
+.cta-title em{font-style:italic}
+.cta-p{font-size:0.92rem;color:rgba(255,255,255,0.6);max-width:460px;margin:0 auto 2rem;line-height:1.85}
+.cta-row{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-white{font-family:var(--sans);font-size:0.7rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--warm);background:#fff;padding:0.9rem 2.2rem;transition:all 0.2s;display:inline-flex}
+.btn-white:hover{background:var(--cream2)}
+.btn-ol{font-family:var(--sans);font-size:0.7rem;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,0.4);padding:0.9rem 2.2rem;transition:all 0.2s;display:inline-flex}
+.btn-ol:hover{border-color:#fff}
+footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;max-width:1280px;margin:0 auto;padding-bottom:3.5rem;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2rem}
+.fbrand{font-family:var(--serif);font-size:1.4rem;font-weight:400;color:#fff;margin-bottom:0.75rem;line-height:1.2}
+.ftag{font-size:0.83rem;line-height:1.85;max-width:320px;margin-bottom:1.75rem}
+.fc h5{font-size:0.6rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--warm3);margin-bottom:1.2rem}
+.fc ul{list-style:none;margin:0;padding:0}
+.fc li{margin-bottom:0.6rem;font-size:0.82rem}
+.fc a{color:rgba(255,255,255,0.45);transition:color 0.2s}
+.fc a:hover{color:#fff}
+.fb{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;font-size:0.72rem}
+.fleg{display:flex;gap:1.75rem}
+.fleg a{color:rgba(255,255,255,0.3);transition:color 0.2s}
+.fleg a:hover{color:rgba(255,255,255,0.65)}
+@media(max-width:900px){
+  .nav-links,.btn-book-nav{display:none}
+  .nav-hamburger{display:flex}
+  .nav{padding:0 1.5rem}
+  .filter-bar{padding:0 1rem}
+  .content-wrap{padding:0 1.5rem}
+  .resto-grid,.act-grid,.events-grid{grid-template-columns:1fr}
+  .fg{grid-template-columns:1fr 1fr;gap:2rem}
+  .page-hero{padding:5rem 1.5rem 4rem}
+}
+@media(max-width:580px){
+  .fg{grid-template-columns:1fr}
+  footer{padding:3.5rem 1.5rem 2rem}
+}
+
+/* ====================================
+   MOBIELE VERBETERINGEN (gedeeld)
+   Alle regels staan in media queries.
+   Desktop onaangetast.
+   ==================================== */
+
+@media (max-width:900px){
+  /* Nav hoogte */
+  .nav{height:58px}
+  .nav-logo-main{font-size:1rem}
+  .nav-logo-sub{display:none}
+
+  /* Hamburger verbetering */
+  .nav-hamburger{display:flex;align-items:center;justify-content:center;width:42px;height:42px;padding:0}
+  .nav-hamburger span{transition:all 0.25s}
+
+  /* Mobile menu verbeterd */
+  .mobile-menu{top:58px;padding:1.25rem 1.5rem 2rem;gap:0}
+  .mobile-menu a{font-size:0.85rem;letter-spacing:0.14em;padding:0.9rem 0;border-bottom:1px solid var(--line)}
+  .mobile-menu a:last-child{border-bottom:none}
+
+  /* Lang-bar kleiner */
+  .lang-bar button{padding:0.28rem 0.45rem;font-size:0.58rem}
+
+  /* Page hero */
+  .page-hero{padding:5rem 1.5rem 3.5rem}
+  .page-hero h1,.hero-h1{font-size:clamp(1.9rem,7vw,2.8rem)}
+
+  /* Footer grid */
+  .fg{grid-template-columns:1fr 1fr;gap:1.5rem}
+  .fbrand{font-size:1.1rem}
+  .ftag{font-size:0.8rem;margin-bottom:1.25rem}
+  .fc li{margin-bottom:0.5rem}
+
+  /* CTA strip */
+  .cta-strip{padding:3.5rem 1.5rem}
+  .cta-strip h3{font-size:clamp(1.6rem,6vw,2.2rem)}
+  .cs-btns{flex-direction:column;align-items:center;gap:0.75rem}
+  .cs-btns a,.cs-btns button{width:100%;max-width:320px;text-align:center;justify-content:center}
+}
+
+@media (max-width:600px){
+  /* Footer 1 kolom */
+  .fg{grid-template-columns:1fr}
+  footer{padding:3rem 1.5rem 2rem}
+  .fb{flex-direction:column;gap:0.5rem;align-items:flex-start}
+
+  /* Buttons full width op kleine schermen */
+  .cs-btns a,.cs-btns button,.btn-row a,.btn-row button{width:100%;max-width:100%;text-align:center;justify-content:center}
+}
+
+@media (max-width:480px){
+  /* iOS zoom preventie */
+  input,select,textarea{font-size:16px!important}
+
+  /* Touch targets: min 44px */
+  .btn-prim,.btn-ghost,.btn-book-nav,.btn-submit,.lang-bar button{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+  .fib{min-height:52px}
+
+  /* Kleinere nav */
+  .nav{padding:0 1rem}
+  .nav-logo-main{font-size:0.92rem}
+}
+
+@media (max-width:900px){
+  /* Hero */
+  .page-hero{padding:5rem 1.5rem 3.5rem}
+  .page-hero h1{font-size:clamp(1.7rem,6.5vw,2.5rem)}
+
+  /* Filter bar: horizontaal scrollbaar */
+  .filter-bar{padding:0 1rem;overflow-x:auto;-webkit-overflow-scrolling:touch;justify-content:flex-start;gap:0;scrollbar-width:none;flex-wrap:nowrap}
+  .filter-bar::-webkit-scrollbar{display:none}
+  .filter-btn{white-space:nowrap;flex-shrink:0;min-height:44px;padding:0.7rem 1rem;font-size:0.7rem}
+
+  /* Content */
+  .content-wrap{padding:0 1.25rem}
+
+  /* Section headers */
+  .section-header{margin-bottom:1.5rem}
+  .section-header h2{font-size:clamp(1.4rem,5.5vw,2rem)}
+  .section-header p{font-size:0.88rem}
+
+  /* Grids: 1 kolom */
+  .resto-grid,.act-grid,.events-grid{grid-template-columns:1fr;gap:1rem}
+
+  /* Cards */
+  .act-card{padding:1.25rem}
+  .act-body h3{font-size:1rem}
+  .act-body p{font-size:0.85rem}
+
+  /* Resto cards */
+  .resto-card{padding:1.25rem 1.5rem}
+  .resto-card h3{font-size:1rem}
+
+  /* Events */
+  .event-card{padding:1.25rem 1.5rem}
+}
+
+@media (max-width:480px){
+  .page-hero{padding:4rem 1rem 3rem}
+  .filter-bar{padding:0 0.75rem}
+  .filter-btn{padding:0.65rem 0.85rem;font-size:0.67rem}
+  .content-wrap{padding:0 1rem}
+
+  /* Act cards: compacter */
+  .act-card{padding:1rem}
+
+  /* Resto tag */
+  .resto-tag{font-size:0.6rem;padding:0.2rem 0.6rem}
+}
+
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-main">Vakantiewoningen in Oostende</span>
+    <span class="nav-logo-sub">Het Relax Hoeveke &middot; La Brise et La Mer</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+    <li><a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a></li>
+    <li><a href="galerij.html" data-i18n="nav.gallery">Galerij</a></li>
+    <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+    <li><a href="boeken.html" data-i18n="nav.book">Boeken</a></li>
+    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    <li><a href="ontdek.html" class="active">Ontdek</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="lang-bar">
+      <button class="active" data-lang="nl">NL</button><button data-lang="fr">FR</button><button data-lang="en">EN</button><button data-lang="de">DE</button>
+    </div>
+    <a href="boeken.html" class="btn-book-nav" data-i18n="nav.reserve">Reserveer nu</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html" data-i18n="nav.home">Home</a>
+  <a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a>
+  <a href="galerij.html" data-i18n="nav.gallery">Galerij</a>
+  <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+  <a href="boeken.html" data-i18n="nav.book">Boeken</a>
+  <a href="contact.html" data-i18n="nav.contact">Contact</a>
+  <a href="ontdek.html" style="color:var(--warm);font-weight:500">Ontdek Oostende</a>
+</div>
+
+<div class="page-hero">
+  <div class="phi">
+    <div class="phe" data-i18n="od.hero.ew">Onze favorieten</div>
+    <h1 data-i18n="od.hero.h1">Ontdek <em>Oostende</em></h1>
+    <p data-i18n="od.hero.p">Van gastronomische bistro&#39;s in Stene-Dorp tot brasseries met zeezicht op de Albert I-Promenade &mdash; dit zijn de plekken die de eigenaars zelf aanraden.</p>
+    <div class="hero-tags">
+      <span class="hero-tag" data-i18n="od.hero.t1">Restaurants</span>
+      <span class="hero-tag" data-i18n="od.hero.t2">Activiteiten</span>
+      <span class="hero-tag" data-i18n="od.hero.t3">Cultuur</span>
+      <span class="hero-tag" data-i18n="od.hero.t4">Kinderen</span>
+      <span class="hero-tag">Evenementen</span>
+    </div>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all" data-i18n="od.f.all">Alles</button>
+  <button class="filter-btn" data-filter="resto-hoeve" data-i18n="od.f.hoeve">Eten bij 't Hoeveke</button>
+  <button class="filter-btn sea-filter" data-filter="resto-zee" data-i18n="od.f.brise">Eten bij La Brise</button>
+  <button class="filter-btn" data-filter="todo" data-i18n="od.f.act">Activiteiten</button>
+  <button class="filter-btn gold-filter" data-filter="cultuur" data-i18n="od.f.cult">Cultuur</button>
+  <button class="filter-btn" data-filter="kids" data-i18n="od.f.kids">Kinderen</button>
+  <button class="filter-btn" data-filter="events" data-i18n="od.f.evt">Evenementen</button>
+</div>
+
+<div class="content-wrap">
+
+  <!-- RESTAURANTS HOEVEKE -->
+  <section class="odkaz-section" data-cat="resto-hoeve" id="sec-resto-hoeve">
+    <div class="section-eyebrow warm-ew">
+      <span class="dot dot-warm"></span>
+      Restaurants &middot; Stene-Dorp
+    </div>
+    <h2 class="section-title" data-i18n="od.s1.title">Eten in de buurt van <em>Het Relax Hoeveke</em></h2>
+    <p class="section-subtitle" data-i18n="od.s1.sub">Stene-Dorp is een culinair verborgen parel. Binnen fietsafstand van het Hoeveke vind je bistro&#39;s, gasthoven en gezellige eetcaf&eacute;s. Allemaal op wandel- of fietsafstand.</p>
+    <div class="prop-label hoeve"><span class="dot dot-warm"></span> Nabij Stene-Dorpstraat 36, Stene</div>
+
+    <div class="resto-grid">
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r1.name">Gastro Na&#39;Jo</div>
+        <div class="resto-type" data-i18n="od.r1.type">Gastronomisch Frans-Belgisch</div>
+        <div class="resto-addr" data-i18n="od.r1.addr">Steensedijk 60, Stene &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r1.desc">Chef Johnny en zijn vrouw Nancy runnen dit gerenommeerde restaurant. Na 20 jaar ervaring in de Oostendse horeca openden ze hun eigen zaak &mdash; een adres dat verrast met de gastronomische keuken op niveau. Gemiddelde besteding &euro;70&ndash;80 per persoon. Reserveren sterk aangeraden.</div>
+        <div class="resto-tags"><span class="resto-tag">Gastronomisch</span><span class="resto-tag">Reserveren aangeraden</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r2.name">&#39;t Genoegen</div>
+        <div class="resto-type" data-i18n="od.r2.type">Fondue &amp; grill restaurant</div>
+        <div class="resto-addr" data-i18n="od.r2.addr">Stenedorpstraat 23, Stene &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r2.desc">Gezellig fondue- en grillrestaurant in het hart van Stene-Dorp. Kwaliteitsvol vlees, verzorgde frieten en sauzen in een sfeervolle omgeving. Populair bij locals voor een uitgebreide groepsavond.</div>
+        <div class="resto-tags"><span class="resto-tag">Fondue</span><span class="resto-tag">Grill</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r3.name">Bistro De Lisse</div>
+        <div class="resto-type" data-i18n="od.r3.type">Frans-Belgische bistro</div>
+        <div class="resto-addr" data-i18n="od.r3.addr">Stenedorpstraat 27, Stene &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r3.desc">Pal tegenover de Sint-Annakerk van Stene. Geert en Betty Vynck staan al sinds 2007 garant voor klassewerk: seizoensgebonden dagverse producten, verse vis en een uitstekende wijnkaart. Sterk beoordeeld op TripAdvisor (&hellip;#72 Oostende). Reserveren is noodzakelijk.</div>
+        <div class="resto-tags"><span class="resto-tag">Verse vis</span><span class="resto-tag">Seizoensgebonden</span><span class="resto-tag">Reserveren vereist</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r4.name">Gasthof Vossenhol</div>
+        <div class="resto-type" data-i18n="od.r4.type">Nostalgisch gasthof &amp; restaurant</div>
+        <div class="resto-addr" data-i18n="od.r4.addr">Stenedorpstraat 29, Stene &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r4.desc">Een gasthof vol karakter met een uitgesproken nostalgische sfeer: donker hout, decoratieve elementen en een gezellige open haard. Klassieke Belgische keuken, royale porties en een warm onthaal. De kreeft is een specialiteit van het huis.</div>
+        <div class="resto-tags"><span class="resto-tag">Open haard</span><span class="resto-tag">Kreeft</span><span class="resto-tag">Huiselijk</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r5.name">Roccia</div>
+        <div class="resto-type" data-i18n="od.r5.type">Italiaans ge&iuml;nspireerd &middot; BBQ</div>
+        <div class="resto-addr" data-i18n="od.r5.addr">Stenedorpstraat 4, Stene &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r5.desc">Steven en Magali runnen dit sympathieke restaurant met een Italiaans geïnspireerde kaart en BBQ-inslag. Een warme ontvangst in een huiselijke sfeer &mdash; ideaal voor een gezellige avond met vrienden of familie. Ook aanwezig op Ostendaise.</div>
+        <div class="resto-tags"><span class="resto-tag">Italiaans</span><span class="resto-tag">BBQ</span><span class="resto-tag">Gezellig</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r6.name">De Vlasschaard</div>
+        <div class="resto-type" data-i18n="od.r6.type">Internationaal &agrave; la carte</div>
+        <div class="resto-addr" data-i18n="od.r6.addr">Oudstrijdersplein 5, Stene &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r6.desc">Restaurant van Hilde, gelegen in het centrum van Stene-Dorp. Internationale keuken met een knipoog naar alle windstreken. Huiskamergevoel, vriendelijke bediening en ook bijzonder geschikt voor feesten en groepen. Open woensdag tot zondag.</div>
+        <div class="resto-tags"><span class="resto-tag">Internationaal</span><span class="resto-tag">Groepen</span><span class="resto-tag">Feesten</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r7.name">&#39;t Pomptje</div>
+        <div class="resto-type" data-i18n="od.r7.type">Grill &middot; Belgische keuken</div>
+        <div class="resto-addr" data-i18n="od.r7.addr">Oudstrijdersplein 2, Stene &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r7.desc">Patron Miguel serveert hier de lekkerste gegrilde gerechten van Stene. De gemarineerde ribbetjes en c&ocirc;te &agrave; l&#39;os zijn de absolute specialiteit &mdash; bezoekers komen er speciaal voor terug. Rustiek kader, terras bij mooi weer. Ook eigen huisbier.</div>
+        <div class="resto-tags"><span class="resto-tag">Ribbetjes</span><span class="resto-tag">Grill</span><span class="resto-tag">Huisbier</span></div>
+      </div>
+
+    </div>
+
+    <div class="tip-box">
+      <strong>Tip van de eigenaars:</strong> Bij aankomst leggen we een persoonlijk adresboekje klaar met openingsuren en reservatietips. Stene-Dorp ligt op het Groen Lint &mdash; je fietst er zo naartoe. De meeste restaurants zijn gesloten op maandag en/of dinsdag &mdash; check vooraf even.
+    </div>
+  </section>
+
+  <!-- RESTAURANTS LA BRISE -->
+  <section class="odkaz-section" data-cat="resto-zee" id="sec-resto-zee">
+    <div class="section-eyebrow sea-ew">
+      <span class="dot dot-sea"></span>
+      Restaurants &middot; Mariakerke &amp; omgeving
+    </div>
+    <h2 class="section-title" style="color:var(--sea);">Eten in de buurt van <em>La Brise et La Mer</em></h2>
+    <p class="section-subtitle" data-i18n="od.s2.sub">Van visrestaurants met zeezicht tot Italiaanse trattoria&#39;s en een koffiebar met churning gelato &mdash; de omgeving van de Zeedijk Mariakerke heeft verrassend veel te bieden.</p>
+    <div class="prop-label zee"><span class="dot dot-sea"></span> Nabij Zeedijk 170, Mariakerke &mdash; Oostende</div>
+
+    <div class="resto-grid">
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r8.name">Restaurant North</div>
+        <div class="resto-type" data-i18n="od.r8.type">Visrestaurant &middot; Moderne zeekeuken</div>
+        <div class="resto-addr" data-i18n="od.r8.addr">Zeedijk 137c (hoek Northlaan), Mariakerke &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r8.desc">Een van de beste visrestaurants aan de kust. Chef Jan Liebrechts bereidt dagverse Noordzeevis in een modern en stijlvol kader met prachtig zeezicht en zonnig terras. De garnaalkroketten wonnen zowel de jury- als publieksprijs op het Garnaalkrokettenfestival 2024. Reserveren sterk aangeraden.</div>
+        <div class="resto-tags"><span class="resto-tag">Zeezicht</span><span class="resto-tag">Garnaalkroketten</span><span class="resto-tag">Reserveren aangeraden</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r9.name">Il Gusto di Sorrento</div>
+        <div class="resto-type" data-i18n="od.r9.type">Italiaans restaurant</div>
+        <div class="resto-addr" data-i18n="od.r9.addr">Zeedijk 137, Mariakerke &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r9.desc">Authentieke Italiaanse keuken met zicht op de Noordzee. Pizza, pasta en vis bereid naar zuiderse traditie. Gelegen vlak naast restaurant North &mdash; een vaste waarde in Mariakerke voor wie zin heeft in Itali&euml; aan de kust.</div>
+        <div class="resto-tags"><span class="resto-tag">Italiaans</span><span class="resto-tag">Zeezicht</span><span class="resto-tag">Pizza &amp; pasta</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r10.name">Restaurant Boucquez</div>
+        <div class="resto-type" data-i18n="od.r10.type">Frans-Belgisch &middot; Casual fine dining</div>
+        <div class="resto-addr" data-i18n="od.r10.addr">Troonstraat 83, Mariakerke &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r10.desc">Al meer dan 35 jaar een vaste waarde in Mariakerke. Familiezaak van Guillaume met lokale producten, korte keten en klassieke gerechten met een moderne touch. Garnaalkroketten, Oostendse vissoep en huisgemaakte lekkernijen. Terras bij mooi weer.</div>
+        <div class="resto-tags"><span class="resto-tag">Familiezaak</span><span class="resto-tag">Lokaal</span><span class="resto-tag">35 jaar traditie</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r11.name">Trattoria Ensorito</div>
+        <div class="resto-type" data-i18n="od.r11.type">Italiaans &middot; Pizzeria</div>
+        <div class="resto-addr" data-i18n="od.r11.addr">Dorpsstraat 103, Mariakerke &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r11.desc">Een knipoog naar James Ensor in naam en geest. Italiaanse pizzeria en trattoria met een ruim terras. Verse pasta, pizza en zeevruchten. Genieten bij mooi weer is hier s&rsquo;avonds op het terras een echte belevenis. Takeaway ook mogelijk.</div>
+        <div class="resto-tags"><span class="resto-tag">Pizzeria</span><span class="resto-tag">Terras</span><span class="resto-tag">Takeaway</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r12.name">Den Artisjok</div>
+        <div class="resto-type" data-i18n="od.r12.type">Belgisch &middot; Bi&egrave;re de Paris</div>
+        <div class="resto-addr" data-i18n="od.r12.addr">Troonstraat 121, Mariakerke &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r12.desc">Gerenoveerd familierestaurant van chef Sven (hotelschool Ter Duinen), vlak bij het KV Oostende-stadion. Voor iedereen wat wils &mdash; een &agrave; la carte kaart voor groot en klein, &#39;s middags en &#39;s avonds. Ook bereikbaar per tram (halte op 50 m).</div>
+        <div class="resto-tags"><span class="resto-tag">Familie</span><span class="resto-tag">Jong &amp; oud</span><span class="resto-tag">Bereikbaar per tram</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r13.name">Fogato</div>
+        <div class="resto-type" data-i18n="od.r13.type">Koffie &amp; churning gelato salon</div>
+        <div class="resto-addr" data-i18n="od.r13.addr">Troonstraat 99, Mariakerke &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r13.desc">Het beste koffieadres in Mariakerke &mdash; een goed bewaard geheim vlak bij het strand. Meesterlijk gebrande koffiebonen in samenwerking met OR Coffee en ambachtelijke churning gelato. Ideale tussenstop na een strandwandeling. Score 4.9/5 op Google.</div>
+        <div class="resto-tags"><span class="resto-tag">Koffie</span><span class="resto-tag">Gelato</span><span class="resto-tag">Nabij strand</span></div>
+      </div>
+
+      <div class="resto-card">
+        <div class="resto-name" data-i18n="od.r14.name">Bistro Bottarga</div>
+        <div class="resto-type" data-i18n="od.r14.type">Brasserie &middot; Fusion &amp; klassiekers</div>
+        <div class="resto-addr" data-i18n="od.r14.addr">Albert I-Promenade 64c &mdash; Oostende</div>
+        <div class="resto-desc" data-i18n="od.r14.desc">Brasserie op de dijk met prachtig zeezicht en een verwarmd terras. Het concept draait rond fusion cuisine: klassiekers, wereldse gerechten en zuiders ge&iuml;nspireerde schotels. Mosselen, garnaalkroketten, steak tartare. Meer dan 1.400 beoordelingen, score 9.2/10.</div>
+        <div class="resto-tags"><span class="resto-tag">Zeezicht</span><span class="resto-tag">Terras</span><span class="resto-tag">Fusion</span></div>
+      </div>
+
+    </div>
+
+    <div class="tip-box" style="border-left-color:var(--sea2)">
+      <strong>Tip:</strong> De meeste restaurants langs de Zeedijk zijn ook in het laagseizoen actief &mdash; Oostende is een echte jaarrondstad. Reserveren is bijna overal aangeraden in het hoogseizoen, zeker bij North en Boucquez.
+    </div>
+  </section>
+
+  <!-- ACTIVITEITEN -->
+  <section class="odkaz-section" data-cat="todo" id="sec-todo">
+    <div class="section-eyebrow warm-ew">
+      <span class="dot dot-warm"></span>
+      Activiteiten &middot; Natuur &amp; beweging
+    </div>
+    <h2 class="section-title" data-i18n="od.s3.title">Buiten <em>genieten</em></h2>
+    <p class="section-subtitle" data-i18n="od.s3.sub">Stene en omgeving is ideaal voor wandelaars, fietsers en natuurliefhebbers. Het Groen Lint, De Schorre en de hondenweide liggen letterlijk om de hoek van Het Relax Hoeveke.</p>
+    <div class="prop-label hoeve"><span class="dot dot-warm"></span> Vooral rondom Het Relax Hoeveke &middot; Stene</div>
+
+    <div class="act-grid">
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a13.title">Kinderboerderij Stene</div>
+          <div class="act-cat" data-i18n="od.a13.sub">Familie &middot; Gratis &middot; 5 min. wandelen</div>
+          <div class="act-desc" data-i18n="od.a13.body">Op wandelafstand van het Hoeveke. Gratis toegang, boerderijdieren aanraken. Perfect voor peuters en kleuters. Een vaste bezienswaardigheid van Stene-Dorp.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a1.title">Het Groen Lint</div>
+          <div class="act-cat" data-i18n="od.a1.sub">Fietsroute &middot; Grotendeels autovrij</div>
+          <div class="act-desc" data-i18n="od.a1.body">De fietsroute vertrekt voor de deur. Grotendeels autovrij, langs parken, waterpartijen en evenementenpark De Nieuwe Koerse. Ideaal voor een halve dag fietsen richting centrum of De Schorre.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a2.title">De Schorre</div>
+          <div class="act-cat" data-i18n="od.a2.sub">Sportpark &middot; 10 min. fietsen</div>
+          <div class="act-desc" data-i18n="od.a2.body">Het sportpark van Oostende met padel, tennis, skatepark, speeltuinen en evenementen. In de zomer een bruisend centrum voor sport en plezier voor alle leeftijden.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a3.title">Grote Hondenlosloopweide</div>
+          <div class="act-cat" data-i18n="od.a3.sub">Honden &middot; 5 min. fietsen &middot; Stene</div>
+          <div class="act-desc" data-i18n="od.a3.body">Kom je met hond? De hondenlosloopweide van Stene ligt vlakbij het Hoeveke. Volledig omheind, groot terrein. Honden zijn ook welkom in het Hoeveke zelf.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a4.title">Wandelroutes Stene-Dorp</div>
+          <div class="act-cat" data-i18n="od.a4.sub">Wandelen &middot; Alle niveaus</div>
+          <div class="act-desc" data-i18n="od.a4.body">Aan de overkant van de straat start een wandelpad naar de biotuin van Stene-Dorp en verder richting Fort Napoleon en de Oosteroeverduinen. Kaarten liggen klaar in het Hoeveke.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a5.title">Biotuin Stene-Dorp</div>
+          <div class="act-cat" data-i18n="od.a5.sub">Natuur &middot; Rustig &middot; Gratis</div>
+          <div class="act-desc" data-i18n="od.a5.body">Een rustige, groene tuin op wandelafstand. Perfect voor een ochtendwandeling of vogels spotten. Gratis toegang, altijd open &mdash; een ideale start van de dag.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTUUR -->
+  <section class="odkaz-section" data-cat="cultuur" id="sec-cultuur">
+    <div class="section-eyebrow gold-ew">
+      <span class="dot dot-gold"></span>
+      Cultuur &amp; bezoeken &middot; Oostende
+    </div>
+    <h2 class="section-title" data-i18n="od.s4.title">Oostende <em>ontdekken</em></h2>
+    <p class="section-subtitle" data-i18n="od.s4.sub">Oostende heeft meer te bieden dan zandstranden. Van het James Ensorhuis tot de Atlantikwall &mdash; de stad is rijk aan geschiedenis, kunst en unieke plekken.</p>
+    <div class="prop-label zee"><span class="dot dot-sea"></span> Centraal gelegen &middot; Bereikbaar vanuit beide verblijven</div>
+
+    <div class="act-grid">
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a6.title">James Ensorhuis</div>
+          <div class="act-cat" data-i18n="od.a6.sub">Museum &middot; Vlaanderenstraat 27, Centrum</div>
+          <div class="act-desc" data-i18n="od.a6.body">Het volledig gerestaureerde woonhuis van de Belgische meester. Verplichte stop voor kunstliefhebbers. Klein maar indrukwekkend &mdash; plan minstens een uur.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a7.title">Atlantikwall Raversijde</div>
+          <div class="act-cat" data-i18n="od.a7.sub">Erfgoed &middot; Provinciaal domein Raversijde</div>
+          <div class="act-desc" data-i18n="od.a7.body">Gedeeltelijk gereconstrueerde bunkers van de Atlantikwall langs de kust bij Raversijde. Uniek openluchtmuseum &mdash; rondleidingen beschikbaar in het seizoen. Indrukwekkend stuk kustgeschiedenis.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a8.title">Vistrap Oostende</div>
+          <div class="act-cat" data-i18n="od.a8.sub">Markt &middot; Zaterdagochtend &middot; Visserskaai</div>
+          <div class="act-desc" data-i18n="od.a8.body">De befaamde Oostendse Vistrap op zaterdagochtend aan de Visserskaai. Verse vis rechtstreeks van de boot, gerookte paling, garnaaltjes. Kom vroeg voor de beste keuze &mdash; een absolute belevenis.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a9.title">MuZee</div>
+          <div class="act-cat" data-i18n="od.a9.sub">Kunstmuseum &middot; Romestraat 11, Centrum</div>
+          <div class="act-desc" data-i18n="od.a9.body">Museum voor moderne en hedendaagse kunst. Vaste collectie met Ensor en Spilliaert, plus wisselende tentoonstellingen. Prachtig uitzicht op zee vanuit het museumcaf&eacute;.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a10.title">Wandeling naar Middelkerke</div>
+          <div class="act-cat" data-i18n="od.a10.sub">Strand &middot; 8 km enkele weg &middot; Terug per kusttram</div>
+          <div class="act-desc" data-i18n="od.a10.body">Wandel langs de vloedlijn van La Brise richting Middelkerke &mdash; 8 km van pure zeelucht. Neem de kusttram terug. Een van de mooiste strandwandelingen aan de Belgische kust.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a11.title">The Crystal Ship</div>
+          <div class="act-cat" data-i18n="od.a11.sub">Street art &middot; Jaarlijks festival &middot; Lente</div>
+          <div class="act-desc" data-i18n="od.a11.body">Internationaal street art festival dat Oostende omtovert tot een openluchtmuseum. De muurschilderingen van vorige edities zijn het hele jaar te bewonderen op een wandelroute door de stad.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KINDEREN -->
+  <section class="odkaz-section" data-cat="kids" id="sec-kids">
+    <div class="section-eyebrow green-ew">
+      <span class="dot dot-green"></span>
+      Met kinderen &middot; Oostende &amp; omgeving
+    </div>
+    <h2 class="section-title" data-i18n="od.s5.title">Plezier voor <em>het hele gezin</em></h2>
+    <p class="section-subtitle" data-i18n="od.s5.sub">Strand, dieren, avontuur, kunst en sport &mdash; in Oostende is voor elk kind iets te beleven. Onze tips voor een onvergetelijk gezinsuitje.</p>
+
+    <div class="act-grid">
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a12.title">Surfclub Oostende</div>
+          <div class="act-cat" data-i18n="od.a12.sub">Watersport &middot; Strand &middot; Vanaf 8 jaar</div>
+          <div class="act-desc" data-i18n="od.a12.body">Surfles voor kinderen en volwassenen. Ervaren instructeurs, kindvriendelijk materiaal en de Noordzee als speeltuin. Bodyboard en surfboard voor elk niveau.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a14.title">Kinderboerderij Stene</div>
+          <div class="act-cat" data-i18n="od.a14.sub">Dieren &middot; Gratis &middot; Stene-Dorp</div>
+          <div class="act-desc" data-i18n="od.a14.body">Geiten, konijnen, pony&#39;s en kippen aaien op wandelafstand van het Hoeveke. Gratis en altijd open &mdash; perfect voor de kleinsten.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a15.title">MuZee Kinderatelier</div>
+          <div class="act-cat" data-i18n="od.a15.sub">Kunst &middot; Workshops &middot; Centrum Oostende</div>
+          <div class="act-desc" data-i18n="od.a15.body">Het MuZee organiseert regelmatig ateliers voor kinderen. Schilderen in de stijl van Ensor of collages maken. Creatief en educatief. Check de agenda bij aankomst.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a16.title">Strand &amp; zee</div>
+          <div class="act-cat" data-i18n="od.a16.sub">Gratis &middot; Alle leeftijden</div>
+          <div class="act-desc" data-i18n="od.a16.body">Het grootste speelplein ter wereld. Zandkastelen, strandtennis, schelpen zoeken. Vanuit La Brise ben je in 30 seconden op het strand van Mariakerke &mdash; een van de rustigste stranden aan de kust.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a17.title">Fietsen langs de Kust</div>
+          <div class="act-cat" data-i18n="od.a17.sub">Fiets &middot; Alle leeftijden &middot; Autovrije dijk</div>
+          <div class="act-desc" data-i18n="od.a17.body">Huur fietsen (inclusief kinderfietsjes en bakfietsen) en verken de kustlijn. De zeedijk is autovrij en vlak. Tot Middelkerke of zelfs Bredene via het Groen Lint &mdash; voor elk niveau.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a18.title">De Schorre Sportpark</div>
+          <div class="act-cat" data-i18n="od.a18.sub">Sport &amp; spel &middot; 10 min. van &#39;t Hoeveke</div>
+          <div class="act-desc" data-i18n="od.a18.body">Skatepark, klimparcours, speeltuinen en ruimte om vrij te spelen. In de zomer ook pop-up activiteiten. Kinderen kunnen hier uren zoet zijn &mdash; neem een picknick mee.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a19.title">Sea Life Blankenberge</div>
+          <div class="act-cat" data-i18n="od.a19.sub">Aquarium &middot; 15 min. per kusttram</div>
+          <div class="act-desc" data-i18n="od.a19.body">Prachtig aquarium op 15 minuten met de kusttram. Haaien, zeepaardjes, koraalriffen &mdash; een onderwaterwereld die kinderen versteld doet staan. Ticket online is goedkoper.</div>
+        </div>
+      </div>
+
+      <div class="act-card">
+        <div class="act-body">
+          <div class="act-name" data-i18n="od.a20.title">Paulusfeesten</div>
+          <div class="act-cat" data-i18n="od.a20.sub">Kermis &middot; Zomer &middot; Centrum Oostende</div>
+          <div class="act-desc" data-i18n="od.a20.body">De jaarlijkse kermis van Oostende rond eind juni. Attracties, streetfood, muziek &mdash; een sfeer die de ganse stad opslokt. Een must voor jong en oud.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENEMENTEN -->
+  <section class="odkaz-section" data-cat="events" id="sec-events">
+    <div class="section-eyebrow gold-ew">
+      <span class="dot dot-gold"></span>
+      Jaarlijkse evenementen &middot; Oostende
+    </div>
+    <h2 class="section-title" data-i18n="od.s6.title">Elk jaar <em>opnieuw</em></h2>
+    <p class="section-subtitle" data-i18n="od.s6.sub">Oostende bruist het hele jaar. Van het North Sea Food Fest tot de Rode Loper van het Filmfestival &mdash; er is altijd iets te beleven. Data verschuiven licht per jaar, check <a href="https://www.visitoostende.be" target="_blank" style="color:var(--warm);text-decoration:underline">visitoostende.be</a> voor de actuele agenda.</p>
+
+    <div class="events-grid">
+
+      <div class="event-card">
+        <div class="event-month" data-i18n="od.e1.month">Eind juni &middot; Jaarlijks</div>
+        <div class="event-body">
+          <div class="event-name" data-i18n="od.e1.name">Ostendaise &mdash; North Sea Food Fest</div>
+          <div class="event-type" data-i18n="od.e1.type">Visfestival &middot; Zeeheldenplein &middot; Gratis toegang</div>
+          <div class="event-desc" data-i18n="od.e1.desc">Het jaarlijkse visfestival op het Zeeheldenplein in het hart van Oostende. Meer dan 20 lokale chefs bereiden gerechten met dagverse Noordzeevis &mdash; van aperitief tot zonsondergang. Gratis toegang, gerechten aan &euro;8 per bordje. Champagne- en wijnbar aanwezig. In 2026 vindt de 11e editie plaats op 27&ndash;28 juni.</div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-month" data-i18n="od.e2.month">Zomer &middot; Jaarlijks</div>
+        <div class="event-body">
+          <div class="event-name" data-i18n="od.e2.name">TAZ &mdash; Tentoonstellingen aan Zee</div>
+          <div class="event-type" data-i18n="od.e2.type">Kunst &middot; Openlucht &middot; Zeedijk</div>
+          <div class="event-desc" data-i18n="od.e2.desc">Elke zomer transformeert de Zeedijk in een openluchtgalerij. Beeldhouwwerken, installaties en werk van Belgische en internationale kunstenaars. Gratis te bewonderen langs de dijk &mdash; perfect als aanvulling bij een stranddagje.</div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-month" data-i18n="od.e3.month">Augustus &middot; Jaarlijks</div>
+        <div class="event-body">
+          <div class="event-name" data-i18n="od.e3.name">Filmfestival Oostende</div>
+          <div class="event-type" data-i18n="od.e3.type">Cinema &middot; Belgische film &middot; Casinokwartier</div>
+          <div class="event-desc" data-i18n="od.e3.desc">Het Belgische filmfestival bij uitstek. Het Casinokwartier wordt een week lang omgetoverd tot filmset. Rode loper, Belgische sterren, openluchtvertoningen en een feestelijk kader aan zee.</div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-month" data-i18n="od.e4.month">Lente &middot; Jaarlijks</div>
+        <div class="event-body">
+          <div class="event-name" data-i18n="od.e4.name">The Crystal Ship</div>
+          <div class="event-type" data-i18n="od.e4.type">Street Art Festival &middot; Internationaal</div>
+          <div class="event-desc" data-i18n="od.e4.desc">Internationaal street art festival waarbij de muren van Oostende worden omgetoverd tot kunstwerken. De muurschilderingen van vorige edities zijn het hele jaar te zien op een wandelroute door de stad.</div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-month" data-i18n="od.e5.month">Zomer &middot; Jaarlijks</div>
+        <div class="event-body">
+          <div class="event-name" data-i18n="od.e5.name">Garnaalkrokettenfestival</div>
+          <div class="event-type" data-i18n="od.e5.type">Culinair &middot; Volksfeest</div>
+          <div class="event-desc" data-i18n="od.e5.desc">Festival ter ere van het meest iconische gerecht van de Belgische kust. Chefs meten hun garnaalkroket, het publiek stemt. Restaurant North won zowel de jury- als publieksprijs in 2024. Een culinaire viering van de Noordzeegarnaal.</div>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-month" data-i18n="od.e6.month">Eind juni &middot; Jaarlijks</div>
+        <div class="event-body">
+          <div class="event-name" data-i18n="od.e6.name">Paulusfeesten</div>
+          <div class="event-type" data-i18n="od.e6.type">Kermis &middot; Volksfeest &middot; Centrum Oostende</div>
+          <div class="event-desc" data-i18n="od.e6.desc">De jaarlijkse kermis van Oostende rondom het feest van Sint-Paulus. Attracties, streetfood, muziek en een sfeer die de ganse stad opslokt. Een vaste afspraak voor jong en oud, elk jaar opnieuw.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<div class="cta-section">
+  <div class="cta-inner">
+    <span class="cta-ew">Klaar om te boeken?</span>
+    <h2 class="cta-title">Reserveer rechtstreeks <em>bij ons</em></h2>
+    <p class="cta-p">Geen commissie, geen tussenpersoon. Bij aankomst wacht een persoonlijk adresboekje met al onze favorieten op u.</p>
+    <div class="cta-row">
+      <a href="boeken.html#hoeveke" class="btn-white">Het Relax Hoeveke</a>
+      <a href="boeken.html#brise" class="btn-white">La Brise et La Mer</a>
+      <a href="contact.html" class="btn-ol">Stel een vraag</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="fg">
+    <div>
+      <div class="fbrand">Vakantiewoningen<br>in Oostende</div>
+      <p class="ftag">Twee unieke verblijven aan de Belgische kust &mdash; Het Relax Hoeveke in het landelijke Stene en La Brise et La Mer op de Zeedijk van Mariakerke.</p>
+    </div>
+    <div class="fc">
+      <h5>Navigatie</h5>
+      <ul>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a></li>
+        <li><a href="galerij.html" data-i18n="nav.gallery">Galerij</a></li>
+        <li><a href="boeken.html" data-i18n="nav.book">Boeken</a></li>
+        <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="ontdek.html">Ontdek Oostende</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Boeken</h5>
+      <ul>
+        <li><a href="boeken.html#hoeveke">Het Relax Hoeveke</a></li>
+        <li><a href="boeken.html#brise">La Brise et La Mer</a></li>
+        <li><a href="boeken.html">Beste prijs &mdash; rechtstreeks</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="mailto:vakantiewoningeninoostende@hotmail.com">vakantiewoningeninoostende@hotmail.com</a></li>
+        <li><a href="tel:+32475687243">0475 68 72 43</a></li>
+        <li><a href="https://wa.me/32475687243">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fb">
+    <span>&copy; <span id="yr"></span> Vakantiewoningen in Oostende</span>
+    <div class="fleg">
+      <a href="#">Privacybeleid</a>
+      <a href="#">Cookiebeleid</a>
+      <a href="#">Algemene voorwaarden</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+var _n=document.getElementById('nav');
+window.addEventListener('scroll',function(){_n.classList.toggle('scrolled',window.scrollY>50);},{passive:true});
+document.getElementById('hamburger').addEventListener('click',function(){
+  document.getElementById('mobile-menu').classList.toggle('open');
+});
+document.getElementById('yr').textContent=new Date().getFullYear();
+document.querySelectorAll('.filter-btn').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('active');});
+    btn.classList.add('active');
+    var f=btn.dataset.filter;
+    document.querySelectorAll('.odkaz-section').forEach(function(s){
+      if(f==='all'){s.classList.remove('hidden');}
+      else{s.classList.toggle('hidden',s.dataset.cat!==f);}
+    });
+    if(f!=='all'){
+      var target=document.querySelector('.odkaz-section[data-cat="'+f+'"]');
+      if(target){setTimeout(function(){target.scrollIntoView({behavior:'smooth',block:'start'});},50);}
+    }
+  });
+});
+
+var T = {"nl":{"nav.home":"Home","nav.rentals":"Onze verblijven","nav.gallery":"Galerij","nav.faq":"FAQ","nav.book":"Boeken","nav.contact":"Contact","nav.reserve":"Reserveer nu","ft.tagline":"Twee unieke verblijven aan de Belgische kust.","ft.nav":"Navigatie","ft.book":"Boeken","ft.contact":"Contact","ft.bh":"Het Relax Hoeveke boeken","ft.bz":"La Brise et La Mer boeken","ft.privacy":"Privacybeleid","ft.cookies":"Cookiebeleid","ft.terms":"Algemene voorwaarden","od.hero.ew":"Onze favorieten","od.hero.h1":"Ontdek <em>Oostende</em>","od.hero.p":"Van gastronomische bistro&#39;s in Stene-Dorp tot brasseries met zeezicht op de Albert I-Promenade &mdash; dit zijn de plekken die de eigenaars zelf aanraden.","od.hero.t1":"Restaurants","od.hero.t2":"Activiteiten","od.hero.t3":"Cultuur","od.hero.t4":"Kinderen","od.f.all":"Alles","od.f.hoeve":"Eten bij &#39;t Hoeveke","od.f.brise":"Eten bij La Brise","od.f.act":"Activiteiten","od.f.cult":"Cultuur","od.f.kids":"Kinderen","od.f.evt":"Evenementen","od.s1.dot":"Restaurants &middot; Stene-Dorp","od.s1.title":"Eten in de buurt van <em>Het Relax Hoeveke</em>","od.s1.sub":"Stene-Dorp is een culinair verborgen parel. Binnen fietsafstand van het Hoeveke vind je bistro&#39;s, gasthoven en gezellige eetcaf&eacute;s. Allemaal op wandel- of fietsafstand.","od.s2.dot":"Restaurants &middot; Zeedijk Mariakerke","od.s2.title":"Eten in de buurt van <em>La Brise et La Mer</em>","od.s2.sub":"Van visrestaurants met zeezicht tot Italiaanse trattoria&#39;s en een koffiebar met churning gelato &mdash; de omgeving van de Zeedijk Mariakerke heeft verrassend veel te bieden.","od.s3.dot":"Buiten genieten","od.s3.title":"Buiten <em>genieten</em>","od.s3.sub":"Stene en omgeving is ideaal voor wandelaars, fietsers en natuurliefhebbers. Het Groen Lint, De Schorre en de hondenweide liggen letterlijk om de hoek van Het Relax Hoeveke.","od.s4.dot":"Cultuur &amp; erfgoed","od.s4.title":"Oostende <em>ontdekken</em>","od.s4.sub":"Oostende heeft meer te bieden dan zandstranden. Van het James Ensorhuis tot de Atlantikwall &mdash; de stad is rijk aan geschiedenis, kunst en unieke plekken.","od.s5.dot":"Familie &amp; kinderen","od.s5.title":"Plezier voor <em>het hele gezin</em>","od.s5.sub":"Strand, dieren, avontuur, kunst en sport &mdash; in Oostende is voor elk kind iets te beleven. Onze tips voor een onvergetelijk gezinsuitje.","od.s6.dot":"Elk jaar opnieuw","od.s6.title":"Elk jaar <em>opnieuw</em>","od.s6.sub":"Oostende bruist het hele jaar door. Van het North Sea Food Fest tot het Filmfestival &mdash; er is altijd wel een reden om een bezoek te plannen.","od.lbl.res":"Reserveren aangeraden","od.lbl.walk":"Op wandelafstand","od.lbl.bike":"Op fietsafstand","od.lbl.free":"Gratis","od.lbl.annual":"Jaarlijks","od.tag.gastro":"Gastronomisch","od.tag.bistro":"Bistro","od.tag.grill":"Grill","od.tag.italian":"Italiaans","od.tag.fish":"Vis & zee","od.tag.belgian":"Belgisch","od.tag.terrace":"Terras","od.tag.sea":"Zeezicht","od.tag.coffee":"Koffie & gebak","od.r1.name":"Gastro Na&#39;Jo","od.r1.type":"Gastronomisch Frans-Belgisch","od.r1.addr":"Steensedijk 60, Stene &mdash; Oostende","od.r1.desc":"Chef Johnny en zijn vrouw Nancy runnen dit gerenommeerde restaurant. Na 20 jaar ervaring in de Oostendse horeca openden ze hun eigen zaak &mdash; een adres dat verrast met de gastronomische keuken op niveau. Gemiddelde besteding &euro;70&ndash;80 per persoon. Reserveren sterk aangeraden.","od.r2.name":"&#39;t Genoegen","od.r2.type":"Fondue &amp; grill restaurant","od.r2.addr":"Stenedorpstraat 23, Stene &mdash; Oostende","od.r2.desc":"Het gezelligste fonduerestaurant van Stene-Dorp. Huiselijke sfeer, ruime porties en een trouwe vaste klantenkring. Reserveren aangeraden, zeker in het weekend.","od.r3.name":"Bistro De Lisse","od.r3.type":"Frans-Belgische bistro","od.r3.addr":"Stenedorpstraat 27, Stene &mdash; Oostende","od.r3.desc":"Geert en Betty Vynck runnen al jaren dit lokale adres in het hart van Stene-Dorp. Eerlijke bistrokeuken, seizoensgebonden menu en een warm onthaal. TripAdvisor-favoriet in de regio.","od.r4.name":"Gasthof Vossenhol","od.r4.type":"Nostalgisch gasthof &amp; restaurant","od.r4.addr":"Stenedorpstraat 29, Stene &mdash; Oostende","od.r4.desc":"Een echte Vlaamse klassieker: open haard, kraanwater en huisbereide kreeftbereidingen. Volksrestaurant met een jarenlange traditie en een unieke nostalgische sfeer.","od.r5.name":"Roccia","od.r5.type":"Italiaans ge&iuml;nspireerd &middot; BBQ","od.r5.addr":"Stenedorpstraat 4, Stene &mdash; Oostende","od.r5.desc":"Steven en Magali openden dit originele BBQ-concept met Italiaanse toetsen. Geen standaard pizzeria, maar een creatief adres met kwaliteitsproducten van het vuur.","od.r6.name":"De Vlasschaard","od.r6.type":"Internationaal &agrave; la carte","od.r6.addr":"Oudstrijdersplein 5, Stene &mdash; Oostende","od.r6.desc":"Patron Hilde verwelkomt u met een gevarieerde kaart en een warme bediening. Ruim terras op het dorpsplein van Stene. Ideaal voor een uitgebreid etentje na een fietstocht.","od.r7.name":"&#39;t Pomptje","od.r7.type":"Grill &middot; Belgische keuken","od.r7.addr":"Oudstrijdersplein 2, Stene &mdash; Oostende","od.r7.desc":"Patron Miguel is een begrip in Stene. Ribbetjes, c&ocirc;te &agrave; l&#39;os en een eigen huisbier &mdash; &#39;t Pomptje is een gezellige volkse grill met vaste stamgasten. Terras op het plein.","od.r8.name":"Restaurant North","od.r8.type":"Visrestaurant &middot; Moderne zeekeuken","od.r8.addr":"Zeedijk 137c, Mariakerke &mdash; Oostende","od.r8.desc":"Chef Jan Liebrechts won het garnaalkrokettenfestival 2024 en staat voor vernieuwende zeekeuken. Centraal gelegen aan het begin van de Northlaan, met een mooi uitzicht op zee.","od.r9.name":"Il Gusto di Sorrento","od.r9.type":"Italiaans restaurant","od.r9.addr":"Zeedijk 137, Mariakerke &mdash; Oostende","od.r9.desc":"Authentieke Italiaanse keuken op de Zeedijk van Mariakerke. Verse pasta, pizza uit de houtoven en een uitgebreide wijnkaart. Populair bij zowel locals als toeristen.","od.r10.name":"Restaurant Boucquez","od.r10.type":"Frans-Belgisch &middot; Casual fine dining","od.r10.addr":"Troonstraat 83, Mariakerke &mdash; Oostende","od.r10.desc":"Guillaume Boucquez runt al meer dan 35 jaar dit familiebedrijf in Mariakerke. Klassieke Frans-Belgische keuken met verse producten. Een vaste waarde in de buurt.","od.r11.name":"Trattoria Ensorito","od.r11.type":"Italiaans &middot; Pizzeria","od.r11.addr":"Dorpsstraat 103, Mariakerke &mdash; Oostende","od.r11.desc":"Gezellige Italiaanse trattoria in het dorpscentrum van Mariakerke. Ruime keuze aan pizza&#39;s en pasta&#39;s, met een terras op de rustige Dorpsstraat.","od.r12.name":"Den Artisjok","od.r12.type":"Belgisch &middot; Bi&egrave;re de Paris","od.r12.addr":"Troonstraat 121, Mariakerke &mdash; Oostende","od.r12.desc":"Chef Sven serveert klassieke Belgische gerechten in een ontspannen bistrosfeer. Seizoensgebonden menu, goede bierkaart en een vaste lokale clientele.","od.r13.name":"Fogato","od.r13.type":"Koffie &amp; churning gelato salon","od.r13.addr":"Troonstraat 99, Mariakerke &mdash; Oostende","od.r13.desc":"Sfeervolle koffiebar met churning gelato &mdash; ambachtelijk ijscrème bereid op het moment zelf. Perfect voor een ochtendkoffie of een zoet tussendoortje na een wandeling langs de Zeedijk.","od.r14.name":"Bistro Bottarga","od.r14.type":"Brasserie &middot; Fusion &amp; klassiekers","od.r14.addr":"Albert I-Promenade 64c, Oostende","od.r14.desc":"Een van de best beoordeelde brasseries aan de Oostendse kust met een score van 9.2/10. Fusion met klassiekers, prachtig terras aan de promenade en vakkundige bediening.","od.a1.title":"Het Groen Lint","od.a1.sub":"Fietsroute &middot; Grotendeels autovrij","od.a1.body":"De fietsroute vertrekt voor de deur. Grotendeels autovrij, langs parken, waterpartijen en evenementenpark De Nieuwe Koerse. Ideaal voor een halve dag fietsen richting centrum of De Schorre.","od.a2.title":"De Schorre","od.a2.sub":"Sportpark &middot; 10 min. fietsen","od.a2.body":"Het sportpark van Oostende met padel, tennis, skatepark, speeltuinen en evenementen. In de zomer een bruisend centrum voor sport en plezier voor alle leeftijden.","od.a3.title":"Grote Hondenlosloopweide","od.a3.sub":"Honden &middot; 5 min. fietsen &middot; Stene","od.a3.body":"Kom je met hond? De hondenlosloopweide van Stene ligt vlakbij het Hoeveke. Volledig omheind, groot terrein. Honden zijn ook welkom in het Hoeveke zelf.","od.a4.title":"Wandelroutes Stene-Dorp","od.a4.sub":"Wandelen &middot; Alle niveaus","od.a4.body":"Aan de overkant van de straat start een wandelpad naar de biotuin van Stene-Dorp en verder richting Fort Napoleon en de Oosteroeverduinen. Kaarten liggen klaar in het Hoeveke.","od.a5.title":"Biotuin Stene-Dorp","od.a5.sub":"Natuur &middot; Rustig &middot; Gratis","od.a5.body":"Een rustige, groene tuin op wandelafstand. Perfect voor een ochtendwandeling of vogels spotten. Gratis toegang, altijd open &mdash; een ideale start van de dag.","od.a6.title":"James Ensorhuis","od.a6.sub":"Museum &middot; Vlaanderenstraat 27, Centrum","od.a6.body":"Het volledig gerestaureerde woonhuis van de Belgische meester. Verplichte stop voor kunstliefhebbers. Klein maar indrukwekkend &mdash; plan minstens een uur.","od.a7.title":"Atlantikwall Raversijde","od.a7.sub":"Erfgoed &middot; Provinciaal domein Raversijde","od.a7.body":"Gedeeltelijk gereconstrueerde bunkers van de Atlantikwall langs de kust bij Raversijde. Uniek openluchtmuseum &mdash; rondleidingen beschikbaar in het seizoen. Indrukwekkend stuk kustgeschiedenis.","od.a8.title":"Vistrap Oostende","od.a8.sub":"Markt &middot; Zaterdagochtend &middot; Visserskaai","od.a8.body":"De befaamde Oostendse Vistrap op zaterdagochtend aan de Visserskaai. Verse vis rechtstreeks van de boot, gerookte paling, garnaaltjes. Kom vroeg voor de beste keuze &mdash; een absolute belevenis.","od.a9.title":"MuZee","od.a9.sub":"Kunstmuseum &middot; Romestraat 11, Centrum","od.a9.body":"Museum voor moderne en hedendaagse kunst. Vaste collectie met Ensor en Spilliaert, plus wisselende tentoonstellingen. Prachtig uitzicht op zee vanuit het museumcaf&eacute;.","od.a10.title":"Wandeling naar Middelkerke","od.a10.sub":"Strand &middot; 8 km enkele weg &middot; Terug per kusttram","od.a10.body":"Wandel langs de vloedlijn van La Brise richting Middelkerke &mdash; 8 km van pure zeelucht. Neem de kusttram terug. Een van de mooiste strandwandelingen aan de Belgische kust.","od.a11.title":"The Crystal Ship","od.a11.sub":"Street art &middot; Jaarlijks festival &middot; Lente","od.a11.body":"Internationaal street art festival dat Oostende omtovert tot een openluchtmuseum. De muurschilderingen van vorige edities zijn het hele jaar te bewonderen op een wandelroute door de stad.","od.a12.title":"Surfclub Oostende","od.a12.sub":"Watersport &middot; Strand &middot; Vanaf 8 jaar","od.a12.body":"Surfles voor kinderen en volwassenen. Ervaren instructeurs, kindvriendelijk materiaal en de Noordzee als speeltuin. Bodyboard en surfboard voor elk niveau.","od.a13.title":"Kinderboerderij Stene","od.a13.sub":"Familie &middot; Gratis &middot; 5 min. wandelen","od.a13.body":"Op wandelafstand van het Hoeveke. Gratis toegang, boerderijdieren aanraken. Perfect voor peuters en kleuters. Een vaste bezienswaardigheid van Stene-Dorp.","od.a14.title":"Kinderboerderij Stene","od.a14.sub":"Dieren &middot; Gratis &middot; Stene-Dorp","od.a14.body":"Geiten, konijnen, pony&#39;s en kippen aaien op wandelafstand van het Hoeveke. Gratis en altijd open &mdash; perfect voor de kleinsten.","od.a15.title":"MuZee Kinderatelier","od.a15.sub":"Kunst &middot; Workshops &middot; Centrum Oostende","od.a15.body":"Het MuZee organiseert regelmatig ateliers voor kinderen. Schilderen in de stijl van Ensor of collages maken. Creatief en educatief. Check de agenda bij aankomst.","od.a16.title":"Strand &amp; zee","od.a16.sub":"Gratis &middot; Alle leeftijden","od.a16.body":"Het grootste speelplein ter wereld. Zandkastelen, strandtennis, schelpen zoeken. Vanuit La Brise ben je in 30 seconden op het strand van Mariakerke &mdash; een van de rustigste stranden aan de kust.","od.a17.title":"Fietsen langs de Kust","od.a17.sub":"Fiets &middot; Alle leeftijden &middot; Autovrije dijk","od.a17.body":"Huur fietsen (inclusief kinderfietsjes en bakfietsen) en verken de kustlijn. De zeedijk is autovrij en vlak. Tot Middelkerke of zelfs Bredene via het Groen Lint &mdash; voor elk niveau.","od.a18.title":"De Schorre Sportpark","od.a18.sub":"Sport &amp; spel &middot; 10 min. van &#39;t Hoeveke","od.a18.body":"Skatepark, klimparcours, speeltuinen en ruimte om vrij te spelen. In de zomer ook pop-up activiteiten. Kinderen kunnen hier uren zoet zijn &mdash; neem een picknick mee.","od.a19.title":"Sea Life Blankenberge","od.a19.sub":"Aquarium &middot; 15 min. per kusttram","od.a19.body":"Prachtig aquarium op 15 minuten met de kusttram. Haaien, zeepaardjes, koraalriffen &mdash; een onderwaterwereld die kinderen versteld doet staan. Ticket online is goedkoper.","od.a20.title":"Paulusfeesten","od.a20.sub":"Kermis &middot; Zomer &middot; Centrum Oostende","od.a20.body":"De jaarlijkse kermis van Oostende rond eind juni. Attracties, streetfood, muziek &mdash; een sfeer die de ganse stad opslokt. Een must voor jong en oud.","od.e1.month":"Eind juni &middot; Jaarlijks","od.e1.name":"Ostendaise &mdash; North Sea Food Fest","od.e1.type":"Visfestival &middot; Zeeheldenplein &middot; Gratis toegang","od.e1.desc":"Het jaarlijkse visfestival op het Zeeheldenplein in het hart van Oostende. Meer dan 20 lokale chefs bereiden gerechten met dagverse Noordzeevis. Gratis toegang, gerechten aan &euro;8 per bordje.","od.e1.date":"2026: 27-28 juni","od.e2.month":"Zomer &middot; Jaarlijks","od.e2.name":"TAZ &mdash; Tentoonstellingen aan Zee","od.e2.type":"Kunst &middot; Openlucht &middot; Zeedijk","od.e2.desc":"Kunsttentoonstellingen in openlucht langs de Zeedijk en op het Albert I-Plein. Hedendaagse kunst in een unieke strandcontext. Gratis te bezichtigen.","od.e3.month":"Augustus &middot; Jaarlijks","od.e3.name":"Filmfestival Oostende","od.e3.type":"Cinema &middot; Belgische film &middot; Casinokwartier","od.e3.desc":"Het toonaangevende Belgische filmfestival beleeft zijn 18e editie in Oostende. Premières, gastprogramma&#39;s en openluchtvertoningen in het Casinokwartier. Prachtige sfeer.","od.e4.month":"Lente &middot; Jaarlijks","od.e4.name":"The Crystal Ship","od.e4.type":"Street Art Festival &middot; Internationaal","od.e4.desc":"Elk voorjaar komen internationale street art-artiesten naar Oostende om gebouwen te beschilderen. Het festival duurt 2 weken; de werken blijven het hele jaar zichtbaar door de stad.","od.e5.month":"Zomer &middot; Jaarlijks","od.e5.name":"Garnaalkrokettenfestival","od.e5.type":"Culinair &middot; Volksfeest","od.e5.desc":"Het geliefde garnaalkrokettenfestival, waarbij Oostendse chefs strijden om de beste bereiding. Democratisch volksfeest met proeverijen en muziek. Typisch Oostends en absoluut de moeite.","od.e6.month":"Eind juni &middot; Jaarlijks","od.e6.name":"Paulusfeesten","od.e6.type":"Kermis &middot; Volksfeest &middot; Centrum Oostende","od.e6.desc":"De grote jaarlijkse kermis in het centrum van Oostende. Attracties voor jong en oud, muziek en een bruisende volkse sfeer. Elk jaar eind juni, een vaste waarde in de Oostendse zomercalender.","od.disclaimer":"Geen sponsoring &mdash; enkel persoonlijke aanbevelingen van de eigenaars."},"fr":{"nav.home":"Accueil","nav.rentals":"Nos hébergements","nav.gallery":"Galerie","nav.faq":"FAQ","nav.book":"Réserver","nav.contact":"Contact","nav.reserve":"Réserver","ft.tagline":"Deux hébergements uniques sur la côte belge.","ft.nav":"Navigation","ft.book":"Réserver","ft.contact":"Contact","ft.bh":"Réserver Het Relax Hoeveke","ft.bz":"Réserver La Brise et La Mer","ft.privacy":"Politique de confidentialité","ft.cookies":"Politique cookies","ft.terms":"Conditions générales","od.hero.ew":"Nos coups de cœur","od.hero.h1":"Découvrir <em>Ostende</em>","od.hero.p":"Des bistros gastronomiques de Stene-Dorp aux brasseries avec vue mer sur la promenade Albert I&nbsp;&mdash; ce sont les adresses que les propriétaires recommandent eux-mêmes.","od.hero.t1":"Restaurants","od.hero.t2":"Activités","od.hero.t3":"Culture","od.hero.t4":"Enfants","od.f.all":"Tout","od.f.hoeve":"Manger près du Hoeveke","od.f.brise":"Manger près de La Brise","od.f.act":"Activités","od.f.cult":"Culture","od.f.kids":"Enfants","od.f.evt":"Événements","od.s1.dot":"Restaurants &middot; Stene-Dorp","od.s1.title":"Manger près de <em>Het Relax Hoeveke</em>","od.s1.sub":"Stene-Dorp est une perle culinaire cachée. À distance de vélo du Hoeveke, vous trouvez des bistros, des tavernes et de charmants cafés-restaurants. Tous à portée de marche ou de vélo.","od.s2.dot":"Restaurants &middot; Digue Mariakerke","od.s2.title":"Manger près de <em>La Brise et La Mer</em>","od.s2.sub":"Des restaurants de poisson avec vue mer aux trattorias italiennes et un salon de café avec gelato maison &mdash; les environs de la digue de Mariakerke ont étonnamment beaucoup à offrir.","od.s3.dot":"Plein air","od.s3.title":"Profiter de <em>l'extérieur</em>","od.s3.sub":"Stene et ses environs sont idéaux pour les randonneurs, cyclistes et amoureux de la nature. Het Groen Lint, De Schorre et le grand terrain pour chiens sont littéralement à deux pas du Relax Hoeveke.","od.s4.dot":"Culture &amp; patrimoine","od.s4.title":"Découvrir <em>Ostende</em>","od.s4.sub":"Ostende a plus à offrir que des plages de sable. De la maison de James Ensor au Mur de l'Atlantique &mdash; la ville est riche en histoire, art et lieux uniques.","od.s5.dot":"Famille &amp; enfants","od.s5.title":"Du plaisir pour <em>toute la famille</em>","od.s5.sub":"Plage, animaux, aventure, art et sport &mdash; à Ostende, il y a quelque chose pour chaque enfant. Nos conseils pour une sortie familiale inoubliable.","od.s6.dot":"Chaque année","od.s6.title":"Chaque année <em>de retour</em>","od.s6.sub":"Ostende est animée toute l'année. Du North Sea Food Fest au Festival du Film &mdash; il y a toujours une bonne raison de planifier une visite.","od.lbl.res":"Réservation recommandée","od.lbl.walk":"À pied","od.lbl.bike":"À vélo","od.lbl.free":"Gratuit","od.lbl.annual":"Annuel","od.tag.gastro":"Gastronomique","od.tag.bistro":"Bistro","od.tag.grill":"Grill","od.tag.italian":"Italien","od.tag.fish":"Poisson & mer","od.tag.belgian":"Belge","od.tag.terrace":"Terrasse","od.tag.sea":"Vue mer","od.tag.coffee":"Café & pâtisserie","od.r1.name":"Gastro Na&#39;Jo","od.r1.type":"Gastronomique franco-belge","od.r1.addr":"Steensedijk 60, Stene &mdash; Ostende","od.r1.desc":"Le chef Johnny et son épouse Nancy dirigent ce restaurant réputé. Après 20 ans d'expérience dans la restauration ostendaise, ils ont ouvert leur propre établissement &mdash; une adresse qui surprend par sa cuisine gastronomique de haut niveau. Budget moyen &euro;70&ndash;80 par personne. Réservation fortement conseillée.","od.r2.name":"&#39;t Genoegen","od.r2.type":"Restaurant fondue &amp; grill","od.r2.addr":"Stenedorpstraat 23, Stene &mdash; Ostende","od.r2.desc":"Le restaurant fondue le plus convivial de Stene-Dorp. Ambiance chaleureuse, généreuses portions et une clientèle fidèle. Réservation conseillée, surtout le week-end.","od.r3.name":"Bistro De Lisse","od.r3.type":"Bistro franco-belge","od.r3.addr":"Stenedorpstraat 27, Stene &mdash; Ostende","od.r3.desc":"Geert et Betty Vynck tiennent depuis des années cette adresse locale au cœur de Stene-Dorp. Cuisine bistro honnête, menu saisonnier et accueil chaleureux. Favori sur TripAdvisor dans la région.","od.r4.name":"Gasthof Vossenhol","od.r4.type":"Taverne nostalgique &amp; restaurant","od.r4.addr":"Stenedorpstraat 29, Stene &mdash; Ostende","od.r4.desc":"Un vrai classique flamand: feu de cheminée, bière pression et préparations maison de homard. Restaurant populaire avec une longue tradition et une atmosphère nostalgique unique.","od.r5.name":"Roccia","od.r5.type":"Inspiré de l'Italie &middot; BBQ","od.r5.addr":"Stenedorpstraat 4, Stene &mdash; Ostende","od.r5.desc":"Steven et Magali ont ouvert ce concept BBQ original avec des touches italiennes. Pas une pizzeria classique, mais une adresse créative avec des produits de qualité cuits au feu.","od.r6.name":"De Vlasschaard","od.r6.type":"International &agrave; la carte","od.r6.addr":"Oudstrijdersplein 5, Stene &mdash; Ostende","od.r6.desc":"La patronne Hilde vous accueille avec une carte variée et un service chaleureux. Grande terrasse sur la place du village de Stene. Idéal pour un dîner copieux après une balade à vélo.","od.r7.name":"&#39;t Pomptje","od.r7.type":"Grill &middot; Cuisine belge","od.r7.addr":"Oudstrijdersplein 2, Stene &mdash; Ostende","od.r7.desc":"Le patron Miguel est une institution à Stene. Côtes levées, côte à l'os et une bière maison &mdash; 't Pomptje est un grill populaire et convivial avec des habitués fidèles. Terrasse sur la place.","od.r8.name":"Restaurant North","od.r8.type":"Restaurant de poisson &middot; Cuisine marine moderne","od.r8.addr":"Zeedijk 137c, Mariakerke &mdash; Ostende","od.r8.desc":"Le chef Jan Liebrechts a remporté le festival de la croquette de crevettes 2024 et propose une cuisine marine innovante. Situé au début de la Northlaan, avec une belle vue sur la mer.","od.r9.name":"Il Gusto di Sorrento","od.r9.type":"Restaurant italien","od.r9.addr":"Zeedijk 137, Mariakerke &mdash; Ostende","od.r9.desc":"Cuisine italienne authentique sur la digue de Mariakerke. Pâtes fraîches, pizza au feu de bois et une belle carte des vins. Populaire auprès des locaux comme des touristes.","od.r10.name":"Restaurant Boucquez","od.r10.type":"Franco-belge &middot; Casual fine dining","od.r10.addr":"Troonstraat 83, Mariakerke &mdash; Ostende","od.r10.desc":"Guillaume Boucquez dirige depuis plus de 35 ans cette affaire familiale à Mariakerke. Cuisine franco-belge classique avec des produits frais. Une valeur sûre dans le quartier.","od.r11.name":"Trattoria Ensorito","od.r11.type":"Italien &middot; Pizzeria","od.r11.addr":"Dorpsstraat 103, Mariakerke &mdash; Ostende","od.r11.desc":"Conviviale trattoria italienne dans le centre du village de Mariakerke. Large choix de pizzas et pâtes, avec terrasse sur la tranquille Dorpsstraat.","od.r12.name":"Den Artisjok","od.r12.type":"Belge &middot; Bi&egrave;re de Paris","od.r12.addr":"Troonstraat 121, Mariakerke &mdash; Ostende","od.r12.desc":"Le chef Sven sert des plats belges classiques dans une ambiance bistro détendue. Menu saisonnier, bonne carte de bières et une clientèle locale fidèle.","od.r13.name":"Fogato","od.r13.type":"Café &amp; salon de gelato churning","od.r13.addr":"Troonstraat 99, Mariakerke &mdash; Ostende","od.r13.desc":"Café chaleureux avec gelato churning &mdash; glace artisanale préparée sur le moment. Parfait pour un café du matin ou une pause sucrée après une promenade sur la digue.","od.r14.name":"Bistro Bottarga","od.r14.type":"Brasserie &middot; Fusion &amp; classiques","od.r14.addr":"Albert I-Promenade 64c, Ostende","od.r14.desc":"L'une des brasseries les mieux notées sur la côte ostendaise avec un score de 9,2/10. Fusion avec classiques, magnifique terrasse sur la promenade et service professionnel.","od.a1.title":"Het Groen Lint","od.a1.sub":"Piste cyclable &middot; Majoritairement sans voiture","od.a1.body":"La piste cyclable la plus populaire au départ du Relax Hoeveke. 15 km de chemin cyclable le long de nouveaux parcs, du parc événementiel De Nieuwe Koerse et des dunes de l'Oostereoever avec Fort Napoleon. Le départ est littéralement à votre porte.","od.a2.title":"De Schorre","od.a2.sub":"Parc sportif &middot; 10 min. à vélo","od.a2.body":"Le grand parc sportif d'Ostende, à distance de vélo du Hoeveke. Courts de tennis, terrains de football, skatepark, aires de jeux et vastes espaces verts. Entrée gratuite.","od.a3.title":"Grand espace pour chiens","od.a3.sub":"Chiens &middot; 5 min. à vélo","od.a3.body":"Le plus grand espace de liberté pour chiens d'Ostende est à 5 minutes à vélo du Relax Hoeveke. Espace clôturé, parfait pour une sortie quotidienne avec votre animal.","od.a4.title":"Promenades Stene-Dorp","od.a4.sub":"Marche &middot; Tous niveaux","od.a4.body":"Au départ du Relax Hoeveke, vous partez immédiatement sur un réseau de sentiers ruraux à travers les polders et le long du jardin bio de Stene-Dorp. Reposant et étonnamment varié.","od.a5.title":"Jardin bio Stene-Dorp","od.a5.sub":"Nature &middot; Calme &middot; Gratuit","od.a5.body":"Un jardin biologique et espace éducatif vert de l'autre côté de la rue. Idéal pour une promenade matinale tranquille, avec des panneaux d'information sur la flore et la faune locales.","od.a6.title":"Maison James Ensor","od.a6.sub":"Musée &middot; Vlaanderenstraat 27","od.a6.body":"La maison du peintre belge James Ensor, aménagée en musée. Un aperçu unique de l'atelier et du monde du maître symboliste. Patrimoine classé.","od.a7.title":"Atlantikwall Raversijde","od.a7.sub":"Patrimoine &middot; Domaine provincial","od.a7.body":"L'une des lignes de bunkers les mieux conservées de la Seconde Guerre mondiale. Le musée en plein air du domaine Raversijde vous fait traverser des positions et bunkers authentiques &mdash; impressionnant pour petits et grands.","od.a8.title":"Vistrap Ostende","od.a8.sub":"Marché &middot; Samedi matin","od.a8.body":"Chaque samedi matin au Visserskaai. Poisson frais, crevettes et moules directement des pêcheurs belges. Une vraie tradition ostendaise à ne pas manquer.","od.a9.title":"MuZee","od.a9.sub":"Musée d'art &middot; Romestraat 11","od.a9.body":"Le Musée au Bord de la Mer (MuZee) abrite une collection unique d'art moderne et contemporain, axée sur les thèmes belges côtiers et marins. Expositions temporaires tout au long de l'année.","od.a10.title":"Balade vers Middelkerke","od.a10.sub":"Plage &middot; 8 km","od.a10.body":"Partez de La Brise et La Mer le long de la digue vers Middelkerke &mdash; une magnifique promenade de 8 km le long de la plage. Promenade confortable et vue splendide sur la mer.","od.a11.title":"The Crystal Ship","od.a11.sub":"Street art &middot; Festival annuel","od.a11.body":"Chaque printemps, Ostende se transforme en galerie d'art en plein air. Des artistes internationaux de street art peignent des bâtiments à travers toute la ville. Les œuvres restent visibles toute l'année.","od.a12.title":"Surfclub Ostende","od.a12.sub":"Sports nautiques &middot; Plage Mariakerke","od.a12.body":"Cours de surf, SUP ou simplement regarder les surfeurs &mdash; le surf club sur la plage de Mariakerke est à 30 secondes à pied de La Brise et La Mer. Cours pour débutants et confirmés.","od.a13.title":"Ferme pédagogique Stene","od.a13.sub":"Famille &middot; Gratuit &middot; Proche","od.a13.body":"La ferme pédagogique de Stene est à courte distance à vélo du Relax Hoeveke. Caresser des animaux, découvrir la nature et profiter du calme de la campagne. Entrée gratuite, beau en toute saison.","od.a14.title":"Atelier enfants MuZee","od.a14.sub":"Art &middot; Ateliers &middot; Centre-ville","od.a14.body":"MuZee organise régulièrement des ateliers créatifs pour enfants dans le musée. Sculpture, dessin et peinture encadrés par des artistes professionnels. Réservation via le site web.","od.a15.title":"Plage &amp; mer","od.a15.sub":"Gratuit &middot; Tous âges","od.a15.body":"Seaux et pelles, châteaux de sable, compter les vagues &mdash; la plage devant La Brise et La Mer est à 30 secondes à pied. Plage calme et familiale de Mariakerke, moins animée que la plage du centre-ville.","od.a16.title":"Vélo le long de la côte","od.a16.sub":"Vélo &middot; Tous âges","od.a16.body":"La piste cyclable côtière longe toute la côte belge. Depuis Mariakerke, pédalez vers Middelkerke ou vers le centre d'Ostende. Plat, sûr et adapté aux enfants. Location de vélos à proximité.","od.a17.title":"Parc sportif De Schorre","od.a17.sub":"Sport &amp; jeux &middot; 10 min. à vélo","od.a17.body":"Aires de jeux, skatepark, cages de foot et mur d'escalade &mdash; idéal pour les enfants pleins d'énergie. Entrée gratuite, grand espace vert et environnement sécurisé. À 10 minutes à vélo du Hoeveke.","od.a18.title":"Sea Life Blankenberge","od.a18.sub":"Aquarium &middot; 15 min.","od.a18.body":"L'aquarium populaire de Blankenberge est à 15 minutes en voiture. Vous pouvez aussi y aller facilement en tram côtier. Requins, tortues de mer et poissons tropicaux &mdash; une expérience pour tous les âges.","od.a19.title":"Paulusfeesten","od.a19.sub":"Fête foraine &middot; Été &middot; Centre-ville","od.a19.body":"Les fêtes annuelles Paulusfeesten au centre-ville d'Ostende: attractions foraines, musique et ambiance festive populaire. Chaque année fin juin, accessible en tram côtier.","od.a20.title":"Ferme pédagogique Stene (famille)","od.a20.sub":"Animaux &middot; Gratuit &middot; Stene","od.a20.body":"Également idéal pour toute la famille: la ferme pédagogique de Stene est à courte distance à vélo du Relax Hoeveke. Caresser des animaux, découvrir la nature et la campagne. Entrée gratuite.","od.e1.month":"Fin juin &middot; Annuel","od.e1.name":"Ostendaise &mdash; North Sea Food Fest","od.e1.type":"Festival de poisson &middot; Zeeheldenplein &middot; Entrée gratuite","od.e1.desc":"Le festival annuel de poisson sur la Zeeheldenplein au cœur d'Ostende. Plus de 20 chefs locaux préparent des plats avec du poisson de mer du Nord fraîchement pêché. Entrée gratuite, plats à &euro;8.","od.e1.date":"2026 : 27-28 juin","od.e2.month":"Été &middot; Annuel","od.e2.name":"TAZ &mdash; Expositions au Bord de la Mer","od.e2.type":"Art &middot; Plein air &middot; Digue","od.e2.desc":"Expositions d'art en plein air le long de la digue et sur la place Albert I. Art contemporain dans un contexte plage unique. Entrée gratuite.","od.e3.month":"Août &middot; Annuel","od.e3.name":"Festival du Film d'Ostende","od.e3.type":"Cinéma &middot; Film belge &middot; Quartier Casino","od.e3.desc":"Le grand festival de cinéma belge pour sa 18e édition à Ostende. Premières, programmes invités et projections en plein air dans le Quartier Casino. Atmosphère magnifique.","od.e4.month":"Printemps &middot; Annuel","od.e4.name":"The Crystal Ship","od.e4.type":"Festival de Street Art &middot; International","od.e4.desc":"Chaque printemps, des artistes de street art internationaux viennent à Ostende peindre des bâtiments. Le festival dure 2 semaines; les œuvres restent visibles toute l'année dans la ville.","od.e5.month":"Été &middot; Annuel","od.e5.name":"Festival de la Croquette de Crevettes","od.e5.type":"Culinaire &middot; Fête populaire","od.e5.desc":"Le populaire festival de la croquette de crevettes, où les chefs ostendais s'affrontent pour la meilleure préparation. Fête démocratique avec dégustations et musique. Typiquement ostendais et à ne pas manquer.","od.e6.month":"Fin juin &middot; Annuel","od.e6.name":"Paulusfeesten","od.e6.type":"Fête foraine &middot; Fête populaire &middot; Centre d'Ostende","od.e6.desc":"La grande fête foraine annuelle au centre d'Ostende. Attractions pour petits et grands, musique et ambiance populaire animée. Chaque année fin juin, un rendez-vous incontournable de l'été ostendais.","od.disclaimer":"Pas de sponsoring &mdash; uniquement des recommandations personnelles des propriétaires."},"en":{"nav.home":"Home","nav.rentals":"Our rentals","nav.gallery":"Gallery","nav.faq":"FAQ","nav.book":"Book","nav.contact":"Contact","nav.reserve":"Book now","ft.tagline":"Two unique stays on the Belgian coast.","ft.nav":"Navigation","ft.book":"Book","ft.contact":"Contact","ft.bh":"Book Het Relax Hoeveke","ft.bz":"Book La Brise et La Mer","ft.privacy":"Privacy policy","ft.cookies":"Cookie policy","ft.terms":"Terms & conditions","od.hero.ew":"Our favourites","od.hero.h1":"Discover <em>Ostend</em>","od.hero.p":"From gastronomic bistros in Stene-Dorp to seafront brasseries on the Albert I Promenade &mdash; these are the places the owners recommend themselves.","od.hero.t1":"Restaurants","od.hero.t2":"Activities","od.hero.t3":"Culture","od.hero.t4":"Kids","od.f.all":"All","od.f.hoeve":"Eat near the Hoeveke","od.f.brise":"Eat near La Brise","od.f.act":"Activities","od.f.cult":"Culture","od.f.kids":"Kids","od.f.evt":"Events","od.s1.dot":"Restaurants &middot; Stene-Dorp","od.s1.title":"Eating near <em>Het Relax Hoeveke</em>","od.s1.sub":"Stene-Dorp is a hidden culinary gem. Within cycling distance of the Hoeveke you find bistros, inns and cosy restaurant-cafés. All within walking or cycling distance.","od.s2.dot":"Restaurants &middot; Seafront Mariakerke","od.s2.title":"Eating near <em>La Brise et La Mer</em>","od.s2.sub":"From fish restaurants with sea views to Italian trattorias and a coffee bar with churning gelato &mdash; the area around the Mariakerke seafront has a surprisingly lot to offer.","od.s3.dot":"Outdoors","od.s3.title":"Enjoying <em>the outdoors</em>","od.s3.sub":"Stene and surroundings are ideal for walkers, cyclists and nature lovers. Het Groen Lint, De Schorre and the dog meadow are literally around the corner from Het Relax Hoeveke.","od.s4.dot":"Culture &amp; heritage","od.s4.title":"Discovering <em>Ostend</em>","od.s4.sub":"Ostend has more to offer than sandy beaches. From the James Ensor House to the Atlantic Wall &mdash; the city is rich in history, art and unique places.","od.s5.dot":"Family &amp; children","od.s5.title":"Fun for <em>the whole family</em>","od.s5.sub":"Beach, animals, adventure, art and sport &mdash; in Ostend there is something for every child. Our tips for an unforgettable family outing.","od.s6.dot":"Every year","od.s6.title":"Back every <em>year</em>","od.s6.sub":"Ostend buzzes all year round. From the North Sea Food Fest to the Film Festival &mdash; there is always a good reason to plan a visit.","od.lbl.res":"Reservation recommended","od.lbl.walk":"Walking distance","od.lbl.bike":"Cycling distance","od.lbl.free":"Free","od.lbl.annual":"Annual","od.tag.gastro":"Gastronomic","od.tag.bistro":"Bistro","od.tag.grill":"Grill","od.tag.italian":"Italian","od.tag.fish":"Fish & sea","od.tag.belgian":"Belgian","od.tag.terrace":"Terrace","od.tag.sea":"Sea view","od.tag.coffee":"Coffee & pastries","od.r1.name":"Gastro Na&#39;Jo","od.r1.type":"Gastronomic French-Belgian","od.r1.addr":"Steensedijk 60, Stene &mdash; Ostend","od.r1.desc":"Chef Johnny and his wife Nancy run this acclaimed restaurant. After 20 years of experience in Ostend's hospitality industry, they opened their own establishment &mdash; an address that surprises with its high-level gastronomic cuisine. Average spend &euro;70&ndash;80 per person. Reservation strongly recommended.","od.r2.name":"&#39;t Genoegen","od.r2.type":"Fondue &amp; grill restaurant","od.r2.addr":"Stenedorpstraat 23, Stene &mdash; Ostend","od.r2.desc":"The cosiest fondue restaurant in Stene-Dorp. Homely atmosphere, generous portions and a loyal regular clientele. Reservation recommended, especially at weekends.","od.r3.name":"Bistro De Lisse","od.r3.type":"French-Belgian bistro","od.r3.addr":"Stenedorpstraat 27, Stene &mdash; Ostend","od.r3.desc":"Geert and Betty Vynck have been running this local address in the heart of Stene-Dorp for years. Honest bistro cuisine, seasonal menu and a warm welcome. TripAdvisor favourite in the region.","od.r4.name":"Gasthof Vossenhol","od.r4.type":"Nostalgic inn &amp; restaurant","od.r4.addr":"Stenedorpstraat 29, Stene &mdash; Ostend","od.r4.desc":"A true Flemish classic: open fireplace, draught beer and home-made lobster preparations. Popular restaurant with a long tradition and a unique nostalgic atmosphere.","od.r5.name":"Roccia","od.r5.type":"Italian-inspired &middot; BBQ","od.r5.addr":"Stenedorpstraat 4, Stene &mdash; Ostend","od.r5.desc":"Steven and Magali opened this original BBQ concept with Italian touches. Not a standard pizzeria, but a creative address with quality products cooked over fire.","od.r6.name":"De Vlasschaard","od.r6.type":"International à la carte","od.r6.addr":"Oudstrijdersplein 5, Stene &mdash; Ostend","od.r6.desc":"Patron Hilde welcomes you with a varied menu and warm service. Large terrace on the village square of Stene. Ideal for an extended dinner after a cycling trip.","od.r7.name":"&#39;t Pomptje","od.r7.type":"Grill &middot; Belgian cuisine","od.r7.addr":"Oudstrijdersplein 2, Stene &mdash; Ostend","od.r7.desc":"Patron Miguel is an institution in Stene. Ribs, côte à l'os and a house beer &mdash; 't Pomptje is a popular convivial grill with loyal regulars. Terrace on the square.","od.r8.name":"Restaurant North","od.r8.type":"Fish restaurant &middot; Modern sea cuisine","od.r8.addr":"Zeedijk 137c, Mariakerke &mdash; Ostend","od.r8.desc":"Chef Jan Liebrechts won the shrimp croquette festival 2024 and stands for innovative sea cuisine. Centrally located at the beginning of Northlaan, with a beautiful sea view.","od.r9.name":"Il Gusto di Sorrento","od.r9.type":"Italian restaurant","od.r9.addr":"Zeedijk 137, Mariakerke &mdash; Ostend","od.r9.desc":"Authentic Italian cuisine on the Mariakerke seafront. Fresh pasta, wood-fired pizza and an extensive wine list. Popular with both locals and tourists.","od.r10.name":"Restaurant Boucquez","od.r10.type":"French-Belgian &middot; Casual fine dining","od.r10.addr":"Troonstraat 83, Mariakerke &mdash; Ostend","od.r10.desc":"Guillaume Boucquez has been running this family business in Mariakerke for over 35 years. Classic French-Belgian cuisine with fresh products. A reliable staple in the neighbourhood.","od.r11.name":"Trattoria Ensorito","od.r11.type":"Italian &middot; Pizzeria","od.r11.addr":"Dorpsstraat 103, Mariakerke &mdash; Ostend","od.r11.desc":"Cosy Italian trattoria in the village centre of Mariakerke. Wide choice of pizzas and pasta, with a terrace on the quiet Dorpsstraat.","od.r12.name":"Den Artisjok","od.r12.type":"Belgian &middot; Bi&egrave;re de Paris","od.r12.addr":"Troonstraat 121, Mariakerke &mdash; Ostend","od.r12.desc":"Chef Sven serves classic Belgian dishes in a relaxed bistro atmosphere. Seasonal menu, good beer list and a loyal local clientele.","od.r13.name":"Fogato","od.r13.type":"Coffee &amp; churning gelato salon","od.r13.addr":"Troonstraat 99, Mariakerke &mdash; Ostend","od.r13.desc":"Atmospheric coffee bar with churning gelato &mdash; artisan ice cream prepared on the spot. Perfect for a morning coffee or a sweet treat after a walk along the seafront.","od.r14.name":"Bistro Bottarga","od.r14.type":"Brasserie &middot; Fusion &amp; classics","od.r14.addr":"Albert I-Promenade 64c, Ostend","od.r14.desc":"One of the best-rated brasseries on the Ostend coast with a score of 9.2/10. Fusion with classics, magnificent terrace on the promenade and professional service.","od.a1.title":"Het Groen Lint","od.a1.sub":"Cycling route &middot; Largely car-free","od.a1.body":"The most popular cycling route from Het Relax Hoeveke. A 15 km cycle path along new parks, the events park De Nieuwe Koerse and the Oostereoever dunes with Fort Napoleon. The start is literally at your door.","od.a2.title":"De Schorre","od.a2.sub":"Sports park &middot; 10 min. cycling","od.a2.body":"Ostend's large sports park, within cycling distance of the Hoeveke. Tennis courts, football pitches, skatepark, playgrounds and spacious green areas. Free admission.","od.a3.title":"Large dog meadow","od.a3.sub":"Dogs &middot; 5 min. cycling","od.a3.body":"Ostend's largest off-lead dog area is 5 cycling minutes from Het Relax Hoeveke. Spacious fenced area, perfect for a daily outing with your four-legged friend.","od.a4.title":"Stene-Dorp walks","od.a4.sub":"Walking &middot; All levels","od.a4.body":"From Het Relax Hoeveke you immediately set off on a network of rural walking paths through the polders and along the bio garden of Stene-Dorp. Relaxing and surprisingly varied.","od.a5.title":"Bio garden Stene-Dorp","od.a5.sub":"Nature &middot; Peaceful &middot; Free","od.a5.body":"A biological garden and educational green space across the street. Ideal for a quiet morning walk, with information boards about local flora and fauna.","od.a6.title":"James Ensor House","od.a6.sub":"Museum &middot; Vlaanderenstraat 27","od.a6.body":"The home of Belgian artist James Ensor, arranged as a museum. A unique glimpse into the studio and world of the symbolist master. Listed heritage.","od.a7.title":"Atlantikwall Raversijde","od.a7.sub":"Heritage &middot; Provincial estate","od.a7.body":"One of the best-preserved bunker lines from World War II. The open-air museum at the Raversijde estate lets you walk through authentic positions and bunkers &mdash; impressive for young and old.","od.a8.title":"Fish market Ostend","od.a8.sub":"Market &middot; Saturday morning","od.a8.body":"Every Saturday morning at the Visserskaai. Fresh fish, shrimps and mussels directly from Belgian fishermen. A genuine Ostend tradition not to be missed.","od.a9.title":"MuZee","od.a9.sub":"Art museum &middot; Romestraat 11","od.a9.body":"The Museum by the Sea (MuZee) houses a unique collection of modern and contemporary art, focusing on Belgian coastal and maritime themes. Temporary exhibitions throughout the year.","od.a10.title":"Walk to Middelkerke","od.a10.sub":"Beach &middot; 8 km","od.a10.body":"Step from La Brise et La Mer along the seafront towards Middelkerke &mdash; a beautiful 8 km walk along the beach. Comfortable promenade and stunning sea views.","od.a11.title":"The Crystal Ship","od.a11.sub":"Street art &middot; Annual festival","od.a11.body":"Every spring, Ostend transforms into an open-air gallery. International street art artists paint buildings throughout the city. The works remain visible throughout the year.","od.a12.title":"Surf club Ostend","od.a12.sub":"Water sports &middot; Mariakerke beach","od.a12.body":"Surfing lessons, SUP or just watching the surfers &mdash; the surf club on Mariakerke beach is 30 seconds on foot from La Brise et La Mer. Lessons for beginners and advanced surfers.","od.a13.title":"Stene petting farm","od.a13.sub":"Family &middot; Free &middot; Nearby","od.a13.body":"The Stene petting farm is a short cycling distance from Het Relax Hoeveke. Stroke the animals, discover nature and enjoy the peace of the countryside. Free admission, beautiful in every season.","od.a14.title":"MuZee kids' workshop","od.a14.sub":"Art &middot; Workshops &middot; City centre","od.a14.body":"MuZee regularly organises creative workshops for children in the museum itself. Sculpting, drawing and painting guided by professional artists. Reservation via the website.","od.a15.title":"Beach &amp; sea","od.a15.sub":"Free &middot; All ages","od.a15.body":"Buckets and spades, building sandcastles, counting waves &mdash; the beach in front of La Brise et La Mer is 30 seconds on foot. Calm, family-friendly beach of Mariakerke, less busy than the city beach.","od.a16.title":"Cycling along the coast","od.a16.sub":"Cycling &middot; All ages","od.a16.body":"The coastal cycling route runs along the entire Belgian coast. From Mariakerke, cycle towards Middelkerke or towards Ostend city centre. Flat, safe and family-friendly. Bike rental nearby.","od.a17.title":"De Schorre sports park","od.a17.sub":"Sport &amp; play &middot; 10 min. cycling","od.a17.body":"Playgrounds, skatepark, football cages and a climbing wall &mdash; ideal for energetic children. Free admission, spacious green area and safe environment. 10 cycling minutes from the Hoeveke.","od.a18.title":"Sea Life Blankenberge","od.a18.sub":"Aquarium &middot; 15 min.","od.a18.body":"The popular Blankenberge aquarium is 15 minutes by car. You can also easily get there by coastal tram. Sharks, sea turtles and tropical fish &mdash; an experience for all ages.","od.a19.title":"Paulusfeesten","od.a19.sub":"Funfair &middot; Summer &middot; City centre","od.a19.body":"The annual Paulusfeesten in Ostend city centre: funfair attractions, music and a popular festive atmosphere. Every year late June, accessible by coastal tram.","od.a20.title":"Stene petting farm (family)","od.a20.sub":"Animals &middot; Free &middot; Stene","od.a20.body":"Also ideal for the whole family: the Stene petting farm is a short cycling distance from Het Relax Hoeveke. Stroke the animals, discover nature and the countryside. Free admission.","od.e1.month":"Late June &middot; Annual","od.e1.name":"Ostendaise &mdash; North Sea Food Fest","od.e1.type":"Fish festival &middot; Zeeheldenplein &middot; Free entry","od.e1.desc":"The annual fish festival on the Zeeheldenplein in the heart of Ostend. More than 20 local chefs prepare dishes with freshly caught North Sea fish. Free entry, dishes at &euro;8 each.","od.e1.date":"2026: 27-28 June","od.e2.month":"Summer &middot; Annual","od.e2.name":"TAZ &mdash; Exhibitions by the Sea","od.e2.type":"Art &middot; Outdoor &middot; Seafront","od.e2.desc":"Outdoor art exhibitions along the seafront and on Albert I Square. Contemporary art in a unique beach context. Free to view.","od.e3.month":"August &middot; Annual","od.e3.name":"Ostend Film Festival","od.e3.type":"Cinema &middot; Belgian film &middot; Casino Quarter","od.e3.desc":"The leading Belgian film festival for its 18th edition in Ostend. Premieres, guest programmes and outdoor screenings in the Casino Quarter. Magnificent atmosphere.","od.e4.month":"Spring &middot; Annual","od.e4.name":"The Crystal Ship","od.e4.type":"Street Art Festival &middot; International","od.e4.desc":"Every spring, international street art artists come to Ostend to paint buildings. The festival lasts 2 weeks; the works remain visible throughout the city all year round.","od.e5.month":"Summer &middot; Annual","od.e5.name":"Shrimp croquette festival","od.e5.type":"Culinary &middot; Popular festival","od.e5.desc":"The beloved shrimp croquette festival, where Ostend chefs compete for the best preparation. Democratic popular festival with tastings and music. Typically Ostend and absolutely worth a visit.","od.e6.month":"Late June &middot; Annual","od.e6.name":"Paulusfeesten","od.e6.type":"Funfair &middot; Popular festival &middot; Ostend city centre","od.e6.desc":"The large annual funfair in the centre of Ostend. Attractions for young and old, music and a buzzing popular atmosphere. Every year late June, a fixture in Ostend's summer calendar.","od.disclaimer":"No sponsorship &mdash; only personal recommendations from the owners."},"de":{"nav.home":"Startseite","nav.rentals":"Unsere Unterkünfte","nav.gallery":"Galerie","nav.faq":"FAQ","nav.book":"Buchen","nav.contact":"Kontakt","nav.reserve":"Jetzt buchen","ft.tagline":"Zwei einzigartige Unterkünfte an der belgischen Küste.","ft.nav":"Navigation","ft.book":"Buchen","ft.contact":"Kontakt","ft.bh":"Het Relax Hoeveke buchen","ft.bz":"La Brise et La Mer buchen","ft.privacy":"Datenschutz","ft.cookies":"Cookie-Richtlinie","ft.terms":"AGB","od.hero.ew":"Unsere Favoriten","od.hero.h1":"Ostende <em>entdecken</em>","od.hero.p":"Von Gastronomie-Bistros in Stene-Dorp bis hin zu Brasseries mit Meerblick an der Albert-I-Promenade &mdash; das sind die Orte, die die Eigentümer selbst empfehlen.","od.hero.t1":"Restaurants","od.hero.t2":"Aktivitäten","od.hero.t3":"Kultur","od.hero.t4":"Kinder","od.f.all":"Alles","od.f.hoeve":"Essen beim Hoeveke","od.f.brise":"Essen bei La Brise","od.f.act":"Aktivitäten","od.f.cult":"Kultur","od.f.kids":"Kinder","od.f.evt":"Veranstaltungen","od.s1.dot":"Restaurants &middot; Stene-Dorp","od.s1.title":"Essen in der Nähe von <em>Het Relax Hoeveke</em>","od.s1.sub":"Stene-Dorp ist ein verstecktes kulinarisches Kleinod. In Fahrraddistanz vom Hoeveke finden Sie Bistros, Gasthöfe und gemütliche Restaurantcafés. Alle in Geh- oder Fahrraddistanz.","od.s2.dot":"Restaurants &middot; Strandpromenade Mariakerke","od.s2.title":"Essen in der Nähe von <em>La Brise et La Mer</em>","od.s2.sub":"Von Fischrestaurants mit Meerblick bis zu italienischen Trattorias und einer Kaffeebar mit Churning-Gelato &mdash; die Umgebung der Strandpromenade Mariakerke hat überraschend viel zu bieten.","od.s3.dot":"Im Freien","od.s3.title":"Die <em>Natur genießen</em>","od.s3.sub":"Stene und Umgebung sind ideal für Wanderer, Radfahrer und Naturliebhaber. Het Groen Lint, De Schorre und die Hundewiese liegen buchstäblich um die Ecke vom Relax Hoeveke.","od.s4.dot":"Kultur &amp; Erbe","od.s4.title":"Ostende <em>erkunden</em>","od.s4.sub":"Ostende hat mehr zu bieten als Sandstrände. Vom James-Ensor-Haus bis zum Atlantikwall &mdash; die Stadt ist reich an Geschichte, Kunst und einzigartigen Orten.","od.s5.dot":"Familie &amp; Kinder","od.s5.title":"Spaß für <em>die ganze Familie</em>","od.s5.sub":"Strand, Tiere, Abenteuer, Kunst und Sport &mdash; in Ostende gibt es für jedes Kind etwas zu erleben. Unsere Tipps für einen unvergesslichen Familienausflug.","od.s6.dot":"Jedes Jahr","od.s6.title":"Jedes Jahr <em>wieder</em>","od.s6.sub":"Ostende pulsiert das ganze Jahr. Vom North Sea Food Fest bis zum Filmfestival &mdash; es gibt immer einen guten Grund, einen Besuch zu planen.","od.lbl.res":"Reservierung empfohlen","od.lbl.walk":"Fußläufig","od.lbl.bike":"Per Fahrrad","od.lbl.free":"Kostenlos","od.lbl.annual":"Jährlich","od.tag.gastro":"Gastronomisch","od.tag.bistro":"Bistro","od.tag.grill":"Grill","od.tag.italian":"Italienisch","od.tag.fish":"Fisch & Meer","od.tag.belgian":"Belgisch","od.tag.terrace":"Terrasse","od.tag.sea":"Meerblick","od.tag.coffee":"Kaffee & Gebäck","od.r1.name":"Gastro Na&#39;Jo","od.r1.type":"Gastronomisch Französisch-Belgisch","od.r1.addr":"Steensedijk 60, Stene &mdash; Ostende","od.r1.desc":"Küchenchef Johnny und seine Frau Nancy führen dieses renommierte Restaurant. Nach 20 Jahren Erfahrung in Ostends Gastronomie eröffneten sie ihr eigenes Etablissement &mdash; eine Adresse, die mit gehobener gastronomischer Küche überrascht. Durchschnittliche Ausgaben &euro;70&ndash;80 pro Person. Reservierung dringend empfohlen.","od.r2.name":"&#39;t Genoegen","od.r2.type":"Fondue &amp; Grill Restaurant","od.r2.addr":"Stenedorpstraat 23, Stene &mdash; Ostende","od.r2.desc":"Das gemütlichste Fondue-Restaurant in Stene-Dorp. Heimeliges Ambiente, großzügige Portionen und eine treue Stammkundschaft. Reservierung empfohlen, besonders am Wochenende.","od.r3.name":"Bistro De Lisse","od.r3.type":"Französisch-Belgisches Bistro","od.r3.addr":"Stenedorpstraat 27, Stene &mdash; Ostende","od.r3.desc":"Geert und Betty Vynck führen seit Jahren diese lokale Adresse im Herzen von Stene-Dorp. Ehrliche Bistroküche, Saisonmenü und ein herzlicher Empfang. TripAdvisor-Favorit in der Region.","od.r4.name":"Gasthof Vossenhol","od.r4.type":"Nostalgischer Gasthof &amp; Restaurant","od.r4.addr":"Stenedorpstraat 29, Stene &mdash; Ostende","od.r4.desc":"Ein echter flämischer Klassiker: offener Kamin, Fassbier und hausgemachte Hummerzubereitungen. Volkstümliches Restaurant mit langer Tradition und einzigartiger nostalgischer Atmosphäre.","od.r5.name":"Roccia","od.r5.type":"Italienisch inspiriert &middot; BBQ","od.r5.addr":"Stenedorpstraat 4, Stene &mdash; Ostende","od.r5.desc":"Steven und Magali eröffneten dieses originelle BBQ-Konzept mit italienischen Akzenten. Keine Standard-Pizzeria, sondern eine kreative Adresse mit hochwertigen Produkten vom Feuer.","od.r6.name":"De Vlasschaard","od.r6.type":"International à la carte","od.r6.addr":"Oudstrijdersplein 5, Stene &mdash; Ostende","od.r6.desc":"Patron Hilde empfängt Sie mit einer abwechslungsreichen Karte und warmherzigem Service. Große Terrasse am Dorfplatz von Stene. Ideal für ein ausgiebiges Abendessen nach einer Radtour.","od.r7.name":"&#39;t Pomptje","od.r7.type":"Grill &middot; Belgische Küche","od.r7.addr":"Oudstrijdersplein 2, Stene &mdash; Ostende","od.r7.desc":"Patron Miguel ist eine Institution in Stene. Spare Ribs, Côte à l'os und ein Hausbier &mdash; 't Pomptje ist ein geselliger Volksgrill mit treuen Stammgästen. Terrasse auf dem Platz.","od.r8.name":"Restaurant North","od.r8.type":"Fischrestaurant &middot; Moderne Meeresküche","od.r8.addr":"Zeedijk 137c, Mariakerke &mdash; Ostende","od.r8.desc":"Küchenchef Jan Liebrechts gewann das Garnaalkrokettenfestival 2024 und steht für innovative Meeresküche. Zentral an der Northlaan gelegen, mit schönem Meerblick.","od.r9.name":"Il Gusto di Sorrento","od.r9.type":"Italienisches Restaurant","od.r9.addr":"Zeedijk 137, Mariakerke &mdash; Ostende","od.r9.desc":"Authentische italienische Küche an der Strandpromenade von Mariakerke. Frische Pasta, Holzofenpizza und eine umfangreiche Weinkarte. Beliebt bei Einheimischen wie Touristen.","od.r10.name":"Restaurant Boucquez","od.r10.type":"Französisch-Belgisch &middot; Casual Fine Dining","od.r10.addr":"Troonstraat 83, Mariakerke &mdash; Ostende","od.r10.desc":"Guillaume Boucquez führt seit über 35 Jahren diesen Familienbetrieb in Mariakerke. Klassische französisch-belgische Küche mit frischen Produkten. Eine bewährte Größe im Viertel.","od.r11.name":"Trattoria Ensorito","od.r11.type":"Italienisch &middot; Pizzeria","od.r11.addr":"Dorpsstraat 103, Mariakerke &mdash; Ostende","od.r11.desc":"Gemütliche italienische Trattoria im Dorfzentrum von Mariakerke. Großes Angebot an Pizzen und Pasta, mit Terrasse auf der ruhigen Dorpsstraat.","od.r12.name":"Den Artisjok","od.r12.type":"Belgisch &middot; Bi&egrave;re de Paris","od.r12.addr":"Troonstraat 121, Mariakerke &mdash; Ostende","od.r12.desc":"Küchenchef Sven serviert klassische belgische Gerichte in entspannter Bistroatmosphäre. Saisonales Menü, gute Bierkarte und eine treue lokale Kundschaft.","od.r13.name":"Fogato","od.r13.type":"Kaffee &amp; Churning Gelato Salon","od.r13.addr":"Troonstraat 99, Mariakerke &mdash; Ostende","od.r13.desc":"Stimmungsvolle Kaffeebar mit Churning-Gelato &mdash; handwerkliches Eis, das frisch vor Ort zubereitet wird. Perfekt für einen Morgenkaffee oder eine süße Pause nach einem Spaziergang an der Promenade.","od.r14.name":"Bistro Bottarga","od.r14.type":"Brasserie &middot; Fusion &amp; Klassiker","od.r14.addr":"Albert I-Promenade 64c, Ostende","od.r14.desc":"Eine der bestbewerteten Brasseries an der Ostender Küste mit einer Bewertung von 9,2/10. Fusion mit Klassikern, prächtige Terrasse an der Promenade und professioneller Service.","od.a1.title":"Het Groen Lint","od.a1.sub":"Radroute &middot; Weitgehend autofrei","od.a1.body":"Die beliebteste Radroute vom Relax Hoeveke. Ein 15 km langer Radweg durch neue Parks, den Veranstaltungspark De Nieuwe Koerse und die Oostereoever-Dünen mit Fort Napoleon. Start buchstäblich vor der Haustür.","od.a2.title":"De Schorre","od.a2.sub":"Sportpark &middot; 10 Min. Radfahren","od.a2.body":"Ostends großer Sportpark, in Fahrraddistanz vom Hoeveke. Tennisplätze, Fußballfelder, Skatepark, Spielplätze und weitläufige Grünanlagen. Freier Eintritt.","od.a3.title":"Große Hundeauslaufwiese","od.a3.sub":"Hunde &middot; 5 Min. Radfahren","od.a3.body":"Ostends größte Hundeauslaufwiese liegt 5 Fahrradminuten vom Relax Hoeveke. Weitläufiges eingezäuntes Gelände, perfekt für einen täglichen Ausflug mit Ihrem Vierbeiner.","od.a4.title":"Wanderwege Stene-Dorp","od.a4.sub":"Wandern &middot; Alle Niveaus","od.a4.body":"Vom Relax Hoeveke starten Sie sofort auf einem Netz ländlicher Wanderwege durch die Polder und entlang des Biogartens von Stene-Dorp. Erholsam und überraschend abwechslungsreich.","od.a5.title":"Biogarten Stene-Dorp","od.a5.sub":"Natur &middot; Ruhig &middot; Kostenlos","od.a5.body":"Ein biologischer Garten und pädagogischer Grünraum gegenüber der Straße. Ideal für einen ruhigen Morgenspa­ziergang, mit Infotafeln zur lokalen Flora und Fauna.","od.a6.title":"James-Ensor-Haus","od.a6.sub":"Museum &middot; Vlaanderenstraat 27","od.a6.body":"Das Wohnhaus des belgischen Künstlers James Ensor, als Museum eingerichtet. Ein einzigartiger Einblick in das Atelier und die Lebenswelt des symbolistischen Meisters. Geschütztes Kulturerbe.","od.a7.title":"Atlantikwall Raversijde","od.a7.sub":"Kulturerbe &middot; Provinzdomäne","od.a7.body":"Eine der besterhaltenen Bunkerlinien aus dem Zweiten Weltkrieg. Das Freilichtmuseum auf dem Raversijde-Domäne lässt Sie durch authentische Stellungen und Bunker wandern &mdash; beeindruckend für Jung und Alt.","od.a8.title":"Vistrap Ostende","od.a8.sub":"Markt &middot; Samstagmorgen","od.a8.body":"Jeden Samstagmorgen am Visserskaai. Frischer Fisch, Garnelen und Muscheln direkt von belgischen Fischern. Eine echte Ostender Tradition, die man nicht verpassen sollte.","od.a9.title":"MuZee","od.a9.sub":"Kunstmuseum &middot; Romestraat 11","od.a9.body":"Das Museum an der See (MuZee) beherbergt eine einzigartige Sammlung moderner und zeitgenössischer Kunst mit Schwerpunkt auf belgischen Küsten- und Meeresth­emen. Wechselausstellungen das ganze Jahr über.","od.a10.title":"Spaziergang nach Middelkerke","od.a10.sub":"Strand &middot; 8 km","od.a10.body":"Starten Sie von La Brise et La Mer entlang der Promenade nach Middelkerke &mdash; ein herrlicher 8-km-Spaziergang am Strand. Komfortable Promenade und atemberaubende Meerblicke.","od.a11.title":"The Crystal Ship","od.a11.sub":"Street Art &middot; Jährliches Festival","od.a11.body":"Jeden Frühling verwandelt sich Ostende in eine Freiluftgalerie. Internationale Street-Art-Künstler bemalen Gebäude in der ganzen Stadt. Die Werke bleiben das ganze Jahr sichtbar.","od.a12.title":"Surfclub Ostende","od.a12.sub":"Wassersport &middot; Strand Mariakerke","od.a12.body":"Surfunterricht, SUP oder einfach den Surfern zusehen &mdash; der Surfclub am Strand von Mariakerke ist 30 Sekunden zu Fuß von La Brise et La Mer entfernt. Kurse für Anfänger und Fortgeschrittene.","od.a13.title":"Streichelzoo Stene","od.a13.sub":"Familie &middot; Kostenlos &middot; In der Nähe","od.a13.body":"Der Streichelzoo von Stene liegt kurze Fahrraddistanz vom Relax Hoeveke. Tiere streicheln, die Natur entdecken und die Ruhe des Landes genießen. Freier Eintritt, in jeder Jahreszeit schön.","od.a14.title":"MuZee Kinderatelier","od.a14.sub":"Kunst &middot; Workshops &middot; Stadtzentrum","od.a14.body":"MuZee organisiert regelmäßig kreative Workshops für Kinder im Museum. Bildhauern, Zeichnen und Malen unter Anleitung professioneller Künstler. Anmeldung über die Website.","od.a15.title":"Strand &amp; Meer","od.a15.sub":"Kostenlos &middot; Alle Altersgruppen","od.a15.body":"Eimer und Schaufel, Sandburgen bauen, Wellen zählen &mdash; der Strand vor La Brise et La Mer ist 30 Sekunden zu Fuß. Ruhiger Familienstrand von Mariakerke, weniger belebt als der Stadtstrand.","od.a16.title":"Radfahren entlang der Küste","od.a16.sub":"Fahrrad &middot; Alle Altersgruppen","od.a16.body":"Der Küstenradweg verläuft entlang der gesamten belgischen Küste. Von Mariakerke radeln Sie Richtung Middelkerke oder ins Ostender Stadtzentrum. Flach, sicher und familienfreundlich. Fahrradverleih in der Nähe.","od.a17.title":"Sportpark De Schorre","od.a17.sub":"Sport &amp; Spiel &middot; 10 Min. Radfahren","od.a17.body":"Spielplätze, Skatepark, Fußballkäfige und eine Kletterwand &mdash; ideal für energiegeladene Kinder. Freier Eintritt, weitläufiges Grüngelände und sichere Umgebung. 10 Fahrradminuten vom Hoeveke.","od.a18.title":"Sea Life Blankenberge","od.a18.sub":"Aquarium &middot; 15 Min.","od.a18.body":"Das beliebte Aquarium von Blankenberge ist 15 Autominuten entfernt. Mit der Küstenstraßenbahn können Sie auch gut anreisen. Haie, Meeresschildkröten und Tropenfische &mdash; ein Erlebnis für alle Altersgruppen.","od.a19.title":"Paulusfeesten","od.a19.sub":"Jahrmarkt &middot; Sommer &middot; Stadtzentrum","od.a19.body":"Das jährliche Paulusfeesten im Ostender Stadtzentrum: Fahrgeschäfte, Musik und volksfestliche Atmosphäre. Jeden Sommer Ende Juni, mit der Küstenstraßenbahn erreichbar.","od.a20.title":"Streichelzoo Stene (Familie)","od.a20.sub":"Tiere &middot; Kostenlos &middot; Stene","od.a20.body":"Auch ideal für die ganze Familie: Der Streichelzoo von Stene liegt kurze Fahrraddistanz vom Relax Hoeveke. Tiere streicheln, Natur entdecken und die Landschaft genießen. Freier Eintritt.","od.e1.month":"Ende Juni &middot; Jährlich","od.e1.name":"Ostendaise &mdash; North Sea Food Fest","od.e1.type":"Fischfestival &middot; Zeeheldenplein &middot; Freier Eintritt","od.e1.desc":"Das jährliche Fischfestival auf dem Zeeheldenplein im Herzen von Ostende. Mehr als 20 lokale Köche bereiten Gerichte mit frisch gefangenem Nordseefi­sch zu. Freier Eintritt, Gerichte à &euro;8.","od.e1.date":"2026: 27.-28. Juni","od.e2.month":"Sommer &middot; Jährlich","od.e2.name":"TAZ &mdash; Ausstellungen am Meer","od.e2.type":"Kunst &middot; Freiluft &middot; Strandpromenade","od.e2.desc":"Freilichtkunstausstellungen entlang der Promenade und am Albert-I-Platz. Zeitgenössische Kunst in einzigartigem Strandkontext. Kostenlos zu besichtigen.","od.e3.month":"August &middot; Jährlich","od.e3.name":"Filmfestival Ostende","od.e3.type":"Kino &middot; Belgischer Film &middot; Casinviertel","od.e3.desc":"Das führende belgische Filmfestival für seine 18. Ausgabe in Ostende. Premieren, Gastprogramme und Freilichtvorführungen im Casinoviertel. Wunderschöne Atmosphäre.","od.e4.month":"Frühling &middot; Jährlich","od.e4.name":"The Crystal Ship","od.e4.type":"Street Art Festival &middot; International","od.e4.desc":"Jeden Frühling kommen internationale Street-Art-Künstler nach Ostende, um Gebäude zu bemalen. Das Festival dauert 2 Wochen; die Werke bleiben das ganze Jahr in der Stadt sichtbar.","od.e5.month":"Sommer &middot; Jährlich","od.e5.name":"Garnaalkrokettenfestival","od.e5.type":"Kulinarisch &middot; Volksfest","od.e5.desc":"Das beliebte Garnaalkrokettenfestival, bei dem Ostender Köche um die beste Zubereitung wetteifern. Demokratisches Volksfest mit Verkostungen und Musik. Typisch ostendisch und absolut empfehlenswert.","od.e6.month":"Ende Juni &middot; Jährlich","od.e6.name":"Paulusfeesten","od.e6.type":"Jahrmarkt &middot; Volksfest &middot; Ostender Stadtzentrum","od.e6.desc":"Der große jährliche Jahrmarkt im Zentrum von Ostende. Attraktionen für Jung und Alt, Musik und ausgelassene Volksfestatmosphäre. Jeden Sommer Ende Juni, ein fester Bestandteil im Ostender Sommerkalender.","od.disclaimer":"Keine Werbung &mdash; ausschließlich persönliche Empfehlungen der Eigentümer."}};
+
+function applyLang(lang){
+  if(!T[lang])lang='nl';
+  localStorage.setItem('lang',lang);
+  document.documentElement.lang=lang;
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var k=el.getAttribute('data-i18n');
+    if(T[lang][k]!==undefined)el.innerHTML=T[lang][k];
+  });
+  document.querySelectorAll('.lang-bar button').forEach(function(b){
+    b.classList.toggle('active',b.dataset.lang===lang);
+  });
+}
+
+document.querySelectorAll('.lang-bar button').forEach(function(b){
+  b.addEventListener('click',function(){applyLang(b.dataset.lang);});
+});
+
+window.addEventListener('DOMContentLoaded',function(){
+  try{
+    var saved=localStorage.getItem('lang');
+    applyLang(saved&&T[saved]?saved:'nl');
+  }catch(e){applyLang('nl');}
+});
+</script>
+<!-- COOKIE BANNER -->
+<div id="ck" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1e120a;color:rgba(255,255,255,0.85);padding:1rem 2rem;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;border-top:3px solid #c9a050;box-shadow:0 -4px 30px rgba(0,0,0,0.3)">
+  <p style="font-size:0.82rem;line-height:1.65;max-width:640px;margin:0">Wij gebruiken cookies om uw bezoek te verbeteren en anonieme statistieken bij te houden. Meer info in ons <a href="#" style="color:#c9a050;text-decoration:underline">cookiebeleid</a>.</p>
+  <div style="display:flex;gap:0.75rem;flex-shrink:0">
+    <button id="ck-decline" style="background:transparent;border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.6);padding:0.5rem 1.2rem;font-family:inherit;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer">Weigeren</button>
+    <button id="ck-accept" style="background:#c9a050;border:none;color:#3d2b1f;padding:0.5rem 1.4rem;font-family:inherit;font-size:0.68rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer">Aanvaarden</button>
+  </div>
+</div>
+<script>
+(function(){
+  try {
+    if (!localStorage.getItem('ck')) {
+      var b = document.getElementById('ck');
+      b.style.display = 'flex';
+      document.getElementById('ck-accept').onclick = function() {
+        localStorage.setItem('ck','1'); b.style.display='none';
+      };
+      document.getElementById('ck-decline').onclick = function() {
+        localStorage.setItem('ck','0'); b.style.display='none';
+      };
+    }
+  } catch(e) {}
+})();
+</script>
+</body>
+</html>
