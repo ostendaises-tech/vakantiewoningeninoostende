@@ -1,0 +1,6 @@
+# Force www
+https://vakantiewoningeninoostende.be/* https://www.vakantiewoningeninoostende.be/:splat 301!
+
+# Force HTTPS
+http://vakantiewoningeninoostende.be/* https://www.vakantiewoningeninoostende.be/:splat 301!
+http://www.vakantiewoningeninoostende.be/* https://www.vakantiewoningeninoostende.be/:splat 301!
