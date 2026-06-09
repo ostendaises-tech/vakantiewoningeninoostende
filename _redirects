@@ -4,3 +4,4 @@ https://vakantiewoningeninoostende.be/* https://www.vakantiewoningeninoostende.b
 # Force HTTPS
 http://vakantiewoningeninoostende.be/* https://www.vakantiewoningeninoostende.be/:splat 301!
 http://www.vakantiewoningeninoostende.be/* https://www.vakantiewoningeninoostende.be/:splat 301!
+/.netlify/functions/translate /.netlify/functions/translate 200
