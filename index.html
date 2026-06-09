@@ -20,8 +20,7 @@
 <meta name="author" content="Vakantiewoningen in Oostende"/>
 <meta name="geo.region" content="BE-VWV"/>
 <meta name="geo.placename" content="Oostende"/>
-<script type="application/ld+json">
-{
+<script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "LodgingBusiness",
   "name": "Vakantiewoningen in Oostende",
@@ -31,6 +30,8 @@
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Oostende",
+    "addressRegion": "West-Vlaanderen",
+    "postalCode": "8400",
     "addressCountry": "BE"
   },
   "description": "Twee unieke vakantiewoningen in Oostende: La Brise et La Mer met frontaal zeezicht en Het Relax Hoeveke in het landelijke Stene.",
@@ -48,9 +49,21 @@
       },
       "numberOfRooms": 1,
       "amenityFeature": [
-        {"@type": "LocationFeatureSpecification", "name": "Zeezicht", "value": true},
-        {"@type": "LocationFeatureSpecification", "name": "Wifi", "value": true},
-        {"@type": "LocationFeatureSpecification", "name": "Huisdieren toegestaan", "value": true}
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Zeezicht",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Wifi",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Huisdieren toegestaan",
+          "value": true
+        }
       ]
     },
     {
@@ -65,15 +78,39 @@
       },
       "numberOfRooms": 2,
       "amenityFeature": [
-        {"@type": "LocationFeatureSpecification", "name": "Tuin", "value": true},
-        {"@type": "LocationFeatureSpecification", "name": "Gratis parking", "value": true},
-        {"@type": "LocationFeatureSpecification", "name": "Huisdieren toegestaan", "value": true},
-        {"@type": "LocationFeatureSpecification", "name": "Wifi", "value": true}
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Tuin",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Gratis parking",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Huisdieren toegestaan",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Wifi",
+          "value": true
+        }
       ]
     }
-  ]
-}
-</script>
+  ],
+  "image": "https://www.vakantiewoningeninoostende.be/images/zee-hero.jpg",
+  "priceRange": "€€",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "9.1",
+    "reviewCount": "344",
+    "bestRating": "10",
+    "worstRating": "1"
+  }
+}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
@@ -840,7 +877,7 @@ h2.serif em { font-style: italic; }
 .reviews .section-head { margin-bottom: 4rem; }
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
@@ -1351,7 +1388,7 @@ footer {
     <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
     <li><a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a></li>
     <li><a href="galerij.html" data-i18n="nav.gallery">Galerij</a></li>
-    <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
+    <li><a href="reviews.html">Reviews</a></li><li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
     <li><a href="boeken.html" data-i18n="nav.book">Boeken</a></li>
     <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     <li><a href="ontdek.html" data-i18n="nav.ontdek">Ontdek</a></li>
@@ -1371,7 +1408,7 @@ footer {
   <a href="index.html" data-i18n="nav.home">Home</a>
   <a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a>
   <a href="galerij.html" data-i18n="nav.gallery">Galerij</a>
-  <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+  <a href="reviews.html">Reviews</a></li><li><a href="faq.html" data-i18n="nav.faq">FAQ</a>
   <a href="boeken.html" data-i18n="nav.book">Boeken</a>
   <a href="contact.html" data-i18n="nav.contact">Contact</a>
   <a href="ontdek.html" data-i18n="nav.ontdek">Ontdek</a>
@@ -1637,70 +1674,46 @@ footer {
     <div class="eyebrow" data-i18n="rev.eyebrow">Ervaringen</div>
     <h2 class="serif" style="margin-top:0.75rem" data-i18n="rev.title">Wat onze gasten zeggen</h2>
   </div>
-  <div class="reviews-grid" id="reviews-grid">
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">"Fantastisch verblijf! Het hoeveke is een prachtige, authentieke plek. Alles was tip-top in orde. De tuin is heerlijk rustig en de eigenaars zijn super vriendelijk. Zeker voor herhaling!"</p>
-      <div class="review-meta">Lore V. <span class="review-badge badge-h">Het Relax Hoeveke</span></div>
+  <div class="reviews-grid">
+
+    <!-- Hoeveke 1 — links -->
+    <div class="review-card reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text" data-i18n="rq.hoeve1">"Een wunderschönes, gemütliches Häuschen mit Garten in ruhiger Lage. Besonders hervorheben möchten wir die sehr nette Vermieterin. Für einen Urlaub mit Hund ist die Unterkunft einfach ideal."</p>
+      <div class="review-meta"><span data-i18n="rm.hoeve1">Olivera &mdash; Duitsland &middot; juni 2026</span> <span class="review-badge badge-h">Het Relax Hoeveke</span></div>
     </div>
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">"Geweldig appartement met een prachtig uitzicht op zee. Het appartement was netjes en goed uitgerust. De ligging is ideaal — het strand ligt pal voor de deur. Aanrader!"</p>
-      <div class="review-meta">Nathalie D. <span class="review-badge badge-s">La Brise et La Mer</span></div>
+
+    <!-- La Brise 1 — rechts -->
+    <div class="review-card reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text" data-i18n="rq.brise1">"Wir haben uns vom ersten Augenblick an wohlgefühlt. Egal bei welchem Wetter, die Aussicht ist ein Traum&hellip; Mehr als die Sitzbank am großen Fenster braucht es nicht."</p>
+      <div class="review-meta"><span data-i18n="rm.brise1">Hilla &mdash; Duitsland &middot; mei 2026</span> <span class="review-badge badge-s">La Brise et La Mer</span></div>
     </div>
-    <div class="review-card">
-      <div class="review-stars">★★★★★</div>
-      <p class="review-text">"Très bel appartement, vue magnifique sur la mer. Très propre, bien équipé et idéalement situé. Hôte très sympathique et réactif. Nous reviendrons avec plaisir!"</p>
-      <div class="review-meta">Marie-Claire B. <span class="review-badge badge-s">La Brise et La Mer</span></div>
+
+    <!-- Hoeveke 2 — links -->
+    <div class="review-card reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text" data-i18n="rq.hoeve2">"Zalig genoten van het Relax Hoeveke. De hectiek van het dagelijks leven kwam even tot stilstand. Pittoresk gelegen en een heerlijke plek om volledig tot rust te komen."</p>
+      <div class="review-meta"><span data-i18n="rm.hoeve2">Isabel &mdash; België &middot; februari 2026</span> <span class="review-badge badge-h">Het Relax Hoeveke</span></div>
     </div>
+
+    <!-- La Brise 2 — rechts -->
+    <div class="review-card reveal">
+      <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="review-text" data-i18n="rq.brise2">"Fantastisch uitzicht met een geweldige bank aan het raam. Prachtig en goed uitgerust appartement. Geweldige locatie. Vriendelijke en fijne communicatie met de verhuurder."</p>
+      <div class="review-meta"><span data-i18n="rm.brise2">Antje &mdash; België &middot; mei 2026</span> <span class="review-badge badge-s">La Brise et La Mer</span></div>
+    </div>
+
+  </div>
+  <div style="text-align:center;margin-top:2.5rem">
+    <a href="reviews.html" class="btn-outline" data-i18n="rev.all">Alle reviews lezen</a>
   </div>
 </section>
 
 <!-- ======================================================
      FOOTER
      ====================================================== -->
-<footer>
-  <div class="footer-grid">
-    <div>
-      <div class="footer-brand" data-i18n="footer.brand">Vakantiewoningen<br>in Oostende</div>
-      <p class="footer-tagline" data-i18n="footer.tagline">Twee unieke verblijven aan de Belgische kust — Het Relax Hoeveke in het landelijke Stene en La Brise et La Mer op de Zeedijk van Mariakerke.</p>
-
-    </div>
-    <div class="footer-col">
-      <h5 data-i18n="footer.nav">Navigatie</h5>
-      <ul>
-        <li><a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a></li>
-        <li><a href="galerij.html" data-i18n="nav.gallery">Galerij</a></li>
-        <li><a href="boeken.html" data-i18n="nav.book">Boeken</a></li>
-        <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
-        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5 data-i18n="footer.book">Boeken</h5>
-      <ul>
-
-        <li><a href="boeken.html" data-i18n="footer.direct">Rechtstreeks boeken</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h5 data-i18n="footer.contact">Contact</h5>
-      <ul>
-        <li><a href="mailto:vakantiewoningeninoostende@hotmail.com">vakantiewoningeninoostende@hotmail.com</a></li>
-        <li><a href="tel:+32475687243">0475 68 72 43</a></li>
-        <li><a href="https://wa.me/32475687243">WhatsApp</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <span>© <span id="yr"></span> Vakantiewoningen in Oostende</span>
-    <div class="footer-legal">
-      <a href="#" data-i18n="footer.privacy">Privacybeleid</a>
-      <a href="#" data-i18n="footer.cookies">Cookiebeleid</a>
-      <a href="#" data-i18n="footer.terms">Algemene voorwaarden</a>
-    </div>
-  </div>
-</footer>
+<footer><div class="fg"><div><div class="fbrand" data-i18n="ft.brand">Vakantiewoningen<br>in Oostende</div><p class="ftag" data-i18n="ft.tagline">Twee unieke verblijven aan de Belgische kust.</p></div><div class="fc"><h5 data-i18n="ft.nav">Navigatie</h5><ul><li><a href="index.html" data-i18n="nav.home">Home</a></li><li><a href="woningen.html" data-i18n="nav.rentals">Onze verblijven</a></li><li><a href="galerij.html" data-i18n="nav.gallery">Galerij</a></li><li><a href="reviews.html">Reviews</a></li><li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li><li><a href="boeken.html" data-i18n="nav.book">Boeken</a></li><li><a href="contact.html" data-i18n="nav.contact">Contact</a></li></ul></div><div class="fc"><h5 data-i18n="ft.book">Boeken</h5><ul><li><a href="boeken.html#hoeveke" data-i18n="ft.bh">Het Relax Hoeveke boeken</a></li><li><a href="boeken.html#brise" data-i18n="ft.bz">La Brise et La Mer boeken</a></li></ul></div><div class="fc"><h5 data-i18n="ft.contact">Contact</h5><ul><li><a href="mailto:vakantiewoningeninoostende@hotmail.com">vakantiewoningeninoostende@hotmail.com</a></li><li><a href="tel:+32475687243">0475 68 72 43</a></li><li><a href="https://wa.me/32475687243">WhatsApp</a></li></ul></div></div><div class="fb"><span>&copy; <span id="yr"></span> Vakantiewoningen in Oostende</span><div class="fleg"><a href="privacybeleid.html" data-i18n="ft.privacy">Privacybeleid</a><a href="cookiebeleid.html" data-i18n="ft.cookies">Cookiebeleid</a><a href="algemene-voorwaarden.html" data-i18n="ft.terms">Algemene voorwaarden</a></div></div></footer>
 
 <!-- ======================================================
      SCRIPTS
@@ -1720,7 +1733,7 @@ document.querySelectorAll('.mobile-menu a').forEach(a =>
     document.getElementById('mobile-menu').classList.remove('open')));
 
 // ── Language switcher ─────────────────────────────────────────────
-const T={"nl":{"nav.home":"Home","nav.rentals":"Onze verblijven","nav.gallery":"Galerij","nav.faq":"FAQ","nav.book":"Boeken","nav.contact":"Contact","nav.ontdek":"Ontdek","nav.bookNow":"Reserveer nu","hero.hoeve.loc":"Stene &middot; Oostende","hero.hoeve.sub":"Landelijk &amp; authentiek","hero.hoeve.desc":"Een verblijf in Stene's oudste hoeve — met SMEG-keuken, vrijstaande badkuip en eigen tuin.","hero.hoeve.cta":"Ontdek Het Relax Hoeveke","hero.zee.loc":"Zeedijk 170 &middot; Mariakerke","hero.zee.sub":"De zee voor uw deur","hero.zee.desc":"Wakker worden met de Noordzee als uitzicht. Rechtstreeks aan het strand.","hero.zee.cta":"Ontdek het appartement","props.eyebrow":"Onze verblijven","props.title":"Twee werelden, één bestemming","card.hoeve.badge":"01 &middot; Stene","card.hoeve.type":"Het Relax Hoeveke &middot; Stene-Dorpstraat 36","card.hoeve.desc":"Stene's oudste hoevetje. Slaapkamer + slaapbank. Kook op de professionele SMEG, geniet van de tuin.","card.zee.badge":"02 &middot; Zeedijk","card.zee.type":"Appartement &middot; Aan het strand","card.zee.desc":"Licht en modern appartement met frontaal zeezicht, rechtstreeks aan het strand.","tag.garden":"Tuin","tag.parking":"Gratis parking","tag.bathtub":"Vrijst. badkuip","tag.seaview":"Frontaal zeezicht","tag.terrace":"Terras","tag.wifi":"Gratis wifi","card.cta.book":"Beschikbaarheid","card.cta.more":"Meer info","gal.eyebrow":"Galerij","gal.title":"Neem een kijkje binnen","gal.all":"Alle foto's bekijken","cta.eyebrow":"Reserveer vandaag","cta.title":"Klaar voor uw Oostende-escape?","cta.desc":"Kies uw verblijf en bekijk de beschikbaarheid. Alle kalenders zijn gesynchroniseerd.","cta.hoeve":"Boek Het Relax Hoeveke","cta.zee":"Boek La Brise et La Mer","cta.question":"Stel een vraag","rev.eyebrow":"Ervaringen","rev.title":"Wat onze gasten zeggen","footer.tagline":"Twee unieke verblijven aan de Belgische kust.","footer.nav":"Navigatie","footer.book":"Boeken","footer.contact":"Contact","footer.direct":"Rechtstreeks boeken","footer.privacy":"Privacybeleid","footer.cookies":"Cookiebeleid","footer.terms":"Algemene voorwaarden","intro.ew":"Welkom","intro.h2":"Twee adressen,<br><em>één onvergetelijke vakantie</em>","intro.p1":"Vlak aan de Noordzee of in het historische Stene — bij ons kiest u bewust. <strong>La Brise et La Mer</strong> op de Zeedijk van Mariakerke biedt zeezicht en het ritme van de golven als decor.","intro.p2":"<strong>Het Relax Hoeveke</strong>, Stene's oudste hoevetje, is heel anders: authentieke balken, een SMEG-keuken, een vrijstaande badkuip en een sfeervolle tuin. Allebei op 10 minuten van het centrum van Oostende.","intro.quote":"\"Kies uw eigen Oostende — de zee of de stilte, of de twee samen.\""},"fr":{"nav.home":"Accueil","nav.rentals":"Nos hébergements","nav.gallery":"Galerie","nav.faq":"FAQ","nav.book":"Réserver","nav.contact":"Contact","nav.ontdek":"Découvrir","nav.bookNow":"Réserver","hero.hoeve.loc":"Stene &middot; Ostende","hero.hoeve.sub":"Campagne &amp; authenticité","hero.hoeve.desc":"Un séjour dans la plus ancienne ferme de Stene — cuisine SMEG, baignoire îlot et jardin privé.","hero.hoeve.cta":"Découvrir Het Relax Hoeveke","hero.zee.loc":"Digue 170 &middot; Mariakerke","hero.zee.sub":"La mer à votre porte","hero.zee.desc":"Se réveiller avec la mer du Nord en vue. Directement sur la plage.","hero.zee.cta":"Découvrir l'appartement","props.eyebrow":"Nos hébergements","props.title":"Deux mondes, une destination","card.hoeve.badge":"01 &middot; Stene","card.hoeve.type":"Het Relax Hoeveke &middot; Stene-Dorpstraat 36","card.hoeve.desc":"La plus ancienne ferme de Stene. Chambre + canapé-lit. Cuisinez sur le SMEG professionnel.","card.zee.badge":"02 &middot; Digue","card.zee.type":"Appartement &middot; Sur la plage","card.zee.desc":"Appartement lumineux avec vue mer frontale, directement sur la plage.","tag.garden":"Jardin","tag.parking":"Parking gratuit","tag.bathtub":"Baignoire îlot","tag.seaview":"Vue mer frontale","tag.terrace":"Terrasse","tag.wifi":"Wifi gratuit","card.cta.book":"Disponibilités","card.cta.more":"En savoir plus","gal.eyebrow":"Galerie","gal.title":"Jetez un œil à l'intérieur","gal.all":"Voir toutes les photos","cta.eyebrow":"Réservez aujourd'hui","cta.title":"Prêt pour votre escapade à Ostende ?","cta.desc":"Choisissez votre hébergement et consultez les disponibilités. Tous les calendriers sont synchronisés.","cta.hoeve":"Réserver Het Relax Hoeveke","cta.zee":"Réserver La Brise et La Mer","cta.question":"Poser une question","rev.eyebrow":"Avis","rev.title":"Ce que disent nos clients","footer.tagline":"Deux hébergements uniques sur la côte belge.","footer.nav":"Navigation","footer.book":"Réserver","footer.contact":"Contact","footer.direct":"Réserver directement","footer.privacy":"Politique de confidentialité","footer.cookies":"Politique cookies","footer.terms":"Conditions générales","intro.ew":"Bienvenue","intro.h2":"Deux adresses,<br><em>des vacances inoubliables</em>","intro.p1":"En bord de mer du Nord ou dans le village historique de Stene — chez nous, vous choisissez en connaissance de cause. <strong>La Brise et La Mer</strong> sur la digue de Mariakerke offre une vue mer et le rythme des vagues comme décor.","intro.p2":"<strong>Het Relax Hoeveke</strong>, la plus ancienne ferme de Stene, est tout autre : poutres authentiques, cuisine SMEG, baignoire îlot et un charmant jardin. Les deux à 10 minutes du centre d'Ostende.","intro.quote":"\"Choisissez votre Ostende — la mer ou la tranquillité, ou les deux ensemble.\""},"en":{"nav.home":"Home","nav.rentals":"Our rentals","nav.gallery":"Gallery","nav.faq":"FAQ","nav.book":"Book","nav.contact":"Contact","nav.ontdek":"Discover","nav.bookNow":"Book now","hero.hoeve.loc":"Stene &middot; Ostend","hero.hoeve.sub":"Rural &amp; authentic","hero.hoeve.desc":"A stay in Stene's oldest farmhouse — SMEG kitchen, freestanding bathtub and private garden.","hero.hoeve.cta":"Discover Het Relax Hoeveke","hero.zee.loc":"Seafront 170 &middot; Mariakerke","hero.zee.sub":"The sea at your door","hero.zee.desc":"Wake up with the North Sea as your view. Directly on the beach.","hero.zee.cta":"Discover the apartment","props.eyebrow":"Our rentals","props.title":"Two worlds, one destination","card.hoeve.badge":"01 &middot; Stene","card.hoeve.type":"Het Relax Hoeveke &middot; Stene-Dorpstraat 36","card.hoeve.desc":"Stene's oldest farmhouse. Bedroom + sofa bed. Cook on the professional SMEG, enjoy the garden.","card.zee.badge":"02 &middot; Seafront","card.zee.type":"Apartment &middot; On the beach","card.zee.desc":"Light and modern apartment with full sea views, directly on the beach.","tag.garden":"Garden","tag.parking":"Free parking","tag.bathtub":"Freestanding tub","tag.seaview":"Full sea views","tag.terrace":"Terrace","tag.wifi":"Free wifi","card.cta.book":"Availability","card.cta.more":"More info","gal.eyebrow":"Gallery","gal.title":"Take a look inside","gal.all":"View all photos","cta.eyebrow":"Book today","cta.title":"Ready for your Ostend escape?","cta.desc":"Choose your rental and check availability. All calendars are synchronised.","cta.hoeve":"Book Het Relax Hoeveke","cta.zee":"Book La Brise et La Mer","cta.question":"Ask a question","rev.eyebrow":"Reviews","rev.title":"What our guests say","footer.tagline":"Two unique stays on the Belgian coast.","footer.nav":"Navigation","footer.book":"Book","footer.contact":"Contact","footer.direct":"Book directly","footer.privacy":"Privacy policy","footer.cookies":"Cookie policy","footer.terms":"Terms & conditions","intro.ew":"Welcome","intro.h2":"Two addresses,<br><em>one unforgettable holiday</em>","intro.p1":"Right on the North Sea or in historic Stene — with us, you choose consciously. <strong>La Brise et La Mer</strong> on the Mariakerke seafront offers sea views and the rhythm of the waves as its backdrop.","intro.p2":"<strong>Het Relax Hoeveke</strong>, Stene's oldest farmhouse, is entirely different: authentic beams, a SMEG kitchen, a freestanding bathtub and a charming garden. Both just 10 minutes from Ostend city centre.","intro.quote":"\"Choose your own Ostend — the sea or the silence, or both together.\""},"de":{"nav.home":"Startseite","nav.rentals":"Unsere Unterkünfte","nav.gallery":"Galerie","nav.faq":"FAQ","nav.book":"Buchen","nav.contact":"Kontakt","nav.ontdek":"Entdecken","nav.bookNow":"Jetzt buchen","hero.hoeve.loc":"Stene &middot; Ostende","hero.hoeve.sub":"Ländlich &amp; authentisch","hero.hoeve.desc":"Ein Aufenthalt im ältesten Bauernhof von Stene — SMEG-Küche, freistehende Badewanne und Privatgarten.","hero.hoeve.cta":"Het Relax Hoeveke entdecken","hero.zee.loc":"Promenade 170 &middot; Mariakerke","hero.zee.sub":"Das Meer vor Ihrer Tür","hero.zee.desc":"Aufwachen mit der Nordsee als Ausblick. Direkt am Strand.","hero.zee.cta":"Das Apartment entdecken","props.eyebrow":"Unsere Unterkünfte","props.title":"Zwei Welten, ein Ziel","card.hoeve.badge":"01 &middot; Stene","card.hoeve.type":"Het Relax Hoeveke &middot; Stene-Dorpstraat 36","card.hoeve.desc":"Stenes ältester Bauernhof. Schlafzimmer + Schlafsofa. Kochen auf dem professionellen SMEG.","card.zee.badge":"02 &middot; Promenade","card.zee.type":"Apartment &middot; Am Strand","card.zee.desc":"Helles, modernes Apartment mit frontaler Meeraussicht, direkt am Strand.","tag.garden":"Garten","tag.parking":"Kostenloser Parkplatz","tag.bathtub":"Freistehende Wanne","tag.seaview":"Frontaler Meerblick","tag.terrace":"Terrasse","tag.wifi":"Kostenloses WLAN","card.cta.book":"Verfügbarkeit","card.cta.more":"Mehr Info","gal.eyebrow":"Galerie","gal.title":"Werfen Sie einen Blick hinein","gal.all":"Alle Fotos ansehen","cta.eyebrow":"Heute buchen","cta.title":"Bereit für Ihren Ostende-Ausflug?","cta.desc":"Wählen Sie Ihre Unterkunft und prüfen Sie die Verfügbarkeit. Alle Kalender sind synchronisiert.","cta.hoeve":"Het Relax Hoeveke buchen","cta.zee":"La Brise et La Mer buchen","cta.question":"Frage stellen","rev.eyebrow":"Bewertungen","rev.title":"Was unsere Gäste sagen","footer.tagline":"Zwei einzigartige Unterkünfte an der belgischen Küste.","footer.nav":"Navigation","footer.book":"Buchen","footer.contact":"Kontakt","footer.direct":"Direkt buchen","footer.privacy":"Datenschutz","footer.cookies":"Cookie-Richtlinie","footer.terms":"AGB","intro.ew":"Willkommen","intro.h2":"Zwei Adressen,<br><em>ein unvergesslicher Urlaub</em>","intro.p1":"Direkt an der Nordsee oder im historischen Stene — bei uns wählen Sie bewusst. <strong>La Brise et La Mer</strong> an der Strandpromenade von Mariakerke bietet Meerblick und das Rauschen der Wellen als Kulisse.","intro.p2":"<strong>Het Relax Hoeveke</strong>, Stenes ältester Bauernhof, ist ganz anders: authentische Balken, eine SMEG-Küche, eine freistehende Badewanne und ein stimmungsvoller Garten. Beide nur 10 Minuten vom Zentrum Ostende.","intro.quote":"\"Wählen Sie Ihr Ostende — das Meer oder die Stille, oder beides zusammen.\""}};;
+const T={"nl":{"nav.home":"Home","nav.rentals":"Onze verblijven","nav.gallery":"Galerij","nav.faq":"FAQ","nav.book":"Boeken","nav.contact":"Contact","nav.ontdek":"Ontdek","nav.bookNow":"Reserveer nu","hero.hoeve.loc":"Stene &middot; Oostende","hero.hoeve.sub":"Landelijk &amp; authentiek","hero.hoeve.desc":"Een verblijf in Stene's oudste hoeve — met SMEG-keuken, vrijstaande badkuip en eigen tuin.","hero.hoeve.cta":"Ontdek Het Relax Hoeveke","hero.zee.loc":"Zeedijk 170 &middot; Mariakerke","hero.zee.sub":"De zee voor uw deur","hero.zee.desc":"Wakker worden met de Noordzee als uitzicht. Rechtstreeks aan het strand.","hero.zee.cta":"Ontdek het appartement","props.eyebrow":"Onze verblijven","props.title":"Twee werelden, één bestemming","card.hoeve.badge":"01 &middot; Stene","card.hoeve.type":"Het Relax Hoeveke &middot; Stene-Dorpstraat 36","card.hoeve.desc":"Stene's oudste hoevetje. Slaapkamer + slaapbank. Kook op de professionele SMEG, geniet van de tuin.","card.zee.badge":"02 &middot; Zeedijk","card.zee.type":"Appartement &middot; Aan het strand","card.zee.desc":"Licht en modern appartement met frontaal zeezicht, rechtstreeks aan het strand.","tag.garden":"Tuin","tag.parking":"Gratis parking","tag.bathtub":"Vrijst. badkuip","tag.seaview":"Frontaal zeezicht","tag.terrace":"Terras","tag.wifi":"Gratis wifi","card.cta.book":"Beschikbaarheid","card.cta.more":"Meer info","gal.eyebrow":"Galerij","gal.title":"Neem een kijkje binnen","gal.all":"Alle foto's bekijken","cta.eyebrow":"Reserveer vandaag","cta.title":"Klaar voor uw Oostende-escape?","cta.desc":"Kies uw verblijf en bekijk de beschikbaarheid. Alle kalenders zijn gesynchroniseerd.","cta.hoeve":"Boek Het Relax Hoeveke","cta.zee":"Boek La Brise et La Mer","cta.question":"Stel een vraag","rev.eyebrow":"Ervaringen","rev.title":"Wat onze gasten zeggen","rev.all":"Alle reviews lezen","footer.tagline":"Twee unieke verblijven aan de Belgische kust.","footer.nav":"Navigatie","footer.book":"Boeken","footer.contact":"Contact","footer.direct":"Rechtstreeks boeken","footer.privacy":"Privacybeleid","footer.cookies":"Cookiebeleid","footer.terms":"Algemene voorwaarden","intro.ew":"Welkom","intro.h2":"Twee adressen,<br><em>één onvergetelijke vakantie</em>","intro.p1":"Vlak aan de Noordzee of in het historische Stene — bij ons kiest u bewust. <strong>La Brise et La Mer</strong> op de Zeedijk van Mariakerke biedt zeezicht en het ritme van de golven als decor.","intro.p2":"<strong>Het Relax Hoeveke</strong>, Stene's oudste hoevetje, is heel anders: authentieke balken, een SMEG-keuken, een vrijstaande badkuip en een sfeervolle tuin. Allebei op 10 minuten van het centrum van Oostende.","intro.quote":"\"Kies uw eigen Oostende — de zee of de stilte, of de twee samen.\"","rq.hoeve1":"\"Een prachtig, gezellig huisje met tuin op een rustige locatie. We zijn erg blij met de zeer vriendelijke verhuurder. Voor een vakantie met hond is de accommodatie gewoon ideaal.\"","rm.hoeve1":"Olivera &mdash; Duitsland &middot; juni 2026","rq.hoeve2":"\"Zalig genoten van het Relax Hoeveke. De hectiek van het dagelijks leven kwam even tot stilstand. Pittoresk gelegen en een heerlijke plek om volledig tot rust te komen.\"","rm.hoeve2":"Isabel &mdash; België &middot; februari 2026","rq.brise1":"\"We voelden ons vanaf het eerste moment op ons gemak. Wat het weer ook is, het uitzicht is een droom&hellip; Je hebt niet meer nodig dan de zitbank aan het grote raam.\"","rm.brise1":"Hilla &mdash; Duitsland &middot; mei 2026","rq.brise2":"\"Fantastisch uitzicht met een geweldige bank aan het raam. Prachtig en goed uitgerust appartement. Geweldige locatie. Vriendelijke en fijne communicatie met de verhuurder.\"","rm.brise2":"Antje &mdash; België &middot; mei 2026","ft.nav":"Navigatie","ft.book":"Boeken","ft.contact":"Contact","ft.bh":"Het Relax Hoeveke boeken","ft.bz":"La Brise et La Mer boeken","ft.privacy":"Privacybeleid","ft.cookies":"Cookiebeleid","ft.terms":"Algemene voorwaarden","ft.brand":"Vakantiewoningen<br>in Oostende","ft.direct":"Beste prijs — rechtstreeks","ft.tagline":"Twee unieke verblijven aan de Belgische kust."},"fr":{"nav.home":"Accueil","nav.rentals":"Nos hébergements","nav.gallery":"Galerie","nav.faq":"FAQ","nav.book":"Réserver","nav.contact":"Contact","nav.ontdek":"Découvrir","nav.bookNow":"Réserver","hero.hoeve.loc":"Stene &middot; Ostende","hero.hoeve.sub":"Campagne &amp; authenticité","hero.hoeve.desc":"Un séjour dans la plus ancienne ferme de Stene — cuisine SMEG, baignoire îlot et jardin privé.","hero.hoeve.cta":"Découvrir Het Relax Hoeveke","hero.zee.loc":"Digue 170 &middot; Mariakerke","hero.zee.sub":"La mer à votre porte","hero.zee.desc":"Se réveiller avec la mer du Nord en vue. Directement sur la plage.","hero.zee.cta":"Découvrir l'appartement","props.eyebrow":"Nos hébergements","props.title":"Deux mondes, une destination","card.hoeve.badge":"01 &middot; Stene","card.hoeve.type":"Het Relax Hoeveke &middot; Stene-Dorpstraat 36","card.hoeve.desc":"La plus ancienne ferme de Stene. Chambre + canapé-lit. Cuisinez sur le SMEG professionnel.","card.zee.badge":"02 &middot; Digue","card.zee.type":"Appartement &middot; Sur la plage","card.zee.desc":"Appartement lumineux avec vue mer frontale, directement sur la plage.","tag.garden":"Jardin","tag.parking":"Parking gratuit","tag.bathtub":"Baignoire îlot","tag.seaview":"Vue mer frontale","tag.terrace":"Terrasse","tag.wifi":"Wifi gratuit","card.cta.book":"Disponibilités","card.cta.more":"En savoir plus","gal.eyebrow":"Galerie","gal.title":"Jetez un œil à l'intérieur","gal.all":"Voir toutes les photos","cta.eyebrow":"Réservez aujourd'hui","cta.title":"Prêt pour votre escapade à Ostende ?","cta.desc":"Choisissez votre hébergement et consultez les disponibilités. Tous les calendriers sont synchronisés.","cta.hoeve":"Réserver Het Relax Hoeveke","cta.zee":"Réserver La Brise et La Mer","cta.question":"Poser une question","rev.eyebrow":"Avis","rev.title":"Ce que disent nos clients","rev.all":"Lire tous les avis","footer.tagline":"Deux hébergements uniques sur la côte belge.","footer.nav":"Navigation","footer.book":"Réserver","footer.contact":"Contact","footer.direct":"Réserver directement","footer.privacy":"Politique de confidentialité","footer.cookies":"Politique cookies","footer.terms":"Conditions générales","intro.ew":"Bienvenue","intro.h2":"Deux adresses,<br><em>des vacances inoubliables</em>","intro.p1":"En bord de mer du Nord ou dans le village historique de Stene — chez nous, vous choisissez en connaissance de cause. <strong>La Brise et La Mer</strong> sur la digue de Mariakerke offre une vue mer et le rythme des vagues comme décor.","intro.p2":"<strong>Het Relax Hoeveke</strong>, la plus ancienne ferme de Stene, est tout autre : poutres authentiques, cuisine SMEG, baignoire îlot et un charmant jardin. Les deux à 10 minutes du centre d'Ostende.","intro.quote":"\"Choisissez votre Ostende — la mer ou la tranquillité, ou les deux ensemble.\"","rq.hoeve1":"\"Une magnifique petite maison avec jardin dans un cadre calme. Nous avons particulièrement apprécié la très sympathique propriétaire. Pour des vacances avec un chien, c\'est simplement idéal.\"","rm.hoeve1":"Olivera &mdash; Allemagne &middot; juin 2026","rq.hoeve2":"\"Un séjour merveilleux au Relax Hoeveke. L\'agitation du quotidien s\'est estompée. Situé dans un cadre pittoresque, c\'est un endroit idéal pour se ressourcer complètement.\"","rm.hoeve2":"Isabel &mdash; Belgique &middot; février 2026","rq.brise1":"\"Nous nous sommes sentis à l\'aise dès le premier instant. Quelle que soit la météo, la vue est un rêve&hellip; Il ne faut rien de plus que la banquette près de la grande fenêtre.\"","rm.brise1":"Hilla &mdash; Allemagne &middot; mai 2026","rq.brise2":"\"Vue fantastique avec un magnifique banc près de la fenêtre. Appartement magnifique et bien équipé. Emplacement idéal. Communication sympathique avec le propriétaire.\"","rm.brise2":"Antje &mdash; Belgique &middot; mai 2026","ft.nav":"Navigation","ft.book":"Réserver","ft.contact":"Contact","ft.bh":"Réserver Het Relax Hoeveke","ft.bz":"Réserver La Brise et La Mer","ft.privacy":"Politique de confidentialité","ft.cookies":"Politique cookies","ft.terms":"Conditions générales","ft.brand":"Hébergements<br>à Ostende","ft.direct":"Meilleur prix — réservation directe","ft.tagline":"Deux hébergements uniques sur la côte belge."},"en":{"nav.home":"Home","nav.rentals":"Our rentals","nav.gallery":"Gallery","nav.faq":"FAQ","nav.book":"Book","nav.contact":"Contact","nav.ontdek":"Discover","nav.bookNow":"Book now","hero.hoeve.loc":"Stene &middot; Ostend","hero.hoeve.sub":"Rural &amp; authentic","hero.hoeve.desc":"A stay in Stene's oldest farmhouse — SMEG kitchen, freestanding bathtub and private garden.","hero.hoeve.cta":"Discover Het Relax Hoeveke","hero.zee.loc":"Seafront 170 &middot; Mariakerke","hero.zee.sub":"The sea at your door","hero.zee.desc":"Wake up with the North Sea as your view. Directly on the beach.","hero.zee.cta":"Discover the apartment","props.eyebrow":"Our rentals","props.title":"Two worlds, one destination","card.hoeve.badge":"01 &middot; Stene","card.hoeve.type":"Het Relax Hoeveke &middot; Stene-Dorpstraat 36","card.hoeve.desc":"Stene's oldest farmhouse. Bedroom + sofa bed. Cook on the professional SMEG, enjoy the garden.","card.zee.badge":"02 &middot; Seafront","card.zee.type":"Apartment &middot; On the beach","card.zee.desc":"Light and modern apartment with full sea views, directly on the beach.","tag.garden":"Garden","tag.parking":"Free parking","tag.bathtub":"Freestanding tub","tag.seaview":"Full sea views","tag.terrace":"Terrace","tag.wifi":"Free wifi","card.cta.book":"Availability","card.cta.more":"More info","gal.eyebrow":"Gallery","gal.title":"Take a look inside","gal.all":"View all photos","cta.eyebrow":"Book today","cta.title":"Ready for your Ostend escape?","cta.desc":"Choose your rental and check availability. All calendars are synchronised.","cta.hoeve":"Book Het Relax Hoeveke","cta.zee":"Book La Brise et La Mer","cta.question":"Ask a question","rev.eyebrow":"Reviews","rev.title":"What our guests say","rev.all":"Read all reviews","footer.tagline":"Two unique stays on the Belgian coast.","footer.nav":"Navigation","footer.book":"Book","footer.contact":"Contact","footer.direct":"Book directly","footer.privacy":"Privacy policy","footer.cookies":"Cookie policy","footer.terms":"Terms & conditions","intro.ew":"Welcome","intro.h2":"Two addresses,<br><em>one unforgettable holiday</em>","intro.p1":"Right on the North Sea or in historic Stene — with us, you choose consciously. <strong>La Brise et La Mer</strong> on the Mariakerke seafront offers sea views and the rhythm of the waves as its backdrop.","intro.p2":"<strong>Het Relax Hoeveke</strong>, Stene's oldest farmhouse, is entirely different: authentic beams, a SMEG kitchen, a freestanding bathtub and a charming garden. Both just 10 minutes from Ostend city centre.","intro.quote":"\"Choose your own Ostend — the sea or the silence, or both together.\"","rq.hoeve1":"\"A beautiful, cosy cottage with a garden in a quiet location. We especially appreciated the very friendly host. For a holiday with a dog, the accommodation is simply ideal.\"","rm.hoeve1":"Olivera &mdash; Germany &middot; June 2026","rq.hoeve2":"\"A wonderful stay at the Relax Hoeveke. The hustle of daily life faded away. Picturesquely located and a wonderful place to completely unwind.\"","rm.hoeve2":"Isabel &mdash; Belgium &middot; February 2026","rq.brise1":"\"We felt at home from the very first moment. Whatever the weather, the view is a dream&hellip; Nothing more is needed than the window seat by the large window.\"","rm.brise1":"Hilla &mdash; Germany &middot; May 2026","rq.brise2":"\"Fantastic view with a wonderful window seat. Beautiful and well-equipped apartment. Great location. Friendly and pleasant communication with the host.\"","rm.brise2":"Antje &mdash; Belgium &middot; May 2026","ft.nav":"Navigation","ft.book":"Book","ft.contact":"Contact","ft.bh":"Book Het Relax Hoeveke","ft.bz":"Book La Brise et La Mer","ft.privacy":"Privacy policy","ft.cookies":"Cookie policy","ft.terms":"Terms &amp; conditions","ft.brand":"Holiday Rentals<br>in Ostend","ft.direct":"Best price — book direct","ft.tagline":"Two unique stays on the Belgian coast."},"de":{"nav.home":"Startseite","nav.rentals":"Unsere Unterkünfte","nav.gallery":"Galerie","nav.faq":"FAQ","nav.book":"Buchen","nav.contact":"Kontakt","nav.ontdek":"Entdecken","nav.bookNow":"Jetzt buchen","hero.hoeve.loc":"Stene &middot; Ostende","hero.hoeve.sub":"Ländlich &amp; authentisch","hero.hoeve.desc":"Ein Aufenthalt im ältesten Bauernhof von Stene — SMEG-Küche, freistehende Badewanne und Privatgarten.","hero.hoeve.cta":"Het Relax Hoeveke entdecken","hero.zee.loc":"Promenade 170 &middot; Mariakerke","hero.zee.sub":"Das Meer vor Ihrer Tür","hero.zee.desc":"Aufwachen mit der Nordsee als Ausblick. Direkt am Strand.","hero.zee.cta":"Das Apartment entdecken","props.eyebrow":"Unsere Unterkünfte","props.title":"Zwei Welten, ein Ziel","card.hoeve.badge":"01 &middot; Stene","card.hoeve.type":"Het Relax Hoeveke &middot; Stene-Dorpstraat 36","card.hoeve.desc":"Stenes ältester Bauernhof. Schlafzimmer + Schlafsofa. Kochen auf dem professionellen SMEG.","card.zee.badge":"02 &middot; Promenade","card.zee.type":"Apartment &middot; Am Strand","card.zee.desc":"Helles, modernes Apartment mit frontaler Meeraussicht, direkt am Strand.","tag.garden":"Garten","tag.parking":"Kostenloser Parkplatz","tag.bathtub":"Freistehende Wanne","tag.seaview":"Frontaler Meerblick","tag.terrace":"Terrasse","tag.wifi":"Kostenloses WLAN","card.cta.book":"Verfügbarkeit","card.cta.more":"Mehr Info","gal.eyebrow":"Galerie","gal.title":"Werfen Sie einen Blick hinein","gal.all":"Alle Fotos ansehen","cta.eyebrow":"Heute buchen","cta.title":"Bereit für Ihren Ostende-Ausflug?","cta.desc":"Wählen Sie Ihre Unterkunft und prüfen Sie die Verfügbarkeit. Alle Kalender sind synchronisiert.","cta.hoeve":"Het Relax Hoeveke buchen","cta.zee":"La Brise et La Mer buchen","cta.question":"Frage stellen","rev.eyebrow":"Bewertungen","rev.title":"Was unsere Gäste sagen","rev.all":"Alle Bewertungen lesen","footer.tagline":"Zwei einzigartige Unterkünfte an der belgischen Küste.","footer.nav":"Navigation","footer.book":"Buchen","footer.contact":"Kontakt","footer.direct":"Direkt buchen","footer.privacy":"Datenschutz","footer.cookies":"Cookie-Richtlinie","footer.terms":"AGB","intro.ew":"Willkommen","intro.h2":"Zwei Adressen,<br><em>ein unvergesslicher Urlaub</em>","intro.p1":"Direkt an der Nordsee oder im historischen Stene — bei uns wählen Sie bewusst. <strong>La Brise et La Mer</strong> an der Strandpromenade von Mariakerke bietet Meerblick und das Rauschen der Wellen als Kulisse.","intro.p2":"<strong>Het Relax Hoeveke</strong>, Stenes ältester Bauernhof, ist ganz anders: authentische Balken, eine SMEG-Küche, eine freistehende Badewanne und ein stimmungsvoller Garten. Beide nur 10 Minuten vom Zentrum Ostende.","intro.quote":"\"Wählen Sie Ihr Ostende — das Meer oder die Stille, oder beides zusammen.\"","rq.hoeve1":"\"Ein wunderschönes, gemütliches Häuschen mit Garten in ruhiger Lage. Besonders hervorheben möchten wir die sehr nette Vermieterin. Für einen Urlaub mit Hund ist die Unterkunft einfach ideal.\"","rm.hoeve1":"Olivera &mdash; Deutschland &middot; Juni 2026","rq.hoeve2":"\"Herrlich erholt im Relax Hoeveke. Der Alltagsstress war für eine Weile vergessen. Malerisch gelegen und ein wunderbarer Ort zum vollständigen Entspannen.\"","rm.hoeve2":"Isabel &mdash; Belgien &middot; Februar 2026","rq.brise1":"\"Wir haben uns vom ersten Augenblick an wohlgefühlt. Egal bei welchem Wetter, die Aussicht ist ein Traum&hellip; Mehr als die Sitzbank am großen Fenster braucht es nicht.\"","rm.brise1":"Hilla &mdash; Deutschland &middot; Mai 2026","rq.brise2":"\"Fantastischer Ausblick mit einer wunderbaren Fensterbank. Schöne und gut ausgestattete Wohnung. Tolle Lage. Freundliche Kommunikation mit dem Vermieter.\"","rm.brise2":"Antje &mdash; Belgien &middot; Mai 2026","ft.nav":"Navigation","ft.book":"Buchen","ft.contact":"Kontakt","ft.bh":"Het Relax Hoeveke buchen","ft.bz":"La Brise et La Mer buchen","ft.privacy":"Datenschutz","ft.cookies":"Cookie-Richtlinie","ft.terms":"AGB","ft.brand":"Ferienunterkünfte<br>in Ostende","ft.direct":"Bester Preis — direkt buchen","ft.tagline":"Zwei einzigartige Unterkünfte an der belgischen Küste."}};;
 
 let lang = 'nl';
 function setLang(l) {
@@ -1761,29 +1774,87 @@ document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => obs.obs
 const yrEl = document.getElementById('yr');
 if (yrEl) yrEl.textContent = new Date().getFullYear();
 </script>
-<!-- COOKIE BANNER -->
-<div id="ck" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1e120a;color:rgba(255,255,255,0.85);padding:1rem 2rem;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;border-top:3px solid #c9a050;box-shadow:0 -4px 30px rgba(0,0,0,0.3)">
-  <p style="font-size:0.82rem;line-height:1.65;max-width:640px;margin:0">Wij gebruiken cookies om uw bezoek te verbeteren en anonieme statistieken bij te houden. Meer info in ons <a href="#" style="color:#c9a050;text-decoration:underline">cookiebeleid</a>.</p>
-  <div style="display:flex;gap:0.75rem;flex-shrink:0">
-    <button id="ck-decline" style="background:transparent;border:1px solid rgba(255,255,255,0.25);color:rgba(255,255,255,0.6);padding:0.5rem 1.2rem;font-family:inherit;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer">Weigeren</button>
-    <button id="ck-accept" style="background:#c9a050;border:none;color:#3d2b1f;padding:0.5rem 1.4rem;font-family:inherit;font-size:0.68rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer">Aanvaarden</button>
+<!-- COOKIE BANNER – GDPR compliant -->
+<div id="ck" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1e120a;color:rgba(255,255,255,0.88);padding:1.25rem 2rem;box-shadow:0 -4px 30px rgba(0,0,0,0.4);border-top:2px solid #c9a050">
+  <div style="max-width:1280px;margin:0 auto;display:flex;align-items:flex-start;gap:2rem;flex-wrap:wrap">
+    <div style="flex:1;min-width:260px">
+      <p style="font-size:0.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#c9a050;margin-bottom:0.4rem">Cookie-instellingen</p>
+      <p style="font-size:0.82rem;line-height:1.7;color:rgba(255,255,255,0.75);margin:0">
+        Wij gebruiken functionele cookies voor de werking van de site. Met uw toestemming laden wij ook externe diensten zoals Google Fonts en onze boekingenwidget (Lodgify).
+        <a href="cookiebeleid.html" style="color:#c9a050;text-decoration:underline;margin-left:4px">Meer info</a>
+      </p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.5rem;flex-shrink:0;justify-content:center">
+      <button id="ck-accept" style="background:#c9a050;border:none;color:#1e120a;padding:0.6rem 1.6rem;font-size:0.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;font-family:inherit;white-space:nowrap">Alles aanvaarden</button>
+      <button id="ck-decline" style="background:transparent;border:1px solid rgba(255,255,255,0.35);color:rgba(255,255,255,0.75);padding:0.6rem 1.6rem;font-size:0.72rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;font-family:inherit;white-space:nowrap">Enkel functioneel</button>
+    </div>
   </div>
 </div>
 <script>
 (function(){
-  try {
-    if (!localStorage.getItem('ck')) {
-      var b = document.getElementById('ck');
-      b.style.display = 'flex';
-      document.getElementById('ck-accept').onclick = function() {
-        localStorage.setItem('ck','1'); b.style.display='none';
+  try{
+    var saved=localStorage.getItem('ck');
+    if(!saved){
+      var b=document.getElementById('ck');
+      b.style.display='block';
+      document.getElementById('ck-accept').onclick=function(){
+        localStorage.setItem('ck','all');b.style.display='none';
       };
-      document.getElementById('ck-decline').onclick = function() {
-        localStorage.setItem('ck','0'); b.style.display='none';
+      document.getElementById('ck-decline').onclick=function(){
+        localStorage.setItem('ck','func');b.style.display='none';
       };
     }
-  } catch(e) {}
+  }catch(e){}
 })();
 </script>
+
+<style id="footer-css">
+/* ── Footer ── */
+footer{background:#1e120a;color:rgba(255,255,255,0.5);padding:5rem 3rem 2.5rem}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;max-width:1280px;margin:0 auto;padding-bottom:3.5rem;border-bottom:1px solid rgba(255,255,255,0.07);margin-bottom:2rem}
+.fbrand{font-family:var(--serif,'Cormorant Garamond',Georgia,serif);font-size:1.4rem;font-weight:400;color:#fff;margin-bottom:0.75rem;line-height:1.2}
+.ftag{font-size:0.83rem;line-height:1.85;max-width:320px;margin-bottom:1.75rem}
+.fc h5{font-size:0.6rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:#b8956a;margin-bottom:1.2rem}
+.fc ul{list-style:none;margin:0;padding:0}
+.fc li{margin-bottom:0.6rem;font-size:0.82rem}
+.fc a{color:rgba(255,255,255,0.45);transition:color 0.2s}
+.fc a:hover{color:#fff}
+.fb{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;font-size:0.72rem}
+.fb2{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.75rem;font-size:0.72rem}
+.fleg{display:flex;gap:1.75rem}
+.fleg a{color:rgba(255,255,255,0.3);transition:color 0.2s;text-decoration:none}
+.fleg a:hover{color:rgba(255,255,255,0.65)}
+@media(max-width:900px){.fg{grid-template-columns:1fr 1fr;gap:2rem}.fbrand{font-size:1.1rem}}
+@media(max-width:600px){.fg{grid-template-columns:1fr}footer{padding:3.5rem 1.5rem 2rem}.fb,.fb2{flex-direction:column;gap:0.5rem;align-items:flex-start}.fleg{flex-wrap:wrap;gap:1rem}}
+</style>
+<style id="nav-master">
+/* ═══ DEFINITIEVE NAV — identiek op elke pagina en in elke taal ═══ */
+.nav{position:fixed!important;top:0!important;left:0!important;right:0!important;z-index:9999!important;height:70px!important;display:flex!important;align-items:center!important;justify-content:space-between!important;padding:0 3rem!important;background:rgba(250,248,244,0.97)!important;backdrop-filter:blur(12px)!important;border-bottom:1px solid transparent!important;transition:border-color 0.3s,height 0.3s!important;flex-wrap:nowrap!important}
+.nav.scrolled{border-bottom-color:rgba(42,33,24,0.10)!important;height:62px!important}
+.nav-links{display:flex!important;gap:2rem!important;list-style:none!important;margin:0!important;padding:0!important;align-items:center!important;flex-wrap:nowrap!important}
+.nav-links li{display:flex!important;align-items:center!important;padding:0!important;margin:0!important;white-space:nowrap!important}
+.nav-links a{font-size:0.7rem!important;letter-spacing:0.14em!important;text-transform:uppercase!important;font-weight:500!important;color:#7a5c42!important;transition:color 0.2s!important;position:relative!important;text-decoration:none!important;white-space:nowrap!important;display:inline-block!important;padding:0!important;border:none!important;background:none!important;line-height:1!important}
+.nav-links a::after{content:""!important;position:absolute!important;bottom:-3px!important;left:0!important;width:0!important;height:1px!important;background:#3d2b1f!important;transition:width 0.3s!important}
+.nav-links a:hover{color:#3d2b1f!important}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%!important}
+.nav-links a.active{color:#3d2b1f!important}
+.nav-right{display:flex!important;align-items:center!important;gap:1rem!important;flex-shrink:0!important}
+.lang-bar{display:flex!important;border:1px solid rgba(42,33,24,0.10)!important;flex-shrink:0!important}
+.lang-bar button{background:none!important;border:none!important;border-right:1px solid rgba(42,33,24,0.10)!important;font-family:'Jost',sans-serif!important;font-size:0.62rem!important;font-weight:500!important;letter-spacing:0.10em!important;text-transform:uppercase!important;color:#8a7a6a!important;padding:0.3rem 0.5rem!important;cursor:pointer!important;transition:all 0.2s!important;line-height:1!important}
+.lang-bar button:last-child{border-right:none!important}
+.lang-bar button:hover{color:#3d2b1f!important;background:#f2ede4!important}
+.lang-bar button.active{background:#3d2b1f!important;color:#fff!important}
+.btn-book-nav,.nav-book{font-family:'Jost',sans-serif!important;font-size:0.68rem!important;font-weight:500!important;letter-spacing:0.14em!important;text-transform:uppercase!important;color:#fff!important;background:#3d2b1f!important;padding:0.55rem 1.3rem!important;transition:background 0.2s!important;white-space:nowrap!important;text-decoration:none!important;display:inline-block!important;flex-shrink:0!important}
+.btn-book-nav:hover,.nav-book:hover{background:#2a1a0e!important}
+/* Mobile */
+@media(min-width:901px){.nav-hamburger,.hamburger,button#hamburger,button#hbg{display:none!important}}
+@media(max-width:900px){
+  .nav-links,.btn-book-nav,.nav-book{display:none!important}
+  .nav-hamburger,.hamburger,button#hamburger,button#hbg{display:flex!important;align-items:center!important;justify-content:center!important;width:44px!important;height:44px!important;padding:0!important;background:none!important;border:none!important;cursor:pointer!important;flex-direction:column!important;gap:5px!important;flex-shrink:0!important}
+  .nav-hamburger span,.hamburger span{display:block!important;width:22px!important;height:2px!important;background:#3d2b1f!important;border-radius:1px!important}
+  .nav{padding:0 1.25rem!important;height:60px!important}
+  .nav-logo-sub,.logo-sub{display:none!important}
+}
+</style>
 </body>
 </html>
